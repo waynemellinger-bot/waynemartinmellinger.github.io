@@ -1,0 +1,702 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Wayne Martin Mellinger, Ph.D. — Sociologist · Philosopher · Writer · Poet</title>
+<meta name="description" content="Wayne Martin Mellinger, Ph.D. — sociologist, philosopher, writer, and poet; social and environmental justice activist. Critical Interactionism, Dionysian Naturalism, and public scholarship from Santa Barbara, California.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght,ital@9..144,300..700,0..1&family=Source+Serif+4:opsz,wght@8..60,300..600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink:#1e1c18;
+    --paper:#f6f2ea;
+    --dusk-1:#141c29;
+    --dusk-2:#2c4258;
+    --dusk-3:#5c7486;
+    --fog:#e4e0d6;
+    --ochre:#a8562c;
+    --ochre-soft:#c97c4e;
+    --sage:#5c6a52;
+    --line: rgba(30,28,24,0.14);
+    --serif-display: 'Fraunces', Georgia, 'Iowan Old Style', serif;
+    --serif-body: 'Source Serif 4', Georgia, serif;
+    --mono: 'IBM Plex Mono', ui-monospace, 'SF Mono', Menlo, monospace;
+  }
+
+  *{box-sizing:border-box; margin:0; padding:0;}
+  html{scroll-behavior:smooth;}
+  body{
+    background:var(--paper);
+    color:var(--ink);
+    font-family:var(--serif-body);
+    font-size:18px;
+    line-height:1.65;
+    -webkit-font-smoothing:antialiased;
+  }
+  @media (prefers-reduced-motion: reduce){
+    html{scroll-behavior:auto;}
+    *{animation-duration:0.01ms !important; transition-duration:0.01ms !important;}
+  }
+
+  a{color:inherit;}
+  img{max-width:100%; display:block;}
+
+  .wrap{max-width:1120px; margin:0 auto; padding:0 32px;}
+  @media (max-width:640px){ .wrap{padding:0 22px;} }
+
+  .eyebrow{
+    font-family:var(--mono);
+    font-size:12.5px;
+    letter-spacing:0.14em;
+    text-transform:uppercase;
+    color:var(--sage);
+    display:flex;
+    align-items:center;
+    gap:10px;
+  }
+  .eyebrow::before{
+    content:"";
+    width:22px; height:1px;
+    background:var(--ochre);
+    display:inline-block;
+  }
+
+  /* ---------- NAV ---------- */
+  nav{
+    position:fixed; top:0; left:0; right:0; z-index:50;
+    background:rgba(246,242,234,0);
+    transition:background 0.4s ease, box-shadow 0.4s ease, backdrop-filter 0.4s ease;
+    padding:22px 0;
+  }
+  nav.scrolled{
+    background:rgba(246,242,234,0.92);
+    backdrop-filter:blur(8px);
+    box-shadow:0 1px 0 var(--line);
+    padding:14px 0;
+  }
+  nav .wrap{display:flex; align-items:center; justify-content:space-between;}
+  .brand{
+    font-family:var(--serif-display);
+    font-weight:600;
+    font-size:17px;
+    letter-spacing:0.01em;
+    color:var(--paper);
+    transition:color 0.4s ease;
+    text-decoration:none;
+  }
+  nav.scrolled .brand{color:var(--ink);}
+  .navlinks{display:flex; gap:18px; font-family:var(--mono); font-size:11px; letter-spacing:0.04em; text-transform:uppercase; white-space:nowrap;}
+  .navlinks a{color:rgba(246,242,234,0.72); text-decoration:none; transition:color 0.4s ease;}
+  nav.scrolled .navlinks a{color:rgba(30,28,24,0.6);}
+  .navlinks a:hover{color:var(--ochre-soft);}
+  .navtoggle{display:none;}
+  @media (max-width:1020px){
+    .navlinks{display:none;}
+  }
+
+  /* ---------- HERO ---------- */
+  .hero{
+    position:relative;
+    height:100svh;
+    min-height:560px;
+    overflow:hidden;
+    background:linear-gradient(180deg, var(--dusk-1) 0%, var(--dusk-2) 46%, var(--dusk-3) 78%, #8a9a92 100%);
+    display:flex;
+    align-items:flex-end;
+  }
+  .hero-sky{
+    position:absolute; inset:0;
+    background:
+      radial-gradient(1200px 500px at 20% 15%, rgba(255,222,180,0.12), transparent 60%),
+      radial-gradient(900px 500px at 80% 100%, rgba(169,86,44,0.20), transparent 60%);
+  }
+  .hero-sun{
+    position:absolute;
+    left:50%; top:62%;
+    width:120px; height:120px;
+    transform:translate(-50%,-50%);
+    border-radius:50%;
+    background:radial-gradient(circle at 50% 50%, #ffe8c9, var(--ochre-soft) 55%, transparent 75%);
+    filter:blur(1px);
+    opacity:0.9;
+  }
+  /* aperture / lens motif — the signature element */
+  .aperture{
+    position:absolute;
+    left:50%; top:62%;
+    transform:translate(-50%,-50%);
+    width:280px; height:280px;
+    pointer-events:none;
+  }
+  .aperture svg{width:100%; height:100%; display:block;}
+  .aperture circle{
+    fill:none;
+    stroke:rgba(246,242,234,0.55);
+    stroke-width:0.6;
+    transform-origin:center;
+  }
+
+  .hero-water{
+    position:absolute; left:0; right:0; bottom:0; height:34%;
+    background:linear-gradient(180deg, rgba(20,28,41,0) 0%, rgba(20,28,41,0.35) 100%);
+  }
+  .hero-water::before{
+    content:"";
+    position:absolute; inset:0;
+    background-image:repeating-linear-gradient(90deg, rgba(246,242,234,0.05) 0px, rgba(246,242,234,0.05) 1px, transparent 1px, transparent 46px);
+    opacity:0.5;
+  }
+
+  .hero-content{
+    position:relative; z-index:2;
+    width:100%;
+    padding-bottom:9vh;
+    color:var(--paper);
+  }
+  .hero-kicker{
+    font-family:var(--mono);
+    font-size:12.5px;
+    letter-spacing:0.16em;
+    text-transform:uppercase;
+    color:rgba(246,242,234,0.68);
+    margin-bottom:22px;
+  }
+  .hero-title{
+    font-family:var(--serif-display);
+    font-weight:500;
+    font-size:clamp(38px, 6.2vw, 78px);
+    line-height:1.04;
+    letter-spacing:-0.01em;
+    max-width:820px;
+  }
+  .hero-title em{
+    font-style:italic;
+    font-weight:350;
+    color:var(--ochre-soft);
+  }
+  .hero-quote{
+    margin-top:34px;
+    max-width:520px;
+    font-family:var(--serif-display);
+    font-style:italic;
+    font-weight:300;
+    font-size:19px;
+    line-height:1.5;
+    color:rgba(246,242,234,0.86);
+    opacity:0;
+    animation:fadeUp 1.4s ease 0.6s forwards;
+  }
+  @keyframes fadeUp{
+    from{opacity:0; transform:translateY(14px);}
+    to{opacity:1; transform:translateY(0);}
+  }
+  .scroll-cue{
+    position:absolute; left:32px; bottom:28px; z-index:2;
+    font-family:var(--mono); font-size:11px; letter-spacing:0.12em; text-transform:uppercase;
+    color:rgba(246,242,234,0.55);
+    display:flex; align-items:center; gap:10px;
+  }
+  .scroll-cue::after{
+    content:"";
+    width:1px; height:34px;
+    background:rgba(246,242,234,0.45);
+    display:block;
+  }
+
+  /* ---------- SECTION shell ---------- */
+  section{padding:108px 0;}
+  @media (max-width:640px){ section{padding:72px 0;} }
+  .section-head{max-width:640px; margin-bottom:52px;}
+  .section-title{
+    font-family:var(--serif-display);
+    font-weight:500;
+    font-size:clamp(28px, 3.4vw, 40px);
+    letter-spacing:-0.01em;
+    margin-top:14px;
+  }
+  .section-lede{
+    margin-top:16px;
+    font-size:17px;
+    color:rgba(30,28,24,0.72);
+  }
+
+  /* ---------- INTRO ---------- */
+  .intro{background:var(--paper);}
+  .intro-grid{
+    display:grid;
+    grid-template-columns:220px 1fr;
+    gap:64px;
+  }
+  @media (max-width:820px){ .intro-grid{grid-template-columns:1fr;} }
+  .intro-figure{
+    font-family:var(--serif-display);
+    font-style:italic;
+    font-size:15px;
+    color:var(--sage);
+    line-height:1.6;
+    border-left:1px solid var(--line);
+    padding-left:20px;
+    position:sticky; top:120px; align-self:start;
+  }
+  .intro-body p{margin-bottom:22px; font-size:18px; color:rgba(30,28,24,0.86);}
+  .intro-body p:first-child::first-letter{
+    font-family:var(--serif-display);
+    font-size:64px;
+    font-weight:500;
+    float:left;
+    line-height:0.8;
+    padding-right:10px;
+    padding-top:6px;
+    color:var(--ochre);
+  }
+  .thesis-line{
+    margin-top:36px;
+    padding:22px 26px;
+    border-left:2px solid var(--ochre);
+    background:rgba(168,86,44,0.06);
+    font-family:var(--serif-display);
+    font-style:italic;
+    font-size:19px;
+    color:var(--dusk-1);
+  }
+
+  /* ---------- PROJECTS ---------- */
+  .projects{background:var(--fog);}
+  .card-grid{
+    display:grid;
+    grid-template-columns:repeat(3, 1fr);
+    gap:1px;
+    background:var(--line);
+    border:1px solid var(--line);
+  }
+  @media (max-width:900px){ .card-grid{grid-template-columns:repeat(2,1fr);} }
+  @media (max-width:600px){ .card-grid{grid-template-columns:1fr;} }
+  .card{
+    background:var(--fog);
+    padding:38px 32px;
+    display:flex;
+    flex-direction:column;
+    gap:16px;
+    min-height:230px;
+    transition:background 0.3s ease;
+  }
+  .card:hover{background:#eee9dc;}
+  .card-mark{
+    width:34px; height:34px;
+    display:flex; align-items:center; justify-content:center;
+  }
+  .card-mark svg{width:100%; height:100%;}
+  .card h3{
+    font-family:var(--serif-display);
+    font-weight:500;
+    font-size:21px;
+  }
+  .card p{font-size:15.5px; color:rgba(30,28,24,0.68); flex-grow:1;}
+  .card .learn{
+    font-family:var(--mono); font-size:11.5px; letter-spacing:0.08em; text-transform:uppercase;
+    color:var(--ochre); text-decoration:none;
+    display:inline-flex; align-items:center; gap:6px;
+  }
+  .card .learn:hover{text-decoration:underline;}
+
+  /* ---------- WRITING ---------- */
+  .writing{background:var(--paper);}
+  .writing-list{border-top:1px solid var(--line);}
+  .writing-item{
+    display:grid;
+    grid-template-columns:110px 1fr auto;
+    gap:24px;
+    align-items:baseline;
+    padding:24px 0;
+    border-bottom:1px solid var(--line);
+  }
+  @media (max-width:640px){
+    .writing-item{grid-template-columns:1fr; gap:6px;}
+  }
+  .writing-date{font-family:var(--mono); font-size:12px; color:var(--sage); letter-spacing:0.04em;}
+  .writing-title{font-family:var(--serif-display); font-size:19px; font-weight:500;}
+  .writing-venue{font-family:var(--mono); font-size:11.5px; text-transform:uppercase; letter-spacing:0.06em; color:rgba(30,28,24,0.5);}
+
+  /* ---------- PAUSE (poetry) ---------- */
+  .pause{
+    background:var(--dusk-1);
+    color:var(--paper);
+    position:relative;
+  }
+  .pause .wrap{max-width:640px;}
+  .pause .eyebrow{color:var(--ochre-soft);}
+  .pause .eyebrow::before{background:var(--paper);}
+  .pause-title{
+    font-family:var(--serif-display);
+    font-style:italic;
+    font-weight:300;
+    font-size:clamp(30px,4vw,44px);
+    margin:16px 0 46px;
+  }
+  .poem{
+    font-family:var(--serif-display);
+    font-weight:300;
+    font-size:21px;
+    line-height:2;
+    color:rgba(246,242,234,0.92);
+  }
+  .poem .stanza{margin-bottom:32px;}
+  .poem-cred{
+    margin-top:40px;
+    font-family:var(--mono);
+    font-size:12px;
+    letter-spacing:0.06em;
+    text-transform:uppercase;
+    color:rgba(246,242,234,0.5);
+  }
+
+  /* ---------- ADVOCACY ---------- */
+  .advocacy{background:var(--paper);}
+  .adv-grid{display:grid; grid-template-columns:1fr 1fr; gap:56px;}
+  @media (max-width:760px){ .adv-grid{grid-template-columns:1fr;} }
+  .adv-list{list-style:none;}
+  .adv-list li{
+    padding:16px 0;
+    border-bottom:1px solid var(--line);
+    display:flex; justify-content:space-between; gap:16px;
+    font-size:16px;
+  }
+  .adv-list li span:last-child{
+    font-family:var(--mono); font-size:12px; color:var(--sage); white-space:nowrap; padding-top:3px;
+  }
+
+  /* ---------- BIO STRIP ---------- */
+  .biostrip{background:var(--sage); color:var(--paper); padding:64px 0;}
+  .biostrip .wrap{display:flex; flex-wrap:wrap; gap:12px 34px; align-items:baseline;}
+  .biostrip .role{
+    font-family:var(--serif-display); font-style:italic; font-size:20px;
+  }
+  .biostrip .dot{opacity:0.5;}
+
+  /* ---------- FOOTER ---------- */
+  footer{background:var(--dusk-1); color:rgba(246,242,234,0.75); padding:64px 0 40px;}
+  .footer-grid{display:grid; grid-template-columns:1.4fr 1fr 1fr; gap:40px; padding-bottom:40px; border-bottom:1px solid rgba(246,242,234,0.14);}
+  @media (max-width:700px){ .footer-grid{grid-template-columns:1fr;} }
+  .footer-grid h4{font-family:var(--mono); font-size:11.5px; text-transform:uppercase; letter-spacing:0.08em; color:rgba(246,242,234,0.5); margin-bottom:16px;}
+  .footer-grid p{font-size:15px; max-width:340px; color:rgba(246,242,234,0.7);}
+  .footer-links{list-style:none;}
+  .footer-links li{margin-bottom:10px; font-size:14.5px;}
+  .footer-links a{text-decoration:none; color:rgba(246,242,234,0.75);}
+  .footer-links a:hover{color:var(--ochre-soft);}
+  .footer-bottom{
+    display:flex; justify-content:space-between; align-items:center; padding-top:26px;
+    font-family:var(--mono); font-size:11.5px; color:rgba(246,242,234,0.45);
+    flex-wrap:wrap; gap:12px;
+  }
+</style>
+</head>
+<body>
+
+<nav id="mainnav">
+  <div class="wrap">
+    <a class="brand" href="#top">Wayne Martin Mellinger</a>
+    <div class="navlinks">
+      <a href="#top">Home</a>
+      <a href="#biography">Biography</a>
+      <a href="#sociology">Sociology</a>
+      <a href="#religion-philosophy">Religion &amp; Philosophy</a>
+      <a href="#public-writing">Public Writing</a>
+      <a href="#poetry">Poetry</a>
+      <a href="#projects">Projects</a>
+      <a href="#cv">CV</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </div>
+</nav>
+
+<header class="hero" id="top">
+  <div class="hero-sky"></div>
+  <div class="hero-sun"></div>
+  <div class="aperture" aria-hidden="true">
+    <svg viewBox="0 0 280 280">
+      <circle id="ap1" cx="140" cy="140" r="130"/>
+      <circle id="ap2" cx="140" cy="140" r="100"/>
+      <circle id="ap3" cx="140" cy="140" r="70"/>
+    </svg>
+  </div>
+  <div class="hero-water"></div>
+  <div class="hero-content">
+    <div class="wrap">
+      <div class="hero-kicker">Sociologist · Philosopher · Writer · Poet</div>
+      <div class="hero-kicker" style="margin-top:-14px; color:var(--ochre-soft);">Social and Environmental Justice Activist</div>
+      <h1 class="hero-title">Sociology written from<br>the <em>sidewalk</em>, not about it.</h1>
+      <p class="hero-quote">&ldquo;Abandonment is not an absence. It is something institutions do.&rdquo;</p>
+    </div>
+  </div>
+  <div class="scroll-cue">Scroll</div>
+</header>
+
+<section class="intro" id="biography">
+  <div class="wrap">
+    <div class="intro-grid">
+      <div class="intro-figure">
+        Sociologist.<br>Philosopher.<br>Writer.<br>Poet.<br>Justice Activist.
+      </div>
+      <div class="intro-body">
+        <div class="eyebrow">Biography</div>
+        <h2 class="section-title" style="margin-bottom:28px;">A scholar who never left the street</h2>
+        <p>Wayne Martin Mellinger, Ph.D., is an independent sociologist and public intellectual based in Santa Barbara, California, working at the intersection of ethnomethodology, institutional analysis, and the sociology of homelessness. He trained at the University of California, Santa Barbara under Don H. Zimmerman, Thomas P. Wilson, and Harvey Molotch, in a department that helped found the ethnomethodology and conversation analysis tradition — the close, empirical study of how social order is accomplished in the fine grain of everyday interaction.</p>
+        <p>For nearly two decades, that training has been tested against the street. As a street outreach worker in Santa Barbara County, Wayne has sat across from people navigating intake interviews, waitlists, discharge planning, and the countless small documentary transactions through which institutions decide who is seen and who is not. That vantage point is the empirical ground for his current theoretical project, Critical Interactionism: an approach that treats abandonment not as an absence of resources or compassion, but as something organizations actively accomplish, in real time, through the ordinary mechanics of paperwork, categorization, and deferral.</p>
+        <p>He serves on the Santa Barbara County Behavioral Wellness Commission and the Santa Barbara County Continuum of Care, and sits on the boards of several nonprofits working on homelessness and social justice, including CLUE-SB, Showers of Blessing, and the Committee for Social Justice. Since 2012, he has written more than a hundred columns for the online newspaper Noozhawk, translating research and street-level observation for a general audience.</p>
+        <p>Wayne's scholarship extends into two ongoing research platforms. <em>Doing Modernity: Studies in Critical Interactionism</em> houses his work on institutions, recognition, and the Santa Barbara School of ethnomethodology. <em>The Dionysian Naturalist: Studies in Religious Naturalism and Other Emerging Nature Religions</em> develops a parallel line of inquiry into contemporary Paganism, religious naturalism, and ecstatic spiritual practice — a personal theological framework he calls Dionysian Naturalism.</p>
+        <p>Each December 21st, Wayne organizes the Longest Night Homeless Memorial Vigil at the Santa Barbara County Courthouse, a ritual of public mourning for community members who died while homeless that year. He co-founded the Santa Barbara Homeless Foot Washing and the Freedom Warming Centers. He is a practicing member of the Unitarian Society of Santa Barbara, and also writes poetry and literary fiction alongside his scholarly and journalistic work.</p>
+        <div class="thesis-line">The thread running through all of it: rigorous sociological method, a theology of nature and embodiment, and a refusal to separate scholarship from the work of showing up.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="projects" id="sociology">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="eyebrow">Sociology</div>
+      <h2 class="section-title">Critical Interactionism &amp; the study of institutional abandonment</h2>
+      <p class="section-lede">Trained in the Santa Barbara School of ethnomethodology, applied for two decades on the street.</p>
+    </div>
+    <div class="card-grid">
+
+      <div class="card">
+        <div class="card-mark"><svg viewBox="0 0 34 34" fill="none" stroke="#a8562c" stroke-width="1.4"><path d="M8 26 C8 14, 26 14, 26 8"/><circle cx="26" cy="8" r="2.4" fill="#a8562c" stroke="none"/></svg></div>
+        <h3>Critical Interactionism</h3>
+        <p>A theoretical synthesis of ethnomethodology, institutional ethnography, and critical social theory, aimed at making organizational abandonment analytically visible.</p>
+        <a class="learn" href="#">Learn more →</a>
+      </div>
+
+      <div class="card">
+        <div class="card-mark"><svg viewBox="0 0 34 34" fill="none" stroke="#a8562c" stroke-width="1.4"><path d="M6 26 L14 14 L20 20 L28 6"/></svg></div>
+        <h3>Abandonment in Real Time</h3>
+        <p>A book-length study of institutional recognition and premature death among the homeless, developed from two decades of street outreach and social-autopsy method.</p>
+        <a class="learn" href="#">Learn more →</a>
+      </div>
+
+      <div class="card">
+        <div class="card-mark"><svg viewBox="0 0 34 34" fill="none" stroke="#a8562c" stroke-width="1.4"><circle cx="17" cy="17" r="13"/><circle cx="17" cy="17" r="6"/></svg></div>
+        <h3>Doing Modernity</h3>
+        <p>A research platform on institutions, recognition, and the Santa Barbara School of ethnomethodology — the intellectual lineage running from Garfinkel through Zimmerman to the present.</p>
+        <a class="learn" href="#">Learn more →</a>
+      </div>
+
+      <div class="card">
+        <div class="card-mark"><svg viewBox="0 0 34 34" fill="none" stroke="#a8562c" stroke-width="1.4"><rect x="7" y="7" width="20" height="20" rx="1"/><path d="M7 14 h20 M14 7 v20"/></svg></div>
+        <h3>Housing Justice</h3>
+        <p>Applied research and advocacy growing directly out of Wayne's work with the Continuum of Care and Behavioral Wellness Commission in Santa Barbara County.</p>
+        <a class="learn" href="#">Learn more →</a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section class="intro" id="religion-philosophy" style="border-top:1px solid var(--line);">
+  <div class="wrap">
+    <div class="intro-grid">
+      <div class="intro-figure">
+        Religious<br>Naturalism.<br>Paganism.<br>Western Esoterica.<br>Nature Ritual.
+      </div>
+      <div class="intro-body">
+        <div class="eyebrow">Religion &amp; Philosophy</div>
+        <h2 class="section-title" style="margin-bottom:28px;">Dionysian Naturalism</h2>
+        <p>Alongside his sociology, Wayne writes and develops theology under <em>The Dionysian Naturalist: Studies in Religious Naturalism and Other Emerging Nature Religions</em> — a personal framework, Dionysian Naturalism, sitting at the crossing of Religious Naturalism, contemporary Paganism, and the human sciences.</p>
+        <p>His interests here range across Western esoteric traditions, entheogenic spirituality, Druidry, and nature-based ritual practice, and draw on figures such as Abraham Joshua Heschel, Robin Wall Kimmerer, Annie Dillard, and Mary Oliver. He is a practicing member of the Unitarian Society of Santa Barbara.</p>
+        <div class="thesis-line">A theology built for people who take both ecology and ecstasy seriously.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="writing" id="public-writing">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="eyebrow">Public Writing</div>
+      <h2 class="section-title">Essays, columns, and scholarship</h2>
+      <p class="section-lede">A running record — academic articles, Noozhawk columns, and public essays. This list is built to grow; drop new pieces in as they publish.</p>
+    </div>
+    <div class="writing-list">
+      <div class="writing-item">
+        <div class="writing-date">2026</div>
+        <div class="writing-title">Many Interaction Orders</div>
+        <div class="writing-venue">Studies in Symbolic Interaction</div>
+      </div>
+      <div class="writing-item">
+        <div class="writing-date">2026</div>
+        <div class="writing-title">Making the Sacred Observable</div>
+        <div class="writing-venue">Working paper</div>
+      </div>
+      <div class="writing-item">
+        <div class="writing-date">2026</div>
+        <div class="writing-title">On the 500 Block of State Street</div>
+        <div class="writing-venue">Noozhawk</div>
+      </div>
+      <div class="writing-item">
+        <div class="writing-date">Ongoing</div>
+        <div class="writing-title">Abandonment in Real Time</div>
+        <div class="writing-venue">Book manuscript, in development</div>
+      </div>
+      <div class="writing-item">
+        <div class="writing-date">Since 2012</div>
+        <div class="writing-title">Columns on homelessness &amp; community</div>
+        <div class="writing-venue">Noozhawk — 110+ pieces</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="pause" id="poetry">
+  <div class="wrap">
+    <div class="eyebrow">Poetry</div>
+    <h2 class="pause-title">Not everything here needs a citation.</h2>
+    <div class="poem">
+      <div class="stanza">
+        I have knelt on sidewalks<br>
+        that never asked to hold a body,<br>
+        and learned that attention, given plainly,<br>
+        is its own kind of shelter.
+      </div>
+      <div class="stanza">
+        The courthouse steps in December<br>
+        do not warm anyone.<br>
+        We light candles there anyway,<br>
+        because naming is a form of care<br>
+        the paperwork forgot.
+      </div>
+      <div class="stanza">
+        Somewhere between the file and the face<br>
+        a person goes missing.<br>
+        I have spent my life trying<br>
+        to notice exactly where.
+      </div>
+    </div>
+    <div class="poem-cred">From an ongoing collection — Moments of Awe Punctuated by the Mundane</div>
+  </div>
+</section>
+
+<section class="advocacy" id="projects">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="eyebrow">Projects &amp; Community Work</div>
+      <h2 class="section-title">Justice work in Santa Barbara County</h2>
+      <p class="section-lede">The organizing, ritual, and civic work behind the scholarship — where street outreach becomes public practice.</p>
+    </div>
+    <div class="adv-grid">
+      <div>
+        <ul class="adv-list">
+          <li><span>Longest Night Homeless Memorial Vigil</span><span>Organizer, Dec. 21 annually</span></li>
+          <li><span>Santa Barbara Homeless Foot Washing</span><span>Co-founder</span></li>
+          <li><span>Freedom Warming Centers</span><span>Co-founder</span></li>
+        </ul>
+      </div>
+      <div>
+        <ul class="adv-list">
+          <li><span>Santa Barbara County Behavioral Wellness Commission</span><span>Commissioner</span></li>
+          <li><span>Santa Barbara / Santa Maria Continuum of Care</span><span>Member</span></li>
+          <li><span>CLUE-SB · Showers of Blessing · Committee for Social Justice</span><span>Board member</span></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="biostrip">
+  <div class="wrap">
+    <span class="role">Sociologist</span><span class="dot">·</span>
+    <span class="role">Philosopher</span><span class="dot">·</span>
+    <span class="role">Writer</span><span class="dot">·</span>
+    <span class="role">Poet</span><span class="dot">·</span>
+    <span class="role">Social and Environmental Justice Activist</span>
+  </div>
+</div>
+
+<section id="cv" style="background:var(--paper); padding:100px 0;">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="eyebrow">Curriculum Vitae</div>
+      <h2 class="section-title">Education &amp; positions</h2>
+    </div>
+    <div class="adv-grid">
+      <div>
+        <ul class="adv-list">
+          <li><span>Ph.D., Sociology — University of California, Santa Barbara</span><span>1990</span></li>
+          <li><span>B.B.A., Performing Arts Administration</span><span></span></li>
+          <li><span>Doctoral training under Zimmerman, Wilson &amp; Molotch</span><span></span></li>
+        </ul>
+      </div>
+      <div>
+        <ul class="adv-list">
+          <li><span>Behavioral Wellness Commission, Santa Barbara County</span><span>Commissioner</span></li>
+          <li><span>Santa Barbara / Santa Maria Continuum of Care</span><span>Member</span></li>
+          <li><span>Noozhawk</span><span>Columnist, 2012–present</span></li>
+        </ul>
+      </div>
+    </div>
+    <p style="margin-top:32px; font-size:15.5px; color:rgba(30,28,24,0.6);">Full CV available as a downloadable PDF — send me your current CV file and I'll add a working download link here.</p>
+  </div>
+</section>
+
+<footer id="contact">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <h4>Contact</h4>
+        <p>For speaking, press, collaboration, or to share a correction — reach out directly. A working email link can be added here once you tell me which address to use.</p>
+      </div>
+      <div>
+        <h4>Elsewhere</h4>
+        <ul class="footer-links">
+          <li><a href="#">Noozhawk</a></li>
+          <li><a href="#">Academia.edu</a></li>
+          <li><a href="#">LinkedIn</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Site</h4>
+        <ul class="footer-links">
+          <li><a href="#biography">Biography</a></li>
+          <li><a href="#sociology">Sociology</a></li>
+          <li><a href="#religion-philosophy">Religion &amp; Philosophy</a></li>
+          <li><a href="#public-writing">Public Writing</a></li>
+          <li><a href="#poetry">Poetry</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#cv">CV</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Wayne Martin Mellinger, Ph.D.</span>
+      <span>Santa Barbara, California</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+  // nav background on scroll
+  const nav = document.getElementById('mainnav');
+  window.addEventListener('scroll', () => {
+    nav.classList.toggle('scrolled', window.scrollY > 60);
+  }, {passive:true});
+
+  // aperture narrows into focus as the hero scrolls out — the signature motion
+  const ap1 = document.getElementById('ap1');
+  const ap2 = document.getElementById('ap2');
+  const ap3 = document.getElementById('ap3');
+  const hero = document.querySelector('.hero');
+  function updateAperture(){
+    const prog = Math.min(1, Math.max(0, window.scrollY / (hero.offsetHeight * 0.9)));
+    ap1.setAttribute('r', 130 - prog*30);
+    ap2.setAttribute('r', 100 - prog*45);
+    ap3.setAttribute('r', 70 - prog*55);
+    const op = 1 - prog*0.6;
+    document.querySelector('.aperture').style.opacity = op;
+  }
+  window.addEventListener('scroll', updateAperture, {passive:true});
+  updateAperture();
+</script>
+
+</body>
+</html>
