@@ -1,0 +1,1334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Wayne Martin Mellinger, Ph.D. — Sociologist · Philosopher · Writer · Poet</title>
+<meta name="description" content="Wayne Martin Mellinger, Ph.D. — sociologist, philosopher, writer, and poet; social and environmental justice activist. Critical Interactionism, Dionysian Naturalism, and public scholarship from Santa Barbara, California.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght,ital@9..144,300..700,0..1&family=Source+Serif+4:opsz,wght@8..60,300..600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink:#1e1c18;
+    --paper:#f6f2ea;
+    --dusk-1:#141c29;
+    --dusk-2:#2c4258;
+    --dusk-3:#5c7486;
+    --fog:#e4e0d6;
+    --ochre:#a8562c;
+    --ochre-soft:#c97c4e;
+    --sage:#5c6a52;
+    --line: rgba(30,28,24,0.14);
+    --serif-display: 'Fraunces', Georgia, 'Iowan Old Style', serif;
+    --serif-body: 'Source Serif 4', Georgia, serif;
+    --mono: 'IBM Plex Mono', ui-monospace, 'SF Mono', Menlo, monospace;
+  }
+
+  *{box-sizing:border-box; margin:0; padding:0;}
+  html{scroll-behavior:smooth;}
+  body{
+    background:var(--paper);
+    color:var(--ink);
+    font-family:var(--serif-body);
+    font-size:18px;
+    line-height:1.65;
+    -webkit-font-smoothing:antialiased;
+  }
+  @media (prefers-reduced-motion: reduce){
+    html{scroll-behavior:auto;}
+    *{animation-duration:0.01ms !important; transition-duration:0.01ms !important;}
+  }
+
+  a{color:inherit;}
+  img{max-width:100%; display:block;}
+
+  .wrap{max-width:1120px; margin:0 auto; padding:0 32px;}
+  @media (max-width:640px){ .wrap{padding:0 22px;} }
+
+  .eyebrow{
+    font-family:var(--mono);
+    font-size:12.5px;
+    letter-spacing:0.14em;
+    text-transform:uppercase;
+    color:var(--sage);
+    display:flex;
+    align-items:center;
+    gap:10px;
+  }
+  .eyebrow::before{
+    content:"";
+    width:22px; height:1px;
+    background:var(--ochre);
+    display:inline-block;
+  }
+
+  /* ---------- NAV ---------- */
+  nav{
+    position:fixed; top:0; left:0; right:0; z-index:50;
+    background:rgba(246,242,234,0);
+    transition:background 0.4s ease, box-shadow 0.4s ease, backdrop-filter 0.4s ease;
+    padding:22px 0;
+  }
+  nav.scrolled{
+    background:rgba(246,242,234,0.92);
+    backdrop-filter:blur(8px);
+    box-shadow:0 1px 0 var(--line);
+    padding:14px 0;
+  }
+  nav .wrap{display:flex; align-items:center; justify-content:space-between; gap:20px;}
+  .brand{
+    font-family:var(--serif-display);
+    font-weight:600;
+    font-size:17px;
+    letter-spacing:0.01em;
+    color:var(--paper);
+    transition:color 0.4s ease;
+    text-decoration:none;
+    white-space:nowrap;
+    flex-shrink:0;
+  }
+  nav.scrolled .brand{color:var(--ink);}
+  .navlinks{display:flex; gap:18px; font-family:var(--mono); font-size:11px; letter-spacing:0.04em; text-transform:uppercase; white-space:nowrap; flex-shrink:1; overflow-x:auto; scrollbar-width:none;}
+  .navlinks::-webkit-scrollbar{display:none;}
+  .navlinks a{color:rgba(246,242,234,0.72); text-decoration:none; transition:color 0.4s ease;}
+  nav.scrolled .navlinks a{color:rgba(30,28,24,0.6);}
+  .navlinks a:hover{color:var(--ochre-soft);}
+  .navtoggle{display:none;}
+  @media (max-width:1020px){
+    .navlinks{display:none;}
+  }
+
+  /* ---------- HERO ---------- */
+  .hero{
+    position:relative;
+    height:100svh;
+    min-height:560px;
+    overflow:hidden;
+    background:linear-gradient(180deg, var(--dusk-1) 0%, var(--dusk-2) 46%, var(--dusk-3) 78%, #8a9a92 100%);
+    display:flex;
+    align-items:flex-end;
+  }
+  .hero-sky{
+    position:absolute; inset:0;
+    background:
+      radial-gradient(1200px 500px at 20% 15%, rgba(255,222,180,0.12), transparent 60%),
+      radial-gradient(900px 500px at 80% 100%, rgba(169,86,44,0.20), transparent 60%);
+  }
+  .hero-sun{
+    position:absolute;
+    left:50%; top:62%;
+    width:120px; height:120px;
+    transform:translate(-50%,-50%);
+    border-radius:50%;
+    background:radial-gradient(circle at 50% 50%, #ffe8c9, var(--ochre-soft) 55%, transparent 75%);
+    filter:blur(1px);
+    opacity:0.9;
+  }
+  /* aperture / lens motif — the signature element */
+  .aperture{
+    position:absolute;
+    left:50%; top:62%;
+    transform:translate(-50%,-50%);
+    width:280px; height:280px;
+    pointer-events:none;
+  }
+  .aperture svg{width:100%; height:100%; display:block;}
+  .aperture circle{
+    fill:none;
+    stroke:rgba(246,242,234,0.55);
+    stroke-width:0.6;
+    transform-origin:center;
+  }
+
+  .hero-water{
+    position:absolute; left:0; right:0; bottom:0; height:34%;
+    background:linear-gradient(180deg, rgba(20,28,41,0) 0%, rgba(20,28,41,0.35) 100%);
+  }
+  .hero-water::before{
+    content:"";
+    position:absolute; inset:0;
+    background-image:repeating-linear-gradient(90deg, rgba(246,242,234,0.05) 0px, rgba(246,242,234,0.05) 1px, transparent 1px, transparent 46px);
+    opacity:0.5;
+  }
+
+  .hero-content{
+    position:relative; z-index:2;
+    width:100%;
+    padding-bottom:9vh;
+    color:var(--paper);
+  }
+  .hero-kicker{
+    font-family:var(--mono);
+    font-size:12.5px;
+    letter-spacing:0.16em;
+    text-transform:uppercase;
+    color:rgba(246,242,234,0.68);
+    margin-bottom:22px;
+  }
+  .hero-title{
+    font-family:var(--serif-display);
+    font-weight:500;
+    font-size:clamp(38px, 6.2vw, 78px);
+    line-height:1.04;
+    letter-spacing:-0.01em;
+    max-width:820px;
+  }
+  .hero-title em{
+    font-style:italic;
+    font-weight:350;
+    color:var(--ochre-soft);
+  }
+  .hero-quote{
+    margin-top:34px;
+    max-width:520px;
+    font-family:var(--serif-display);
+    font-style:italic;
+    font-weight:300;
+    font-size:19px;
+    line-height:1.5;
+    color:rgba(246,242,234,0.86);
+    opacity:0;
+    animation:fadeUp 1.4s ease 0.6s forwards;
+  }
+  @keyframes fadeUp{
+    from{opacity:0; transform:translateY(14px);}
+    to{opacity:1; transform:translateY(0);}
+  }
+  .scroll-cue{
+    position:absolute; left:32px; bottom:28px; z-index:2;
+    font-family:var(--mono); font-size:11px; letter-spacing:0.12em; text-transform:uppercase;
+    color:rgba(246,242,234,0.55);
+    display:flex; align-items:center; gap:10px;
+  }
+  .scroll-cue::after{
+    content:"";
+    width:1px; height:34px;
+    background:rgba(246,242,234,0.45);
+    display:block;
+  }
+
+  /* ---------- SECTION shell ---------- */
+  section{padding:108px 0;}
+  @media (max-width:640px){ section{padding:72px 0;} }
+  .section-head{max-width:640px; margin-bottom:52px;}
+  .section-title{
+    font-family:var(--serif-display);
+    font-weight:500;
+    font-size:clamp(28px, 3.4vw, 40px);
+    letter-spacing:-0.01em;
+    margin-top:14px;
+  }
+  .section-lede{
+    margin-top:16px;
+    font-size:17px;
+    color:rgba(30,28,24,0.72);
+  }
+
+  /* ---------- INTRO ---------- */
+  .intro{background:var(--paper);}
+  .intro-grid{
+    display:grid;
+    grid-template-columns:220px 1fr;
+    gap:64px;
+  }
+  @media (max-width:820px){ .intro-grid{grid-template-columns:1fr;} }
+  .intro-figure{
+    font-family:var(--serif-display);
+    font-style:italic;
+    font-size:15px;
+    color:var(--sage);
+    line-height:1.6;
+    border-left:1px solid var(--line);
+    padding-left:20px;
+    position:sticky; top:120px; align-self:start;
+  }
+  .intro-body p{margin-bottom:22px; font-size:18px; color:rgba(30,28,24,0.86);}
+  .intro-body p:first-child::first-letter{
+    font-family:var(--serif-display);
+    font-size:64px;
+    font-weight:500;
+    float:left;
+    line-height:0.8;
+    padding-right:10px;
+    padding-top:6px;
+    color:var(--ochre);
+  }
+  .thesis-line{
+    margin-top:36px;
+    padding:22px 26px;
+    border-left:2px solid var(--ochre);
+    background:rgba(168,86,44,0.06);
+    font-family:var(--serif-display);
+    font-style:italic;
+    font-size:19px;
+    color:var(--dusk-1);
+  }
+
+  /* ---------- PROJECTS ---------- */
+  .projects{background:var(--fog);}
+  .card-grid{
+    display:grid;
+    grid-template-columns:repeat(3, 1fr);
+    gap:1px;
+    background:var(--line);
+    border:1px solid var(--line);
+  }
+  @media (max-width:900px){ .card-grid{grid-template-columns:repeat(2,1fr);} }
+  @media (max-width:600px){ .card-grid{grid-template-columns:1fr;} }
+  .card{
+    background:var(--fog);
+    padding:38px 32px;
+    display:flex;
+    flex-direction:column;
+    gap:16px;
+    min-height:230px;
+    transition:background 0.3s ease;
+  }
+  .card:hover{background:#eee9dc;}
+  .card-mark{
+    width:34px; height:34px;
+    display:flex; align-items:center; justify-content:center;
+  }
+  .card-mark svg{width:100%; height:100%;}
+  .card h3{
+    font-family:var(--serif-display);
+    font-weight:500;
+    font-size:21px;
+  }
+  .card p{font-size:15.5px; color:rgba(30,28,24,0.68); flex-grow:1;}
+  .card .learn{
+    font-family:var(--mono); font-size:11.5px; letter-spacing:0.08em; text-transform:uppercase;
+    color:var(--ochre); text-decoration:none;
+    display:inline-flex; align-items:center; gap:6px;
+  }
+  .card .learn:hover{text-decoration:underline;}
+
+  /* ---------- ANNOTATED BIBLIOGRAPHY ---------- */
+  .annot-list{ border-top:1px solid var(--line); }
+  .annot-item{ padding:26px 0; border-bottom:1px solid var(--line); }
+  .annot-head{ display:flex; align-items:baseline; gap:14px; flex-wrap:wrap; margin-bottom:8px; }
+  .annot-year{ font-family:var(--mono); font-size:12px; color:var(--sage); letter-spacing:0.04em; white-space:nowrap; }
+  .annot-title{ font-family:var(--serif-display); font-weight:500; font-size:18.5px; }
+  .annot-desc{ font-size:15px; color:rgba(30,28,24,0.72); max-width:760px; }
+
+  /* ---------- GALLERY ---------- */
+  .gallery-grid{
+    display:grid;
+    grid-template-columns:repeat(3, 1fr);
+    grid-auto-rows:220px;
+    gap:16px;
+  }
+  @media (max-width:820px){ .gallery-grid{grid-template-columns:repeat(2,1fr);} }
+  @media (max-width:520px){ .gallery-grid{grid-template-columns:1fr;} }
+  .gphoto{
+    margin:0;
+    overflow:hidden;
+    border-radius:2px;
+    background:var(--fog);
+  }
+  .gphoto.tall{ grid-row:span 2; }
+  .gphoto img{
+    width:100%; height:100%;
+    object-fit:cover;
+    display:block;
+    filter:grayscale(6%);
+    transition:transform 0.5s ease;
+  }
+  .gphoto:hover img{ transform:scale(1.04); }
+
+  /* ---------- WRITING ---------- */
+  .writing{background:var(--paper);}
+  .writing-list{border-top:1px solid var(--line);}
+  .writing-item{
+    display:grid;
+    grid-template-columns:110px 1fr auto;
+    gap:24px;
+    align-items:baseline;
+    padding:24px 0;
+    border-bottom:1px solid var(--line);
+  }
+  @media (max-width:640px){
+    .writing-item{grid-template-columns:1fr; gap:6px;}
+  }
+  .writing-date{font-family:var(--mono); font-size:12px; color:var(--sage); letter-spacing:0.04em;}
+  .writing-title{font-family:var(--serif-display); font-size:19px; font-weight:500;}
+  .writing-venue{font-family:var(--mono); font-size:11.5px; text-transform:uppercase; letter-spacing:0.06em; color:rgba(30,28,24,0.5);}
+
+  /* ---------- PAUSE (poetry) ---------- */
+  .pause{
+    background:var(--dusk-1);
+    color:var(--paper);
+    position:relative;
+  }
+  .pause .wrap{max-width:640px;}
+  .pause .eyebrow{color:var(--ochre-soft);}
+  .pause .eyebrow::before{background:var(--paper);}
+  .pause-title{
+    font-family:var(--serif-display);
+    font-style:italic;
+    font-weight:300;
+    font-size:clamp(30px,4vw,44px);
+    margin:16px 0 46px;
+  }
+  .poem{
+    font-family:var(--serif-display);
+    font-weight:300;
+    font-size:21px;
+    line-height:2;
+    color:rgba(246,242,234,0.92);
+  }
+  .poem .stanza{margin-bottom:32px;}
+  .poem-cred{
+    margin-top:40px;
+    font-family:var(--mono);
+    font-size:12px;
+    letter-spacing:0.06em;
+    text-transform:uppercase;
+    color:rgba(246,242,234,0.5);
+  }
+
+  .poem-entry{ margin-bottom:64px; }
+  .poem-entry:last-child{ margin-bottom:0; }
+  .poem-entry-title{
+    font-family:var(--serif-display); font-weight:500; font-style:italic;
+    font-size:24px; color:var(--ochre-soft); margin-bottom:6px;
+  }
+  .poem-entry-meta{
+    font-family:var(--mono); font-size:11.5px; letter-spacing:0.05em; text-transform:uppercase;
+    color:rgba(246,242,234,0.45); margin-bottom:22px;
+  }
+  .poem-entry .poem{ font-size:18px; }
+  .poem-section-label{
+    font-family:var(--mono); font-size:12px; letter-spacing:0.08em; text-transform:uppercase;
+    color:rgba(246,242,234,0.55); margin:28px 0 10px;
+  }
+
+  /* ---------- ADVOCACY ---------- */
+  .advocacy{background:var(--paper);}
+  .adv-grid{display:grid; grid-template-columns:1fr 1fr; gap:56px;}
+  @media (max-width:760px){ .adv-grid{grid-template-columns:1fr;} }
+  .adv-list{list-style:none;}
+  .adv-list li{
+    padding:16px 0;
+    border-bottom:1px solid var(--line);
+    display:flex; justify-content:space-between; gap:16px;
+    font-size:16px;
+  }
+  .adv-list li span:last-child{
+    font-family:var(--mono); font-size:12px; color:var(--sage); white-space:nowrap; padding-top:3px;
+  }
+
+  /* ---------- BIO STRIP ---------- */
+  .biostrip{background:var(--sage); color:var(--paper); padding:64px 0;}
+  .biostrip .wrap{display:flex; flex-wrap:wrap; gap:12px 34px; align-items:baseline;}
+  .biostrip .role{
+    font-family:var(--serif-display); font-style:italic; font-size:20px;
+  }
+  .biostrip .dot{opacity:0.5;}
+
+  /* ---------- FOOTER ---------- */
+  footer{background:var(--dusk-1); color:rgba(246,242,234,0.75); padding:64px 0 40px;}
+  .footer-grid{display:grid; grid-template-columns:1.4fr 1fr 1fr; gap:40px; padding-bottom:40px; border-bottom:1px solid rgba(246,242,234,0.14);}
+  @media (max-width:700px){ .footer-grid{grid-template-columns:1fr;} }
+  .footer-grid h4{font-family:var(--mono); font-size:11.5px; text-transform:uppercase; letter-spacing:0.08em; color:rgba(246,242,234,0.5); margin-bottom:16px;}
+  .footer-grid p{font-size:15px; max-width:340px; color:rgba(246,242,234,0.7);}
+  .footer-links{list-style:none;}
+  .footer-links li{margin-bottom:10px; font-size:14.5px;}
+  .footer-links a{text-decoration:none; color:rgba(246,242,234,0.75);}
+  .footer-links a:hover{color:var(--ochre-soft);}
+  .footer-bottom{
+    display:flex; justify-content:space-between; align-items:center; padding-top:26px;
+    font-family:var(--mono); font-size:11.5px; color:rgba(246,242,234,0.45);
+    flex-wrap:wrap; gap:12px;
+  }
+</style>
+</head>
+<body>
+
+<nav id="mainnav">
+  <div class="wrap">
+    <a class="brand" href="#top">Wayne Martin Mellinger, Ph.D.</a>
+    <div class="navlinks">
+      <a href="#top">Home</a>
+      <a href="#biography">Biography</a>
+      <a href="#sociology">Sociology</a>
+      <a href="#religion-philosophy">Religion &amp; Philosophy</a>
+      <a href="#public-writing">Public Writing</a>
+      <a href="#poetry">Poetry</a>
+      <a href="#prayers">Prayers</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#projects">Projects</a>
+      <a href="#cv">CV</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </div>
+</nav>
+
+<header class="hero" id="top">
+  <div class="hero-sky"></div>
+  <div class="hero-sun"></div>
+  <div class="aperture" aria-hidden="true">
+    <svg viewBox="0 0 280 280">
+      <circle id="ap1" cx="140" cy="140" r="130"/>
+      <circle id="ap2" cx="140" cy="140" r="100"/>
+      <circle id="ap3" cx="140" cy="140" r="70"/>
+    </svg>
+  </div>
+  <div class="hero-water"></div>
+  <div class="hero-content">
+    <div class="wrap">
+      <div class="hero-kicker">Sociologist · Philosopher · Writer · Poet</div>
+      <div class="hero-kicker" style="margin-top:-14px; color:var(--ochre-soft);">Social and Environmental Justice Activist</div>
+    </div>
+  </div>
+  <div class="scroll-cue">Scroll</div>
+</header>
+
+<section class="intro" id="biography">
+  <div class="wrap">
+    <div class="intro-grid">
+      <div class="intro-figure">
+        <img src="images/gallery-portrait-sunflowers.jpg" alt="Wayne Martin Mellinger" style="width:100%; border-radius:2px; margin-bottom:22px; display:block;">
+        Sociologist.<br>Philosopher.<br>Writer.<br>Poet.<br>Justice Activist.
+      </div>
+      <div class="intro-body">
+        <div class="eyebrow">Biography</div>
+        <h2 class="section-title" style="margin-bottom:28px;">A scholar who never left the street</h2>
+        <p>Wayne Martin Mellinger, Ph.D., is an independent sociologist and public intellectual based in Santa Barbara, California, working at the intersection of ethnomethodology, institutional analysis, and the sociology of homelessness. He trained at the University of California, Santa Barbara under Don H. Zimmerman, Thomas P. Wilson, and Harvey Molotch, in a department that helped found the ethnomethodology and conversation analysis tradition — the close, empirical study of how social order is accomplished in the fine grain of everyday interaction.</p>
+        <p>For nearly two decades, that training has been tested against the street. As a street outreach worker in Santa Barbara County, Wayne has sat across from people navigating intake interviews, waitlists, discharge planning, and the countless small documentary transactions through which institutions decide who is seen and who is not. That vantage point is the empirical ground for his current theoretical project, Critical Interactionism: an approach that treats abandonment not as an absence of resources or compassion, but as something organizations actively accomplish, in real time, through the ordinary mechanics of paperwork, categorization, and deferral.</p>
+        <p>He serves on the Santa Barbara County Behavioral Wellness Commission and the Santa Barbara County Continuum of Care, and sits on the boards of several nonprofits working on homelessness and social justice, including CLUE-SB, Showers of Blessing, and the Committee for Social Justice. Since 2012, he has written more than a hundred columns for the online newspaper Noozhawk, translating research and street-level observation for a general audience.</p>
+        <p>Wayne's scholarship extends into two ongoing research platforms. <em>Doing Modernity: Studies in Critical Interactionism</em> houses his work on institutions, recognition, and the Santa Barbara School of ethnomethodology. <em>The Dionysian Naturalist: Studies in Religious Naturalism and Other Emerging Nature Religions</em> develops a parallel line of inquiry into contemporary Paganism, religious naturalism, and ecstatic spiritual practice — a personal theological framework he calls Dionysian Naturalism.</p>
+        <p>Each December 21st, Wayne organizes the Longest Night Homeless Memorial Vigil at the Santa Barbara County Courthouse, a ritual of public mourning for community members who died while homeless that year. He co-founded the Santa Barbara Homeless Foot Washing and the Freedom Warming Centers. He is a practicing member of the Unitarian Society of Santa Barbara, and also writes poetry and literary fiction alongside his scholarly and journalistic work.</p>
+        <p>In 2025, Wayne published <a href="https://philarchive.org/rec/MELIJW" target="_blank" rel="noopener" style="color:var(--ochre); text-decoration:underline;"><em>I Just Wanted to Dance with Dionysus: Life's Sacred Journey, Lost Souls and Our Thirst for Wholeness</em></a>, a Gonzo autoethnography tracing his own passage through addiction, homelessness, and psychiatric crisis, framed through Joseph Campbell's Hero's Journey and Dionysian myth. The book turns his own life into data — treating personal experience as a window onto the institutions and social worlds it moved through.</p>
+        <div class="thesis-line">The thread running through all of it: rigorous sociological method, a theology of nature and embodiment, and a refusal to separate scholarship from the work of showing up.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="writing" id="sociology">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="eyebrow">Sociology</div>
+      <h2 class="section-title">Publications</h2>
+      <p class="section-lede">Peer-reviewed work, books in progress, and the essay archive on Doing Modernity — organized by category, reverse-chronological within each.</p>
+    </div>
+
+    <div class="eyebrow" style="margin-bottom:10px;">Peer-Reviewed Publications</div>
+    <div class="writing-list" style="margin-bottom:48px;">
+      <div class="writing-item"><div class="writing-date">Forthcoming</div><div class="writing-title">Many Interaction Orders</div><div class="writing-venue">Studies in Symbolic Interaction</div></div>
+      <div class="writing-item"><div class="writing-date">1997</div><div class="writing-title">White Fantasies, Black Bodies: Racial Power, Disgust and Desire in American Popular Culture</div><div class="writing-venue">with Rodney Beaulieu — Visual Anthropology 9:117–147</div></div>
+      <div class="writing-item"><div class="writing-date">1997</div><div class="writing-title">Reading the News in the Age of Postmodern Mass Media: Gang Murders in the Los Angeles Times</div><div class="writing-venue">Cultural Studies: A Research Annual</div></div>
+      <div class="writing-item"><div class="writing-date">1997</div><div class="writing-title">Newz from the Hood: The Stephanie Kuhen Murder in the Los Angeles Times</div><div class="writing-venue">Human Systems</div></div>
+      <div class="writing-item"><div class="writing-date">1995</div><div class="writing-title">Talk, Power and Professionals: Partial Repeats as Challenges in the Psychiatric Interview</div><div class="writing-venue">In Therapeutic and Everyday Discourse as Behavior Change, ed. Jürg Siegfried (Ablex), pp. 391–418</div></div>
+      <div class="writing-item"><div class="writing-date">1995</div><div class="writing-title">The Anatomy of an Obituary: "Rock Hudson Dies at 59 After Fighting AIDS"</div><div class="writing-venue">Perspectives on Social Problems 7</div></div>
+      <div class="writing-item"><div class="writing-date">1994</div><div class="writing-title">Negotiated Orders: The Negotiation of Directives in Paramedic-Nurse Interaction</div><div class="writing-venue">Symbolic Interaction 17(2):165–185</div></div>
+      <div class="writing-item"><div class="writing-date">1994</div><div class="writing-title">Toward a Critical Analysis of Tourism Representations</div><div class="writing-venue">Annals of Tourism Research 21(4):756–779</div></div>
+      <div class="writing-item"><div class="writing-date">1992</div><div class="writing-title">Talk-as-Work: The Case of Paramedic Calls for Emergency Field Orders</div><div class="writing-venue">Current Research on Occupations and Professions, Vol. 7, pp. 79–109</div></div>
+      <div class="writing-item"><div class="writing-date">1992</div><div class="writing-title">Accomplishing Fact in Police "Dispatch Packages": An Analysis of the Situated Construction of an Organizational Record</div><div class="writing-venue">Perspectives on Social Problems 4</div></div>
+      <div class="writing-item"><div class="writing-date">1992</div><div class="writing-title">Postcards from the Edge of the Color Line: Images of African Americans in Popular Culture, 1893–1917</div><div class="writing-venue">Symbolic Interaction 15(4):413–433</div></div>
+      <div class="writing-item"><div class="writing-date">1992</div><div class="writing-title">Representing Blackness in the White Imagination: Images of "Happy Darkeys" in Popular Culture, 1893–1917</div><div class="writing-venue">Visual Sociology 7(2):3–21</div></div>
+    </div>
+
+    <div class="eyebrow" style="margin-bottom:10px;">Books &amp; Manuscripts in Progress</div>
+    <div class="writing-list" style="margin-bottom:48px;">
+      <div class="writing-item"><div class="writing-date">Ongoing</div><div class="writing-title">Abandonment in Real Time: Knowledge, Care, and the Moral Limits of Recognition</div><div class="writing-venue">Book manuscript</div></div>
+      <div class="writing-item"><div class="writing-date">Ongoing</div><div class="writing-title">From Minds to Moments: How Ethnomethodology and Conversation Analysis Reconceived Sociological Social Psychology</div><div class="writing-venue">Book manuscript</div></div>
+    </div>
+
+    <div class="eyebrow" style="margin-bottom:10px;">Doing Modernity — The Santa Barbara School: An Annotated Bibliography</div>
+    <p style="font-size:15px; color:rgba(30,28,24,0.6); max-width:760px; margin-bottom:20px;">Compiled February 2026, ongoing. UCSB has been a major center for ethnomethodology and conversation analysis since the mid-1960s, yet the Santa Barbara School has never been systematically documented as a tradition — this bibliography, and the theoretical framework of Critical Interactionism it develops, is an attempt to remedy that.</p>
+
+    <div class="eyebrow" style="margin-bottom:10px; color:var(--sage);">I. Overviews &amp; Theoretical Frameworks</div>
+    <div class="annot-list" style="margin-bottom:40px;">
+      <div class="annot-item">
+        <div class="annot-head"><span class="annot-year">Jan 2026</span><span class="annot-title">The Santa Barbara School of Ethnomethodology and Conversation Analysis</span></div>
+        <p class="annot-desc">The foundational overview, distinguishing the Santa Barbara School from the UCLA and Boston-Manchester Schools via six defining features — ethnographic integration, structure-in-action, moral order, critical orientation, Goffman engagement, and broad sociological relevance.</p>
+      </div>
+      <div class="annot-item">
+        <div class="annot-head"><span class="annot-year">Jan 2026</span><span class="annot-title">From Minds to Moments: How Ethnomethodology and Conversation Analysis Reconceived Sociological Social Psychology</span></div>
+        <p class="annot-desc">Traces the shift from cognitive and attitudinal models of social psychology to the interactional, sequential approach pioneered at Santa Barbara — an ontological shift, not merely a methodological one.</p>
+      </div>
+      <div class="annot-item">
+        <div class="annot-head"><span class="annot-year">Jan 2026</span><span class="annot-title">How UCSB Became a World Center for Studying Race, Policing, and Everyday Interaction</span></div>
+        <p class="annot-desc">Traces the lineage from Zimmerman through Geoffrey Raymond's and Kevin Whitehead's research on racial categorization in police-civilian encounters, courtroom proceedings, and medical interviews.</p>
+      </div>
+      <div class="annot-item">
+        <div class="annot-head"><span class="annot-year">Nov 2025</span><span class="annot-title">The Moral Economy of Interaction</span></div>
+        <p class="annot-desc">Extends Thompson's and Scott's "moral economy" from markets to meaning, arguing every interaction is a moral event where recognition and respect circulate by norms participants feel as binding. The theoretical cornerstone of Critical Interactionism.</p>
+      </div>
+      <div class="annot-item">
+        <div class="annot-head"><span class="annot-year">Nov 2025</span><span class="annot-title">The Layered Moral Economy of Oppression: Completing the Santa Barbara School's Unfinished Revolution</span></div>
+        <p class="annot-desc">Introduces the Layered Moral Economy of Oppression (LMEO) — oppression operating through six interconnected layers, each reproduced and contested through interactional practice.</p>
+      </div>
+      <div class="annot-item">
+        <div class="annot-head"><span class="annot-year">Nov 2025</span><span class="annot-title">The Wilson-Zimmerman Approach to Social Structure</span></div>
+        <p class="annot-desc">Reconstructs Wilson and Zimmerman's claim that social structure exists nowhere but in the sequential organization of members' practices — inverting the standard relationship between structure and action.</p>
+      </div>
+      <div class="annot-item">
+        <div class="annot-head"><span class="annot-year">Nov 2025</span><span class="annot-title">On Maynard and Wilson's "On the Reification of Social Structure" (1980)</span></div>
+        <p class="annot-desc">A close reading treated as a foundational text for the school's anti-reificationist theory of social structure, connecting mid-century EM/CA debates to contemporary practice theory.</p>
+      </div>
+    </div>
+
+    <div class="eyebrow" style="margin-bottom:10px; color:var(--sage);">II. Founders &amp; First-Generation Figures</div>
+    <div class="annot-list" style="margin-bottom:40px;">
+      <div class="annot-item">
+        <div class="annot-head"><span class="annot-year">Nov 2025</span><span class="annot-title">Don H. Zimmerman: The Quiet Maverick of Ethnomethodology</span></div>
+        <p class="annot-desc">Documents Zimmerman's training under Garfinkel, his 1965 move to UCSB, and five decades as the school's central architect — from bureaucratic sociology through emergency dispatch calls, gender and interaction, and <em>Talk and Social Structure</em> (1991).</p>
+      </div>
+      <div class="annot-item">
+        <div class="annot-head"><span class="annot-year">Jul 2025</span><span class="annot-title">Harvey Molotch and the Foundations of Critical Interactionism</span></div>
+        <p class="annot-desc">Positions Molotch as the school's "critical conscience," analyzing his collaborative work with Lester (news production), Boden (Watergate), and Duneier (urban public space) as demonstrations of interactional detail illuminating power.</p>
+      </div>
+      <div class="annot-item">
+        <div class="annot-head"><span class="annot-year">Dec 2025</span><span class="annot-title">When the Doctor is a "Lady": Candace West, the Santa Barbara School, and the Micro-Politics of Gender</span></div>
+        <p class="annot-desc">Examines West's studies of doctor-patient interaction and "Doing Gender" (1987, with Zimmerman) — arguably the most-cited article in sociology — through to West and Fenstermaker's "Doing Difference" (1995).</p>
+      </div>
+      <div class="annot-item">
+        <div class="annot-head"><span class="annot-year">Nov 2025</span><span class="annot-title">Douglas W. Maynard and the Moral Architecture of Institutional Life</span></div>
+        <p class="annot-desc">Presents Maynard as the school's foremost "moral microsociologist," analyzing his studies of plea bargaining and diagnosis delivery through the perspective-display series and the evidential-interactional nexus.</p>
+      </div>
+      <div class="annot-item">
+        <div class="annot-head"><span class="annot-year">Nov 2025</span><span class="annot-title">Democracy Under Threat: Steven Clayman's Interactional Analysis and the Crisis We Can No Longer Ignore</span></div>
+        <p class="annot-desc">Examines Clayman's study of news interviews and political accountability (including <em>The News Interview</em>, 2002, with John Heritage) as illuminating the interactional machinery of democratic accountability.</p>
+      </div>
+      <div class="annot-item">
+        <div class="annot-head"><span class="annot-year">Dec 2025</span><span class="annot-title">Timothy Halkowski and the Mirandum of Ordinary Medical Life</span></div>
+        <p class="annot-desc">Introduces the "mirandum" — the wonder-worthy features of ordinary medical life patients and practitioners treat as requiring explanation — through Halkowski's studies of medical interaction.</p>
+      </div>
+    </div>
+
+    <div class="eyebrow" style="margin-bottom:10px; color:var(--sage);">III. Institutional Sites &amp; Applied Work</div>
+    <div class="annot-list" style="margin-bottom:40px;">
+      <div class="annot-item">
+        <div class="annot-head"><span class="annot-year">Nov 2025</span><span class="annot-title">Organizations Are Talking: Deirdre Boden and the Sequential Constitution of Institutional Order</span></div>
+        <p class="annot-desc">Examines Boden's <em>The Business of Talk</em> (1994): organizations aren't structures within which talk occurs, but are themselves constituted through the sequential organization of meetings, negotiations, and calls.</p>
+      </div>
+      <div class="annot-item">
+        <div class="annot-head"><span class="annot-year">Nov 2025</span><span class="annot-title">On Boden and Molotch's "The Compulsion of Proximity"</span></div>
+        <p class="annot-desc">On the persistent preference for co-present interaction despite remote communication technology, extended toward questions of who has access to co-presence and who is structurally excluded from it.</p>
+      </div>
+      <div class="annot-item">
+        <div class="annot-head"><span class="annot-year">Nov 2025</span><span class="annot-title">On Marilyn Whalen and Jack Whalen's "Studying Workscapes"</span></div>
+        <p class="annot-desc">On the Whalens' approach to CSCW (Computer-Supported Cooperative Work) research, treating technology as embedded in interactional practice rather than a determinant of behavior.</p>
+      </div>
+      <div class="annot-item">
+        <div class="annot-head"><span class="annot-year">Oct 2025</span><span class="annot-title">Ethnomethodology and Conversation Analysis at Xerox PARC: Remaking Technology Through the Social Order</span></div>
+        <p class="annot-desc">On Lucy Suchman and the Whalens' work at Xerox PARC in the 1980s–90s, studying workplace interaction to redesign office technology — a demonstration of EM/CA's practical applicability.</p>
+      </div>
+      <div class="annot-item">
+        <div class="annot-head"><span class="annot-year">Feb 2026</span><span class="annot-title">Jack Whalen and the Documentary Constitution of Organizational Reality</span></div>
+        <p class="annot-desc">The most recent essay in the series. On how documents — forms, records, databases — actively participate in constituting organizational reality rather than merely recording it.</p>
+      </div>
+      <div class="annot-item">
+        <div class="annot-head"><span class="annot-year">Nov 2025</span><span class="annot-title">On Maynard and Zimmerman's "Topical Talk, Ritual and the Social Organization of Relationships"</span></div>
+        <p class="annot-desc">On how topical talk serves ritual and relational functions beyond information transfer — anticipating the moral economy framework developed in later essays.</p>
+      </div>
+      <div class="annot-item">
+        <div class="annot-head"><span class="annot-year">Nov 2025</span><span class="annot-title">Talking City Trouble: Urban Micro-Ethnography and the Moral Order of Public Space</span></div>
+        <p class="annot-desc">On Molotch and Duneier's study of interaction in urban public space, extended through Wayne's own street outreach experience connecting the literature to homelessness, policing, and urban exclusion.</p>
+      </div>
+    </div>
+
+    <div class="eyebrow" style="margin-bottom:10px; color:var(--sage);">IV. The Second Santa Barbara School</div>
+    <div class="annot-list" style="margin-bottom:40px;">
+      <div class="annot-item">
+        <div class="annot-head"><span class="annot-year">Dec 2025</span><span class="annot-title">Jason Turowetz and the Second Santa Barbara School</span></div>
+        <p class="annot-desc">Profiles Turowetz as representative of the post-2000 generation extending the tradition — his work with Maynard on autism diagnosis, and greater theoretical reflexivity around race, disability, and structural inequality.</p>
+      </div>
+    </div>
+
+    <div class="eyebrow" style="margin-bottom:10px; color:var(--sage);">V. Critical Interactionism &amp; Normative Questions</div>
+    <div class="annot-list" style="margin-bottom:48px;">
+      <div class="annot-item">
+        <div class="annot-head"><span class="annot-year">Dec 2025</span><span class="annot-title">What Do We Owe One Another Once We See Asymmetries Being Done</span></div>
+        <p class="annot-desc">Confronts the normative question hanging over the tradition directly: once gender or racial or class asymmetry is documented with sequential precision, what follows? Develops "ethically engaged interactionism."</p>
+      </div>
+      <div class="annot-item">
+        <div class="annot-head"><span class="annot-year">Dec 2025</span><span class="annot-title">Beyond Asymmetries-in-Action: Critical Interactionism, Moral Economy, and the Unequal Distribution of Consequences</span></div>
+        <p class="annot-desc">Extends the argument above with a theory of how interactional patterns generate differential outcomes that compound across interactions, institutions, and lifetimes.</p>
+      </div>
+    </div>
+
+    <div class="eyebrow" style="margin-bottom:10px;">Also on Doing Modernity</div>
+    <p style="font-size:14.5px; color:rgba(30,28,24,0.55); max-width:760px; margin-bottom:14px;">Additional essays not part of the Santa Barbara School bibliography above.</p>
+    <div class="writing-list" style="margin-bottom:48px;">
+      <div class="writing-item"><div class="writing-date">2026</div><div class="writing-title">Reading the News: Towards a Methodology of Critical Textual Analysis</div><div class="writing-venue">Doing Modernity</div></div>
+      <div class="writing-item"><div class="writing-date">2025</div><div class="writing-title">Building a New Astronomy Without a Telescope: Why Critical Interactionism Cannot Ignore EM/CA</div><div class="writing-venue">Doing Modernity</div></div>
+      <div class="writing-item"><div class="writing-date">2025</div><div class="writing-title">The Insurrection of the Next Turn: Sequential Organization and the Praxis of Liberation</div><div class="writing-venue">Doing Modernity</div></div>
+      <div class="writing-item"><div class="writing-date">2025</div><div class="writing-title">Interaction Order at the Margins: Robin James Smith's Sociology of Homeless Outreach</div><div class="writing-venue">Doing Modernity</div></div>
+      <div class="writing-item"><div class="writing-date">2025</div><div class="writing-title">The Many Interaction Orders: Goffman, Rawls, Smith and the Plural Moral Terrains of Everyday Life</div><div class="writing-venue">Doing Modernity</div></div>
+      <div class="writing-item"><div class="writing-date">2025</div><div class="writing-title">George Herbert Mead and the Making of Symbolic Interactionism</div><div class="writing-venue">Doing Modernity</div></div>
+      <div class="writing-item"><div class="writing-date">2025</div><div class="writing-title">Workplace Studies and Critical Interactionism</div><div class="writing-venue">Doing Modernity</div></div>
+      <div class="writing-item"><div class="writing-date">2025</div><div class="writing-title">Interactionist Studies of Work</div><div class="writing-venue">Doing Modernity</div></div>
+      <div class="writing-item"><div class="writing-date">2025</div><div class="writing-title">Ethnomethodology and Conversation Analysis in Social Work</div><div class="writing-venue">Doing Modernity</div></div>
+    </div>
+
+    <div class="eyebrow" style="margin-bottom:10px;">Doing Modernity — Sociology of Homelessness &amp; Abandonment</div>
+    <div class="writing-list" style="margin-bottom:48px;">
+      <div class="writing-item"><div class="writing-date">2026</div><div class="writing-title">The Epistemology of Abandonment: A Critical Interactionist Theory of Modernity</div><div class="writing-venue">Doing Modernity</div></div>
+      <div class="writing-item"><div class="writing-date">2026</div><div class="writing-title">Maladjustment as Insight: The Epistemology of the Abandoned</div><div class="writing-venue">Doing Modernity</div></div>
+      <div class="writing-item"><div class="writing-date">2026</div><div class="writing-title">Abandonment in Real Time: Recognition, Rupture, and the Moral Economy of Interaction</div><div class="writing-venue">Doing Modernity</div></div>
+      <div class="writing-item"><div class="writing-date">2026</div><div class="writing-title">The Career of Disposability: Street Outreach, Fentanyl, and the Sociology of Abandonment</div><div class="writing-venue">Doing Modernity</div></div>
+      <div class="writing-item"><div class="writing-date">2026</div><div class="writing-title">Abandonment as a Site of Revelation: Witnessing the Sacred in a World That Looks Away</div><div class="writing-venue">Doing Modernity</div></div>
+      <div class="writing-item"><div class="writing-date">2025</div><div class="writing-title">Seeing Like an Outreach Worker: Professional Vision and the Politics of Homelessness</div><div class="writing-venue">Doing Modernity</div></div>
+      <div class="writing-item"><div class="writing-date">2025</div><div class="writing-title">First Encounter at the Stone Wall: A Flash Autoethnography of Street Outreach</div><div class="writing-venue">Doing Modernity</div></div>
+    </div>
+
+    <div class="eyebrow" style="margin-bottom:10px;">Doing Modernity — Workplace Studies &amp; Applied EM/CA</div>
+    <div class="writing-list" style="margin-bottom:48px;">
+      <div class="writing-item"><div class="writing-date">2025</div><div class="writing-title">Workplace Studies and Critical Interactionism</div><div class="writing-venue">Doing Modernity</div></div>
+      <div class="writing-item"><div class="writing-date">2025</div><div class="writing-title">Interactionist Studies of Work</div><div class="writing-venue">Doing Modernity</div></div>
+      <div class="writing-item"><div class="writing-date">2025</div><div class="writing-title">EM/CA at Xerox PARC</div><div class="writing-venue">Doing Modernity</div></div>
+      <div class="writing-item"><div class="writing-date">2025</div><div class="writing-title">Ethnomethodology and Conversation Analysis in Social Work</div><div class="writing-venue">Doing Modernity</div></div>
+      <div class="writing-item"><div class="writing-date">2025</div><div class="writing-title">Talking City Trouble: Urban Micro-Ethnography and the Moral Order of Public Space</div><div class="writing-venue">Doing Modernity</div></div>
+    </div>
+
+    <div class="eyebrow" style="margin-bottom:10px;">Doing Modernity — Human-AI Interaction</div>
+    <div class="writing-list" style="margin-bottom:48px;">
+      <div class="writing-item"><div class="writing-date">2025</div><div class="writing-title">An Autoethnography of Human-AI Interaction: Towards an Ethnomethodology of Artificial Accountability</div><div class="writing-venue">Doing Modernity</div></div>
+      <div class="writing-item"><div class="writing-date">2025</div><div class="writing-title">Ethnomethodology and Conversation Analysis in Human–Computer Interaction: A Field Guide</div><div class="writing-venue">Doing Modernity</div></div>
+    </div>
+
+    <div class="eyebrow" style="margin-bottom:10px;">Doing Modernity — Media, Politics &amp; Other Essays</div>
+    <div class="writing-list">
+      <div class="writing-item"><div class="writing-date">2026</div><div class="writing-title">January 6 as Media Event: Seeing, Accountability and Ideology</div><div class="writing-venue">Doing Modernity</div></div>
+      <div class="writing-item"><div class="writing-date">2025</div><div class="writing-title">How to Read People: A Critical Interactionist Guide</div><div class="writing-venue">Doing Modernity</div></div>
+    </div>
+
+  </div>
+</section>
+
+
+<section class="writing" id="religion-philosophy">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="eyebrow">Religion &amp; Philosophy</div>
+      <h2 class="section-title">Dionysian Naturalism &amp; Critical Drug Studies</h2>
+      <p class="section-lede">Theology under <a href="https://thedionysiannaturalist.blogspot.com" target="_blank" rel="noopener" style="color:var(--ochre); text-decoration:underline;">The Dionysian Naturalist</a>, and a parallel platform, <a href="https://wildflesh.blogspot.com/" target="_blank" rel="noopener" style="color:var(--ochre); text-decoration:underline;">Wild Flesh</a>, on drug use and altered states. Reverse-chronological within each category.</p>
+    </div>
+
+    <div class="eyebrow" style="margin-bottom:10px;">The Dionysian Naturalist — Annotated Bibliography (2014–2025)</div>
+    <p style="font-size:15px; color:rgba(30,28,24,0.6); max-width:760px; margin-bottom:20px;">Compiled by Wayne, February 2026. The essays trace an evolving eco-theological architecture — from early writings on shamanism, recovery, and ecstatic experience, through cosmology and enchanted naturalism, to ritual theory, sacred nature, and political eco-theology.</p>
+    <div class="annot-list" style="margin-bottom:56px;">
+
+      <div class="annot-item">
+        <div class="annot-head"><span class="annot-year">2014</span><span class="annot-title">The Ordeal</span></div>
+        <p class="annot-desc">A poem exploring struggle, transformation, and the sacred journey through difficulty — establishing the spiritual and existential concerns that animate the later theological writings.</p>
+      </div>
+
+      <div class="annot-item">
+        <div class="annot-head"><span class="annot-year">2014</span><span class="annot-title">The Amethyst Path: Shamanism, Dionysian Spirituality and Recovery from "Addiction"</span></div>
+        <p class="annot-desc">The foundational essay introducing the Amethyst Path — a shamanic approach to addiction recovery drawing on Dionysian spirituality while maintaining sobriety. Critiques biomedical models of addiction through Jungian psychology, shamanic tradition, and the archetype of the wounded healer.</p>
+      </div>
+
+      <div class="annot-item">
+        <div class="annot-head"><span class="annot-year">2015</span><span class="annot-title">Steps Toward a Dionysian Naturalism: Making the Earth Sacred in a Time of Ecological Disaster</span></div>
+        <p class="annot-desc">Parts 1–3. The programmatic statement establishing Dionysian Naturalism as a distinct theological approach — arguing that de-sacralization of nature is a central cause of ecological crisis, via Nietzsche's Apollonian–Dionysian distinction.</p>
+      </div>
+
+      <div class="annot-item">
+        <div class="annot-head"><span class="annot-year">2015</span><span class="annot-title">Our Universe Is a Sacred Living System</span></div>
+        <p class="annot-desc">Parts 1–3. Traces the shift from archaic views of nature as sacred and animate to modern mechanistic, disenchanted views, and argues for nature as a "sacred living system." The cosmological foundation of Dionysian Naturalism's worldview.</p>
+      </div>
+
+      <div class="annot-item">
+        <div class="annot-head"><span class="annot-year">2015–16</span><span class="annot-title">Enchanting Naturalism</span></div>
+        <p class="annot-desc">Parts 1–2. A call for an "enchanted naturalism" integrating scientific evidence with religious inspiration, addressing Weber's disenchantment thesis while rejecting supernaturalism.</p>
+      </div>
+
+      <div class="annot-item">
+        <div class="annot-head"><span class="annot-year">2016</span><span class="annot-title">Dancing with Dionysus: Ecstasy and Religion in the Age of the Anthropocene</span></div>
+        <p class="annot-desc">Parts 1–4. An autobiographical and theological exploration of "Godless Paganism," tracing the journey from New England Congregationalism through atheism to Dionysian Naturalism. A shorter version appears in John Halstead's anthology <em>Godless Paganism: Voices of Non-Theistic Pagans</em>.</p>
+      </div>
+
+      <div class="annot-item">
+        <div class="annot-head"><span class="annot-year">2016</span><span class="annot-title">Nature Religions and Revolutionary Social Change: Advancing a Practical Theology of Spiritual Activism</span></div>
+        <p class="annot-desc">Parts 1–5. Positions Dionysian Naturalism as a liberation theology embracing revolutionary social change for sustainability. A version also appears on <em>Gods &amp; Radicals: A Site of Beautiful Resistance</em>.</p>
+      </div>
+
+      <div class="annot-item">
+        <div class="annot-head"><span class="annot-year">2018–19</span><span class="annot-title">Bearing Witness to Social Injustice as a Spiritual Practice: Moving from Pain to Taking Compassionate Action</span></div>
+        <p class="annot-desc">Parts 1–3. Dedicated to the memory of Roshi Bernie Glassman. Develops bearing witness as a spiritual practice connecting personal pain to social action, drawing on the Zen Peacemaker tradition and street outreach work, and integrating Heschel's prophetic theology with engaged Buddhism.</p>
+      </div>
+
+      <div class="annot-item">
+        <div class="annot-head"><span class="annot-year">2020</span><span class="annot-title">Tripping with the Gods: On Entheogenic Spirituality</span></div>
+        <p class="annot-desc">Parts 1–5. A comprehensive examination of entheogenic spirituality within Dionysian Naturalism, tracing sacramental substance use from archaic shamanism through the "Pharmacratic Inquisition." Later cross-posted to Wild Flesh (2025).</p>
+      </div>
+
+      <div class="annot-item">
+        <div class="annot-head"><span class="annot-year">2021</span><span class="annot-title">The New American Religions of Nature: Doing Eco-Theology in the Anthropocene</span></div>
+        <p class="annot-desc">Introduces "the Earth Path," arguing that contemporary theology must evolve into eco-theology, balancing Dionysian ecstasy with Apollonian reflection.</p>
+      </div>
+
+      <div class="annot-item">
+        <div class="annot-head"><span class="annot-year">2024</span><span class="annot-title">Re-Sacralizing Nature: A Comprehensive Framework within Dionysian Naturalism</span></div>
+        <p class="annot-desc">A systematic account of re-sacralization as a strategy for ecological renewal and spiritual reconnection, centered on a seven-element ritual framework: Preparation, Invocation, Offering, Reflection, Transformation, Commitment, Celebration.</p>
+      </div>
+
+      <div class="annot-item">
+        <div class="annot-head"><span class="annot-year">2025</span><span class="annot-title">Walking the Earth Path: Exploring the Spiritual Common Core of Nature Religions</span></div>
+        <p class="annot-desc">Synthesizes a decade of theological writing to articulate what is shared across diverse traditions that regard nature as sacred.</p>
+      </div>
+
+      <div class="annot-item">
+        <div class="annot-head"><span class="annot-year">2025</span><span class="annot-title">I Just Wanted to Dance with Dionysus: Life's Sacred Journey, Lost Souls and Our Thirst for Wholeness</span></div>
+        <p class="annot-desc">A Gonzo autoethnographic monograph on madness, addiction, homelessness, and the search for wholeness, framed through Joseph Campbell's Hero's Journey. <a href="https://philarchive.org/rec/MELIJW" target="_blank" rel="noopener" style="color:var(--ochre); text-decoration:underline;">Also on PhilArchive</a> — linked under Biography.</p>
+      </div>
+
+      <div class="annot-item">
+        <div class="annot-head"><span class="annot-year">2025</span><span class="annot-title">The Rise of Religious Naturalism: A New Public Theology of Sacred Nature</span></div>
+        <p class="annot-desc">Traces Religious Naturalism's lineage from Spinoza and Emerson through Dewey, Crosby, Goodenough, Corrington, and Wheeler, and proposes Dionysian Religious Naturalism as a constructive response that restores ritual, embodiment, and community.</p>
+      </div>
+
+      <div class="annot-item">
+        <div class="annot-head"><span class="annot-year">2025</span><span class="annot-title">Radical Faeries as Nature Religion</span></div>
+        <p class="annot-desc">Explores the Radical Faerie movement — rooted in the 1979 Spiritual Conference for Radical Fairies and figures like Harry Hay and Arthur Evans — as a theology integrating queer liberation, ecological reverence, and ritual practice.</p>
+      </div>
+
+      <div class="annot-item">
+        <div class="annot-head"><span class="annot-year">2025</span><span class="annot-title">The Golden Mean: Seeking Balance Between the Apollonian and the Dionysian</span></div>
+        <p class="annot-desc">Proposes a "golden mean" — not compromise but dynamic integration — uniting disciplined thought with embodied ritual practice.</p>
+      </div>
+
+      <div class="annot-item">
+        <div class="annot-head"><span class="annot-year">2025</span><span class="annot-title">Towards a Religious Anthropology of Dionysian Naturalism</span></div>
+        <p class="annot-desc">Draws on Wesley Wildman's account of homo religiosus and Michael Winkelman's research on shamanic consciousness to interpret the drive for transcendence as an adaptive, socially integrative capacity.</p>
+      </div>
+
+      <div class="annot-item">
+        <div class="annot-head"><span class="annot-year">2025</span><span class="annot-title">Sacred Nature: Towards a Comprehensive Theory</span></div>
+        <p class="annot-desc">Draws on Durkheim, Otto, Eliade, Goodenough, and Corrington to trace a shift from transcendent to immanent, relational understandings of the sacred.</p>
+      </div>
+
+      <div class="annot-item">
+        <div class="annot-head"><span class="annot-year">2025</span><span class="annot-title">The Use of Ritual in Dionysian Naturalism</span></div>
+        <p class="annot-desc">Examines how ritual re-sacralizes nature and addresses systemic injustice, integrating Durkheimian sociology, phenomenology, and liberationist praxis.</p>
+      </div>
+
+      <div class="annot-item">
+        <div class="annot-head"><span class="annot-year">2025</span><span class="annot-title">The Dionysian Epic of Evolution: Celebrating Chaos, Ecstasy, and Transformation</span></div>
+        <p class="annot-desc">Reinterprets the Epic of Evolution through seven pivotal turning points, from the Big Bang to the rise of human consciousness, arguing for a mythos that unites scientific understanding with spiritual depth.</p>
+      </div>
+
+    </div>
+
+    <div class="eyebrow" style="margin-bottom:10px;">Also on The Dionysian Naturalist</div>
+    <p style="font-size:14.5px; color:rgba(30,28,24,0.55); max-width:760px; margin-bottom:14px;">Full-length, finished essays not included in the annotated bibliography above — still worth a read.</p>
+    <div class="writing-list" style="margin-bottom:48px;">
+      <div class="writing-item"><div class="writing-date">—</div><div class="writing-title">Making the Sacred Observable</div><div class="writing-venue">The Dionysian Naturalist</div></div>
+      <div class="writing-item"><div class="writing-date">—</div><div class="writing-title">Unitarian Universalism (Revised): A Faith of Conscience, Justice and Earth</div><div class="writing-venue">The Dionysian Naturalist</div></div>
+      <div class="writing-item"><div class="writing-date">—</div><div class="writing-title">The Parsonage at 302 Chicopee Street</div><div class="writing-venue">The Dionysian Naturalist</div></div>
+      <div class="writing-item"><div class="writing-date">—</div><div class="writing-title">Santa Barbara Rising — Opening Prayer for CLUE</div><div class="writing-venue">The Dionysian Naturalist</div></div>
+      <div class="writing-item"><div class="writing-date">—</div><div class="writing-title">My Proposed Gifford Lecture Series — Sacred Nature Awakened</div><div class="writing-venue">The Dionysian Naturalist</div></div>
+      <div class="writing-item"><div class="writing-date">—</div><div class="writing-title">Dionysian Naturalism as Queer Religiosity</div><div class="writing-venue">The Dionysian Naturalist</div></div>
+      <div class="writing-item"><div class="writing-date">—</div><div class="writing-title">Sam Keen: Dionysian Naturalist Saint</div><div class="writing-venue">The Dionysian Naturalist</div></div>
+      <div class="writing-item"><div class="writing-date">—</div><div class="writing-title">The Ancient Dionysian Rites</div><div class="writing-venue">The Dionysian Naturalist</div></div>
+      <div class="writing-item"><div class="writing-date">—</div><div class="writing-title">Dionysian Thinking: Nietzsche and the Critique of Reason</div><div class="writing-venue">The Dionysian Naturalist</div></div>
+      <div class="writing-item"><div class="writing-date">2008/24</div><div class="writing-title">The Will to Party</div><div class="writing-venue">The Dionysian Naturalist — written 2008, edited 2024</div></div>
+      <div class="writing-item"><div class="writing-date">—</div><div class="writing-title">The Enduring Legacy of Dionysus</div><div class="writing-venue">The Dionysian Naturalist</div></div>
+      <div class="writing-item"><div class="writing-date">—</div><div class="writing-title">The New Saint Peter: Peter Lamborn Wilson</div><div class="writing-venue">The Dionysian Naturalist</div></div>
+      <div class="writing-item"><div class="writing-date">—</div><div class="writing-title">A Spirituality of Ecstasy: Dionysian Spirituality and Dionysian Naturalism</div><div class="writing-venue">The Dionysian Naturalist</div></div>
+    </div>
+
+    <div class="eyebrow" style="margin-bottom:10px;">Wild Flesh — Critical Drug Studies</div>
+    <div class="writing-list">
+      <div class="writing-item"><div class="writing-date">2026</div><div class="writing-title">The Shamanic Wisdom Traditions of Controlled Use</div><div class="writing-venue">Wild Flesh</div></div>
+      <div class="writing-item"><div class="writing-date">2025</div><div class="writing-title"><a href="https://wildflesh.blogspot.com/2025/09/what-is-critical-drug-studies-deeper.html" target="_blank" rel="noopener" style="color:inherit;">What is Critical Drug Studies? A Deeper Excursion</a></div><div class="writing-venue">Wild Flesh</div></div>
+      <div class="writing-item"><div class="writing-date">2025</div><div class="writing-title"><a href="https://wildflesh.blogspot.com/2025/09/my-four-blogs.html" target="_blank" rel="noopener" style="color:inherit;">My Four Blogs</a></div><div class="writing-venue">Wild Flesh</div></div>
+      <div class="writing-item"><div class="writing-date">2025</div><div class="writing-title"><a href="https://wildflesh.blogspot.com/2025/07/addiction-modernity-and-urge-to-use.html" target="_blank" rel="noopener" style="color:inherit;">Addiction, Modernity and the "Urge to Use"</a></div><div class="writing-venue">Wild Flesh</div></div>
+      <div class="writing-item"><div class="writing-date">2025</div><div class="writing-title"><a href="https://wildflesh.blogspot.com/2025/07/caught-in-open-why-my-friends-keep.html" target="_blank" rel="noopener" style="color:inherit;">Caught in the Open: Why My Friends Keep Going to Jail While I Stay Free</a></div><div class="writing-venue">Wild Flesh</div></div>
+      <div class="writing-item"><div class="writing-date">2025</div><div class="writing-title"><a href="https://wildflesh.blogspot.com/2025/06/addiction-teaches-lesson.html" target="_blank" rel="noopener" style="color:inherit;">"Addiction Teaches Lesson"</a></div><div class="writing-venue">Wild Flesh</div></div>
+      <div class="writing-item"><div class="writing-date">2025</div><div class="writing-title"><a href="https://wildflesh.blogspot.com/2025/06/embodied-ecstasies-sacred-choreography.html" target="_blank" rel="noopener" style="color:inherit;">Embodied Ecstasies: The Sacred Choreography of Party and Play</a></div><div class="writing-venue">Wild Flesh — flash autoethnography</div></div>
+      <div class="writing-item"><div class="writing-date">2025</div><div class="writing-title"><a href="https://wildflesh.blogspot.com/2025/04/will-to-sacred-ecstasy.html" target="_blank" rel="noopener" style="color:inherit;">The Will to Sacred Ecstasy: Ritual Intoxication, Liberation, and Dionysian Naturalism</a></div><div class="writing-venue">Wild Flesh</div></div>
+      <div class="writing-item"><div class="writing-date">2025</div><div class="writing-title"><a href="https://wildflesh.blogspot.com/2025/04/i-just-wanted-to-dance-with-dionysus.html" target="_blank" rel="noopener" style="color:inherit;">I Just Wanted to Dance with Dionysus</a></div><div class="writing-venue">Wild Flesh — also on PhilArchive; linked under Biography</div></div>
+      <div class="writing-item"><div class="writing-date">2025</div><div class="writing-title">Wild Flesh: A Critical Interactionist Approach to Drug Use, Identity, and Liberation</div><div class="writing-venue">Book prospectus</div></div>
+      <div class="writing-item"><div class="writing-date">2025</div><div class="writing-title"><a href="https://wildflesh.blogspot.com/2025/04/craig-reinarman-and-sociology-of-drug.html" target="_blank" rel="noopener" style="color:inherit;">Craig Reinarman and the Sociology of Drug Use</a></div><div class="writing-venue">Wild Flesh</div></div>
+      <div class="writing-item"><div class="writing-date">2025</div><div class="writing-title"><a href="https://wildflesh.blogspot.com/2025/04/drug-war-ideologies-and-war-on-all-of.html" target="_blank" rel="noopener" style="color:inherit;">Drug War Ideologies and the War on All of Us</a></div><div class="writing-venue">Wild Flesh</div></div>
+      <div class="writing-item"><div class="writing-date">2025</div><div class="writing-title"><a href="https://wildflesh.blogspot.com/2025/04/genealogy-of-drug-abuse-and-addiction.html" target="_blank" rel="noopener" style="color:inherit;">A Genealogy of Drug Abuse and Addiction</a></div><div class="writing-venue">Wild Flesh</div></div>
+      <div class="writing-item"><div class="writing-date">2025</div><div class="writing-title"><a href="https://wildflesh.blogspot.com/2025/04/critical-drug-use-theory.html" target="_blank" rel="noopener" style="color:inherit;">Critical Drug Use Theory</a></div><div class="writing-venue">Wild Flesh</div></div>
+      <div class="writing-item"><div class="writing-date">2025</div><div class="writing-title"><a href="https://wildflesh.blogspot.com/2025/04/deconstructing-drug-war-ideologies.html" target="_blank" rel="noopener" style="color:inherit;">Deconstructing Drug War Ideologies</a></div><div class="writing-venue">Wild Flesh</div></div>
+      <div class="writing-item"><div class="writing-date">2025</div><div class="writing-title"><a href="https://wildflesh.blogspot.com/2025/04/tripping-with-gods-on-entheogenic.html" target="_blank" rel="noopener" style="color:inherit;">Tripping with the Gods: On Entheogenic Spirituality</a></div><div class="writing-venue">Wild Flesh</div></div>
+      <div class="writing-item"><div class="writing-date">2025</div><div class="writing-title"><a href="https://wildflesh.blogspot.com/2025/04/held-in-dark-psychedelic-crisis.html" target="_blank" rel="noopener" style="color:inherit;">Held in the Dark: A Psychedelic Crisis, a Stranger's Voice, and the Edges of the Sacred</a></div><div class="writing-venue">Wild Flesh</div></div>
+      <div class="writing-item"><div class="writing-date">2025</div><div class="writing-title"><a href="https://wildflesh.blogspot.com/2025/04/sacred-precautions-dionysian-guide-to.html" target="_blank" rel="noopener" style="color:inherit;">Sacred Precautions: A Dionysian Guide to Harm Reduction, Preparation and Integration</a></div><div class="writing-venue">Wild Flesh</div></div>
+    </div>
+
+  </div>
+</section>
+
+
+<section class="writing" id="public-writing">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="eyebrow">Public Writing</div>
+      <h2 class="section-title">Noozhawk</h2>
+      <p class="section-lede">110+ columns on homelessness, housing, and civic life in Santa Barbara — distinct from the sociology research platform on Doing Modernity (see Sociology). Full archive at <a href="https://www.noozhawk.com/author/wayne-mellinger/" target="_blank" rel="noopener" style="color:var(--ochre); text-decoration:underline;">noozhawk.com/author/wayne-mellinger</a>.</p>
+    </div>
+
+    <div class="writing-list">
+      <div class="writing-item"><div class="writing-date">Jul 2026</div><div class="writing-title"><a href="https://www.noozhawk.com/wayne-mellinger-inside-clue-santa-barbara-where-faith-becomes-public/" target="_blank" rel="noopener" style="color:inherit;">Inside CLUE-Santa Barbara, Where Faith Becomes Public</a></div><div class="writing-venue">Noozhawk</div></div>
+      <div class="writing-item"><div class="writing-date">Jun 2026</div><div class="writing-title"><a href="https://www.noozhawk.com/wayne-mellinger-how-the-500-block-of-state-street-quietly-transformed-public-space/" target="_blank" rel="noopener" style="color:inherit;">How the 500 Block of State Street Quietly Transformed Public Space</a></div><div class="writing-venue">Noozhawk</div></div>
+      <div class="writing-item"><div class="writing-date">Jun 2026</div><div class="writing-title"><a href="https://www.noozhawk.com/wayne-mellinger-how-a-monthly-lunch-helped-shape-santa-barbaras-response-to-homelessness/" target="_blank" rel="noopener" style="color:inherit;">How a Monthly Lunch Helped Shape Santa Barbara's Response to Homelessness</a></div><div class="writing-venue">Noozhawk</div></div>
+      <div class="writing-item"><div class="writing-date">Jun 2026</div><div class="writing-title"><a href="https://www.noozhawk.com/wayne-mellinger-helen-meloy-and-the-invisible-life-of-the-mind/" target="_blank" rel="noopener" style="color:inherit;">Helen Meloy and the Invisible Life of the Mind</a></div><div class="writing-venue">Noozhawk</div></div>
+      <div class="writing-item"><div class="writing-date">Jun 2026</div><div class="writing-title"><a href="https://www.noozhawk.com/wayne-mellinger-paco-fentanyl-and-the-changing-rules-of-street-knowledge/" target="_blank" rel="noopener" style="color:inherit;">Paco, Fentanyl, and the Changing Rules of Street Knowledge</a></div><div class="writing-venue">Noozhawk</div></div>
+      <div class="writing-item"><div class="writing-date">Jun 2026</div><div class="writing-title"><a href="https://www.noozhawk.com/wayne-mellinger-students-without-rooms-in-paradise/" target="_blank" rel="noopener" style="color:inherit;">Students Without Rooms in Paradise</a></div><div class="writing-venue">Noozhawk</div></div>
+      <div class="writing-item"><div class="writing-date">May 2026</div><div class="writing-title"><a href="https://www.noozhawk.com/wayne-mellinger-the-city-stepped-around-him/" target="_blank" rel="noopener" style="color:inherit;">The City Stepped Around Him</a></div><div class="writing-venue">Noozhawk</div></div>
+      <div class="writing-item"><div class="writing-date">May 2026</div><div class="writing-title"><a href="https://www.noozhawk.com/wayne-mellinger-rev-julia-hamilton-preaches-a-theology-of-deeds/" target="_blank" rel="noopener" style="color:inherit;">Rev. Julia Hamilton Preaches a Theology of Deeds</a></div><div class="writing-venue">Noozhawk</div></div>
+      <div class="writing-item"><div class="writing-date">Apr 2026</div><div class="writing-title"><a href="https://www.noozhawk.com/wayne-mellinger-everyone-was-being-reasonable-and-he-died-anyway/" target="_blank" rel="noopener" style="color:inherit;">Everyone Was Being Reasonable, and He Died Anyway</a></div><div class="writing-venue">Noozhawk</div></div>
+      <div class="writing-item"><div class="writing-date">Apr 2026</div><div class="writing-title"><a href="https://www.noozhawk.com/wayne-mellinger-visionaries-guardians-critics-and-benches-in-santa-barbara/" target="_blank" rel="noopener" style="color:inherit;">Visionaries, Guardians, Critics — and Benches — in Santa Barbara</a></div><div class="writing-venue">Noozhawk</div></div>
+      <div class="writing-item"><div class="writing-date">Apr 2026</div><div class="writing-title"><a href="https://www.noozhawk.com/wayne-mellinger-how-santa-barbaras-institutions-produce-harm-without-intending-to/" target="_blank" rel="noopener" style="color:inherit;">How Santa Barbara's Institutions Produce Harm Without Intending To</a></div><div class="writing-venue">Noozhawk</div></div>
+      <div class="writing-item"><div class="writing-date">Apr 2026</div><div class="writing-title"><a href="https://www.noozhawk.com/wayne-mellinger-signs-of-our-times-at-santa-barbaras-no-kings-rally/" target="_blank" rel="noopener" style="color:inherit;">Signs of Our Times at Santa Barbara's "No Kings" Rally</a></div><div class="writing-venue">Noozhawk</div></div>
+      <div class="writing-item"><div class="writing-date">Mar 2026</div><div class="writing-title"><a href="https://www.noozhawk.com/wayne-mellinger-the-bench-on-cota-street-that-isnt-there/" target="_blank" rel="noopener" style="color:inherit;">The Bench on Cota Street That Isn't There</a></div><div class="writing-venue">Noozhawk</div></div>
+      <div class="writing-item"><div class="writing-date">Mar 2026</div><div class="writing-title"><a href="https://www.noozhawk.com/wayne-mellinger-what-the-andree-clark-bird-refuge-reveals-about-visibility-and-power/" target="_blank" rel="noopener" style="color:inherit;">What the Andrée Clark Bird Refuge Reveals About Visibility and Power</a></div><div class="writing-venue">Noozhawk</div></div>
+      <div class="writing-item"><div class="writing-date">Since 2012</div><div class="writing-title">Full archive — 110+ columns</div><div class="writing-venue"><a href="https://www.noozhawk.com/author/wayne-mellinger/" target="_blank" rel="noopener" style="color:inherit;">noozhawk.com/author/wayne-mellinger</a></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="pause" id="poetry">
+  <div class="wrap">
+    <div class="eyebrow">Poetry</div>
+    <h2 class="pause-title">Not everything here needs a citation.</h2>
+    <p style="font-size:16px; color:rgba(246,242,234,0.7); max-width:600px; margin-bottom:56px;">Eighteen poems selected from <em>Moments of Awe Punctuated by the Mundane</em> (2025) — a working selection, not the whole book.</p>
+
+    <div class="poem-entry">
+      <div class="poem-entry-title">A Theology of Wonder</div>
+      <div class="poem-entry-meta">3 December 2007</div>
+      <div class="poem">
+        <div class="stanza">"To be spiritual is to be amazed." — Abraham Joshua Heschel</div>
+        <div class="stanza">Every now and then, the ordinary trips the switch.<br>It may be a black beetle on a red rose bush<br>or a dead horseshoe crab washed ashore.<br>These mundane things rip open a portal,<br>a glimpse of the universe's staggering beauty,<br>the majestic dance of creation.</div>
+        <div class="stanza">For a stolen moment, you're yanked<br>from the dreary confines of your mind,<br>the self-pitying litany silenced.<br>A gentle reprieve from the endless loop of doubt.<br>A space to ponder the angels' whispers,<br>the crab's death a potential omen,<br>a harbinger of all crustaceans.</div>
+        <div class="stanza">But who knows? Maybe it's all just random.<br>Beetles crawl and dead sea creatures wash ashore.<br>No grand design etched on the cosmic canvas,<br>just existence unfolding,<br>an endless, mesmerizing story.</div>
+        <div class="stanza">Why do these moments slip through our fingers?<br>Why do we drift back to autopilot, that sleepwalking routine?<br>Surely these jolts of wonder,<br>these glimpses of life's miracles, are blessings.</div>
+        <div class="stanza">But blessings fade.<br>The chatter of monkey minds begins again.<br>This is the cycle, our journey —<br>moments of awe punctuated by the mundane.<br>Yet, in these startling glimpses,<br>there's a spark to hold onto.<br>Even the ordinary, if we pay attention, can hold<br>the seeds of wonder.</div>
+      </div>
+    </div>
+
+    <div class="poem-entry">
+      <div class="poem-entry-title">Consider the Lizard</div>
+      <div class="poem-entry-meta">18 December 2007</div>
+      <div class="poem">
+        <div class="stanza">Each day the lizard with his lime green sheen<br>waits on sun-baked stones, while the butterflies dance<br>and the bumblebees hum in the spring meadow.<br>There is a pregnant pause of anticipation<br>when he leaps and eats his meal.<br>Life feeds on life — a brutal, primal score.</div>
+        <div class="stanza">I cannot fathom the true meaning of this ritual,<br>but I know this:<br>anyone who hopes to escape death,<br>and hold at bay the endless circle of life,<br>has not considered the lizard —<br>how he basks in his spot,<br>rejuvenated by afternoon heat and insect-filled belly.</div>
+        <div class="stanza">He watches the bough of the oak tree bend,<br>listening to the crickets chirping incessantly as the sun sets on the field,<br>as though all were planned and everything unfolded<br>according to nature's unique desire.<br>The field grows dark with a lavender light.<br>The lizard crawls under a rock.<br>The sky grows bright, star after shining star.</div>
+      </div>
+    </div>
+
+    <div class="poem-entry">
+      <div class="poem-entry-title">Spurred by Friends, Saved by Strangers</div>
+      <div class="poem-entry-meta">16 October 2007</div>
+      <div class="poem">
+        <div class="stanza">Can we bury thoughts by writing words?<br>Can I dissolve my feelings of rejection by putting them down on paper<br>and seeing their black finality?<br>Five years ago I was a popular man<br>who was sought after by old friends who came to town.<br>But then I screwed up — did meth,<br>attempted death,<br>fell apart,<br>ran wild,<br>got arrested, went to jail.<br>Now I do recovery, but some things cannot return.<br>Some cannot forgive or forget my crimes.<br>It hurts that so many have written me off forever and no longer seek my counsel.<br>I have been spurred by friends and saved by strangers.</div>
+      </div>
+    </div>
+
+    <div class="poem-entry">
+      <div class="poem-entry-title">The Search for Light</div>
+      <div class="poem-entry-meta">6 August 2007 — for Ingmar Bergman</div>
+      <div class="poem">
+        <div class="stanza">As I sit in this cold stone pew the dim grey illumination coming from the clouds casts few shadows on this winter morning — just the slight subtleties of shifting light.</div>
+        <div class="stanza">My nightmares burst with bright sunlight and lurid naked glares. My entry into psychosis is blinding. I need clouds and trees and curtains veiling the light, softening it and making it move. I need small doses of light slowly dimming my lover's face until finally only a silhouette is left. Some days this lack of light is reinforced by isolation. Decorous conversations hide loneliness, tensions that cannot be expressed. No sound but the whimper of the wind, the chime of the clocktowers. Life decays towards nothing, but we cling on, trying urgently and clumsily to connect. We see ourselves through windows and in mirrors — divided selves gaze on our darker pasts until all masks dissolve. On a rugged limestone island a bleak dream-world is lived, where stuffed toys become talismans. I hope the bleeding will one day cease. Lighter moments sometimes surface in which I play comedies surrounded by laughter and pretty women. But darkness waits on the edge, loitering like a cloaked stranger playing drawn-out games, and flocks of black birds keep me company — rage, regret and anxiety keep me alert to life's demons, and keep me searching for the hidden lights of a lover.</div>
+      </div>
+    </div>
+
+    <div class="poem-entry">
+      <div class="poem-entry-title">That Which Is Not Meant to Be Seen</div>
+      <div class="poem-entry-meta">2003</div>
+      <div class="poem">
+        <div class="stanza">One evening I returned to the Ventura River and walked beneath the Main Street bridge to this bamboo thicket off to the left where the night before I had talked to a young man who seemed very sick. Diarrhea had ruined his pants. He said he ate bad berries. I went to my car to get him some sweatpants and to the bodega for a quart of milk. I told him then he needed to go to the hospital. He said "I'll be alright" — stupid bastard. And now as I approach the spot where he lay to rest I see his corpse lying there. What was weirdest was his nose was gone, as if tree rats had found him before I did and had a midnight snack. I worried that my footprints led to his body. High on crack I knew I couldn't call 911. What matter — it was too late. If you see a man whose nose is chewed off, you have seen that which is not meant to be seen.</div>
+      </div>
+    </div>
+
+    <div class="poem-entry">
+      <div class="poem-entry-title">Turning Fumbles Into Swan Dives</div>
+      <div class="poem-entry-meta">March 2020</div>
+      <div class="poem">
+        <div class="stanza">As we face the ugliness of the world — seeing things as they really are and accepting that as what really is — we must stay determined to be ourselves and to speak that which must be spoken. To turn our suffering into something that is beautiful we must focus on the present moment and our sometimes haphazard forward momentum.</div>
+        <div class="stanza">When the school of life provides us with growth pains, or we find that we are fumbling, we must gracefully turn that into a swan dive, for to enter the gates of the underworld with a smile on our face is to paradoxically be in paradise. Our suffering can be a call to re-evaluate the path we are on. We must be willing to let go of our dreams so as to live the life that is waiting for us. It is in these darkest moments that light may appear and we become re-born with unknown gifts and hidden strengths.</div>
+      </div>
+    </div>
+
+    <div class="poem-entry">
+      <div class="poem-entry-title">Insane</div>
+      <div class="poem-entry-meta">January 2018</div>
+      <div class="poem">
+        <div class="stanza">The people who are seen as "normal"<br>who play their parts,<br>follow the rules,<br>and obey the laws,<br>are often the ones who are insane.</div>
+        <div class="stanza">The people who do their own thing,<br>reject the roles,<br>break the rules,<br>and disobey the laws,<br>are often the ones who are "sane."</div>
+        <div class="stanza">To accept the rules of a crazy world is an act of craziness itself.<br>But to rebel against those same rules is a healthy, liberating act.</div>
+        <div class="stanza">So what then is "insanity,"<br>and who is truly sane?<br>Who decides psychiatric diagnoses, med regimes, and treatment plans?<br>Words like "mental illness" are labels applied by powerful people to control<br>what they consider wrong or unacceptable. It's merely opinion.</div>
+        <div class="stanza">The truth is, humans vary immensely,<br>and cultures differ in their views on what is right and wrong.<br>It's true that many suffer and need a helping hand,<br>and each of us has had days when we can barely hold on.<br>Mental illness can be real.</div>
+        <div class="stanza">There's no way to stay sane in an insane world, except by being yourself —<br>the unique individual that you are.</div>
+      </div>
+    </div>
+
+    <div class="poem-entry">
+      <div class="poem-entry-title">Dionysian Thinking</div>
+      <div class="poem-entry-meta">30 January 2011</div>
+      <div class="poem">
+        <div class="stanza">Dionysian thinking is not static or fixed but exists in constant flux. Rather than clear and precise linear pronouncements, it offers delirious and ecstatic "non-sense."</div>
+        <div class="stanza">The abandonment of reason leads it to plunge into realms of unreason,<br>evoking Lucretius, Spinoza, Nietzsche, Klossowski, Bataille, Deleuze,<br>Foucault, Genet, Burroughs, and Bey, to forge a philosophy of affirmation.</div>
+        <div class="stanza">It does not seek foundational concepts<br>but continually works against the grain of traditional categories<br>and conventional methods to reclaim State knowledge.<br>Anti-imperial clandestine resistance to the holies of fascism<br>— Capital, State, Family, Industry — keeps its purposes close at hand.</div>
+        <div class="stanza">Also called "nomad thought" or heterology, it privileges multiplicity<br>but never as a foundation. It opposes the solidity<br>and sedentariness of Empires and States and the logic that sustains them.<br>Rather than trees of learning, it is a rhizomic root-sender,<br>always multiplying elements in a fecund way.</div>
+        <div class="stanza">Libidinal politics is the self-organizing flow of intensities<br>and an enchanted realm of desire. Because it does not glorify negation,<br>its explanations are genealogical or other non-dialectical approaches.</div>
+        <div class="stanza">Dionysian thinking affirms life as a dream arising<br>from the detritus of a dilapidated, self-effacing assembly of nodal points,<br>on-off switches, and endless circuits of impulses. Excess and overflow abound,<br>as does the Sun's expenditure of energy. The ecstatic frenzy of trances, intoxication, shamanic journeying, schizophrenia, and orgasm are sacred acts of liberation.</div>
+        <div class="stanza">In this vein, we shall gather again at river bottoms, strip off all our clothes,<br>partake in entheogenic sacraments.</div>
+      </div>
+    </div>
+
+    <div class="poem-entry">
+      <div class="poem-entry-title">Danny, Las Vegas Hustler</div>
+      <div class="poem-entry-meta">13 February 2024</div>
+      <div class="poem">
+        <div class="stanza">"It's not easy being a male hustler on the Las Vegas Strip. Sure, you make a lot of money, but it goes so quickly and the competition is fierce. You don't know who you can trust."</div>
+        <div class="stanza">In one hand,<br>a large bunny mask,<br>white, fluffy, absurd in this context.<br>In the other, an overstuffed athletic bag,<br>filled with most of his world —<br>a change of clothes,<br>a half dozen sex toys,<br>three star-shaped candlesticks<br>he grabbed from somewhere along the way.</div>
+        <div class="stanza">A backpack rides heavy on his back.<br>Danny moves quickly —<br>the Strip teaches you this —<br>grab all you can,<br>and disappear.</div>
+        <div class="stanza">He steps into the shower,<br>tries to wash away the years<br>he claims are only 26,<br>but his body says otherwise.<br>The wear and tear<br>of hustling, drugs,<br>and "friends"<br>who keep him in poverty,<br>homeless for eight years.</div>
+        <div class="stanza">But there's always an exit.<br>Always a rush —<br>now it's morning.<br>He's stuffing his bags,<br>can't find his shoes.<br>"Any cash? Drugs? Insurance?"<br>The questions tumble out —<br>who asks for insurance<br>as they're about to leave?</div>
+        <div class="stanza">The door waits,<br>and you wonder<br>how long he can move<br>through the world<br>before all of it catches up —<br>the hustling, the drugs,<br>the endless cycle<br>of grab and go.</div>
+      </div>
+    </div>
+
+    <div class="poem-entry">
+      <div class="poem-entry-title">The Throne Room</div>
+      <div class="poem-entry-meta">30 March 2024</div>
+      <div class="poem">
+        <div class="stanza">The bathroom may be<br>a fluorescent purgatory,<br>but as I sit upon this porcelain throne,<br>a sliver of glass catches the light,<br>casting fractured rainbows<br>on the cold, institutional tile.</div>
+        <div class="stanza">Outside the window,<br>a wren taps its beak against the glass —<br>a tiny Zen master, unfazed<br>by the relentless flow of human traffic.</div>
+        <div class="stanza">Here, upon these cold seats,<br>we confront our fragile truths,<br>our bodies — magnificent, mundane,<br>messy yet necessary.</div>
+        <div class="stanza">This ritual,<br>a shedding of layers,<br>an invitation simply to be.</div>
+        <div class="stanza">The gurgle, the flush,<br>remind us to release,<br>to flow with the rhythms of life.</div>
+        <div class="stanza">In this small moment,<br>a universe unfolds.<br>We exit a little lighter, a little wiser,<br>catching ourselves in the mirror,<br>seeing, perhaps, our truest self.</div>
+        <div class="stanza">Beneath these fluorescent lights,<br>the sacred hum of existence vibrates,<br>whispering that even in<br>the most mundane rituals,<br>the sacred is always waiting to be found.</div>
+      </div>
+    </div>
+
+    <div class="poem-entry">
+      <div class="poem-entry-title">Held in the Dark: A Psychedelic Crisis, a Stranger's Voice, and the Edges of the Sacred</div>
+      <div class="poem-entry-meta">28 March 2025</div>
+      <div class="poem">
+        <div class="stanza">I don't remember what time it was when I crossed over. Maybe 2:41 AM. Maybe eternity. It began, as these things sometimes do, with a mushroom, a screen, and a yearning I didn't fully understand.</div>
+        <div class="stanza">I had taken a large dose of psilocybin — ritualistically, though alone. Not my first journey. I've danced with Dionysus before, flirted with boundary dissolution. But this time, the combination of the dosage, the trance music, and the AI-generated graphics conspired to split something open in me. Not just metaphorically. My body began to vibrate. Not shake. Vibrate. Like the frequency of my being had been tuned to a station beyond the veil.</div>
+        <div class="stanza">It wasn't pretty. It was glorious. And it was terrifying.</div>
+        <div class="stanza">Somewhere in the middle of it all, I think I had what yogis call a Kundalini Awakening. Every cell in my body was alive with electrical ecstasy. My spine lit up. My palms felt as though they were portals. It reminded me of orgasm the way a thunderstorm reminds you of a faucet — same substance, different scale.</div>
+        <div class="stanza">And then came the terror. I thought I might be dying. Or worse, stuck here — somewhere between worlds, never quite returning.</div>
+        <div class="stanza">Instead of calling 911, I called the Santa Barbara County Access Line. It rang. Then a voice. Soft. Professional. Earthbound. She didn't flinch when I told her I was in psychosis. She didn't mock the word "Kundalini." She asked questions gently, one at a time, like laying stones across a river so I could step back to this world. She stayed with me. Twenty-five minutes. Maybe more. Her voice was a raft.</div>
+        <div class="stanza">This wasn't a "bad trip." It was a holy crisis. There is no ICD-10 code for "kundalini storm." Yet she held me anyway.</div>
+        <div class="stanza">This is a letter of praise, yes. But more than that, it is a small prayer of gratitude. For the unknown woman on the line. For the county system that allowed her to be there. For the mushrooms, strange teachers that they are. For my breath, which eventually returned.</div>
+        <div class="stanza">This was not a mental health episode. This was an encounter with the wild sacred. And she met me there.</div>
+      </div>
+    </div>
+
+    <div class="poem-entry">
+      <div class="poem-entry-title">Angel on State Street</div>
+      <div class="poem-entry-meta">9 March 2025</div>
+      <div class="poem">
+        <div class="stanza">I see him before he sees me —<br>a blur of kinetic frenzy in the doorwell,<br>cigarette burning like a Fourth of July flare,<br>each puff a whispered prayer to the night air.</div>
+        <div class="stanza">"Yo, Angel," I call, stepping closer,<br>his name too heavy for his shoulders,<br>yet light as the mad laughter that escapes his lips.</div>
+        <div class="stanza">"Been lookin' for you," I say.<br>"Me too," he grins, "but I keep getting lost."</div>
+        <div class="stanza">I ask if he's eaten. His eyes flick away,<br>down the block, down the years.<br>"Had twenty bucks," he shrugs.<br>"But I needed some weed to calm my nerves."<br>I nod, press a ten into his palm —<br>a silent sermon of concern.</div>
+        <div class="stanza">The county spends thousands keeping him caged,<br>ER beds, jail cells, citation slips,<br>an expensive ritual of catch and release.<br>But still, no roof, no rest, no relief.</div>
+        <div class="stanza">"Catch you later?" I ask,<br>a standing offer, a thread in the unraveling.<br>He grins, fist-bumps the air.<br>"Yeah, yeah, later," he says, flicking his cigarette,<br>watching the ashes dance,<br>watching them disappear.</div>
+      </div>
+    </div>
+
+    <div class="poem-entry">
+      <div class="poem-entry-title">The God Is in Withdrawal</div>
+      <div class="poem-entry-meta">20 April 2025 — a hymn, a heresy, a confession under harsh light</div>
+      <div class="poem">
+        <div class="stanza">We are living beneath the sanitized gaze of a pharmacratic inquisition. I say this not as metaphor, but as testimony: I have knelt before its altar, shivering in the sacrificial gown of intake, my head still humming with a trace of sacrament misnamed "substance." The nurse diagnosed me "addict," as if that invocation could erase the liturgy still echoing in my blood. But I am not your tragic victim. I am the ecstatic one, the renegade priest of controlled frenzy, the trembling conduit of a forbidden eucharist.</div>
+        <div class="stanza">The war on drugs is not a war on harm — it is a war on gnosis. A war on those who have glimpsed the Real and refused to come back clean. If you are listening: remember this — there are better questions than "sober or not." Like: did you dance with your whole body? Did you touch the Mystery and live to speak of it? Did you come back singing, even with a torn throat?</div>
+        <div class="stanza">Etch this on my tomb: here lies one who mistook intoxication for initiation — and wasn't entirely wrong. They called it relapse; I called it a pilgrimage with poor cartography. What I craved was remembrance. What I wanted was the wisdom of satyrs and sacred fools, not twelve dry steps toward acceptability. Give me thirteen, crooked and spiraling, through nightclubs and temple ruins, through shame and laughter, communion and collapse.</div>
+      </div>
+    </div>
+
+    <div class="poem-entry">
+      <div class="poem-entry-title">The Work of a Woman Named Mary</div>
+      <div class="poem-entry-meta">2 May 2025 — for my sister, seven years behind me and twice as strong</div>
+      <div class="poem">
+        <div class="stanza">Mary was a tantrum in pink pajamas,<br>a thunderstorm at bedtime,<br>a girl who made cats tremble<br>and mothers sigh with a camera in hand.</div>
+        <div class="stanza">At three she recited the names of paintings —<br>El Greco, Degas, Matisse —<br>with the precision of a professor<br>and the joy of a child who knew<br>she could make the world pay attention.</div>
+        <div class="stanza">They called it ADHD.<br>They called it trouble.<br>They called it Ritalin.<br>But it was just Mary,<br>bursting at the seams<br>with too much mind for any one room.</div>
+        <div class="stanza">Chris, our brother, carried shadows she could see.<br>They were close, both marked by diagnosis and difference.<br>When he died in that cell,<br>he tore a hole in the world<br>and Mary bled through it.</div>
+        <div class="stanza">She had an affair with a cop<br>because the marriage had gone quiet.<br>Then the law said her longing was criminal.<br>Two years in Connecticut prison<br>for a woman who sent one message too many.</div>
+        <div class="stanza">But prison, like grief, could not break her.<br>She rose in steel and shadow, came out stronger.<br>Only one thing broke her heart:<br>she was behind bars when our father died.</div>
+        <div class="stanza">Mary is a woman who buries children never born<br>and loves the ones who forget her.<br>She is not common.<br>She is not quiet.<br>She is not done.<br>Mary is the work of a woman<br>who has swallowed fire<br>and still sings.</div>
+      </div>
+    </div>
+
+    <div class="poem-entry">
+      <div class="poem-entry-title">I Was the One Who Gave Him the Mushrooms</div>
+      <div class="poem-entry-meta">1 May 2025 — in the voice of María Sabina</div>
+      <div class="poem">
+        <div class="stanza">I was the one who gave him the mushrooms.<br>My hands cupped them like small brown tongues of God.<br>My fingers knew the names of stars.<br>I sang the ancient language while the candles flickered.</div>
+        <div class="stanza">He called me healer.<br>He called me witch.<br>He called me "informant."</div>
+        <div class="stanza">I was the one who opened the doorway.<br>I said, eat this, Don Roberto,<br>not with your teeth,<br>but with your soul.<br>And he did.<br>And he saw.<br>But I saw first.</div>
+        <div class="stanza">He took the road back to New York,<br>but the spirits stayed with me.<br>He said the world must know.<br>He published the secrets.<br>He sold the names.<br>He made the sacred profane.</div>
+        <div class="stanza">I was the one who lost everything.<br>The curanderas stopped calling me sister.<br>The mountain people said I betrayed them.<br>My son was killed.<br>My house was burned.<br>My name became a currency I could not spend.</div>
+        <div class="stanza">But I was the one who gave him the mushrooms.<br>The velada was mine.<br>The chants were mine.<br>The night was mine.<br>And still is.</div>
+        <div class="stanza">I was the one.<br>I am the one.<br>I will always be<br>the one who gave him the mushrooms.</div>
+      </div>
+    </div>
+
+    <div class="poem-entry">
+      <div class="poem-entry-title">Invocation to the Earth-Muse</div>
+      <div class="poem-entry-meta">20 October 2025 — for the Nine and the One</div>
+      <div class="poem">
+        <div class="stanza">In the beginning, they said the song came from above — nine sisters whispering fire into the ears of men. We bowed and begged for visitations, left honey on the altar, and called that trembling inspiration.</div>
+        <div class="stanza">But now we have learned to listen sideways — not skyward but ground-ward — where root tips converse in mycelial tongues, where the sea rehearses eternity in the metered rhythm of her waves. No distant deity descends. The Muse is the breath of the world itself, the exhalation of natura naturans — nature naturing, endlessly creating, writing herself through us.</div>
+        <div class="stanza">She no longer wears a crown of stars but a crown of pollen, dust, and dew. Her temple is the compost heap, her hymns the murmuring of rivers and the long patience of stone. Still — her laws have not changed. She cannot be summoned by command nor bribed with intellect. She comes when the heart unclenches, when the hand forgets to reach.</div>
+        <div class="stanza">So I light no candles now. I breathe, I wait, I listen for the turning of leaves. And when the world begins to speak, I write — knowing it is not me who speaks, but the ancient Muse reborn in matter, the divine made immanent, the universe remembering itself through a human voice.</div>
+      </div>
+    </div>
+
+    <div class="poem-entry" style="border-top:1px solid rgba(246,242,234,0.14); padding-top:56px;">
+      <div class="poem-entry-title">I Saw the Best Souls of My City</div>
+      <div class="poem-entry-meta">Final version, 13th Longest Night — Steps of the Courthouse, 21 December 2025<br>Dedicated to Timothy John Largent, age 31, from Bakersfield</div>
+      <div class="poem">
+        <div class="poem-section-label">Section I: Witness</div>
+        <div class="stanza">I saw the best souls of my city<br>standing in line at Ralph's at dawn with pockets full of loose change and faded food-stamp cards,<br>arguing gently over whether to buy coffee or bread,<br>whispering psalms under flickering fluorescent lights,<br>anointing cracked hands with jojoba and baby oil,<br>passing a blunt like a peace pipe on a bench at El Presidio after midnight.</div>
+        <div class="stanza">I saw the best souls of my city<br>sleeping under tarps near freeway off-ramps where exhaust becomes incense,<br>where shopping carts become arks,<br>where blankets are folded with the sacred care once reserved for altar cloths,<br>where someone always stays half-awake to watch the others breathe.</div>
+        <div class="stanza">Who were triple-challenged through no fault of their own —<br>evicted by rents that doubled in five years while wages stayed flat as vinyl,<br>denied detox beds because the waitlist was two months long,<br>left to self-medicate psychic agony with fetty<br>because Suboxone required an appointment they couldn't keep<br>without a phone, an address, a calendar, or hope.</div>
+        <div class="stanza">Who died like Timothy John Largent, age thirty-one, from Bakersfield,<br>who just wanted the voices in his head to quiet down,<br>who wanted one night of rest without terror scratching the inside of his skull,<br>and instead his heart stopped at the bottom of Mission Creek,<br>because there were no detox beds,<br>because paying clients always came first,<br>because fetty was easier to find than mercy.</div>
+        <div class="stanza">Who were not criminals but were criminalized,<br>not lazy but exhausted,<br>not broken but wounded,<br>not disposable but discarded.</div>
+        <div class="stanza">I saw the best souls of my city<br>feeding one another from crumpled brown sacks of food,<br>holding hands through fentanyl storms,<br>whispering the names of the dead like a rosary under the stars,<br>teaching newcomers how to survive the night.</div>
+        <div class="stanza">I saw them sacred and unrecognized,<br>saints without shrines,<br>martyrs without anthems,<br>liturgies unfolding beside chain-link fences and freeway walls.</div>
+        <div class="stanza">And I say to you tonight, in candlelight and winter air:<br>these are not throw-away lives.<br>This is not throw-away suffering.<br>This is not acceptable loss.</div>
+
+        <div class="poem-section-label">Section II: The Perpetrators</div>
+        <div class="stanza">Who called themselves compassionate while voting to criminalize camping; who drove past encampments on their way to yoga class; who complained about "the homeless problem" as if people were algebra — variables to be eliminated, not neighbors to be held.</div>
+        <div class="stanza">Who turned Santa Barbara into a playground for hedge-fund aristocrats; who approved $4 million condos where grocery clerks once slept; who watched rents spike into lunacy and called it "market forces," shrugging as families packed their lives into storage units and Hondas.</div>
+        <div class="stanza">Who confiscated shopping carts wearing latex gloves and plastic grins — calling it "clean-up" while tossing love letters, birth certificates, meth pipes, half-read Bibles, and the last photograph of a daughter not yet lost.</div>
+        <div class="stanza">And I — I sat in meetings while mayors pretended it was complicated. I watched outreach budgets shrink and barricades grow. I testified at hearings while developers smirked. I handed out socks, tampons, toothpaste, and hope while the city debated whether harm reduction "sent the wrong message."</div>
+        <div class="stanza">And the question returns, unrelenting: who, exactly, is harming whom?</div>
+
+        <div class="poem-section-label">Section III: We</div>
+        <div class="stanza">We who were called unlovable held each other like scripture under bridges, kissed behind strip malls at midnight with breath sour from trauma and tongues lit like candles against the dark.</div>
+        <div class="stanza">We built a fragile city under those tarps — shared cigarettes at dawn, warned each other which cops were kind, cobbled together survival from borrowed phone chargers and remembered birthdays.</div>
+        <div class="stanza">We called each other brother, sister, mother, even when we had no blood left to give. Mourned in silence when someone vanished, setting aside half a sandwich in case they came back, leaving their sleeping bag untouched like an altar for the missing.</div>
+        <div class="stanza">I remember: Emilio, feeding his cats before feeding himself, weeping when one didn't come back — <em>they're the only things I've never disappointed.</em> Angel dancing shirtless in the Trader Joe's parking lot to music only he could hear, and the rest of us clapping because even in hell someone was dancing.</div>
+        <div class="stanza">We were not saints. We were not clean. We were not sober or safe or saved. But we loved each other in ways no agency could document, in places no grant would fund. We loved each other in the cracks. And that love was real.</div>
+
+        <div class="poem-section-label">Section IV: Consecration</div>
+        <div class="stanza">Let this be a curse upon every city council that criminalized poverty, every developer who paved over sanctuary and called it improvement, every neighbor who dialed 911 when they could have offered water.</div>
+        <div class="stanza">Let this be gratitude — deep, genuine gratitude — for every volunteer who brings socks, every caseworker who breaks policy to show mercy, every outreach worker who remembers their names. You are the faithful remnant. Your labor is holy.</div>
+        <div class="stanza">But let this also be the truth we must speak: we have failed. The crisis grows worse. On this 13th Longest Night we declare: this must stop. This must stop now. We must house ALL our homeless neighbors. The status quo is not good enough.</div>
+        <div class="stanza">Compassion without housing is charity theater. Harm reduction without treatment beds is cruelty with good intentions.</div>
+        <div class="stanza">Let this be a monument made of stories — of Javier, Jordan, Joshua and Angel. Of kind Emilio and his hungry cats. Of Timothy John Largent who just wanted the voices to stop.</div>
+        <div class="stanza">Let this be the thing you cannot unsee. Let this be your mirror. Let this be the sound of their voices still singing through mine.</div>
+
+        <div class="poem-section-label">Section V: The Longest Night</div>
+        <div class="stanza">Every December I return to the courthouse steps with a list of names and a lighter that won't stay lit. The wind off the harbor is cold. The tourists avoid me. The officials do not attend.</div>
+        <div class="stanza">But I read them anyway — Michael. Jennifer. Carlos. Theresa. Angel. Emilio. Jordan. Javier. Timothy John. — because someone must say they were here. Someone must mark the space where they stood.</div>
+        <div class="stanza">The candles flicker and go out. I light them again. The names continue. The list grows longer every year.</div>
+        <div class="stanza">And when I finish, when the last name has been spoken into the indifferent dark, I fold the paper and carry it home like a relic, like a vow, like the only hymn that matters.</div>
+        <div class="stanza">They are not lost. They were abandoned. And I will not stop saying their names until the city learns to count its dead.</div>
+      </div>
+    </div>
+
+    <div class="poem-cred">A selection from Moments of Awe Punctuated by the Mundane (2025). Full collection available on request.</div>
+  </div>
+</section>
+<section class="pause" id="prayers" style="background:var(--dusk-2);">
+  <div class="wrap">
+    <div class="eyebrow">Prayers</div>
+    <h2 class="pause-title">Words offered, not just written.</h2>
+    <p style="font-size:16.5px; color:rgba(246,242,234,0.78); max-width:520px; margin-bottom:40px;">Prayer runs through both platforms — ritual writing from <em>The Dionysian Naturalist</em> alongside prayer-poems from <em>Moments of Awe</em>. A starting list, to be filled in with full texts:</p>
+    <div class="writing-list" style="border-top:1px solid rgba(246,242,234,0.18);">
+      <div class="writing-item" style="border-bottom:1px solid rgba(246,242,234,0.14);">
+        <div class="writing-date" style="color:var(--ochre-soft);">Poem</div>
+        <div class="writing-title" style="color:var(--paper);">A Prayer for Those Who Serve</div>
+        <div class="writing-venue" style="color:rgba(246,242,234,0.5);">Moments of Awe</div>
+      </div>
+      <div class="writing-item" style="border-bottom:1px solid rgba(246,242,234,0.14);">
+        <div class="writing-date" style="color:var(--ochre-soft);">Poem</div>
+        <div class="writing-title" style="color:var(--paper);">Prayer for Longest Night</div>
+        <div class="writing-venue" style="color:rgba(246,242,234,0.5);">Moments of Awe</div>
+      </div>
+      <div class="writing-item" style="border-bottom:1px solid rgba(246,242,234,0.14);">
+        <div class="writing-date" style="color:var(--ochre-soft);">Poem</div>
+        <div class="writing-title" style="color:var(--paper);">A Prayer for an Entheogenic Sacrament</div>
+        <div class="writing-venue" style="color:rgba(246,242,234,0.5);">Moments of Awe</div>
+      </div>
+      <div class="writing-item">
+        <div class="writing-date" style="color:var(--ochre-soft);">Ritual</div>
+        <div class="writing-title" style="color:var(--paper);">Invocations &amp; ritual prayers</div>
+        <div class="writing-venue" style="color:rgba(246,242,234,0.5);">The Dionysian Naturalist</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="projects" id="gallery" style="background:var(--paper);">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="eyebrow">Gallery</div>
+      <h2 class="section-title">Portraits, in several mediums</h2>
+    </div>
+    <div class="gallery-grid">
+      <figure class="gphoto tall"><img src="images/gallery-portrait-sunflowers.jpg" alt="Portrait of Wayne Martin Mellinger"></figure>
+      <figure class="gphoto"><img src="images/gallery-painting-bike.jpg" alt="Painted portrait of Wayne on a coastal trail"></figure>
+      <figure class="gphoto"><img src="images/gallery-portrait-cap.jpg" alt="Portrait of Wayne outdoors"></figure>
+      <figure class="gphoto tall"><img src="images/gallery-painting-alvaro.jpg" alt="Hyperrealist painted portrait of Wayne"></figure>
+      <figure class="gphoto"><img src="images/gallery-sketch.jpg" alt="Illustrated portrait of Wayne"></figure>
+      <figure class="gphoto"><img src="images/gallery-candid-vintage.jpg" alt="Earlier candid photo of Wayne"></figure>
+    </div>
+  </div>
+</section>
+
+<section class="advocacy" id="projects">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="eyebrow">Projects &amp; Community Work</div>
+      <h2 class="section-title">Justice work in Santa Barbara County</h2>
+      <p class="section-lede">The organizing, ritual, and civic work behind the scholarship — where street outreach becomes public practice.</p>
+    </div>
+    <div class="adv-grid">
+      <div>
+        <ul class="adv-list">
+          <li><span>Longest Night Homeless Memorial Vigil</span><span>Organizer, Dec. 21 annually</span></li>
+          <li><span>Santa Barbara Homeless Foot Washing</span><span>Co-founder</span></li>
+          <li><span>Freedom Warming Centers</span><span>Co-founder</span></li>
+        </ul>
+      </div>
+      <div>
+        <ul class="adv-list">
+          <li><span>Santa Barbara County Behavioral Wellness Commission</span><span>Commissioner</span></li>
+          <li><span>Santa Barbara / Santa Maria Continuum of Care</span><span>Member</span></li>
+          <li><span>CLUE-SB · Showers of Blessing · Committee for Social Justice</span><span>Board member</span></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="biostrip">
+  <div class="wrap">
+    <span class="role">Sociologist</span><span class="dot">·</span>
+    <span class="role">Philosopher</span><span class="dot">·</span>
+    <span class="role">Writer</span><span class="dot">·</span>
+    <span class="role">Poet</span><span class="dot">·</span>
+    <span class="role">Social and Environmental Justice Activist</span>
+  </div>
+</div>
+
+<section id="cv" style="background:var(--paper); padding:100px 0;">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="eyebrow">Curriculum Vitae</div>
+      <h2 class="section-title">Education &amp; appointments</h2>
+    </div>
+    <div class="adv-grid">
+      <div>
+        <div class="eyebrow" style="margin-bottom:14px;">Education</div>
+        <ul class="adv-list">
+          <li><span>Ph.D., Sociology — UC Santa Barbara<br><span style="font-family:var(--serif-body); font-style:italic; font-size:13.5px; color:rgba(30,28,24,0.55);">Committee: Zimmerman (chair), Wilson, Molotch</span></span><span>1990</span></li>
+          <li><span>M.A., Sociology — UC Santa Barbara</span><span>1985</span></li>
+          <li><span>B.B.A., Performing Arts Administration — UMass Amherst</span><span>1981</span></li>
+          <li><span>Certificate, French Language &amp; Civilization — Sorbonne</span><span>1981</span></li>
+          <li><span>Post-Professional Skills Competency Award, Alcohol &amp; Drug Counseling — SBCC</span><span>2007</span></li>
+        </ul>
+      </div>
+      <div>
+        <div class="eyebrow" style="margin-bottom:14px;">Academic Appointments</div>
+        <ul class="adv-list">
+          <li><span>Visiting Assistant Professor, Sociology — UC Berkeley</span><span>1994</span></li>
+          <li><span>Visiting Assistant Professor, Sociology — UC Santa Cruz</span><span>1990–92</span></li>
+          <li><span>Graduate Faculty, Ed. Leadership &amp; Change — Fielding Graduate University</span><span>1996–99</span></li>
+          <li><span>Instructor, Sociology — Antioch University Santa Barbara</span><span>2007–12</span></li>
+          <li><span>Instructor, Sociology — Ventura College</span><span>1995–2005</span></li>
+          <li><span>Teaching Associate — UC Santa Barbara</span><span>1985–90</span></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="adv-grid" style="margin-top:56px;">
+      <div>
+        <div class="eyebrow" style="margin-bottom:14px;">Human Services Experience</div>
+        <ul class="adv-list">
+          <li><span>Street Outreach Worker, Counselor, Case Manager — WillBridge / New Beginnings</span><span>2007–12</span></li>
+          <li><span>Homelessness Prevention Program Manager — Transition House</span><span>2008</span></li>
+          <li><span>Columnist — Noozhawk</span><span>2012–present</span></li>
+        </ul>
+      </div>
+      <div>
+        <div class="eyebrow" style="margin-bottom:14px;">Professional &amp; Community Service</div>
+        <ul class="adv-list">
+          <li><span>Commissioner, Behavioral Wellness Commission — Santa Barbara County</span><span></span></li>
+          <li><span>Board Member — CLUE, Showers of Blessing, Committee for Social Justice</span><span></span></li>
+          <li><span>Member, Santa Barbara County Continuum of Care</span><span></span></li>
+          <li><span>Founder, Longest Night Memorial (14th year)</span><span></span></li>
+          <li><span>Founder, Santa Barbara Homeless Foot Washing</span><span></span></li>
+        </ul>
+      </div>
+    </div>
+
+    <p style="margin-top:40px; font-size:15.5px; color:rgba(30,28,24,0.6);">Peer-reviewed work spans ethnomethodology and institutional talk, media and cultural representation, and the sociology of homelessness and abandonment (1992–present), alongside an extensive non-peer-reviewed body of essays on <em>Doing Modernity</em>. A full publication list can be added here, or linked out to a PDF — your call.</p>
+  </div>
+</section>
+
+<footer id="contact">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <h4>Contact</h4>
+        <p>For speaking, press, collaboration, or to share a correction — <a href="mailto:waynemellinger@gmail.com" style="color:var(--ochre-soft); text-decoration:underline;">waynemellinger@gmail.com</a></p>
+      </div>
+      <div>
+        <h4>Elsewhere</h4>
+        <ul class="footer-links">
+          <li><a href="https://www.noozhawk.com/author/wayne-mellinger/" target="_blank" rel="noopener">Noozhawk</a></li>
+          <li><a href="https://independentscholar.academia.edu/WayneMellinger" target="_blank" rel="noopener">Academia.edu</a></li>
+          <li><a href="https://www.linkedin.com/in/wayne-martin-mellinger-ph-d-0757b723/" target="_blank" rel="noopener">LinkedIn</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Site</h4>
+        <ul class="footer-links">
+          <li><a href="#biography">Biography</a></li>
+          <li><a href="#sociology">Sociology</a></li>
+          <li><a href="#religion-philosophy">Religion &amp; Philosophy</a></li>
+          <li><a href="#public-writing">Public Writing</a></li>
+          <li><a href="#poetry">Poetry</a></li>
+          <li><a href="#prayers">Prayers</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#cv">CV</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Wayne Martin Mellinger, Ph.D.</span>
+      <span>Santa Barbara, California</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+  // nav background on scroll
+  const nav = document.getElementById('mainnav');
+  window.addEventListener('scroll', () => {
+    nav.classList.toggle('scrolled', window.scrollY > 60);
+  }, {passive:true});
+
+  // aperture narrows into focus as the hero scrolls out — the signature motion
+  const ap1 = document.getElementById('ap1');
+  const ap2 = document.getElementById('ap2');
+  const ap3 = document.getElementById('ap3');
+  const hero = document.querySelector('.hero');
+  function updateAperture(){
+    const prog = Math.min(1, Math.max(0, window.scrollY / (hero.offsetHeight * 0.9)));
+    ap1.setAttribute('r', 130 - prog*30);
+    ap2.setAttribute('r', 100 - prog*45);
+    ap3.setAttribute('r', 70 - prog*55);
+    const op = 1 - prog*0.6;
+    document.querySelector('.aperture').style.opacity = op;
+  }
+  window.addEventListener('scroll', updateAperture, {passive:true});
+  updateAperture();
+</script>
+
+</body>
+</html>
