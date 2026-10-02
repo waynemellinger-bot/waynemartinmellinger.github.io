@@ -1,0 +1,49 @@
+---
+layout: base.njk
+pagination:
+  data: archive.collections
+  size: 1
+  alias: coll
+permalink: "{{ coll.path }}"
+eleventyComputed:
+  title: "{{ coll.title }}"
+  description: "{{ archive.byCollection[coll.slug].length }} columns by Wayne Martin Mellinger, Ph.D., published in {{ coll.venue }} — browse by year or by topic, each linked to the original."
+  breadcrumbs:
+    - { label: "Public Writing", url: "/public-writing/" }
+---
+{%- set list = archive.byCollection[coll.slug] %}
+{%- set first = list | last %}{% set latest = list | first %}
+<header class="page-head">
+  <p class="eyebrow">Public Writing</p>
+  <h1>{{ coll.title }}</h1>
+  <p class="lede">{{ list.length }} columns published in {{ coll.venue }}, Santa Barbara’s online newspaper, between {{ first.date | monthYear }} and {{ latest.date | monthYear }}. <span id="link-note">Each title links to the column on Noozhawk.</span></p>
+  {%- if site.pilot %}
+  <p class="pilot-note">Topic labels are a first draft, assigned from titles alone, and await the author’s review.</p>
+  {%- endif %}
+</header>
+
+<details class="browse-topics">
+  <summary><span class="label">Browse by topic</span> <span class="count">{{ archive.topicPages.length }} topics</span></summary>
+  <ul class="topic-cloud">
+    {%- for t in archive.topicPages %}
+    {%- set n = 0 %}{% for w in t.works %}{% if w.collection == coll.slug %}{% set n = n + 1 %}{% endif %}{% endfor %}
+    {%- if n %}<li><a href="{{ t.path }}">{{ t.name }} <span class="count">{{ n }}</span></a></li>{% endif %}
+    {%- endfor %}
+  </ul>
+  <p class="all-topics"><a href="/topics/">All topics across the archive</a></p>
+</details>
+
+{% include "works-by-year.njk" %}
+
+<p class="source-note">Compiled from Noozhawk’s <a href="{{ coll.home }}">author archive</a> on October 1, 2026.</p>
+
+{%- set items = [] %}
+{%- for w in list %}{% set items = (items.push({ "@type": "ListItem", "position": loop.index, "item": { "@type": "OpinionNewsArticle", "headline": w.title, "datePublished": w.date, "url": w.url, "author": { "@id": site.url + "/#person" }, "publisher": { "@type": "NewsMediaOrganization", "name": "Noozhawk", "url": "https://www.noozhawk.com/" } } }), items) %}{% endfor %}
+{%- set structuredData = { "@context": "https://schema.org", "@graph": [
+  { "@type": "CollectionPage", "name": coll.title, "url": coll.path | absolute(site.url), "about": { "@id": site.url + "/#person" },
+    "mainEntity": { "@type": "ItemList", "numberOfItems": list.length, "itemListElement": items } },
+  { "@type": "BreadcrumbList", "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": site.url + "/" },
+    { "@type": "ListItem", "position": 2, "name": "Public Writing", "item": site.url + "/public-writing/" },
+    { "@type": "ListItem", "position": 3, "name": coll.title, "item": coll.path | absolute(site.url) } ] } ] } %}
+<script type="application/ld+json">{{ structuredData | json | safe }}</script>

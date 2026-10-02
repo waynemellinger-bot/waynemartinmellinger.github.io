@@ -1,0 +1,51 @@
+---
+layout: base.njk
+pagination:
+  data: sections
+  size: 1
+  alias: s
+permalink: "{{ s.url }}"
+eleventyComputed:
+  title: "{{ s.title }}"
+  description: "{{ s.description }}"
+sections:
+  - url: /public-writing/
+    title: Public Writing
+    description: "Wayne Martin Mellinger's public writing: Noozhawk columns and essays on homelessness, housing and civic life in Santa Barbara."
+    collections: [noozhawk]
+    programs: [public-sociology-justice]
+    pending: [{ url: /public-writing/our-neighbors-on-the-streets/, title: "Our Neighbors on the Streets" }]
+  - url: /scholarship/
+    title: Scholarship
+    description: "Wayne Martin Mellinger's scholarship: Critical Interactionism, the sociology of interaction, homelessness and institutional abandonment, and critical drug studies."
+    programs: [critical-interactionism, interaction-emca, homelessness-abandonment, critical-drug-studies]
+    pending: [{ url: /scholarship/publications/, title: "Publications" }, { url: /scholarship/doing-modernity/, title: "Doing Modernity" }, { url: /scholarship/wild-flesh/, title: "Wild Flesh" }]
+  - url: /religion-philosophy/
+    title: Religion & Philosophy
+    description: "Wayne Martin Mellinger's writing on religious naturalism, Dionysian Naturalism and spiritual practice."
+    programs: [religious-dionysian-naturalism]
+    pending: [{ url: /religion-philosophy/dionysian-naturalist/, title: "The Dionysian Naturalist" }]
+  - url: /creative-work/
+    title: Creative Work
+    description: "Poetry, prayers and ritual writing by Wayne Martin Mellinger."
+    pending: [{ url: /poetry/, title: "Poetry" }, { url: /prayers-ritual/, title: "Prayers & Ritual" }]
+---
+<header class="page-head">
+  <h1>{{ s.title }}</h1>
+</header>
+{%- if s.collections or s.programs %}
+<ul class="section-list">
+  {%- for slug in s.collections %}{% set c = archive.collections | selectattr('slug', 'equalto', slug) | first %}
+  <li><a href="{{ c.path }}">{{ c.title }}</a> <span class="count">{{ archive.byCollection[slug].length }}</span></li>
+  {%- endfor %}
+  {%- for slug in s.programs %}{% set pr = archive.programBySlug[slug] %}{% set pp = archive.programPages | selectattr('slug', 'equalto', slug) | first %}
+  <li><a href="{{ pr.path }}">{{ pr.name }}</a> <span class="count">{{ pp.works.length }}</span></li>
+  {%- endfor %}
+</ul>
+{%- endif %}
+{%- if s.pending %}
+<h2 class="label">Not yet moved to the new site</h2>
+<ul class="section-list pending">
+  {%- for x in s.pending %}<li><a href="{{ x.url }}">{{ x.title }}</a></li>{% endfor %}
+</ul>
+{%- endif %}

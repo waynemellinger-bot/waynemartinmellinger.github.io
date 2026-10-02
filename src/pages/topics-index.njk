@@ -1,0 +1,15 @@
+---
+layout: base.njk
+permalink: /topics/
+title: Topics
+description: "Every topic in the collected works of Wayne Martin Mellinger, Ph.D., with the number of works on each."
+---
+<header class="page-head">
+  <h1>Topics</h1>
+  <p class="lede">Each topic gathers works from every collection.</p>
+</header>
+<ul class="index-list">
+  {%- for t in archive.topicPages %}
+  <li><a href="{{ t.path }}">{{ t.name }}</a> <span class="count">{{ t.works.length }}</span></li>
+  {%- endfor %}
+</ul>

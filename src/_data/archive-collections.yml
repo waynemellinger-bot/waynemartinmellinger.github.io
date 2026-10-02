@@ -1,0 +1,8 @@
+# Collections: where a work was published. "file" is its records file in _data/works/.
+- slug: noozhawk
+  name: Noozhawk
+  title: Noozhawk Columns
+  venue: Noozhawk
+  path: /public-writing/noozhawk/
+  file: noozhawk
+  home: https://www.noozhawk.com/author/wayne-mellinger/

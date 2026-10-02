@@ -1,0 +1,19 @@
+{#- One work record. Used everywhere a work is listed.
+    showVenue: add venue and year (for lists that mix collections or years). -#}
+<li class="work" id="{{ w.id }}">
+  <time class="work-date" datetime="{{ w.date }}">{% if showVenue %}{{ w.date | fullDate }}{% else %}{{ w.date | dayMonth or (w.date | year) }}{% endif %}</time>
+  <div class="work-body">
+    {%- if w.url %}
+    <a class="work-title" href="{{ w.url }}">{{ w.title }}</a>
+    {%- else %}
+    <span class="work-title">{{ w.title }}</span>
+    {%- endif %}
+    {%- if showVenue %}<span class="work-venue"> · <a href="{{ w.permalink }}">{{ w.collectionName }}</a></span>{% endif %}
+    {%- if w.description %}<p class="work-desc">{{ w.description }}</p>{% endif %}
+    {%- if w.topicList.length %}
+    <ul class="work-topics" aria-label="Topics">
+      {%- for t in w.topicList %}<li><a href="/topics/{{ t.slug }}/">{{ t.name }}</a></li>{% endfor %}
+    </ul>
+    {%- endif %}
+  </div>
+</li>

@@ -1,0 +1,33 @@
+---
+layout: base.njk
+permalink: /
+description: "The collected works of Wayne Martin Mellinger, Ph.D. — sociologist, public writer, religious naturalist and poet in Santa Barbara, California."
+---
+<header class="page-head home-head">
+  <h1>{{ site.name }}</h1>
+  <p class="lede">Wayne Martin Mellinger, Ph.D., is an independent sociologist, writer, street outreach worker, and public intellectual based in Santa Barbara, California.</p>
+  {%- if site.pilot %}<p class="pilot-note">This home page is a temporary placeholder. The designed home page is built last, after the collections.</p>{% endif %}
+</header>
+
+<section aria-labelledby="bodies">
+  <h2 id="bodies" class="label">Bodies of work</h2>
+  <ul class="doorways">
+    <li><a href="{{ archive.programBySlug['critical-interactionism'].path }}">Critical Interactionism</a></li>
+    <li><a href="{{ archive.programBySlug['homelessness-abandonment'].path }}">Homelessness &amp; Institutional Abandonment</a></li>
+    <li><a href="/scholarship/doing-modernity/">Doing Modernity</a></li>
+    <li><a href="/public-writing/noozhawk/">Noozhawk columns</a></li>
+    <li><a href="{{ archive.programBySlug['religious-dionysian-naturalism'].path }}">Dionysian Naturalism</a></li>
+    <li><a href="/scholarship/wild-flesh/">Wild Flesh: Critical Drug Studies</a></li>
+    <li><a href="/poetry/">Poetry</a></li>
+    <li><a href="/prayers-ritual/">Prayers &amp; Ritual</a></li>
+  </ul>
+</section>
+
+<section aria-labelledby="recent" data-pagefind-ignore="all">
+  <h2 id="recent" class="label">Recent writing</h2>
+  <ol class="work-list">
+    {%- set showVenue = true %}
+    {%- for w in archive.works | limit(5) %}{% include "record.njk" %}{% endfor %}
+  </ol>
+</section>
+<script src="/assets/js/legacy-anchors.js"></script>

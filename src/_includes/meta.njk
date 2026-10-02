@@ -1,0 +1,36 @@
+{%- set pageTitle = (title + ' — ' + site.name) if title else site.name -%}
+{%- set pageDescription = description or site.description -%}
+{%- set canonical = page.url | absolute(site.url) -%}
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{ pageTitle }}</title>
+<meta name="description" content="{{ pageDescription }}">
+<link rel="canonical" href="{{ canonical }}">
+{%- if placeholder or noindex %}
+<meta name="robots" content="noindex">
+{%- endif %}
+<meta property="og:type" content="{{ ogType or 'website' }}">
+<meta property="og:site_name" content="{{ site.name }}">
+<meta property="og:title" content="{{ title or site.name }}">
+<meta property="og:description" content="{{ pageDescription }}">
+<meta property="og:url" content="{{ canonical }}">
+<meta property="og:locale" content="{{ site.locale }}">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="{{ title or site.name }}">
+<meta name="twitter:description" content="{{ pageDescription }}">
+<link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+{%- set person = {
+  "@type": "Person",
+  "@id": site.url + "/#person",
+  "name": "Wayne Martin Mellinger",
+  "honorificSuffix": "Ph.D.",
+  "url": site.url + "/",
+  "jobTitle": "Sociologist",
+  "address": { "@type": "PostalAddress", "addressLocality": "Santa Barbara", "addressRegion": "CA", "addressCountry": "US" },
+  "alumniOf": [{ "@type": "CollegeOrUniversity", "name": "University of California, Santa Barbara" }, { "@type": "CollegeOrUniversity", "name": "University of Massachusetts Amherst" }],
+  "sameAs": [site.elsewhere[0].url, site.elsewhere[1].url, site.elsewhere[2].url]
+} %}
+<script type="application/ld+json">{{ { "@context": "https://schema.org", "@graph": [person] } | json | safe }}</script>
+{%- if structuredData %}
+<script type="application/ld+json">{{ structuredData | json | safe }}</script>
+{%- endif %}

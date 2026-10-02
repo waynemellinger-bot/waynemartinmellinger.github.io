@@ -1,0 +1,21 @@
+{
+  "name": "waynemartinmellinger-archive",
+  "private": true,
+  "description": "The digital collected works of Wayne Martin Mellinger, Ph.D.",
+  "type": "module",
+  "scripts": {
+    "validate": "node scripts/validate.mjs",
+    "build:site": "eleventy",
+    "build:search": "node scripts/search-index.mjs",
+    "build": "npm run validate && npm run build:site && npm run build:search",
+    "serve": "npm run build && npx http-server _site -p 8080 -c-1"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "^3.1.6",
+    "js-yaml": "^4.3.2",
+    "pagefind": "^1.5.2"
+  }
+}
