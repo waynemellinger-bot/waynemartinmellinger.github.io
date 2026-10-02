@@ -16,8 +16,10 @@ const TYPES = new Set(['column', 'essay', 'article', 'chapter', 'book', 'manuscr
   'prayer', 'invocation', 'ritual', 'liturgy', 'speech', 'testimony']);
 const STATUSES = new Set(['published', 'forthcoming', 'in progress']);
 const VISIBILITY = new Set(['full', 'excerpt', 'title-only']);
+const REVIEW = new Set(['draft', 'reviewed']);
+const BASIS = new Set(['title', 'article']);
 const FIELDS = new Set(['id', 'title', 'date', 'venue', 'type', 'url', 'status', 'programs', 'topics',
-  'topics_status', 'description', 'series', 'selected', 'source', 'note', 'visibility']);
+  'topics_status', 'programs_status', 'classification_basis', 'description', 'series', 'selected', 'source', 'note', 'visibility']);
 const REQUIRED = ['id', 'title', 'date', 'venue', 'type', 'status', 'source'];
 
 const errors = [];
@@ -53,6 +55,12 @@ for (const c of collections) {
     if (r.type && !TYPES.has(r.type)) err(`type "${r.type}" is not one of: ${[...TYPES].join(', ')}`);
     if (r.status && !STATUSES.has(r.status)) err(`status "${r.status}" is not one of: ${[...STATUSES].join(', ')}`);
     if (r.visibility && !VISIBILITY.has(r.visibility)) err(`visibility must be full, excerpt or title-only`);
+    for (const k of ['topics_status', 'programs_status']) {
+      if (r[k] !== undefined && !REVIEW.has(r[k])) err(`${k} must be draft or reviewed, not "${r[k]}"`);
+    }
+    if (r.programs && r.programs.length && !r.programs_status) err('programs_status is required when programs are given');
+    if (r.topics && r.topics.length && !r.topics_status) err('topics_status is required when topics are given');
+    if (r.classification_basis !== undefined && !BASIS.has(r.classification_basis)) err('classification_basis must be title or article');
     if (r.url !== undefined) {
       if (!/^https:\/\/[^\s]+$/.test(r.url)) err('url must start with https:// and contain no spaces');
       if (allUrls.has(r.url)) err(`duplicate url ${r.url}`);

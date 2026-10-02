@@ -32,12 +32,10 @@ Example:
   type: column
   url: https://www.noozhawk.com/wayne-mellinger-the-title-exactly-as-published/
   status: published
-  programs:
-    - homelessness-abandonment
-    - public-sociology-justice
+  source: Noozhawk article page, checked 2026-10-05
   topics:
     - homelessness
-  source: Noozhawk article page, checked 2026-10-05
+  topics_status: draft
 ```
 
 Leave out the `Wayne Mellinger: ` prefix Noozhawk adds to every headline.
@@ -53,9 +51,11 @@ Leave out the `Wayne Mellinger: ` prefix Noozhawk adds to every headline.
 | `type` | yes | One of: column, essay, article, chapter, book, manuscript, poem, prayer, invocation, ritual, liturgy, speech, testimony. |
 | `url` | if one exists | Address of the original. |
 | `status` | yes | `published`, `forthcoming` or `in progress`. |
-| `programs` | optional | Bodies of work, from `src/_data/programs.yml`. |
+| `programs` | optional | Bodies of work, from `src/_data/programs.yml`. A work joins a program only if it substantively contributes to it; none is a valid answer. |
 | `topics` | optional | From `src/_data/topics.yml` only. To use a new topic, add it there first. |
-| `topics_status` | optional | `draft` marks topics not yet reviewed by the author. |
+| `topics_status` | with topics | `draft` or `reviewed`. Only a human editor sets `reviewed`. |
+| `programs_status` | with programs | `draft` or `reviewed`. Only a human editor sets `reviewed`. |
+| `classification_basis` | optional | What a draft classification was based on: `title` or `article`. |
 | `description` | optional | One or two sentences. Leave it out rather than invent one. |
 | `series` | optional | A series within a collection. |
 | `selected` | optional | `true` adds the work to Selected Works. |
