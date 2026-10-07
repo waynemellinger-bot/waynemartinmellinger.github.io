@@ -3,18 +3,17 @@
 // catch it. This forwards each old section address to its new page.
 (function () {
   var map = {
-    '#top': '/',
-    '#contact': '/about/',
-    '#biography': '/about/',
+    '#contact': '/contact/',
+    '#biography': '/about/biography/',
     '#sociology': '/scholarship/',
     '#religion-philosophy': '/religion-philosophy/',
     '#public-writing': '/public-writing/',
-    '#poetry': '/poetry/',
-    '#prayers': '/prayers-ritual/',
+    '#poetry': '/creative-work/poetry/',
+    '#prayers': '/creative-work/#prayers',
     '#gallery': '/about/portraits/',
-    '#projects': '/projects/',
+    '#projects': '/community/',
     '#cv': '/cv/'
   };
   var target = map[window.location.hash];
-  if (target && target !== '/') window.location.replace(target);
+  if (target) window.location.replace(target);
 })();

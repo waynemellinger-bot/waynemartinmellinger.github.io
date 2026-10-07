@@ -31,6 +31,9 @@ jobs:
       # Checks every record, builds the pages, then builds the search index.
       # A record that breaks the rules stops here and nothing is published.
       - run: npm run build
+      # Checks the built pages: links, anchors, titles, descriptions, canonical
+      # addresses, headings, alt text, structured data and the sitemap.
+      - run: python3 scripts/qa/check_site.py
       - uses: actions/upload-pages-artifact@v3
         with:
           path: _site

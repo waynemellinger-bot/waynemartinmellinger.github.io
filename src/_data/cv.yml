@@ -1,0 +1,31 @@
+# Curriculum vitae, as on the previous site (migrated 2026-10-07). Wording and dates unchanged.
+# Order within each section is as on the previous site. "detail" is a second line under an entry.
+sections:
+  - heading: Education
+    entries:
+      - { what: "Ph.D., Sociology — UC Santa Barbara", detail: "Committee: Zimmerman (chair), Wilson, Molotch", when: "1990" }
+      - { what: "M.A., Sociology — UC Santa Barbara", when: "1985" }
+      - { what: "B.B.A., Performing Arts Administration — UMass Amherst", when: "1981" }
+      - { what: "Certificate, French Language & Civilization — Sorbonne", when: "1981" }
+      - { what: "Post-Professional Skills Competency Award, Alcohol & Drug Counseling — SBCC", when: "2007" }
+  - heading: Academic Appointments
+    entries:
+      - { what: "Visiting Assistant Professor, Sociology — UC Berkeley", when: "1994" }
+      - { what: "Visiting Assistant Professor, Sociology — UC Santa Cruz", when: "1990–92" }
+      - { what: "Graduate Faculty, Ed. Leadership & Change — Fielding Graduate University", when: "1996–99" }
+      - { what: "Instructor, Sociology — Antioch University Santa Barbara", when: "2007–12" }
+      - { what: "Instructor, Sociology — Ventura College", when: "1995–2005" }
+      - { what: "Teaching Associate — UC Santa Barbara", when: "1985–90" }
+  - heading: Human Services Experience
+    entries:
+      - { what: "Street Outreach Worker, Counselor, Case Manager — WillBridge / New Beginnings", when: "2007–12" }
+      - { what: "Homelessness Prevention Program Manager — Transition House", when: "2008" }
+      - { what: "Columnist — Noozhawk", when: "2012–present" }
+  - heading: Professional & Community Service
+    entries:
+      - { what: "Commissioner, Behavioral Wellness Commission — Santa Barbara County" }
+      - { what: "Board Member — CLUE, Showers of Blessing, Committee for Social Justice" }
+      - { what: "Member, Santa Barbara County Continuum of Care" }
+      - { what: "Founder, Longest Night Memorial (14th year)" }
+      - { what: "Founder, Santa Barbara Homeless Foot Washing" }
+summary: Peer-reviewed work spans ethnomethodology and institutional talk, media and cultural representation, and the sociology of homelessness and abandonment (1992–present), alongside an extensive non-peer-reviewed body of essays on Doing Modernity.

@@ -1,0 +1,151 @@
+# Scholarly publications: peer-reviewed articles and chapters, and published books.
+# Titles, venues, years and page ranges are copied from the previous site's
+# "Peer-Reviewed Publications" list (migrated 2026-10-07). They have not yet been
+# checked against the journals themselves; see docs/CONTENT-AUDIT.md.
+# Books still in progress are not listed here; they are on the Research page (src/_data/projects.yml).
+
+- id: pub-many-interaction-orders
+  title: Many Interaction Orders
+  venue: Studies in Symbolic Interaction
+  type: article
+  status: forthcoming
+  series: Peer-Reviewed Publications
+  related: [dm-the-many-interaction-orders-goffman-rawls-smith-and-the-plur]
+  note: Listed as "Forthcoming" on the previous site, with no year. Wayne's notes record acceptance for Vol. 64; the volume is not shown on the site until Wayne confirms it.
+  source: Previous site, Peer-Reviewed Publications list
+
+- id: pub-white-fantasies-black-bodies
+  title: "White Fantasies, Black Bodies: Racial Power, Disgust and Desire in American Popular Culture"
+  date: '1997'
+  with: Rodney Beaulieu
+  venue: Visual Anthropology
+  citation: "9:117–147"
+  type: article
+  status: published
+  series: Peer-Reviewed Publications
+  source: Previous site, Peer-Reviewed Publications list
+
+- id: pub-reading-the-news-postmodern-mass-media
+  title: "Reading the News in the Age of Postmodern Mass Media: Gang Murders in the Los Angeles Times"
+  date: '1997'
+  venue: "Cultural Studies: A Research Annual"
+  type: article
+  status: published
+  series: Peer-Reviewed Publications
+  note: Volume and pages not given on the previous site.
+  source: Previous site, Peer-Reviewed Publications list
+
+- id: pub-newz-from-the-hood
+  title: "Newz from the Hood: The Stephanie Kuhen Murder in the Los Angeles Times"
+  date: '1997'
+  venue: Human Systems
+  type: article
+  status: published
+  series: Peer-Reviewed Publications
+  note: Volume and pages not given on the previous site.
+  source: Previous site, Peer-Reviewed Publications list
+
+- id: pub-talk-power-and-professionals
+  title: "Talk, Power and Professionals: Partial Repeats as Challenges in the Psychiatric Interview"
+  date: '1995'
+  venue: Therapeutic and Everyday Discourse as Behavior Change
+  citation: "ed. Jürg Siegfried (Ablex), pp. 391–418"
+  type: chapter
+  status: published
+  series: Peer-Reviewed Publications
+  programs: [interaction-emca]
+  programs_status: draft
+  classification_basis: title
+  source: Previous site, Peer-Reviewed Publications list
+
+- id: pub-anatomy-of-an-obituary
+  title: 'The Anatomy of an Obituary: "Rock Hudson Dies at 59 After Fighting AIDS"'
+  date: '1995'
+  venue: Perspectives on Social Problems
+  citation: "7"
+  type: article
+  status: published
+  series: Peer-Reviewed Publications
+  source: Previous site, Peer-Reviewed Publications list
+
+- id: pub-negotiated-orders
+  title: "Negotiated Orders: The Negotiation of Directives in Paramedic-Nurse Interaction"
+  date: '1994'
+  venue: Symbolic Interaction
+  citation: "17(2):165–185"
+  type: article
+  status: published
+  series: Peer-Reviewed Publications
+  programs: [interaction-emca]
+  programs_status: draft
+  classification_basis: title
+  source: Previous site, Peer-Reviewed Publications list
+
+- id: pub-tourism-representations
+  title: Toward a Critical Analysis of Tourism Representations
+  date: '1994'
+  venue: Annals of Tourism Research
+  citation: "21(4):756–779"
+  type: article
+  status: published
+  series: Peer-Reviewed Publications
+  source: Previous site, Peer-Reviewed Publications list
+
+- id: pub-talk-as-work
+  title: "Talk-as-Work: The Case of Paramedic Calls for Emergency Field Orders"
+  date: '1992'
+  venue: Current Research on Occupations and Professions
+  citation: "Vol. 7, pp. 79–109"
+  type: article
+  status: published
+  series: Peer-Reviewed Publications
+  programs: [interaction-emca]
+  programs_status: draft
+  classification_basis: title
+  source: Previous site, Peer-Reviewed Publications list
+
+- id: pub-accomplishing-fact-dispatch-packages
+  title: 'Accomplishing Fact in Police "Dispatch Packages": An Analysis of the Situated Construction of an Organizational Record'
+  date: '1992'
+  venue: Perspectives on Social Problems
+  citation: "4"
+  type: article
+  status: published
+  series: Peer-Reviewed Publications
+  programs: [interaction-emca]
+  programs_status: draft
+  classification_basis: title
+  source: Previous site, Peer-Reviewed Publications list
+
+- id: pub-postcards-from-the-edge-of-the-color-line
+  title: "Postcards from the Edge of the Color Line: Images of African Americans in Popular Culture, 1893–1917"
+  date: '1992'
+  venue: Symbolic Interaction
+  citation: "15(4):413–433"
+  type: article
+  status: published
+  series: Peer-Reviewed Publications
+  source: Previous site, Peer-Reviewed Publications list
+
+- id: pub-representing-blackness
+  title: 'Representing Blackness in the White Imagination: Images of "Happy Darkeys" in Popular Culture, 1893–1917'
+  date: '1992'
+  venue: Visual Sociology
+  citation: "7(2):3–21"
+  type: article
+  status: published
+  series: Peer-Reviewed Publications
+  source: Previous site, Peer-Reviewed Publications list
+
+- id: book-i-just-wanted-to-dance-with-dionysus
+  title: "I Just Wanted to Dance with Dionysus: Life's Sacred Journey, Lost Souls and Our Thirst for Wholeness"
+  date: '2025'
+  venue: PhilArchive
+  type: book
+  url: https://philarchive.org/rec/MELIJW
+  status: published
+  series: Books
+  description: A Gonzo autoethnography about addiction, homelessness, psychiatric crisis, and recovery, structured through Joseph Campbell's Hero's Journey and the mythology of Dionysus.
+  related: [dn-i-just-wanted-to-dance-with-dionysus-lifes-sacred-journey-lo, wf-i-just-wanted-to-dance-with-dionysus]
+  note: Description is Wayne's own wording from the biography on the previous site.
+  source: Previous site, Biography (linked to PhilArchive)

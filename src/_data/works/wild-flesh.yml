@@ -1,0 +1,269 @@
+# Wild Flesh: works listed on the previous site, migrated 2026-10-07.
+# Created by scripts/migration/extract-legacy.py; edit by hand from now on.
+- id: wf-the-shamanic-wisdom-traditions-of-controlled-use
+  title: The Shamanic Wisdom Traditions of Controlled Use
+  date: '2026'
+  venue: Wild Flesh
+  type: essay
+  status: unverified
+  series:
+  - Critical Drug Studies
+  programs:
+  - critical-drug-studies
+  programs_status: draft
+  classification_basis: grouping
+  note: No link on the previous site; publication not yet confirmed.
+  source: Previous site (waynemartinmellinger.com, single page), migrated 2026-10-07
+- id: wf-what-is-critical-drug-studies-a-deeper-excursion
+  title: What is Critical Drug Studies? A Deeper Excursion
+  date: '2025-09'
+  venue: Wild Flesh
+  type: essay
+  url: https://wildflesh.blogspot.com/2025/09/what-is-critical-drug-studies-deeper.html
+  status: published
+  series:
+  - Critical Drug Studies
+  programs:
+  - critical-drug-studies
+  programs_status: draft
+  classification_basis: grouping
+  note: Month taken from the post address; the previous site gave the year only.
+  source: Previous site (waynemartinmellinger.com, single page), migrated 2026-10-07
+- id: wf-my-four-blogs
+  title: My Four Blogs
+  date: '2025-09'
+  venue: Wild Flesh
+  type: essay
+  url: https://wildflesh.blogspot.com/2025/09/my-four-blogs.html
+  status: published
+  series:
+  - Critical Drug Studies
+  note: Listed under Wild Flesh's Critical Drug Studies heading on the previous site, but it describes all four platforms, so no program is assigned (draft decision, 2026-10-07). Month taken from the post address; the previous site gave the year only.
+  source: Previous site (waynemartinmellinger.com, single page), migrated 2026-10-07
+- id: wf-addiction-modernity-and-the-urge-to-use
+  title: Addiction, Modernity and the "Urge to Use"
+  date: '2025-07'
+  venue: Wild Flesh
+  type: essay
+  url: https://wildflesh.blogspot.com/2025/07/addiction-modernity-and-urge-to-use.html
+  status: published
+  series:
+  - Critical Drug Studies
+  programs:
+  - critical-drug-studies
+  programs_status: draft
+  classification_basis: grouping
+  note: Month taken from the post address; the previous site gave the year only.
+  source: Previous site (waynemartinmellinger.com, single page), migrated 2026-10-07
+- id: wf-caught-in-the-open-why-my-friends-keep-going-to-jail-while-i
+  title: 'Caught in the Open: Why My Friends Keep Going to Jail While I Stay Free'
+  date: '2025-07'
+  venue: Wild Flesh
+  type: essay
+  url: https://wildflesh.blogspot.com/2025/07/caught-in-open-why-my-friends-keep.html
+  status: published
+  series:
+  - Critical Drug Studies
+  programs:
+  - critical-drug-studies
+  programs_status: draft
+  classification_basis: grouping
+  note: Month taken from the post address; the previous site gave the year only.
+  source: Previous site (waynemartinmellinger.com, single page), migrated 2026-10-07
+- id: wf-addiction-teaches-lesson
+  title: '"Addiction Teaches Lesson"'
+  date: '2025-06'
+  venue: Wild Flesh
+  type: essay
+  url: https://wildflesh.blogspot.com/2025/06/addiction-teaches-lesson.html
+  status: published
+  series:
+  - Critical Drug Studies
+  programs:
+  - critical-drug-studies
+  programs_status: draft
+  classification_basis: grouping
+  note: Month taken from the post address; the previous site gave the year only.
+  source: Previous site (waynemartinmellinger.com, single page), migrated 2026-10-07
+- id: wf-embodied-ecstasies-the-sacred-choreography-of-party-and-play
+  title: 'Embodied Ecstasies: The Sacred Choreography of Party and Play'
+  date: '2025-06'
+  venue: Wild Flesh
+  type: essay
+  url: https://wildflesh.blogspot.com/2025/06/embodied-ecstasies-sacred-choreography.html
+  status: published
+  series:
+  - Critical Drug Studies
+  programs:
+  - critical-drug-studies
+  programs_status: draft
+  classification_basis: grouping
+  note: 'Month taken from the post address; the previous site gave the year only. Listed on the previous site as: Wild Flesh — flash autoethnography.'
+  source: Previous site (waynemartinmellinger.com, single page), migrated 2026-10-07
+- id: wf-the-will-to-sacred-ecstasy-ritual-intoxication-liberation-an
+  title: 'The Will to Sacred Ecstasy: Ritual Intoxication, Liberation, and Dionysian Naturalism'
+  date: '2025-04'
+  venue: Wild Flesh
+  type: essay
+  url: https://wildflesh.blogspot.com/2025/04/will-to-sacred-ecstasy.html
+  status: published
+  series:
+  - Critical Drug Studies
+  programs:
+  - critical-drug-studies
+  programs_status: draft
+  classification_basis: grouping
+  note: Month taken from the post address; the previous site gave the year only.
+  source: Previous site (waynemartinmellinger.com, single page), migrated 2026-10-07
+- id: wf-i-just-wanted-to-dance-with-dionysus
+  title: I Just Wanted to Dance with Dionysus
+  date: '2025-04'
+  venue: Wild Flesh
+  type: essay
+  url: https://wildflesh.blogspot.com/2025/04/i-just-wanted-to-dance-with-dionysus.html
+  status: published
+  related: [book-i-just-wanted-to-dance-with-dionysus]
+  series:
+  - Critical Drug Studies
+  programs:
+  - critical-drug-studies
+  programs_status: draft
+  classification_basis: grouping
+  note: 'Month taken from the post address; the previous site gave the year only. Listed on the previous site as: Wild Flesh — also on PhilArchive; linked under Biography.'
+  source: Previous site (waynemartinmellinger.com, single page), migrated 2026-10-07
+- id: wf-wild-flesh-a-critical-interactionist-approach-to-drug-use-id
+  title: 'Wild Flesh: A Critical Interactionist Approach to Drug Use, Identity, and Liberation'
+  date: '2025'
+  venue: Wild Flesh
+  type: manuscript
+  status: book project
+  series:
+  - Critical Drug Studies
+  programs:
+  - critical-drug-studies
+  programs_status: draft
+  classification_basis: grouping
+  note: 'Listed on the previous site as: Book prospectus.'
+  source: Previous site (waynemartinmellinger.com, single page), migrated 2026-10-07
+- id: wf-craig-reinarman-and-the-sociology-of-drug-use
+  title: Craig Reinarman and the Sociology of Drug Use
+  date: '2025-04'
+  venue: Wild Flesh
+  type: essay
+  url: https://wildflesh.blogspot.com/2025/04/craig-reinarman-and-sociology-of-drug.html
+  status: published
+  series:
+  - Critical Drug Studies
+  programs:
+  - critical-drug-studies
+  programs_status: draft
+  classification_basis: grouping
+  note: Month taken from the post address; the previous site gave the year only.
+  source: Previous site (waynemartinmellinger.com, single page), migrated 2026-10-07
+- id: wf-drug-war-ideologies-and-the-war-on-all-of-us
+  title: Drug War Ideologies and the War on All of Us
+  date: '2025-04'
+  venue: Wild Flesh
+  type: essay
+  url: https://wildflesh.blogspot.com/2025/04/drug-war-ideologies-and-war-on-all-of.html
+  status: published
+  series:
+  - Critical Drug Studies
+  programs:
+  - critical-drug-studies
+  programs_status: draft
+  classification_basis: grouping
+  note: Month taken from the post address; the previous site gave the year only.
+  source: Previous site (waynemartinmellinger.com, single page), migrated 2026-10-07
+- id: wf-a-genealogy-of-drug-abuse-and-addiction
+  title: A Genealogy of Drug Abuse and Addiction
+  date: '2025-04'
+  venue: Wild Flesh
+  type: essay
+  url: https://wildflesh.blogspot.com/2025/04/genealogy-of-drug-abuse-and-addiction.html
+  status: published
+  series:
+  - Critical Drug Studies
+  programs:
+  - critical-drug-studies
+  programs_status: draft
+  classification_basis: grouping
+  note: Month taken from the post address; the previous site gave the year only.
+  source: Previous site (waynemartinmellinger.com, single page), migrated 2026-10-07
+- id: wf-critical-drug-use-theory
+  title: Critical Drug Use Theory
+  date: '2025-04'
+  venue: Wild Flesh
+  type: essay
+  url: https://wildflesh.blogspot.com/2025/04/critical-drug-use-theory.html
+  status: published
+  series:
+  - Critical Drug Studies
+  programs:
+  - critical-drug-studies
+  programs_status: draft
+  classification_basis: grouping
+  note: Month taken from the post address; the previous site gave the year only.
+  source: Previous site (waynemartinmellinger.com, single page), migrated 2026-10-07
+- id: wf-deconstructing-drug-war-ideologies
+  title: Deconstructing Drug War Ideologies
+  date: '2025-04'
+  venue: Wild Flesh
+  type: essay
+  url: https://wildflesh.blogspot.com/2025/04/deconstructing-drug-war-ideologies.html
+  status: published
+  series:
+  - Critical Drug Studies
+  programs:
+  - critical-drug-studies
+  programs_status: draft
+  classification_basis: grouping
+  note: Month taken from the post address; the previous site gave the year only.
+  source: Previous site (waynemartinmellinger.com, single page), migrated 2026-10-07
+- id: wf-tripping-with-the-gods-on-entheogenic-spirituality
+  title: 'Tripping with the Gods: On Entheogenic Spirituality'
+  date: '2025-04'
+  venue: Wild Flesh
+  type: essay
+  url: https://wildflesh.blogspot.com/2025/04/tripping-with-gods-on-entheogenic.html
+  status: published
+  related: [dn-tripping-with-the-gods-on-entheogenic-spirituality]
+  series:
+  - Critical Drug Studies
+  programs:
+  - critical-drug-studies
+  programs_status: draft
+  classification_basis: grouping
+  note: Month taken from the post address; the previous site gave the year only.
+  source: Previous site (waynemartinmellinger.com, single page), migrated 2026-10-07
+- id: wf-held-in-the-dark-a-psychedelic-crisis-a-strangers-voice-and
+  title: 'Held in the Dark: A Psychedelic Crisis, a Stranger''s Voice, and the Edges of the Sacred'
+  date: '2025-04'
+  venue: Wild Flesh
+  type: essay
+  url: https://wildflesh.blogspot.com/2025/04/held-in-dark-psychedelic-crisis.html
+  status: published
+  related: [poem-held-in-the-dark-a-psychedelic-crisis-a-strangers]
+  series:
+  - Critical Drug Studies
+  programs:
+  - critical-drug-studies
+  programs_status: draft
+  classification_basis: grouping
+  note: Month taken from the post address; the previous site gave the year only.
+  source: Previous site (waynemartinmellinger.com, single page), migrated 2026-10-07
+- id: wf-sacred-precautions-a-dionysian-guide-to-harm-reduction-prepa
+  title: 'Sacred Precautions: A Dionysian Guide to Harm Reduction, Preparation and Integration'
+  date: '2025-04'
+  venue: Wild Flesh
+  type: essay
+  url: https://wildflesh.blogspot.com/2025/04/sacred-precautions-dionysian-guide-to.html
+  status: published
+  series:
+  - Critical Drug Studies
+  programs:
+  - critical-drug-studies
+  programs_status: draft
+  classification_basis: grouping
+  note: Month taken from the post address; the previous site gave the year only.
+  source: Previous site (waynemartinmellinger.com, single page), migrated 2026-10-07

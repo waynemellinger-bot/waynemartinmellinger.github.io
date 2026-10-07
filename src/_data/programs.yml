@@ -1,20 +1,31 @@
-# Intellectual programs: which body of Wayne's thought a work belongs to.
+# Intellectual programs: the larger bodies of Wayne's thought a work substantively contributes to.
 # Order here is the order shown on the site. "path" is the program's page.
+# A work joins a program only when the connection is defensible; none is a valid answer.
+#
+# Slugs, names, paths and order are unchanged from the accepted Noozhawk pilot.
+# "description" was added 2026-10-07. Each is built from Wayne's own published wording
+# (mostly the biography on the previous site) and is DRAFT until Wayne approves it.
 - slug: critical-interactionism
   name: Critical Interactionism
   path: /scholarship/critical-interactionism/
+  description: Wayne’s theoretical framework, joining ethnomethodology and conversation analysis, institutional ethnography, symbolic interactionism and critical social theory. It examines abandonment as something organizations actively produce through ordinary practices of classification, documentation and delay.
 - slug: interaction-emca
   name: Sociology of Interaction / EMCA
   path: /scholarship/sociology-of-interaction/
+  description: The close empirical study of how people produce social order through everyday interaction — the tradition Wayne trained in at UC Santa Barbara under Don H. Zimmerman, Thomas P. Wilson and Harvey Molotch, and which he documents as the Santa Barbara School.
 - slug: homelessness-abandonment
   name: Homelessness, Institutional Abandonment & Social Policy
   path: /scholarship/homelessness-and-abandonment/
+  description: How institutions treat people experiencing homelessness, mental illness and addiction — tested for nearly two decades against street-level reality in Santa Barbara’s homeless services.
 - slug: critical-drug-studies
   name: Critical Drug Studies
   path: /scholarship/critical-drug-studies/
+  description: Drug use and altered states, studied critically — the work of Wayne’s platform Wild Flesh.
 - slug: religious-dionysian-naturalism
   name: Religious & Dionysian Naturalism
   path: /religion-philosophy/religious-and-dionysian-naturalism/
+  description: Contemporary Paganism, religious naturalism and ecstatic spiritual practice — the theological framework Wayne calls Dionysian Naturalism.
 - slug: public-sociology-justice
   name: Public Sociology & Social Justice
   path: /public-writing/public-sociology/
+  description: Sociological research, political analysis and street-level experience translated for a general audience.

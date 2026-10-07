@@ -3,17 +3,31 @@ layout: base.njk
 pagination:
   data: archive.programPages
   size: 1
+  addAllPagesToCollections: true
   alias: prog
 permalink: "{{ prog.path }}"
 eleventyComputed:
   title: "{{ prog.name }}"
-  description: "Works by Wayne Martin Mellinger, Ph.D., in {{ prog.name }}, across all collections."
+  description: "{{ prog.description }} Works by Wayne Martin Mellinger, Ph.D., across all collections."
+  breadcrumbs:
+    - { label: "Research", url: "/research/" }
 ---
+{%- set hasDraft = false %}{% for w in prog.works %}{% if w.programs_status == 'draft' %}{% set hasDraft = true %}{% endif %}{% endfor %}
 <header class="page-head">
   <p class="eyebrow">Body of work</p>
   <h1>{{ prog.name }}</h1>
-  <p class="lede">{{ prog.works.length }} work{{ '' if prog.works.length == 1 else 's' }}, newest first.</p>
-  {%- if site.pilot %}<p class="pilot-note">During the pilot this lists Noozhawk columns only; the scholarship, essays and books join as each collection moves.</p>{% endif %}
+  <p class="lede">{{ prog.description }}</p>
+  <p class="meta-line">{{ prog.works.length | pluralize('work') }} across the archive, newest first.</p>
+  {%- if hasDraft %}
+  <p class="provisional">Which works belong here is a provisional judgment awaiting the author’s review. A work appears only where it substantively contributes to this body of work; many works belong to none. <a href="/writing/about-the-archive/">About the archive</a></p>
+  {%- endif %}
 </header>
-{%- set list = prog.works %}{% set showVenue = true %}
+{%- set related = [] %}{% for p in archive.projects %}{% if prog.slug in p.programs %}{% set related = (related.push(p), related) %}{% endif %}{% endfor %}
+{%- if related.length %}
+<aside class="aside" aria-labelledby="proj">
+  <h2 id="proj" class="label">Current projects</h2>
+  <ul>{% for p in related %}<li><a href="/research/#{{ p.id }}">{{ p.title }}</a> <span class="status">{{ p.status }}</span></li>{% endfor %}</ul>
+</aside>
+{%- endif %}
+{%- set list = prog.works %}{% set showVenue = true %}{% set showType = true %}
 {% include "works-by-year.njk" %}

@@ -1,0 +1,136 @@
+# Current research and writing projects, shown on the Research page (/research/).
+#
+# Nothing here is a publication claim. Each project carries one status from this list:
+#   Published · Forthcoming · Under Review · In Revision · Working Paper ·
+#   Book Project · Research in Progress · Essay in Development · Archive
+#
+#   id        anchor on the Research page (/research/#id)
+#   title     working title          status   one value from the list above
+#   summary   one or two sentences   programs bodies of work it belongs to (programs.yml)
+#   works     ids of published records that belong to it (checked by the validator)
+#   show      false hides the project from the site without deleting it
+#   review    draft until Wayne approves the title, status and summary
+#   basis     where the wording came from (for the editors; never shown)
+#
+# DRAFTED 2026-10-07. Titles, statuses and summaries come from the previous site and
+# from Wayne's own notes on each project. No publisher, contract, journal or date is
+# claimed for unfinished work. Every entry is draft until Wayne reviews it.
+
+- id: abandonment-in-real-time
+  title: Abandonment in Real Time
+  status: Book Project
+  summary: A book on how routine institutional practices under scarcity contribute to abandonment and premature death among people experiencing homelessness — without requiring malicious individual actors.
+  programs: [homelessness-abandonment, critical-interactionism]
+  works:
+    - dm-the-epistemology-of-abandonment-a-critical-interactionist-th
+    - dm-the-career-of-disposability-street-outreach-fentanyl-and-the
+    - dm-maladjustment-as-insight-the-epistemology-of-the-abandoned
+    - nz-2026-04-13-how-santa-barbaras-institutions-produce-harm
+    - nz-2026-04-27-everyone-was-being-reasonable-and-he-died-anyway
+  show: true
+  review: draft
+  basis: Title from the previous site (Books & Manuscripts in Progress). Summary from Wayne's statement of the book's central problem. The subtitle is withheld because the previous site and Wayne's notes give two different ones.
+
+- id: sociology-of-interaction
+  title: The Sociology of Interaction
+  status: Book Project
+  summary: A book reconstructing the interactionist tradition from Mead through Goffman, Garfinkel and conversation analysis to Critical Interactionism. Its organizing argument is that interactionism asked the questions, ethnomethodology and conversation analysis transformed what counts as an answer, and Critical Interactionism extends what must be followed.
+  programs: [interaction-emca, critical-interactionism]
+  works:
+    - dm-building-a-new-astronomy-without-a-telescope-why-critical-in
+    - dm-from-minds-to-moments-how-ethnomethodology-and-conversation
+    - dm-george-herbert-mead-and-the-making-of-symbolic-interactionis
+  show: true
+  review: draft
+  basis: Wayne's notes (retitled September 2026). The previous site listed a book manuscript "From Minds to Moments"; whether that is the same project is a question for Wayne.
+
+- id: critical-interactionism
+  title: Critical Interactionism
+  status: Research in Progress
+  summary: The theoretical framework behind most of Wayne’s current work, developed in essays on the moral economy of interaction, the layered moral economy of oppression, and what follows once asymmetries are documented in interaction.
+  programs: [critical-interactionism]
+  works:
+    - dm-the-moral-economy-of-interaction
+    - dm-the-layered-moral-economy-of-oppression-completing-the-santa
+    - dm-what-do-we-owe-one-another-once-we-see-asymmetries-being-don
+    - dm-beyond-asymmetries-in-action-critical-interactionism-moral-e
+  show: true
+  review: draft
+  basis: Previous site (biography; Santa Barbara School bibliography annotations).
+
+- id: doing-essays
+  title: "Doing Modernity, Doing Equality, Doing Autonomy"
+  status: Essay in Development
+  summary: A set of essays on how large social arrangements are accomplished in ordinary interaction — contemporary social order, equality (with formal consensus as the principal case, and a distinction between recognition, voice and traction), and autonomy as a collective, performed practice.
+  programs: [critical-interactionism]
+  show: true
+  review: draft
+  basis: Wayne's notes on the three essays (October 2026).
+
+- id: strangers-and-civil-inattention
+  title: Strangers, civil inattention and the interaction order
+  status: Research in Progress
+  summary: Work on anonymity and recognition in public space — extending Goffman’s civil inattention to ask how strangerhood is distributed unequally, including in the treatment of unhoused people.
+  programs: [interaction-emca, critical-interactionism]
+  works:
+    - dm-talking-city-trouble-urban-micro-ethnography-and-the-moral-o
+    - dm-interaction-order-at-the-margins-robin-james-smiths-sociolog
+    - nz-2026-05-25-the-city-stepped-around-him
+  show: true
+  review: draft
+  basis: Wayne's notes ("Civil Inattention after Goffman"; "The Ordinary Stranger"). Working titles not shown until Wayne chooses them.
+
+- id: career-of-the-record
+  title: The Career of the Record
+  status: Essay in Development
+  summary: An essay in documentary sociology on how organizational records are made and what they go on to do — a question Wayne first took up in his 1992 study of police dispatch packages.
+  programs: [interaction-emca, critical-interactionism]
+  works:
+    - pub-accomplishing-fact-dispatch-packages
+    - dm-jack-whalen-and-the-documentary-constitution-of-organization
+  show: true
+  review: draft
+  basis: Wayne's notes list the essay; its status (in development or finished) needs confirming.
+
+- id: dionysian-wine-apollonian-cup
+  title: "Dionysian Wine, Apollonian Cup: Religious Naturalism at a Threshold"
+  status: In Revision
+  summary: A journal article on religious naturalism, in revision after review.
+  programs: [religious-dionysian-naturalism]
+  works:
+    - dn-the-rise-of-religious-naturalism-a-new-public-theology-of-sa
+  show: true
+  review: draft
+  basis: Wayne's notes (revise-and-resubmit). The journal is not named on the site. Whether "The Rise of Religious Naturalism" is an earlier version needs confirming.
+
+- id: nature-religions-and-revolutionary-social-change
+  title: Nature Religions and Revolutionary Social Change
+  status: Research in Progress
+  summary: A revision of Wayne’s essay, first published on The Dionysian Naturalist, testing its claims about ecological crisis, ecstatic ritual and social transformation against current scholarship on transitions beyond industrial modernity.
+  programs: [religious-dionysian-naturalism]
+  works:
+    - dn-nature-religions-and-revolutionary-social-change-advancing-a
+  show: true
+  review: draft
+  basis: Wayne's notes (research-mapping project, October 2026).
+
+- id: lessons-from-the-longest-night
+  title: Lessons from the Longest Night
+  status: Book Project
+  summary: A manuscript of maxims toward a Dionysian philosophy of descent and return, opening and closing at the Longest Night Homeless Memorial Vigil.
+  programs: [religious-dionysian-naturalism]
+  show: true
+  review: draft
+  basis: Wayne's notes. Intended for The Dionysian Naturalist; "Book Project" may be the wrong status.
+
+- id: wild-flesh-book
+  title: "Wild Flesh: A Critical Interactionist Approach to Drug Use, Identity, and Liberation"
+  status: Book Project
+  summary: A book prospectus extending the essays on Wild Flesh.
+  programs: [critical-drug-studies, critical-interactionism]
+  works:
+    - wf-what-is-critical-drug-studies-a-deeper-excursion
+    - wf-critical-drug-use-theory
+  show: true
+  review: draft
+  basis: Previous site (listed as "Book prospectus", 2025).

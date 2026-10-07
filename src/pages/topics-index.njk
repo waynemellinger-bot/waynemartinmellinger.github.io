@@ -3,10 +3,12 @@ layout: base.njk
 permalink: /topics/
 title: Topics
 description: "Every topic in the collected works of Wayne Martin Mellinger, Ph.D., with the number of works on each."
+breadcrumbs:
+  - { label: "Writing", url: "/writing/" }
 ---
 <header class="page-head">
   <h1>Topics</h1>
-  <p class="lede">Each topic gathers works from every collection.</p>
+  <p class="lede">Each topic gathers works from every collection. Topics are provisional, and so far only the Noozhawk columns carry them; the other collections can be browsed by their own headings or by body of work.</p>
 </header>
 <ul class="index-list">
   {%- for t in archive.topicPages %}

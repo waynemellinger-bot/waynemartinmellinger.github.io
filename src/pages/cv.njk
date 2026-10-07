@@ -1,0 +1,33 @@
+---
+layout: base.njk
+permalink: /cv/
+title: Curriculum Vitae
+crumbTitle: CV
+description: "Curriculum vitae of Wayne Martin Mellinger, Ph.D.: education, academic appointments, human services experience, and professional and community service."
+breadcrumbs:
+  - { label: "About", url: "/about/" }
+---
+<header class="page-head">
+  <p class="eyebrow">About</p>
+  <h1>Curriculum Vitae</h1>
+  <p class="lede">Education &amp; appointments</p>
+</header>
+{%- for s in cv.sections %}
+<section class="cv-section" aria-labelledby="cv-{{ loop.index }}">
+  <h2 id="cv-{{ loop.index }}" class="section-title">{{ s.heading }}</h2>
+  <ul class="cv-list">
+    {%- for e in s.entries %}
+    <li><span class="cv-what">{{ e.what }}{% if e.detail %}<span class="cv-detail">{{ e.detail }}</span>{% endif %}</span>{% if e.when %}<span class="cv-when">{{ e.when }}</span>{% endif %}</li>
+    {%- endfor %}
+  </ul>
+</section>
+{%- endfor %}
+<section class="cv-section" aria-labelledby="cv-pubs">
+  <h2 id="cv-pubs" class="section-title">Publications</h2>
+  <p>{{ cv.summary }}</p>
+  <ul class="link-row">
+    <li><a href="/scholarship/publications/">Scholarly publications</a></li>
+    <li><a href="/scholarship/doing-modernity/">Essays on Doing Modernity</a></li>
+    <li><a href="/writing/">All writing</a></li>
+  </ul>
+</section>

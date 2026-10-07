@@ -3,19 +3,22 @@ layout: base.njk
 pagination:
   data: archive.topicPages
   size: 1
+  addAllPagesToCollections: true
   alias: topic
 permalink: "{{ topic.path }}"
 eleventyComputed:
   title: "{{ topic.name }}"
   description: "Writing by Wayne Martin Mellinger, Ph.D., on {{ topic.name | lower }}: {{ topic.works.length }} works across all collections."
   breadcrumbs:
+    - { label: "Writing", url: "/writing/" }
     - { label: "Topics", url: "/topics/" }
 ---
 <header class="page-head">
   <p class="eyebrow">Topic</p>
   <h1>{{ topic.name }}</h1>
   <p class="lede">{{ topic.works.length }} work{{ '' if topic.works.length == 1 else 's' }} across all collections, newest first.</p>
-  {%- if site.pilot %}<p class="pilot-note">During the pilot only Noozhawk columns are listed, and topic labels are a draft.</p>{% endif %}
+  {%- set hasDraft = false %}{% for w in topic.works %}{% if w.topics_status == 'draft' %}{% set hasDraft = true %}{% endif %}{% endfor %}
+  {%- if hasDraft %}<p class="provisional">Topic labels are provisional and await the author’s review. So far only the Noozhawk columns carry topics. <a href="/writing/about-the-archive/">About the archive</a></p>{% endif %}
 </header>
-{%- set list = topic.works %}{% set showVenue = true %}
+{%- set list = topic.works %}{% set showVenue = true %}{% set showType = true %}
 {% include "works-by-year.njk" %}

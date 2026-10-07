@@ -1,0 +1,464 @@
+# The Dionysian Naturalist: works listed on the previous site, migrated 2026-10-07.
+# Created by scripts/migration/extract-legacy.py; edit by hand from now on.
+- id: dn-the-ordeal
+  title: The Ordeal
+  date: '2014'
+  venue: The Dionysian Naturalist
+  type: poem
+  status: unverified
+  series:
+  - Annotated Bibliography (2014–2025)
+  description: A poem exploring struggle, transformation, and the sacred journey through difficulty — establishing the spiritual and existential concerns that animate the later theological writings.
+  programs:
+  - religious-dionysian-naturalism
+  programs_status: draft
+  classification_basis: grouping
+  note: No link on the previous site; publication not yet confirmed.
+  source: Previous site (waynemartinmellinger.com, single page), migrated 2026-10-07
+- id: dn-the-amethyst-path-shamanism-dionysian-spirituality-and-recov
+  title: 'The Amethyst Path: Shamanism, Dionysian Spirituality and Recovery from "Addiction"'
+  date: '2014'
+  venue: The Dionysian Naturalist
+  type: essay
+  url: https://thedionysiannaturalist.blogspot.com/2015/11/the-amethyst-path-shamanism-dionysian.html
+  status: published
+  series:
+  - Annotated Bibliography (2014–2025)
+  description: The foundational essay introducing the Amethyst Path — a shamanic approach to addiction recovery drawing on Dionysian spirituality while maintaining sobriety. Critiques biomedical models of addiction through Jungian psychology, shamanic tradition, and the archetype of the wounded healer.
+  programs:
+  - religious-dionysian-naturalism
+  programs_status: draft
+  classification_basis: grouping
+  note: The post address is dated 2015-11; the year 2014 is as Wayne listed it.
+  source: Previous site (waynemartinmellinger.com, single page), migrated 2026-10-07
+- id: dn-steps-toward-a-dionysian-naturalism-making-the-earth-sacred
+  title: 'Steps Toward a Dionysian Naturalism: Making the Earth Sacred in a Time of Ecological Disaster'
+  date: '2015-11'
+  venue: The Dionysian Naturalist
+  type: essay
+  url: https://thedionysiannaturalist.blogspot.com/2015/11/steps-towards-dionysian-naturalism.html
+  status: published
+  series:
+  - Annotated Bibliography (2014–2025)
+  description: Parts 1–3. The programmatic statement establishing Dionysian Naturalism as a distinct theological approach — arguing that de-sacralization of nature is a central cause of ecological crisis, via Nietzsche's Apollonian–Dionysian distinction.
+  programs:
+  - religious-dionysian-naturalism
+  programs_status: draft
+  classification_basis: grouping
+  note: Month taken from the post address; the previous site gave the year only.
+  source: Previous site (waynemartinmellinger.com, single page), migrated 2026-10-07
+- id: dn-our-universe-is-a-sacred-living-system
+  title: Our Universe Is a Sacred Living System
+  date: '2015-11'
+  venue: The Dionysian Naturalist
+  type: essay
+  url: https://thedionysiannaturalist.blogspot.com/2015/11/our-universe-is-sacred-living-system.html
+  status: published
+  series:
+  - Annotated Bibliography (2014–2025)
+  description: Parts 1–3. Traces the shift from archaic views of nature as sacred and animate to modern mechanistic, disenchanted views, and argues for nature as a "sacred living system." The cosmological foundation of Dionysian Naturalism's worldview.
+  programs:
+  - religious-dionysian-naturalism
+  programs_status: draft
+  classification_basis: grouping
+  note: Month taken from the post address; the previous site gave the year only.
+  source: Previous site (waynemartinmellinger.com, single page), migrated 2026-10-07
+- id: dn-enchanting-naturalism
+  title: Enchanting Naturalism
+  date: '2015'
+  date_display: 2015–16
+  venue: The Dionysian Naturalist
+  type: essay
+  url: https://thedionysiannaturalist.blogspot.com/2015/12/enchanting-naturalism.html
+  status: published
+  series:
+  - Annotated Bibliography (2014–2025)
+  description: Parts 1–2. A call for an "enchanted naturalism" integrating scientific evidence with religious inspiration, addressing Weber's disenchantment thesis while rejecting supernaturalism.
+  programs:
+  - religious-dionysian-naturalism
+  programs_status: draft
+  classification_basis: grouping
+  note: Published in parts, 2015–16. The post address is dated 2015-12.
+  source: Previous site (waynemartinmellinger.com, single page), migrated 2026-10-07
+- id: dn-dancing-with-dionysus-ecstasy-and-religion-in-the-age-of-the
+  title: 'Dancing with Dionysus: Ecstasy and Religion in the Age of the Anthropocene'
+  date: '2016'
+  venue: The Dionysian Naturalist
+  type: essay
+  url: https://thedionysiannaturalist.blogspot.com/2015/12/dancing-with-dionysus-ecstasy.html
+  status: published
+  series:
+  - Annotated Bibliography (2014–2025)
+  description: 'Parts 1–4. An autobiographical and theological exploration of "Godless Paganism," tracing the journey from New England Congregationalism through atheism to Dionysian Naturalism. A shorter version appears in John Halstead''s anthology Godless Paganism: Voices of Non-Theistic Pagans.'
+  programs:
+  - religious-dionysian-naturalism
+  programs_status: draft
+  classification_basis: grouping
+  note: The post address is dated 2015-12; the year 2016 is as Wayne listed it.
+  source: Previous site (waynemartinmellinger.com, single page), migrated 2026-10-07
+- id: dn-nature-religions-and-revolutionary-social-change-advancing-a
+  title: 'Nature Religions and Revolutionary Social Change: Advancing a Practical Theology of Spiritual Activism'
+  date: '2016-06'
+  venue: The Dionysian Naturalist
+  type: essay
+  url: https://thedionysiannaturalist.blogspot.com/2016/06/nature-religions-and-revolutionary.html
+  status: published
+  series:
+  - Annotated Bibliography (2014–2025)
+  description: 'Parts 1–5. Positions Dionysian Naturalism as a liberation theology embracing revolutionary social change for sustainability. A version also appears on Gods & Radicals: A Site of Beautiful Resistance.'
+  programs:
+  - religious-dionysian-naturalism
+  programs_status: draft
+  classification_basis: grouping
+  note: Month taken from the post address; the previous site gave the year only.
+  source: Previous site (waynemartinmellinger.com, single page), migrated 2026-10-07
+- id: dn-bearing-witness-to-social-injustice-as-a-spiritual-practice
+  title: 'Bearing Witness to Social Injustice as a Spiritual Practice: Moving from Pain to Taking Compassionate Action'
+  date: '2018'
+  date_display: 2018–19
+  venue: The Dionysian Naturalist
+  type: essay
+  url: https://thedionysiannaturalist.blogspot.com/2019/02/bearing-witness-to-social-injustice-as.html
+  status: published
+  series:
+  - Annotated Bibliography (2014–2025)
+  description: Parts 1–3. Dedicated to the memory of Roshi Bernie Glassman. Develops bearing witness as a spiritual practice connecting personal pain to social action, drawing on the Zen Peacemaker tradition and street outreach work, and integrating Heschel's prophetic theology with engaged Buddhism.
+  programs:
+  - religious-dionysian-naturalism
+  programs_status: draft
+  classification_basis: grouping
+  note: Published in parts, 2018–19. The post address is dated 2019-02.
+  source: Previous site (waynemartinmellinger.com, single page), migrated 2026-10-07
+- id: dn-tripping-with-the-gods-on-entheogenic-spirituality
+  title: 'Tripping with the Gods: On Entheogenic Spirituality'
+  date: '2020-06'
+  venue: The Dionysian Naturalist
+  type: essay
+  url: https://thedionysiannaturalist.blogspot.com/2020/06/tripping-with-gods-on-entheogenic.html
+  status: published
+  related: [wf-tripping-with-the-gods-on-entheogenic-spirituality]
+  series:
+  - Annotated Bibliography (2014–2025)
+  description: Parts 1–5. A comprehensive examination of entheogenic spirituality within Dionysian Naturalism, tracing sacramental substance use from archaic shamanism through the "Pharmacratic Inquisition." Later cross-posted to Wild Flesh (2025).
+  programs:
+  - religious-dionysian-naturalism
+  programs_status: draft
+  classification_basis: grouping
+  note: Month taken from the post address; the previous site gave the year only.
+  source: Previous site (waynemartinmellinger.com, single page), migrated 2026-10-07
+- id: dn-the-new-american-religions-of-nature-doing-eco-theology-in-t
+  title: 'The New American Religions of Nature: Doing Eco-Theology in the Anthropocene'
+  date: '2021-09'
+  venue: The Dionysian Naturalist
+  type: essay
+  url: https://thedionysiannaturalist.blogspot.com/2021/09/doing-eco-theology-in-anthropocene.html
+  status: published
+  series:
+  - Annotated Bibliography (2014–2025)
+  description: Introduces "the Earth Path," arguing that contemporary theology must evolve into eco-theology, balancing Dionysian ecstasy with Apollonian reflection.
+  programs:
+  - religious-dionysian-naturalism
+  programs_status: draft
+  classification_basis: grouping
+  note: Month taken from the post address; the previous site gave the year only.
+  source: Previous site (waynemartinmellinger.com, single page), migrated 2026-10-07
+- id: dn-re-sacralizing-nature-a-comprehensive-framework-within-diony
+  title: 'Re-Sacralizing Nature: A Comprehensive Framework within Dionysian Naturalism'
+  date: '2024-11'
+  venue: The Dionysian Naturalist
+  type: essay
+  url: https://thedionysiannaturalist.blogspot.com/2024/11/re-sacralizing-nature-comprehensive.html
+  status: published
+  series:
+  - Annotated Bibliography (2014–2025)
+  description: 'A systematic account of re-sacralization as a strategy for ecological renewal and spiritual reconnection, centered on a seven-element ritual framework: Preparation, Invocation, Offering, Reflection, Transformation, Commitment, Celebration.'
+  programs:
+  - religious-dionysian-naturalism
+  programs_status: draft
+  classification_basis: grouping
+  note: Month taken from the post address; the previous site gave the year only.
+  source: Previous site (waynemartinmellinger.com, single page), migrated 2026-10-07
+- id: dn-walking-the-earth-path-exploring-the-spiritual-common-core-o
+  title: 'Walking the Earth Path: Exploring the Spiritual Common Core of Nature Religions'
+  date: '2025'
+  venue: The Dionysian Naturalist
+  type: essay
+  url: https://thedionysiannaturalist.blogspot.com/2024/10/the-new-american-religions-of-nature.html
+  status: published
+  series:
+  - Annotated Bibliography (2014–2025)
+  description: Synthesizes a decade of theological writing to articulate what is shared across diverse traditions that regard nature as sacred.
+  programs:
+  - religious-dionysian-naturalism
+  programs_status: draft
+  classification_basis: grouping
+  note: The post address is dated 2024-10; the year 2025 is as Wayne listed it.
+  source: Previous site (waynemartinmellinger.com, single page), migrated 2026-10-07
+- id: dn-i-just-wanted-to-dance-with-dionysus-lifes-sacred-journey-lo
+  title: 'I Just Wanted to Dance with Dionysus: Life''s Sacred Journey, Lost Souls and Our Thirst for Wholeness'
+  date: '2025-03'
+  venue: The Dionysian Naturalist
+  type: essay
+  url: https://thedionysiannaturalist.blogspot.com/2025/03/i-just-wanted-to-dance-with-adiionysus.html
+  status: published
+  related: [book-i-just-wanted-to-dance-with-dionysus]
+  series:
+  - Annotated Bibliography (2014–2025)
+  description: A Gonzo autoethnographic monograph on madness, addiction, homelessness, and the search for wholeness, framed through Joseph Campbell's Hero's Journey. Also on PhilArchive — linked under Biography.
+  programs:
+  - religious-dionysian-naturalism
+  programs_status: draft
+  classification_basis: grouping
+  note: Month taken from the post address; the previous site gave the year only.
+  source: Previous site (waynemartinmellinger.com, single page), migrated 2026-10-07
+- id: dn-the-rise-of-religious-naturalism-a-new-public-theology-of-sa
+  title: 'The Rise of Religious Naturalism: A New Public Theology of Sacred Nature'
+  date: '2025-09'
+  venue: The Dionysian Naturalist
+  type: essay
+  url: https://thedionysiannaturalist.blogspot.com/2025/09/the-rise-of-eeligious-naturalism-by.html
+  status: published
+  series:
+  - Annotated Bibliography (2014–2025)
+  description: Traces Religious Naturalism's lineage from Spinoza and Emerson through Dewey, Crosby, Goodenough, Corrington, and Wheeler, and proposes Dionysian Religious Naturalism as a constructive response that restores ritual, embodiment, and community.
+  programs:
+  - religious-dionysian-naturalism
+  programs_status: draft
+  classification_basis: grouping
+  note: Month taken from the post address; the previous site gave the year only.
+  source: Previous site (waynemartinmellinger.com, single page), migrated 2026-10-07
+- id: dn-radical-faeries-as-nature-religion
+  title: Radical Faeries as Nature Religion
+  date: '2025-08'
+  venue: The Dionysian Naturalist
+  type: essay
+  url: https://thedionysiannaturalist.blogspot.com/2025/08/radical-faeries-as-nature-religion-by.html
+  status: published
+  series:
+  - Annotated Bibliography (2014–2025)
+  description: Explores the Radical Faerie movement — rooted in the 1979 Spiritual Conference for Radical Fairies and figures like Harry Hay and Arthur Evans — as a theology integrating queer liberation, ecological reverence, and ritual practice.
+  programs:
+  - religious-dionysian-naturalism
+  programs_status: draft
+  classification_basis: grouping
+  note: Month taken from the post address; the previous site gave the year only.
+  source: Previous site (waynemartinmellinger.com, single page), migrated 2026-10-07
+- id: dn-the-golden-mean-seeking-balance-between-the-apollonian-and-t
+  title: 'The Golden Mean: Seeking Balance Between the Apollonian and the Dionysian'
+  date: '2025-06'
+  venue: The Dionysian Naturalist
+  type: essay
+  url: https://thedionysiannaturalist.blogspot.com/2025/06/the-golden-mean-seeking-balance.html
+  status: published
+  series:
+  - Annotated Bibliography (2014–2025)
+  description: Proposes a "golden mean" — not compromise but dynamic integration — uniting disciplined thought with embodied ritual practice.
+  programs:
+  - religious-dionysian-naturalism
+  programs_status: draft
+  classification_basis: grouping
+  note: Month taken from the post address; the previous site gave the year only.
+  source: Previous site (waynemartinmellinger.com, single page), migrated 2026-10-07
+- id: dn-towards-a-religious-anthropology-of-dionysian-naturalism
+  title: Towards a Religious Anthropology of Dionysian Naturalism
+  date: '2025'
+  venue: The Dionysian Naturalist
+  type: essay
+  url: https://thedionysiannaturalist.blogspot.com/2024/12/towards-religious-anthropology-of.html
+  status: published
+  series:
+  - Annotated Bibliography (2014–2025)
+  description: Draws on Wesley Wildman's account of homo religiosus and Michael Winkelman's research on shamanic consciousness to interpret the drive for transcendence as an adaptive, socially integrative capacity.
+  programs:
+  - religious-dionysian-naturalism
+  programs_status: draft
+  classification_basis: grouping
+  note: The post address is dated 2024-12; the year 2025 is as Wayne listed it.
+  source: Previous site (waynemartinmellinger.com, single page), migrated 2026-10-07
+- id: dn-sacred-nature-towards-a-comprehensive-theory
+  title: 'Sacred Nature: Towards a Comprehensive Theory'
+  date: '2025'
+  venue: The Dionysian Naturalist
+  type: essay
+  url: https://thedionysiannaturalist.blogspot.com/2024/12/sacred-nature-towards-comprehensive.html
+  status: published
+  series:
+  - Annotated Bibliography (2014–2025)
+  description: Draws on Durkheim, Otto, Eliade, Goodenough, and Corrington to trace a shift from transcendent to immanent, relational understandings of the sacred.
+  programs:
+  - religious-dionysian-naturalism
+  programs_status: draft
+  classification_basis: grouping
+  note: The post address is dated 2024-12; the year 2025 is as Wayne listed it.
+  source: Previous site (waynemartinmellinger.com, single page), migrated 2026-10-07
+- id: dn-the-use-of-ritual-in-dionysian-naturalism
+  title: The Use of Ritual in Dionysian Naturalism
+  date: '2025'
+  venue: The Dionysian Naturalist
+  type: essay
+  url: https://thedionysiannaturalist.blogspot.com/2024/11/the-use-of-ritual-in-dionysian.html
+  status: published
+  series:
+  - Annotated Bibliography (2014–2025)
+  description: Examines how ritual re-sacralizes nature and addresses systemic injustice, integrating Durkheimian sociology, phenomenology, and liberationist praxis.
+  programs:
+  - religious-dionysian-naturalism
+  programs_status: draft
+  classification_basis: grouping
+  note: The post address is dated 2024-11; the year 2025 is as Wayne listed it.
+  source: Previous site (waynemartinmellinger.com, single page), migrated 2026-10-07
+- id: dn-the-dionysian-epic-of-evolution-celebrating-chaos-ecstasy-an
+  title: 'The Dionysian Epic of Evolution: Celebrating Chaos, Ecstasy, and Transformation'
+  date: '2025'
+  venue: The Dionysian Naturalist
+  type: essay
+  url: https://thedionysiannaturalist.blogspot.com/2024/11/the-dionysian-epic-of-evolution-draft.html
+  status: published
+  series:
+  - Annotated Bibliography (2014–2025)
+  description: Reinterprets the Epic of Evolution through seven pivotal turning points, from the Big Bang to the rise of human consciousness, arguing for a mythos that unites scientific understanding with spiritual depth.
+  programs:
+  - religious-dionysian-naturalism
+  programs_status: draft
+  classification_basis: grouping
+  note: The post address is dated 2024-11; the year 2025 is as Wayne listed it.
+  source: Previous site (waynemartinmellinger.com, single page), migrated 2026-10-07
+- id: dn-making-the-sacred-observable
+  title: Making the Sacred Observable
+  date: '2026-01'
+  venue: The Dionysian Naturalist
+  type: essay
+  url: https://thedionysiannaturalist.blogspot.com/2026/01/making-sacred-observable-by-wayne.html
+  status: published
+  series:
+  - Also on The Dionysian Naturalist
+  note: Date taken from the post address; the previous site gave none.
+  source: Previous site (waynemartinmellinger.com, single page), migrated 2026-10-07
+- id: dn-unitarian-universalism-revised-a-faith-of-conscience-justice
+  title: 'Unitarian Universalism (Revised): A Faith of Conscience, Justice and Earth'
+  date: '2025-10'
+  venue: The Dionysian Naturalist
+  type: essay
+  url: https://thedionysiannaturalist.blogspot.com/2025/10/unitarian-uniiversalism-revised-faith.html
+  status: published
+  series:
+  - Also on The Dionysian Naturalist
+  note: Date taken from the post address; the previous site gave none.
+  source: Previous site (waynemartinmellinger.com, single page), migrated 2026-10-07
+- id: dn-the-parsonage-at-302-chicopee-street
+  title: The Parsonage at 302 Chicopee Street
+  date: '2025-10'
+  venue: The Dionysian Naturalist
+  type: essay
+  url: https://thedionysiannaturalist.blogspot.com/2025/10/the-parsonage-at-302-chicopee-street-by.html
+  status: published
+  series:
+  - Also on The Dionysian Naturalist
+  note: Date taken from the post address; the previous site gave none.
+  source: Previous site (waynemartinmellinger.com, single page), migrated 2026-10-07
+- id: dn-santa-barbara-rising-opening-prayer-for-clue
+  title: Santa Barbara Rising — Opening Prayer for CLUE
+  date: '2025-08'
+  venue: The Dionysian Naturalist
+  type: essay
+  url: https://thedionysiannaturalist.blogspot.com/2025/08/santa-barbara-rising-opening-prayer-by.html
+  status: published
+  series:
+  - Also on The Dionysian Naturalist
+  note: Date taken from the post address; the previous site gave none.
+  source: Previous site (waynemartinmellinger.com, single page), migrated 2026-10-07
+- id: dn-my-proposed-gifford-lecture-series-sacred-nature-awakened
+  title: My Proposed Gifford Lecture Series — Sacred Nature Awakened
+  date: '2025-08'
+  venue: The Dionysian Naturalist
+  type: essay
+  url: https://thedionysiannaturalist.blogspot.com/2025/08/my-proposed-gifford-lecture-series.html
+  status: published
+  series:
+  - Also on The Dionysian Naturalist
+  note: Date taken from the post address; the previous site gave none.
+  source: Previous site (waynemartinmellinger.com, single page), migrated 2026-10-07
+- id: dn-dionysian-naturalism-as-queer-religiosity
+  title: Dionysian Naturalism as Queer Religiosity
+  date: '2025-06'
+  venue: The Dionysian Naturalist
+  type: essay
+  url: https://thedionysiannaturalist.blogspot.com/2025/06/dionysian-naturalism-as-queer.html
+  status: published
+  series:
+  - Also on The Dionysian Naturalist
+  note: Date taken from the post address; the previous site gave none.
+  source: Previous site (waynemartinmellinger.com, single page), migrated 2026-10-07
+- id: dn-sam-keen-dionysian-naturalist-saint
+  title: 'Sam Keen: Dionysian Naturalist Saint'
+  date: '2025-05'
+  venue: The Dionysian Naturalist
+  type: essay
+  url: https://thedionysiannaturalist.blogspot.com/2025/05/sam-keen-dionysian-naturalist-saint-by.html
+  status: published
+  series:
+  - Also on The Dionysian Naturalist
+  note: Date taken from the post address; the previous site gave none.
+  source: Previous site (waynemartinmellinger.com, single page), migrated 2026-10-07
+- id: dn-the-ancient-dionysian-rites
+  title: The Ancient Dionysian Rites
+  date: '2024-11'
+  venue: The Dionysian Naturalist
+  type: essay
+  url: https://thedionysiannaturalist.blogspot.com/2024/11/the-ancient-dionysian-rites-by-wayne.html
+  status: published
+  series:
+  - Also on The Dionysian Naturalist
+  note: Date taken from the post address; the previous site gave none.
+  source: Previous site (waynemartinmellinger.com, single page), migrated 2026-10-07
+- id: dn-dionysian-thinking-nietzsche-and-the-critique-of-reason
+  title: 'Dionysian Thinking: Nietzsche and the Critique of Reason'
+  date: '2024-11'
+  venue: The Dionysian Naturalist
+  type: essay
+  url: https://thedionysiannaturalist.blogspot.com/2024/11/dionysian-thinking-nietzsche-and.html
+  status: published
+  series:
+  - Also on The Dionysian Naturalist
+  note: Date taken from the post address; the previous site gave none.
+  source: Previous site (waynemartinmellinger.com, single page), migrated 2026-10-07
+- id: dn-the-will-to-party
+  title: The Will to Party
+  date: '2008'
+  venue: The Dionysian Naturalist
+  type: essay
+  url: https://thedionysiannaturalist.blogspot.com/2024/11/the-will-to-party-2008-edited-2024-by.html
+  status: published
+  series:
+  - Also on The Dionysian Naturalist
+  note: 'Listed on the previous site as: The Dionysian Naturalist — written 2008, edited 2024.'
+  source: Previous site (waynemartinmellinger.com, single page), migrated 2026-10-07
+- id: dn-the-enduring-legacy-of-dionysus
+  title: The Enduring Legacy of Dionysus
+  date: '2024-11'
+  venue: The Dionysian Naturalist
+  type: essay
+  url: https://thedionysiannaturalist.blogspot.com/2024/11/the-enduring-legacy-of-dionysus-by.html
+  status: published
+  series:
+  - Also on The Dionysian Naturalist
+  note: Date taken from the post address; the previous site gave none.
+  source: Previous site (waynemartinmellinger.com, single page), migrated 2026-10-07
+- id: dn-the-new-saint-peter-peter-lamborn-wilson
+  title: 'The New Saint Peter: Peter Lamborn Wilson'
+  venue: The Dionysian Naturalist
+  type: essay
+  status: unverified
+  series:
+  - Also on The Dionysian Naturalist
+  note: Undated on the previous site. No link on the previous site; publication not yet confirmed.
+  source: Previous site (waynemartinmellinger.com, single page), migrated 2026-10-07
+- id: dn-a-spirituality-of-ecstasy-dionysian-spirituality-and-dionysi
+  title: 'A Spirituality of Ecstasy: Dionysian Spirituality and Dionysian Naturalism'
+  venue: The Dionysian Naturalist
+  type: essay
+  status: unverified
+  series:
+  - Also on The Dionysian Naturalist
+  note: Undated on the previous site. No link on the previous site; publication not yet confirmed.
+  source: Previous site (waynemartinmellinger.com, single page), migrated 2026-10-07

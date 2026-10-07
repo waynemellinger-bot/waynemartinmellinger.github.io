@@ -1,0 +1,50 @@
+---
+layout: base.njk
+bodyClass: reading
+pagination:
+  data: archive.byCollection.poetry
+  size: 1
+  addAllPagesToCollections: true
+  alias: poem
+permalink: "{{ poem.page }}"
+eleventyComputed:
+  title: "{{ poem.title }}"
+  description: "“{{ poem.title }}”, a poem by Wayne Martin Mellinger from Moments of Awe Punctuated by the Mundane (2025)."
+  ogType: article
+  breadcrumbs:
+    - { label: "Writing", url: "/writing/" }
+    - { label: "Creative Work", url: "/creative-work/" }
+    - { label: "Poems", url: "/creative-work/poetry/" }
+---
+{%- set all = archive.byCollection.poetry %}
+{%- set i = 0 %}{% for p in all %}{% if p.id == poem.id %}{% set i = loop.index0 %}{% endif %}{% endfor %}
+<article class="poem-page">
+  <header class="page-head">
+    <h1>{{ poem.title }}</h1>
+    {%- for m in poem.meta %}<p class="poem-meta">{{ m }}</p>{% endfor %}
+  </header>
+  <div class="poem">
+    {%- for b in poem.text %}
+    {%- if b.section %}<h2 class="poem-section">{{ b.section }}</h2>
+    {%- else %}{% set ls = b.stanza | lines %}
+    {%- if ls.length == 1 and ls[0].length > 160 %}<p class="stanza prose-stanza">{{ ls[0] }}</p>
+    {%- else %}<p class="stanza">{% for line in ls %}<span class="line">{{ line }}</span>{% if not loop.last %}<br>{% endif %}{% endfor %}</p>{% endif %}{% endif %}
+    {%- endfor %}
+  </div>
+  <footer class="poem-foot">
+    <p>From <cite>Moments of Awe Punctuated by the Mundane</cite> (2025).
+      {%- if poem.relatedList.length %} Also published on {% for r in poem.relatedList %}<a href="{{ r.url or r.permalink }}">{{ r.collectionName }}</a>{% if not loop.last %}, {% endif %}{% endfor %}.{% endif %}</p>
+    <nav class="prev-next" aria-label="More poems">
+      <ul>
+        {%- if i > 0 %}{% set p = all[i - 1] %}<li class="prev"><span class="label">Previous</span> <a href="{{ p.page }}">{{ p.title }}</a></li>{% endif %}
+        {%- if i < all.length - 1 %}{% set p = all[i + 1] %}<li class="next"><span class="label">Next</span> <a href="{{ p.page }}">{{ p.title }}</a></li>{% endif %}
+        <li class="all"><a href="/creative-work/poetry/">All {{ all.length }} poems</a></li>
+      </ul>
+    </nav>
+  </footer>
+</article>
+{%- set sd = { "@context": "https://schema.org", "@type": "CreativeWork", "genre": "Poetry", "name": poem.title,
+  "author": { "@id": site.url + "/#person" }, "url": poem.page | absolute(site.url), "inLanguage": "en",
+  "isPartOf": { "@type": "Book", "name": "Moments of Awe Punctuated by the Mundane", "author": { "@id": site.url + "/#person" }, "datePublished": "2025" } } %}
+{%- if poem.date %}{% set sd = (sd | dictMerge({ "dateCreated": poem.date })) %}{% endif %}
+<script type="application/ld+json">{{ sd | json | safe }}</script>

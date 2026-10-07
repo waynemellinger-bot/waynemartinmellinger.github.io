@@ -1,0 +1,18 @@
+# Images used on the site. Files are in src/assets/images/ as NAME-600 and NAME-1200
+# (.jpg and .webp). Alt text is as written on the previous site.
+# "large" is false for images too small for a 1200 version. width/height are of the 600 version.
+# Credits for the painted and illustrated portraits are not recorded; add "credit" when known.
+portrait:
+  name: portrait-sunflowers
+  alt: Portrait of Wayne Martin Mellinger with sunflowers
+  width: 600
+  height: 701
+  large: true
+gallery:
+  - { name: portrait-sunflowers, alt: Portrait of Wayne Martin Mellinger with sunflowers, width: 600, height: 701, large: true }
+  - { name: portrait-coastal-trail, alt: Painted portrait of Wayne on a coastal trail with his bicycle, width: 600, height: 898, large: true }
+  - { name: portrait-hyperrealist, alt: Hyperrealist painted portrait of Wayne, width: 600, height: 749, large: true }
+  - { name: portrait-labor-harmony, alt: Illustrated portrait of Wayne with symbols of labor and harmony, width: 600, height: 400, large: true }
+  - { name: portrait-ink, alt: Illustrated ink portrait of Wayne, width: 600, height: 600, large: true }
+  - { name: self-portrait-early, alt: Early painted self-portrait of Wayne, width: 339, height: 569, large: false }
+  - { name: photo-candid, alt: Earlier candid photo of Wayne, width: 453, height: 603, large: false }

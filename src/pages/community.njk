@@ -1,0 +1,44 @@
+---
+layout: base.njk
+permalink: /community/
+title: Community Work
+crumbTitle: Community
+description: "Justice work in Santa Barbara County by Wayne Martin Mellinger, Ph.D.: the Longest Night Homeless Memorial Vigil, the Santa Barbara Homeless Foot Washing, the Behavioral Wellness Commission, the Continuum of Care, and community boards."
+---
+{#- Roles and wording as on the previous site ("Projects & Community Work"), migrated 2026-10-07. -#}
+<header class="page-head">
+  <h1>Justice work in Santa Barbara County</h1>
+  <p class="lede">The organizing, ritual, and civic work behind the scholarship — where street outreach becomes public practice.</p>
+</header>
+
+<section aria-labelledby="organizing">
+  <h2 id="organizing" class="section-title">Organizing and ritual</h2>
+  <ul class="cv-list">
+    <li><span class="cv-what">Longest Night Homeless Memorial Vigil<span class="cv-detail">Each December 21st, at the Santa Barbara County Courthouse, the community gathers to remember neighbors who died while homeless.</span></span><span class="cv-when">Organizer, Dec. 21 annually</span></li>
+    <li><span class="cv-what">Santa Barbara Homeless Foot Washing</span><span class="cv-when">Co-founder</span></li>
+    <li><span class="cv-what">Freedom Warming Centers</span><span class="cv-when">Co-founder</span></li>
+  </ul>
+  {%- set vigil = archive.byId['poem-i-saw-the-best-souls-of-my-city'] %}
+  {%- if vigil %}
+  <p class="see-also">Read <a href="{{ vigil.page }}">“{{ vigil.title }}”</a>, the poem read on the courthouse steps at the 13th Longest Night, December 21, 2025.</p>
+  {%- endif %}
+</section>
+
+<section aria-labelledby="civic">
+  <h2 id="civic" class="section-title">Civic service</h2>
+  <ul class="cv-list">
+    <li><span class="cv-what">Santa Barbara County Behavioral Wellness Commission</span><span class="cv-when">Commissioner</span></li>
+    <li><span class="cv-what">Santa Barbara / Santa Maria Continuum of Care</span><span class="cv-when">Member</span></li>
+    <li><span class="cv-what">CLUE-SB · Showers of Blessing · Committee for Social Justice</span><span class="cv-when">Board member</span></li>
+  </ul>
+</section>
+
+<section aria-labelledby="public-writing">
+  <h2 id="public-writing" class="section-title">Writing for the public</h2>
+  <p>Wayne’s <a href="/public-writing/noozhawk/">{{ archive.byCollection.noozhawk.length }} Noozhawk columns</a> carry much of this work to a general audience — on homelessness, housing, mental health, criminalization and the people of Santa Barbara.</p>
+  {%- set psj = archive.programBySlug['public-sociology-justice'] %}
+  <ul class="link-row">
+    <li><a href="{{ psj.path }}">{{ psj.name }}</a></li>
+    <li><a href="{{ archive.programBySlug['homelessness-abandonment'].path }}">{{ archive.programBySlug['homelessness-abandonment'].name }}</a></li>
+  </ul>
+</section>

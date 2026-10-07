@@ -1,0 +1,7 @@
+# Addresses that existed on the live site and no longer do. Each gets a small page that
+# forwards visitors (and tells search engines) to the new address.
+# GitHub Pages cannot send server redirects, so this is the standard workaround.
+# Old one-page section links (/#poetry and so on) are handled by src/assets/js/legacy-anchors.js.
+- from: "/index (1).html"
+  to: /
+  why: Duplicate copy of the old home page, uploaded by accident and live on the old site.

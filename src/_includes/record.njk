@@ -1,19 +1,43 @@
 {#- One work record. Used everywhere a work is listed.
-    showVenue: add venue and year (for lists that mix collections or years). -#}
-<li class="work" id="{{ w.id }}">
-  <time class="work-date" datetime="{{ w.date }}">{% if showVenue %}{{ w.date | fullDate }}{% else %}{{ w.date | dayMonth or (w.date | year) }}{% endif %}</time>
+    fullDates: show the whole date (lists that span years).
+    showVenue: name the collection (lists that mix collections).
+    showType:  name the kind of work (lists that mix kinds). -#}
+{%- set href = w.page or w.url %}
+<li class="work" id="{{ w.id }}"
+  {%- if filterable %} data-collection="{{ w.collection }}" data-type="{{ w.type }}" data-year="{{ w.year or '' }}" data-programs="{{ ((w.programs or []) | join(' ')) or 'none' }}" data-topics="{{ (w.topics or []) | join(' ') }}"{% endif %}>
+  {%- if w.date %}<time class="work-date" datetime="{{ w.date }}">{{ w | dateLabel(fullDates) }}</time>
+  {%- else %}<span class="work-date">{{ w | dateLabel(fullDates) }}</span>{% endif %}
   <div class="work-body">
-    {%- if w.url %}
-    <a class="work-title" href="{{ w.url }}">{{ w.title }}</a>
+    {%- if href %}
+    <a class="work-title" href="{{ href }}">{{ w.title }}</a>
     {%- else %}
     <span class="work-title">{{ w.title }}</span>
     {%- endif %}
-    {%- if showVenue %}<span class="work-venue"> · <a href="{{ w.permalink }}">{{ w.collectionName }}</a></span>{% endif %}
+    {%- if w.statusLabel and not (w.status == 'forthcoming' and not w.date) %} <span class="status">{{ w.statusLabel }}</span>{% endif %}
+    {%- if w.with or w.citation or (w.type in ['article', 'chapter', 'book']) %}
+    <p class="work-cite">
+      {%- if w.with %}With {{ w.with }}. {% endif %}
+      {%- if w.type == 'chapter' %}In <cite>{{ w.venue }}</cite>{% if w.citation %}, {{ w.citation }}{% endif %}.
+      {%- else %}<cite>{{ w.venue }}</cite>{% if w.citation %} {{ w.citation }}{% endif %}.{% endif %}
+    </p>
+    {%- endif %}
+    {%- if showVenue or showType %}
+    <p class="work-venue">
+      {%- if showType %}<span class="work-type">{{ w.typeLabel }}</span>{% endif %}
+      {%- if showType and showVenue %} · {% endif %}
+      {%- if showVenue %}<a href="{{ w.collectionPath }}">{{ w.collectionName }}</a>{% endif %}
+    </p>
+    {%- endif %}
     {%- if w.description %}<p class="work-desc">{{ w.description }}</p>{% endif %}
     {%- if w.topicList.length %}
     <ul class="work-topics" aria-label="Topics">
       {%- for t in w.topicList %}<li><a href="/topics/{{ t.slug }}/">{{ t.name }}</a></li>{% endfor %}
     </ul>
+    {%- endif %}
+    {%- if w.relatedList.length %}
+    <p class="work-related">Also:
+      {%- for r in w.relatedList %} <a href="{{ r.permalink }}">{{ r.collectionName }}{% if r.type in ['book', 'poem'] %} ({{ r.typeLabel | lower }}){% endif %}</a>{% if not loop.last %},{% endif %}{% endfor %}
+    </p>
     {%- endif %}
   </div>
 </li>

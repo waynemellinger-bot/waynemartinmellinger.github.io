@@ -9,42 +9,61 @@
 {% block head %}{% endblock %}
 <script>document.documentElement.classList.add('js');</script>
 </head>
-<body>
+<body class="{{ bodyClass }}">
 <a class="skip-link" href="#main">Skip to content</a>
-{% if site.pilot %}
-<div class="pilot-bar" data-pagefind-ignore="all">Preview: Noozhawk pilot. Other sections have not moved to the new site yet.</div>
-{% endif %}
+{%- if site.pilot %}
+<div class="pilot-bar" data-pagefind-ignore="all">Preview. This site has not been published yet.</div>
+{%- endif %}
 <header class="site-header" data-pagefind-ignore="all">
-  <div class="wrap header-inner">
-    <a class="brand" href="/">{{ site.name }}</a>
+  <div class="wrap wide header-inner">
+    <a class="brand" href="/"{% if page.url == '/' %} aria-current="page"{% endif %}>{{ site.name }}</a>
     <button class="menu-button" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
     <nav id="site-nav" class="site-nav" aria-label="Main">
       <ul>
+        {%- set section = breadcrumbs[0].url if breadcrumbs else '' %}
         {%- for item in site.nav %}
-        {%- set current = page.url == item.url or (page.url.startsWith(item.url) and item.url != '/') %}
-        <li><a href="{{ item.url }}"{% if current %} aria-current="{{ 'page' if page.url == item.url else 'true' }}"{% endif %}>{{ item.label }}</a></li>
+        {%- set exact = page.url == item.url %}
+        {%- set within = page.url.startsWith(item.url) or section == item.url %}
+        <li><a href="{{ item.url }}"{% if exact %} aria-current="page"{% elif within %} aria-current="true"{% endif %}>{{ item.label }}</a></li>
         {%- endfor %}
       </ul>
     </nav>
   </div>
 </header>
 
-<main id="main" tabindex="-1"{% if not placeholder %} data-pagefind-body{% endif %}>
-  <div class="wrap">
+<main id="main" tabindex="-1"{% if not noindex %} data-pagefind-body{% endif %}>
+  <div class="wrap{% if wide %} wide{% endif %}">
     {% if breadcrumbs %}{% include "breadcrumbs.njk" %}{% endif %}
     {{ content | safe }}
   </div>
 </main>
 
 <footer class="site-footer" data-pagefind-ignore="all">
-  <div class="wrap footer-inner">
-    <p class="footer-name">{{ site.name }}<br><span>Santa Barbara, California</span></p>
-    <ul class="footer-links" aria-label="Elsewhere">
-      {%- for e in site.elsewhere %}
-      <li><a href="{{ e.url }}">{{ e.label }}</a></li>
-      {%- endfor %}
-      <li><a href="/legacy/#contact">Contact</a></li>
-    </ul>
+  <div class="wrap wide footer-inner">
+    <div>
+      <p class="footer-name">{{ site.name }}</p>
+      <p class="footer-place">Santa Barbara, California</p>
+      <p class="footer-mail"><a href="mailto:{{ site.email }}">{{ site.email }}</a></p>
+    </div>
+    <nav aria-label="Site">
+      <h2 class="label">This site</h2>
+      <ul class="footer-links">
+        <li><a href="/writing/">All writing</a></li>
+        <li><a href="/topics/">Topics</a></li>
+        <li><a href="/research/">Research</a></li>
+        <li><a href="/cv/">CV</a></li>
+        <li><a href="/contact/">Contact</a></li>
+        <li><a href="/legacy/">The previous site, preserved</a></li>
+      </ul>
+    </nav>
+    <nav aria-label="Elsewhere">
+      <h2 class="label">Elsewhere</h2>
+      <ul class="footer-links">
+        {%- for e in site.elsewhere %}
+        <li><a href="{{ e.url }}"{% if e.sameAs %} rel="me"{% endif %}>{{ e.label }}</a></li>
+        {%- endfor %}
+      </ul>
+    </nav>
   </div>
 </footer>
 <script src="/assets/js/menu.js" defer></script>
