@@ -3,12 +3,14 @@
 # A work joins a program only when the connection is defensible; none is a valid answer.
 #
 # Slugs, names, paths and order are unchanged from the accepted Noozhawk pilot.
-# "description" was added 2026-10-07. Each is built from Wayne's own published wording
-# (mostly the biography on the previous site) and is DRAFT until Wayne approves it.
+# "description" was added 2026-10-07 and revised the same day per the content review
+# (Critical Interactionism, Homelessness, Critical Drug Studies, Religious & Dionysian Naturalism).
+# All six are PROVISIONAL until Wayne approves scope and voice. Approving a description does not
+# approve any work's assignment to the program.
 - slug: critical-interactionism
   name: Critical Interactionism
   path: /scholarship/critical-interactionism/
-  description: Wayne’s theoretical framework, joining ethnomethodology and conversation analysis, institutional ethnography, symbolic interactionism and critical social theory. It examines abandonment as something organizations actively produce through ordinary practices of classification, documentation and delay.
+  description: An approach to studying how power, inequality, recognition and social change are accomplished through interaction and institutional practices, bringing ethnomethodology and conversation analysis into dialogue with institutional ethnography and critical social theory.
 - slug: interaction-emca
   name: Sociology of Interaction / EMCA
   path: /scholarship/sociology-of-interaction/
@@ -16,15 +18,15 @@
 - slug: homelessness-abandonment
   name: Homelessness, Institutional Abandonment & Social Policy
   path: /scholarship/homelessness-and-abandonment/
-  description: How institutions treat people experiencing homelessness, mental illness and addiction — tested for nearly two decades against street-level reality in Santa Barbara’s homeless services.
+  description: Research and public writing on homelessness, housing, institutional care and abandonment, informed by lived experience and work in Santa Barbara’s service and advocacy networks.
 - slug: critical-drug-studies
   name: Critical Drug Studies
   path: /scholarship/critical-drug-studies/
-  description: Drug use and altered states, studied critically — the work of Wayne’s platform Wild Flesh.
+  description: Research and writing on drug use, identity, altered states, harm reduction and the institutions and inequalities that shape them.
 - slug: religious-dionysian-naturalism
   name: Religious & Dionysian Naturalism
   path: /religion-philosophy/religious-and-dionysian-naturalism/
-  description: Contemporary Paganism, religious naturalism and ecstatic spiritual practice — the theological framework Wayne calls Dionysian Naturalism.
+  description: Research on religious naturalism, contemporary nature religions, embodied ritual and ecological responsibility, including the constructive project of Dionysian Religious Naturalism.
 - slug: public-sociology-justice
   name: Public Sociology & Social Justice
   path: /public-writing/public-sociology/

@@ -28,6 +28,7 @@
       {%- if showVenue %}<a href="{{ w.collectionPath }}">{{ w.collectionName }}</a>{% endif %}
     </p>
     {%- endif %}
+    {%- if w.date_note %}<p class="work-date-note">{{ w.date_note }}</p>{% endif %}
     {%- if w.description %}<p class="work-desc">{{ w.description }}</p>{% endif %}
     {%- if w.topicList.length %}
     <ul class="work-topics" aria-label="Topics">

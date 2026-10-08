@@ -61,7 +61,7 @@
 - id: doing-essays
   title: "Doing Modernity, Doing Equality, Doing Autonomy"
   status: Essay in Development
-  summary: A set of essays on how large social arrangements are accomplished in ordinary interaction — contemporary social order, equality (with formal consensus as the principal case, and a distinction between recognition, voice and traction), and autonomy as a collective, performed practice.
+  summary: A set of essays on how large social arrangements are accomplished in ordinary interaction — contemporary social order, equality (including civil inattention, public recognition and formal consensus), and autonomy as a collective, performed practice.
   programs: [critical-interactionism]
   show: true
   review: draft
@@ -82,26 +82,26 @@
 
 - id: career-of-the-record
   title: The Career of the Record
-  status: Essay in Development
-  summary: An essay in documentary sociology on how organizational records are made and what they go on to do — a question Wayne first took up in his 1992 study of police dispatch packages.
+  status: Book Project
+  summary: A book project examining how organizational records are produced, circulate, accumulate and acquire authority.
   programs: [interaction-emca, critical-interactionism]
   works:
     - pub-accomplishing-fact-dispatch-packages
     - dm-jack-whalen-and-the-documentary-constitution-of-organization
   show: true
   review: draft
-  basis: Wayne's notes list the essay; its status (in development or finished) needs confirming.
+  basis: Content review 2026-10-07 (September inventory P06 identifies a monograph). Does not establish manuscript completion or a contract. Whether a separate article exists is for Wayne to confirm.
 
 - id: dionysian-wine-apollonian-cup
   title: "Dionysian Wine, Apollonian Cup: Religious Naturalism at a Threshold"
-  status: In Revision
-  summary: A journal article on religious naturalism, in revision after review.
+  status: Under Review
+  summary: A revised journal article on religious naturalism, communal practice, ritual and ecological action, resubmitted to the American Journal of Theology & Philosophy in September 2026.
   programs: [religious-dionysian-naturalism]
   works:
     - dn-the-rise-of-religious-naturalism-a-new-public-theology-of-sa
   show: true
   review: draft
-  basis: Wayne's notes (revise-and-resubmit). The journal is not named on the site. Whether "The Rise of Religious Naturalism" is an earlier version needs confirming.
+  basis: Content review 2026-10-07. Title verified against the September 28 submission manuscript and response; status from Wayne's September 28 report of resubmission. Receipt and current editorial stage unverified; nothing implies acceptance. Whether "The Rise of Religious Naturalism" is an earlier version needs confirming.
 
 - id: nature-religions-and-revolutionary-social-change
   title: Nature Religions and Revolutionary Social Change

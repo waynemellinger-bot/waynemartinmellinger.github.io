@@ -1,5 +1,26 @@
 # Changelog
 
+## 2026-10-08 — Content review corrections (October 7 review)
+
+- Research page: "Dionysian Wine, Apollonian Cup" now Under Review, summary naming the
+  American Journal of Theology & Philosophy (receipt and editorial stage recorded as unverified);
+  "The Career of the Record" now a Book Project with the review's summary; the Doing essays
+  no longer narrow Doing Equality to formal consensus.
+- Biography (two sentences only): commission service made date-neutral ("has served"); the
+  Noozhawk sentence no longer says "since 2012" or "more than a hundred".
+- CV: Noozhawk start year removed; "14th year" removed ("Founder and organizer, Longest Night
+  Homeless Memorial Vigil"); commission service date-neutral; Foot Washing "Founder" harmonized
+  to "Co-founder", matching the biography and Community page.
+- Community: Freedom Warming Centers "Helped establish" (matches the biography); commission
+  "Has served as commissioner". About and home page wording aligned; the home page no longer
+  lists the commission.
+- Coverage: Noozhawk described as "133 columns catalogued … on October 1, 2026", not "every column".
+- Poems: presented as a selection shown on the earlier site, not the book's contents or final
+  texts; the structured-data claim that each poem is part of the book removed.
+- Seven date conflicts now shown publicly on each record (bibliography year and post date)
+  instead of silently showing one. New record field `date_note`.
+- Program descriptions: four replaced per the review; all six remain provisional.
+
 ## 2026-10-07 — Site completed (branch `archive-rebuild`, commit after `10f3067`)
 
 Built on the accepted Noozhawk pilot (tag `noozhawk-pilot-accepted`). The Noozhawk records

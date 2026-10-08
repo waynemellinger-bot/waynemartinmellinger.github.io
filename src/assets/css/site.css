@@ -350,3 +350,4 @@ section + section { margin-top: 2.5rem; }
   .work[hidden] { display: grid; }
 }
 .search-label { display: block; font-family: var(--mono); font-size: 0.78rem; letter-spacing: 0.08em; text-transform: uppercase; color: var(--sage); margin-bottom: 0.4rem; }
+.work-date-note { font-size: 0.85rem; font-style: italic; color: var(--ink-soft); margin: 0.2rem 0 0; }

@@ -23,7 +23,7 @@
   home: https://www.noozhawk.com/author/wayne-mellinger/
   noun: column
   intro: Columns published in Noozhawk, Santa Barbara’s online newspaper. Each title links to the column on Noozhawk.
-  coverage: Complete as of October 1, 2026, compiled from Noozhawk’s author archive and author feed.
+  coverage: 133 columns catalogued from Noozhawk’s author archive and author feed on October 1, 2026.
   schema: OpinionNewsArticle
   publisher: { name: Noozhawk, url: "https://www.noozhawk.com/" }
 
@@ -111,6 +111,6 @@
   file: poetry
   group_by: none
   noun: poem
-  intro: A working selection from Moments of Awe Punctuated by the Mundane (2025), in the order Wayne arranged them. Each poem has its own page.
-  coverage: The selection shown on the previous site. The full collection is available from Wayne on request.
+  intro: A working selection of poems, in the order Wayne arranged them on his earlier site, which presented them as drawn from Moments of Awe Punctuated by the Mundane (2025). Each poem has its own page.
+  coverage: The selection shown on the previous site — not the full contents of the book, and not necessarily its final texts. The full collection is available from Wayne on request.
   schema: CreativeWork

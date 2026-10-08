@@ -29,6 +29,13 @@ first, because publishing makes them public.
 
 ## NEEDS WAYNE'S REVIEW — before publishing
 
+**A0. Behavioral Wellness Commission — conflicting records.** The content review found only
+former membership; Claude's notes record you saying you currently serve. The site now says
+"has served", which is true either way. If you serve now, say so and it becomes "Commissioner".
+
+*Updated October 8 after the content review: A1's AJTP and Career of the Record statuses and
+A4's conflicting facts have been corrected conservatively; please still read A1–A3.*
+
 **A1. The Research page** (`src/_data/projects.yml`). Ten projects with titles, statuses and
 one- or two-sentence summaries drafted from your notes. Publishing makes them public claims.
 Check every status and summary; set `show: false` on any you do not want public. Specific

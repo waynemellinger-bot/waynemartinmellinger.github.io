@@ -9,7 +9,7 @@ pagination:
 permalink: "{{ poem.page }}"
 eleventyComputed:
   title: "{{ poem.title }}"
-  description: "“{{ poem.title }}”, a poem by Wayne Martin Mellinger from Moments of Awe Punctuated by the Mundane (2025)."
+  description: "“{{ poem.title }}”, a poem by Wayne Martin Mellinger."
   ogType: article
   breadcrumbs:
     - { label: "Writing", url: "/writing/" }
@@ -32,7 +32,7 @@ eleventyComputed:
     {%- endfor %}
   </div>
   <footer class="poem-foot">
-    <p>From <cite>Moments of Awe Punctuated by the Mundane</cite> (2025).
+    <p>From the selection of poems on Wayne’s earlier site, presented there as drawn from <cite>Moments of Awe Punctuated by the Mundane</cite> (2025).
       {%- if poem.relatedList.length %} Also published on {% for r in poem.relatedList %}<a href="{{ r.url or r.permalink }}">{{ r.collectionName }}</a>{% if not loop.last %}, {% endif %}{% endfor %}.{% endif %}</p>
     <nav class="prev-next" aria-label="More poems">
       <ul>
@@ -44,7 +44,6 @@ eleventyComputed:
   </footer>
 </article>
 {%- set sd = { "@context": "https://schema.org", "@type": "CreativeWork", "genre": "Poetry", "name": poem.title,
-  "author": { "@id": site.url + "/#person" }, "url": poem.page | absolute(site.url), "inLanguage": "en",
-  "isPartOf": { "@type": "Book", "name": "Moments of Awe Punctuated by the Mundane", "author": { "@id": site.url + "/#person" }, "datePublished": "2025" } } %}
+  "author": { "@id": site.url + "/#person" }, "url": poem.page | absolute(site.url), "inLanguage": "en" } %}
 {%- if poem.date %}{% set sd = (sd | dictMerge({ "dateCreated": poem.date })) %}{% endif %}
 <script type="application/ld+json">{{ sd | json | safe }}</script>

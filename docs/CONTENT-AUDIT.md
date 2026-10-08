@@ -40,6 +40,11 @@ noticed and left alone: the old page titles a column *Signs of Our Times at Sant
 
 ## Site-level content questions
 
+*October 8: items 1–3 below were corrected conservatively per the content review (date-neutral
+Noozhawk wording; "helped establish"; "14th year" removed). Item 4 is now handled by labelling the
+poems a selection. The seven date conflicts are shown publicly on their records. A new open item:
+the Behavioral Wellness Commission (see DECISIONS-FOR-WAYNE.md, A0).*
+
 1. **Noozhawk start date.** The biography says "Since 2012, he has written more than a
    hundred columns"; the CV says "Columnist — Noozhawk, 2012–present". Noozhawk's own
    archive has 133 columns, the first on June 8, 2011. The biography and CV are shown

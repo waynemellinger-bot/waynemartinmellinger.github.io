@@ -72,7 +72,7 @@ const ONLINE_TYPES = new Set(['column', 'essay']);
 const VISIBILITY = new Set(['full', 'excerpt', 'title-only']);
 const REVIEW = new Set(['draft', 'reviewed']);
 const BASIS = new Set(['title', 'article', 'grouping']);
-const FIELDS = new Set(['id', 'title', 'date', 'date_display', 'venue', 'type', 'url', 'page', 'status',
+const FIELDS = new Set(['id', 'title', 'date', 'date_display', 'date_note', 'venue', 'type', 'url', 'page', 'status',
   'with', 'citation', 'series', 'description', 'programs', 'topics', 'topics_status', 'programs_status',
   'classification_basis', 'related', 'selected', 'source', 'note', 'visibility', 'meta', 'order', 'text']);
 const REQUIRED = ['id', 'title', 'venue', 'type', 'status', 'source'];
