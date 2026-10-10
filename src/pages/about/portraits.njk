@@ -1,0 +1,25 @@
+---
+layout: base.njk
+permalink: /about/portraits/
+title: Portraits
+wide: true
+description: "Portraits of Wayne Martin Mellinger, Ph.D., in several mediums: paintings, illustrations and photographs."
+breadcrumbs:
+  - { label: "About", url: "/about/" }
+---
+<header class="page-head">
+  <p class="eyebrow">About</p>
+  <h1>Portraits</h1>
+  <p class="lede">Portraits, in several mediums.</p>
+</header>
+<ul class="gallery">
+  {%- for img in images.gallery %}
+  <li class="gallery-item{% if img.height > img.width * 1.2 %} tall{% endif %}">
+    <figure>
+      {%- set sizes = "(min-width: 64rem) 30rem, (min-width: 40rem) 45vw, 92vw" %}{% set eager = loop.first %}
+      {% include "picture.njk" %}
+      {%- if img.credit %}<figcaption>{{ img.credit }}</figcaption>{% endif %}
+    </figure>
+  </li>
+  {%- endfor %}
+</ul>

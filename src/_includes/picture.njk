@@ -1,0 +1,11 @@
+{#- One image from src/_data/images.yml, as WebP with a JPEG fallback.
+    Set before including: img (the image entry), sizes (CSS sizes hint), eager (true for the first image on a page). -#}
+<picture>
+  {%- if img.large %}
+  <source type="image/webp" srcset="/assets/images/{{ img.name }}-600.webp 600w, /assets/images/{{ img.name }}-1200.webp 1200w" sizes="{{ sizes or '100vw' }}">
+  <img src="/assets/images/{{ img.name }}-600.jpg" srcset="/assets/images/{{ img.name }}-600.jpg 600w, /assets/images/{{ img.name }}-1200.jpg 1200w" sizes="{{ sizes or '100vw' }}"
+  {%- else %}
+  <source type="image/webp" srcset="/assets/images/{{ img.name }}-600.webp">
+  <img src="/assets/images/{{ img.name }}-600.jpg"
+  {%- endif %} alt="{{ img.alt }}" width="{{ img.width }}" height="{{ img.height }}"{% if eager %} fetchpriority="high"{% else %} loading="lazy"{% endif %} decoding="async">
+</picture>

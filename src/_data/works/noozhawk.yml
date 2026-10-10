@@ -1,0 +1,2031 @@
+# Noozhawk columns by Wayne Martin Mellinger, Ph.D.
+#
+# One entry per column, newest first. To add a column, copy the first entry,
+# paste it at the top, and change each field. See README.md for every field.
+#
+# Gathered 2026-10-01 from Noozhawk's author archive and author RSS feed:
+#   https://www.noozhawk.com/author/wayne-mellinger/
+#   https://www.noozhawk.com/author/wayne-mellinger/feed/
+# Titles are as published, without Noozhawk's "Wayne Mellinger: " byline prefix.
+# Each record has two kinds of field:
+#   Bibliographic facts, taken from Noozhawk and recorded in `source`:
+#     id, title, date, venue, type, url, status, source, note
+#   Editorial classification, by Claude as a first pass and not yet reviewed:
+#     programs, topics, their *_status (draft | reviewed), classification_basis
+# classification_basis says what the draft was based on: "article" (the column
+# was read) or "title" (title only). Only Wayne or ChatGPT marks a status "reviewed".
+
+- id: nz-2026-09-28-lynne-gibbs-keeps-showing-up-to-fight-for
+  title: Lynne Gibbs Keeps Showing Up to Fight for County's Mental Health System
+  date: '2026-09-28'
+  venue: Noozhawk
+  type: column
+  url: https://www.noozhawk.com/wayne-mellinger-lynne-gibbs-keeps-showing-up-to-fight-for-countys-mental-health-system/
+  status: published
+  source: Noozhawk author archive and author RSS feed, read 2026-10-01
+  programs:
+  - public-sociology-justice
+  programs_status: draft
+  topics:
+  - mental-health
+  - profiles
+  topics_status: draft
+  classification_basis: article
+- id: nz-2026-09-21-on-homelessness-catch-people-before-they-fall
+  title: On Homelessness, Catch People Before They Fall
+  date: '2026-09-21'
+  venue: Noozhawk
+  type: column
+  url: https://www.noozhawk.com/wayne-mellinger-on-homelessness-catch-people-before-they-fall/
+  status: published
+  source: Noozhawk author archive and author RSS feed, read 2026-10-01
+  programs:
+  - homelessness-abandonment
+  - public-sociology-justice
+  programs_status: draft
+  topics:
+  - homelessness
+  topics_status: draft
+  classification_basis: title
+- id: nz-2026-09-14-what-santa-barbaras-chumash-past-can-teach-us
+  title: What Santa Barbara's Chumash Past Can Teach Us About Patriarchy
+  date: '2026-09-14'
+  venue: Noozhawk
+  type: column
+  url: https://www.noozhawk.com/wayne-mellinger-what-santa-barbaras-chumash-past-can-teach-us-about-patriarchy/
+  status: published
+  source: Noozhawk author archive and author RSS feed, read 2026-10-01
+  programs_status: draft
+  topics:
+  - chumash-and-indigenous
+  - santa-barbara-history
+  topics_status: draft
+  classification_basis: title
+- id: nz-2026-09-07-what-kind-of-state-street-do-we-want
+  title: What Kind of State Street Do We Want?
+  date: '2026-09-07'
+  venue: Noozhawk
+  type: column
+  url: https://www.noozhawk.com/wayne-mellinger-what-kind-of-state-street-do-we-want/
+  status: published
+  source: Noozhawk author archive and author RSS feed, read 2026-10-01
+  programs_status: draft
+  topics:
+  - public-space
+  - santa-barbara-history
+  topics_status: draft
+  classification_basis: title
+- id: nz-2026-08-31-chumash-settler-colonialism-and-the-work-of
+  title: Chumash, Settler Colonialism and the Work of Reconciliation
+  date: '2026-08-31'
+  venue: Noozhawk
+  type: column
+  url: https://www.noozhawk.com/wayne-mellinger-chumash-settler-colonialism-and-the-work-of-reconciliation/
+  status: published
+  source: Noozhawk author archive and author RSS feed, read 2026-10-01
+  programs:
+  - public-sociology-justice
+  programs_status: draft
+  topics:
+  - chumash-and-indigenous
+  - santa-barbara-history
+  topics_status: draft
+  classification_basis: title
+- id: nz-2026-08-24-i-am-currently-serving-my-second-sentence
+  title: I Am Currently Serving My Second Sentence
+  date: '2026-08-24'
+  venue: Noozhawk
+  type: column
+  url: https://www.noozhawk.com/wayne-mellinger-i-am-currently-serving-my-second-sentence/
+  status: published
+  source: Noozhawk author archive and author RSS feed, read 2026-10-01
+  programs_status: draft
+  topics:
+  - reflections-on-living
+  topics_status: draft
+  classification_basis: title
+- id: nz-2026-08-17-sociology-activism-and-the-lessons-i-learned-in
+  title: Sociology, Activism and the Lessons I Learned in Santa Barbara
+  date: '2026-08-17'
+  venue: Noozhawk
+  type: column
+  url: https://www.noozhawk.com/wayne-mellinger-sociology-activism-and-the-lessons-i-learned-in-santa-barbara/
+  status: published
+  source: Noozhawk author archive and author RSS feed, read 2026-10-01
+  programs:
+  - public-sociology-justice
+  programs_status: draft
+  topics:
+  - sociology-and-interaction
+  - reflections-on-living
+  topics_status: draft
+  classification_basis: article
+- id: nz-2026-08-10-learning-to-dance-with-anna-galindo
+  title: Learning to Dance with Anna Galindo
+  date: '2026-08-10'
+  venue: Noozhawk
+  type: column
+  url: https://www.noozhawk.com/wayne-mellinger-learning-to-dance-with-anna-galindo/
+  status: published
+  source: Noozhawk author archive and author RSS feed, read 2026-10-01
+  programs_status: draft
+  topics:
+  - profiles
+  - reflections-on-living
+  topics_status: draft
+  classification_basis: title
+- id: nz-2026-08-03-old-spanish-days-and-the-stories-we-choose-to
+  title: Old Spanish Days and the Stories We Choose to Tell
+  date: '2026-08-03'
+  venue: Noozhawk
+  type: column
+  url: https://www.noozhawk.com/wayne-mellinger-old-spanish-days-and-the-stories-we-choose-to-tell/
+  status: published
+  source: Noozhawk author archive and author RSS feed, read 2026-10-01
+  programs_status: draft
+  topics:
+  - santa-barbara-history
+  topics_status: draft
+  classification_basis: title
+- id: nz-2026-07-29-federal-funding-fight-threatens-santa-barbara
+  title: Federal Funding Fight Threatens Santa Barbara County's Homeless Response System
+  date: '2026-07-29'
+  venue: Noozhawk
+  type: column
+  url: https://www.noozhawk.com/wayne-mellinger-federal-funding-fight-threatens-santa-barbara-countys-homeless-response-system/
+  status: published
+  source: Noozhawk author archive and author RSS feed, read 2026-10-01
+  programs:
+  - homelessness-abandonment
+  - public-sociology-justice
+  programs_status: draft
+  topics:
+  - homelessness
+  - politics-and-democracy
+  topics_status: draft
+  classification_basis: title
+- id: nz-2026-07-20-the-math-of-living-indoors
+  title: The Math of Living Indoors
+  date: '2026-07-20'
+  venue: Noozhawk
+  type: column
+  url: https://www.noozhawk.com/wayne-mellinger-the-math-of-living-indoors/
+  status: published
+  source: Noozhawk author archive and author RSS feed, read 2026-10-01
+  programs:
+  - homelessness-abandonment
+  programs_status: draft
+  topics:
+  - homelessness
+  - housing
+  topics_status: draft
+  classification_basis: title
+- id: nz-2026-07-13-when-the-library-is-the-last-public-living-room
+  title: When the Library Is the Last Public Living Room
+  date: '2026-07-13'
+  venue: Noozhawk
+  type: column
+  url: https://www.noozhawk.com/wayne-mellinger-when-the-library-is-the-last-public-living-room/
+  status: published
+  source: Noozhawk author archive and author RSS feed, read 2026-10-01
+  programs_status: draft
+  topics:
+  - public-space
+  topics_status: draft
+  classification_basis: title
+- id: nz-2026-07-06-inside-clue-santa-barbara-where-faith-becomes
+  title: Inside CLUE-Santa Barbara, Where Faith Becomes Public
+  date: '2026-07-06'
+  venue: Noozhawk
+  type: column
+  url: https://www.noozhawk.com/wayne-mellinger-inside-clue-santa-barbara-where-faith-becomes-public/
+  status: published
+  source: Noozhawk author archive and author RSS feed, read 2026-10-01
+  programs:
+  - public-sociology-justice
+  programs_status: draft
+  topics:
+  - faith-and-justice
+  topics_status: draft
+  classification_basis: title
+- id: nz-2026-06-29-how-the-500-block-of-state-street-quietly
+  title: How the 500 Block of State Street Quietly Transformed Public Space
+  date: '2026-06-29'
+  venue: Noozhawk
+  type: column
+  url: https://www.noozhawk.com/wayne-mellinger-how-the-500-block-of-state-street-quietly-transformed-public-space/
+  status: published
+  source: Noozhawk author archive and author RSS feed, read 2026-10-01
+  programs_status: draft
+  topics:
+  - public-space
+  - santa-barbara-history
+  topics_status: draft
+  classification_basis: title
+- id: nz-2026-06-22-how-a-monthly-lunch-helped-shape-santa-barbaras
+  title: How a Monthly Lunch Helped Shape Santa Barbara's Response to Homelessness
+  date: '2026-06-22'
+  venue: Noozhawk
+  type: column
+  url: https://www.noozhawk.com/wayne-mellinger-how-a-monthly-lunch-helped-shape-santa-barbaras-response-to-homelessness/
+  status: published
+  source: Noozhawk author archive and author RSS feed, read 2026-10-01
+  programs:
+  - homelessness-abandonment
+  programs_status: draft
+  topics:
+  - homelessness
+  - santa-barbara-history
+  topics_status: draft
+  classification_basis: title
+- id: nz-2026-06-15-helen-meloy-and-the-invisible-life-of-the-mind
+  title: Helen Meloy and the Invisible Life of the Mind
+  date: '2026-06-15'
+  venue: Noozhawk
+  type: column
+  url: https://www.noozhawk.com/wayne-mellinger-helen-meloy-and-the-invisible-life-of-the-mind/
+  status: published
+  source: Noozhawk author archive and author RSS feed, read 2026-10-01
+  programs_status: draft
+  topics:
+  - profiles
+  topics_status: draft
+  classification_basis: article
+- id: nz-2026-06-08-paco-fentanyl-and-the-changing-rules-of-street
+  title: Paco, Fentanyl, and the Changing Rules of Street Knowledge
+  date: '2026-06-08'
+  venue: Noozhawk
+  type: column
+  url: https://www.noozhawk.com/wayne-mellinger-paco-fentanyl-and-the-changing-rules-of-street-knowledge/
+  status: published
+  source: Noozhawk author archive and author RSS feed, read 2026-10-01
+  programs:
+  - critical-drug-studies
+  programs_status: draft
+  topics:
+  - drugs-and-harm-reduction
+  - sociology-and-interaction
+  - profiles
+  - homelessness
+  topics_status: draft
+  classification_basis: article
+- id: nz-2026-06-01-students-without-rooms-in-paradise
+  title: Students Without Rooms in Paradise
+  date: '2026-06-01'
+  venue: Noozhawk
+  type: column
+  url: https://www.noozhawk.com/wayne-mellinger-students-without-rooms-in-paradise/
+  status: published
+  source: Noozhawk author archive and author RSS feed, read 2026-10-01
+  programs:
+  - homelessness-abandonment
+  programs_status: draft
+  topics:
+  - housing
+  topics_status: draft
+  classification_basis: title
+- id: nz-2026-05-25-the-city-stepped-around-him
+  title: The City Stepped Around Him
+  date: '2026-05-25'
+  venue: Noozhawk
+  type: column
+  url: https://www.noozhawk.com/wayne-mellinger-the-city-stepped-around-him/
+  status: published
+  source: Noozhawk author archive and author RSS feed, read 2026-10-01
+  programs:
+  - critical-interactionism
+  - interaction-emca
+  - homelessness-abandonment
+  programs_status: draft
+  topics:
+  - homelessness
+  - public-space
+  - sociology-and-interaction
+  topics_status: draft
+  classification_basis: article
+- id: nz-2026-05-11-rev-julia-hamilton-preaches-a-theology-of-deeds
+  title: Rev. Julia Hamilton Preaches a Theology of Deeds
+  date: '2026-05-11'
+  venue: Noozhawk
+  type: column
+  url: https://www.noozhawk.com/wayne-mellinger-rev-julia-hamilton-preaches-a-theology-of-deeds/
+  status: published
+  source: Noozhawk author archive and author RSS feed, read 2026-10-01
+  programs_status: draft
+  topics:
+  - faith-and-justice
+  - profiles
+  topics_status: draft
+  classification_basis: title
+- id: nz-2026-04-27-everyone-was-being-reasonable-and-he-died-anyway
+  title: Everyone Was Being Reasonable, and He Died Anyway
+  date: '2026-04-27'
+  venue: Noozhawk
+  type: column
+  url: https://www.noozhawk.com/wayne-mellinger-everyone-was-being-reasonable-and-he-died-anyway/
+  status: published
+  source: Noozhawk author archive and author RSS feed, read 2026-10-01
+  programs:
+  - critical-interactionism
+  - homelessness-abandonment
+  - public-sociology-justice
+  programs_status: draft
+  topics:
+  - institutions-and-abandonment
+  - sociology-and-interaction
+  topics_status: draft
+  classification_basis: article
+- id: nz-2026-04-20-visionaries-guardians-critics-and-benches-in
+  title: Visionaries, Guardians, Critics — and Benches — in Santa Barbara
+  date: '2026-04-20'
+  venue: Noozhawk
+  type: column
+  url: https://www.noozhawk.com/wayne-mellinger-visionaries-guardians-critics-and-benches-in-santa-barbara/
+  status: published
+  source: Noozhawk author archive and author RSS feed, read 2026-10-01
+  programs_status: draft
+  topics:
+  - public-space
+  - santa-barbara-history
+  topics_status: draft
+  classification_basis: title
+- id: nz-2026-04-13-how-santa-barbaras-institutions-produce-harm
+  title: How Santa Barbara's Institutions Produce Harm Without Intending To
+  date: '2026-04-13'
+  venue: Noozhawk
+  type: column
+  url: https://www.noozhawk.com/wayne-mellinger-how-santa-barbaras-institutions-produce-harm-without-intending-to/
+  status: published
+  source: Noozhawk author archive and author RSS feed, read 2026-10-01
+  programs:
+  - critical-interactionism
+  - homelessness-abandonment
+  - public-sociology-justice
+  programs_status: draft
+  topics:
+  - institutions-and-abandonment
+  - sociology-and-interaction
+  topics_status: draft
+  classification_basis: article
+- id: nz-2026-04-06-signs-of-our-times-at-santa-barbaras-no-kings
+  title: Signs of Our Times at Santa Barbara's 'No Kings' Rally
+  date: '2026-04-06'
+  venue: Noozhawk
+  type: column
+  url: https://www.noozhawk.com/wayne-mellinger-signs-of-our-times-at-santa-barbaras-no-kings-rally/
+  status: published
+  source: Noozhawk author archive and author RSS feed, read 2026-10-01
+  programs:
+  - public-sociology-justice
+  programs_status: draft
+  topics:
+  - politics-and-democracy
+  topics_status: draft
+  classification_basis: title
+- id: nz-2026-03-30-the-bench-on-cota-street-that-isnt-there
+  title: The Bench on Cota Street That Isn't There
+  date: '2026-03-30'
+  venue: Noozhawk
+  type: column
+  url: https://www.noozhawk.com/wayne-mellinger-the-bench-on-cota-street-that-isnt-there/
+  status: published
+  source: Noozhawk author archive and author RSS feed, read 2026-10-01
+  programs_status: draft
+  topics:
+  - public-space
+  topics_status: draft
+  classification_basis: title
+- id: nz-2026-03-23-what-the-andree-clark-bird-refuge-reveals-about
+  title: What the Andrée Clark Bird Refuge Reveals About Visibility and Power
+  date: '2026-03-23'
+  venue: Noozhawk
+  type: column
+  url: https://www.noozhawk.com/wayne-mellinger-what-the-andree-clark-bird-refuge-reveals-about-visibility-and-power/
+  status: published
+  source: Noozhawk author archive and author RSS feed, read 2026-10-01
+  programs_status: draft
+  topics:
+  - public-space
+  - ecology-and-climate
+  topics_status: draft
+  classification_basis: title
+- id: nz-2026-03-16-on-the-streets-of-santa-barbara-style-can-be
+  title: On the Streets of Santa Barbara, Style Can Be Armor
+  date: '2026-03-16'
+  venue: Noozhawk
+  type: column
+  url: https://www.noozhawk.com/wayne-mellinger-on-the-streets-of-santa-barbara-style-can-be-armor/
+  status: published
+  source: Noozhawk author archive and author RSS feed, read 2026-10-01
+  programs:
+  - interaction-emca
+  programs_status: draft
+  topics:
+  - public-space
+  - sociology-and-interaction
+  - homelessness
+  topics_status: draft
+  classification_basis: article
+- id: nz-2026-03-09-fellowship-club-of-santa-barbara-is-a-place-to
+  title: Fellowship Club of Santa Barbara Is a Place to Belong
+  date: '2026-03-09'
+  venue: Noozhawk
+  type: column
+  url: https://www.noozhawk.com/wayne-mellinger-fellowship-club-of-santa-barbara-is-a-place-to-belong/
+  status: published
+  source: Noozhawk author archive and author RSS feed, read 2026-10-01
+  programs_status: draft
+  topics:
+  - mental-health
+  - homelessness
+  - drugs-and-harm-reduction
+  topics_status: draft
+  classification_basis: article
+- id: nz-2026-02-23-rising-tide-of-homeless-deaths-a-tragic-reality
+  title: Rising Tide of Homeless Deaths a Tragic Reality We Must Face
+  date: '2026-02-23'
+  venue: Noozhawk
+  type: column
+  url: https://www.noozhawk.com/wayne-mellinger-rising-tide-of-homeless-deaths-a-tragic-reality-we-must-face/
+  status: published
+  source: Noozhawk author RSS feed (/author/wayne-mellinger/feed/), read 2026-10-01
+  programs:
+  - homelessness-abandonment
+  programs_status: draft
+  topics:
+  - homelessness
+  topics_status: draft
+  classification_basis: title
+- id: nz-2026-02-10-ernestine-ygnacio-de-soto-a-living-thread-to
+  title: Ernestine Ygnacio-De Soto a Living Thread to Survival of Chumash Heritage
+  date: '2026-02-10'
+  venue: Noozhawk
+  type: column
+  url: https://www.noozhawk.com/wayne-mellinger-ernestine-ygnacio-de-soto-a-living-thread-to-survival-of-chumash-heritage/
+  status: published
+  source: Noozhawk author RSS feed (/author/wayne-mellinger/feed/), read 2026-10-01
+  programs_status: draft
+  topics:
+  - chumash-and-indigenous
+  - santa-barbara-history
+  - profiles
+  topics_status: draft
+  classification_basis: title
+- id: nz-2026-01-27-how-ucsb-became-a-world-center-for-studying-race
+  title: How UCSB Became a World Center for Studying Race, Policing, and Everyday Interaction
+  date: '2026-01-27'
+  venue: Noozhawk
+  type: column
+  url: https://www.noozhawk.com/wayne-mellinger-how-ucsb-became-a-world-center-for-studying-race-policing-and-everyday-interaction/
+  status: published
+  source: Noozhawk author RSS feed (/author/wayne-mellinger/feed/), read 2026-10-01
+  programs:
+  - interaction-emca
+  programs_status: draft
+  topics:
+  - race-and-ethnicity
+  - sociology-and-interaction
+  - santa-barbara-history
+  topics_status: draft
+  classification_basis: article
+- id: nz-2026-01-13-why-santa-barbara-county-must-rethink-how-help
+  title: Why Santa Barbara County Must Rethink How Help Reaches the Street
+  date: '2026-01-13'
+  venue: Noozhawk
+  type: column
+  url: https://www.noozhawk.com/wayne-mellinger-why-santa-barbara-county-must-rethink-how-help-reaches-the-street/
+  status: published
+  source: Noozhawk author RSS feed (/author/wayne-mellinger/feed/), read 2026-10-01
+  programs:
+  - homelessness-abandonment
+  - public-sociology-justice
+  programs_status: draft
+  topics:
+  - homelessness
+  - institutions-and-abandonment
+  - drugs-and-harm-reduction
+  topics_status: draft
+  classification_basis: article
+- id: nz-2026-01-07-santa-barbara-county-must-enforce-denial-of
+  title: Santa Barbara County Must Enforce Denial of Sable's Oil Restart
+  date: '2026-01-07'
+  venue: Noozhawk
+  type: column
+  url: https://www.noozhawk.com/wayne-mellinger-santa-barbara-county-must-enforce-denial-of-sables-oil-restart/
+  status: published
+  source: Noozhawk author RSS feed (/author/wayne-mellinger/feed/), read 2026-10-01
+  programs:
+  - public-sociology-justice
+  programs_status: draft
+  topics:
+  - ecology-and-climate
+  - politics-and-democracy
+  topics_status: draft
+  classification_basis: title
+- id: nz-2025-12-25-i-saw-the-best-souls-of-my-city-and-we-must-not
+  title: I Saw the Best Souls of My City — and We Must Not Look Away
+  date: '2025-12-25'
+  venue: Noozhawk
+  type: column
+  url: https://www.noozhawk.com/wayne-mellinger-i-saw-the-best-souls-of-my-city-and-we-must-not-look-away/
+  status: published
+  source: Noozhawk author RSS feed (/author/wayne-mellinger/feed/), read 2026-10-01
+  programs:
+  - homelessness-abandonment
+  programs_status: draft
+  topics:
+  - homelessness
+  topics_status: draft
+  classification_basis: title
+- id: nz-2025-12-03-what-santa-barbara-county-needs-to-know-about
+  title: What Santa Barbara County Needs to Know About the Fentanyl Crisis
+  date: '2025-12-03'
+  venue: Noozhawk
+  type: column
+  url: https://www.noozhawk.com/wayne-mellinger-what-santa-barbara-county-needs-to-know-about-the-fentanyl-crisis/
+  status: published
+  source: Noozhawk author RSS feed (/author/wayne-mellinger/feed/), read 2026-10-01
+  programs:
+  - critical-drug-studies
+  - public-sociology-justice
+  programs_status: draft
+  topics:
+  - drugs-and-harm-reduction
+  topics_status: draft
+  classification_basis: article
+- id: nz-2025-11-24-outreach-in-the-age-of-fentanyl-and-another
+  title: Outreach in the Age of Fentanyl, and Another Young Man Lost
+  date: '2025-11-24'
+  venue: Noozhawk
+  type: column
+  url: https://www.noozhawk.com/wayne-mellinger-outreach-in-the-age-of-fentanyl-and-another-young-man-lost/
+  status: published
+  source: Noozhawk author RSS feed (/author/wayne-mellinger/feed/), read 2026-10-01
+  programs:
+  - homelessness-abandonment
+  - critical-drug-studies
+  programs_status: draft
+  topics:
+  - homelessness
+  - drugs-and-harm-reduction
+  topics_status: draft
+  classification_basis: article
+- id: nz-2025-11-17-don-zimmerman-the-quiet-maverick-of
+  title: Don Zimmerman the Quiet Maverick of Ethnomethodology
+  date: '2025-11-17'
+  venue: Noozhawk
+  type: column
+  url: https://www.noozhawk.com/wayne-mellinger-don-zimmerman-the-quiet-maverick-of-ethnomethodology/
+  status: published
+  source: Noozhawk author RSS feed (/author/wayne-mellinger/feed/), read 2026-10-01
+  programs:
+  - interaction-emca
+  programs_status: draft
+  topics:
+  - sociology-and-interaction
+  - profiles
+  topics_status: draft
+  classification_basis: article
+- id: nz-2025-11-10-end-of-oil-in-santa-barbara-county-a-half
+  title: End of Oil in Santa Barbara County a Half-Century in the Making
+  date: '2025-11-10'
+  venue: Noozhawk
+  type: column
+  url: https://www.noozhawk.com/wayne-mellinger-end-of-oil-in-santa-barbara-county-a-half-century-in-the-making/
+  status: published
+  source: Noozhawk author RSS feed (/author/wayne-mellinger/feed/), read 2026-10-01
+  programs_status: draft
+  topics:
+  - ecology-and-climate
+  - santa-barbara-history
+  topics_status: draft
+  classification_basis: title
+- id: nz-2025-11-03-touring-sanctuary-centers-new-supportive-housing
+  title: Touring Sanctuary Centers' New Supportive Housing Project and Clinic
+  date: '2025-11-03'
+  venue: Noozhawk
+  type: column
+  url: https://www.noozhawk.com/wayne-mellinger-touring-sanctuary-centers-new-supportive-housing-project-and-clinic/
+  status: published
+  source: Noozhawk author archive and author RSS feed, read 2026-10-01
+  programs:
+  - homelessness-abandonment
+  programs_status: draft
+  topics:
+  - housing
+  topics_status: draft
+  classification_basis: title
+- id: nz-2025-10-27-franciscos-story-a-long-way-home
+  title: Francisco's Story a Long Way Home
+  date: '2025-10-27'
+  venue: Noozhawk
+  type: column
+  url: https://www.noozhawk.com/wayne-mellinger-franciscos-story-a-long-way-home/
+  status: published
+  source: Noozhawk author archive and author RSS feed, read 2026-10-01
+  programs_status: draft
+  topics:
+  - profiles
+  topics_status: draft
+  classification_basis: title
+- id: nz-2025-10-20-reflections-on-more-mesa
+  title: Reflections on More Mesa
+  date: '2025-10-20'
+  venue: Noozhawk
+  type: column
+  url: https://www.noozhawk.com/wayne-mellinger-reflections-on-more-mesa/
+  status: published
+  source: Noozhawk author archive and author RSS feed, read 2026-10-01
+  programs_status: draft
+  topics:
+  - ecology-and-climate
+  topics_status: draft
+  classification_basis: title
+- id: nz-2025-10-13-the-miracle-of-year-round-berries
+  title: The Miracle of Year-Round Berries
+  date: '2025-10-13'
+  venue: Noozhawk
+  type: column
+  url: https://www.noozhawk.com/wayne-mellinger-the-miracle-of-year-round-berries/
+  status: published
+  source: Noozhawk author archive and author RSS feed, read 2026-10-01
+  programs_status: draft
+  topics_status: draft
+  classification_basis: title
+- id: nz-2025-10-06-ice-raids-betray-santa-barbaras-community-values
+  title: ICE Raids Betray Santa Barbara's Community Values
+  date: '2025-10-06'
+  venue: Noozhawk
+  type: column
+  url: https://www.noozhawk.com/wayne-mellinger-ice-raids-betray-santa-barbaras-community-values/
+  status: published
+  source: Noozhawk author archive and author RSS feed, read 2026-10-01
+  programs:
+  - public-sociology-justice
+  programs_status: draft
+  topics:
+  - immigration
+  - criminalization-and-jails
+  topics_status: draft
+  classification_basis: title
+- id: nz-2025-09-29-when-home-turns-deadly-and-women-end-up-on-the
+  title: When Home Turns Deadly and Women End Up on the Street
+  date: '2025-09-29'
+  venue: Noozhawk
+  type: column
+  url: https://www.noozhawk.com/wayne-mellinger-when-home-turns-deadly-and-women-end-up-on-the-street/
+  status: published
+  source: Noozhawk author archive and author RSS feed, read 2026-10-01
+  programs:
+  - homelessness-abandonment
+  programs_status: draft
+  topics:
+  - homelessness
+  topics_status: draft
+  classification_basis: title
+- id: nz-2025-09-15-santa-barbaras-hidden-suffering-deserves
+  title: Santa Barbara's Hidden Suffering Deserves Compassion, Not Sweeps
+  date: '2025-09-15'
+  venue: Noozhawk
+  type: column
+  url: https://www.noozhawk.com/wayne-mellinger-santa-barbaras-hidden-suffering-deserves-compassion-not-sweeps/
+  status: published
+  source: Noozhawk author archive and author RSS feed, read 2026-10-01
+  programs:
+  - homelessness-abandonment
+  - public-sociology-justice
+  programs_status: draft
+  topics:
+  - homelessness
+  topics_status: draft
+  classification_basis: title
+- id: nz-2025-09-08-radical-hospitality-and-the-story-of-showers-of
+  title: Radical Hospitality and the Story of Showers of Blessing
+  date: '2025-09-08'
+  venue: Noozhawk
+  type: column
+  url: https://www.noozhawk.com/wayne-mellinger-radical-hospitality-and-the-story-of-showers-of-blessing/
+  status: published
+  source: Noozhawk author archive and author RSS feed, read 2026-10-01
+  programs:
+  - homelessness-abandonment
+  programs_status: draft
+  topics:
+  - homelessness
+  - faith-and-justice
+  topics_status: draft
+  classification_basis: title
+- id: nz-2025-09-01-charlies-rules-strip-away-more-than-just-freedom
+  title: Charlie's Rules Strip Away More Than Just Freedom From Homeless
+  date: '2025-09-01'
+  venue: Noozhawk
+  type: column
+  url: https://www.noozhawk.com/wayne-mellinger-charlies-rules-strip-away-more-than-just-freedom-from-homeless/
+  status: published
+  source: Noozhawk author archive and author RSS feed, read 2026-10-01
+  programs:
+  - homelessness-abandonment
+  programs_status: draft
+  topics:
+  - homelessness
+  - profiles
+  topics_status: draft
+  classification_basis: title
+- id: nz-2025-08-25-claudias-shopping-cart-once-held-her-life-now
+  title: Claudia's Shopping Cart Once Held Her Life, Now She Holds the Cards
+  date: '2025-08-25'
+  venue: Noozhawk
+  type: column
+  url: https://www.noozhawk.com/wayne-mellinger-claudias-shopping-cart-once-held-her-life-now-she-holds-the-cards/
+  status: published
+  source: Noozhawk author archive and author RSS feed, read 2026-10-01
+  programs:
+  - homelessness-abandonment
+  programs_status: draft
+  topics:
+  - homelessness
+  - profiles
+  topics_status: draft
+  classification_basis: title
+- id: nz-2025-08-18-federal-homelessness-policies-abandon-what-works
+  title: Federal Homelessness Policies Abandon What Works
+  date: '2025-08-18'
+  venue: Noozhawk
+  type: column
+  url: https://www.noozhawk.com/wayne-mellinger-federal-homelessness-policies-abandon-what-works/
+  status: published
+  source: Noozhawk author archive and author RSS feed, read 2026-10-01
+  programs:
+  - homelessness-abandonment
+  - public-sociology-justice
+  programs_status: draft
+  topics:
+  - homelessness
+  - politics-and-democracy
+  topics_status: draft
+  classification_basis: title
+- id: nz-2025-08-11-the-philosopher-of-the-bus-stop
+  title: The Philosopher of the Bus Stop
+  date: '2025-08-11'
+  venue: Noozhawk
+  type: column
+  url: https://www.noozhawk.com/wayne-mellinger-the-philosopher-of-the-bus-stop/
+  status: published
+  source: Noozhawk author archive and author RSS feed, read 2026-10-01
+  programs_status: draft
+  topics:
+  - profiles
+  topics_status: draft
+  classification_basis: title
+- id: nz-2025-08-04-a-practical-guide-to-help-the-unhoused-for
+  title: A Practical Guide to Help the Unhoused for Neighbors Who Care
+  date: '2025-08-04'
+  venue: Noozhawk
+  type: column
+  url: https://www.noozhawk.com/wayne-mellinger-a-practical-guide-to-help-the-unoused-for-neighbors-who-care/
+  status: published
+  source: Noozhawk author archive and author RSS feed, read 2026-10-01
+  programs:
+  - homelessness-abandonment
+  programs_status: draft
+  topics:
+  - homelessness
+  topics_status: draft
+  classification_basis: title
+- id: nz-2025-07-28-why-my-friends-keep-going-to-jail-while-i-stay
+  title: Why My Friends Keep Going to Jail While I Stay Free
+  date: '2025-07-28'
+  venue: Noozhawk
+  type: column
+  url: https://www.noozhawk.com/wayne-mellinger-why-my-friends-keep-going-to-jail-while-i-stay-free/
+  status: published
+  source: Noozhawk author archive and author RSS feed, read 2026-10-01
+  programs_status: draft
+  topics:
+  - criminalization-and-jails
+  - reflections-on-living
+  topics_status: draft
+  classification_basis: title
+- id: nz-2025-07-21-a-housing-first-priority-to-rethinking
+  title: A Housing First Priority to Rethinking Homelessness in Santa Barbara
+  date: '2025-07-21'
+  venue: Noozhawk
+  type: column
+  url: https://www.noozhawk.com/wayne-mellinger-a-housing-first-priority-to-rethinking-homelessness-in-santa-barbara/
+  status: published
+  source: Noozhawk author archive and author RSS feed, read 2026-10-01
+  programs:
+  - homelessness-abandonment
+  - public-sociology-justice
+  programs_status: draft
+  topics:
+  - homelessness
+  - housing
+  topics_status: draft
+  classification_basis: title
+- id: nz-2025-07-14-grand-jury-has-spoken-on-housing-shame-but-will
+  title: Grand Jury Has Spoken on Housing Shame But Will We Listen?
+  date: '2025-07-14'
+  venue: Noozhawk
+  type: column
+  url: https://www.noozhawk.com/wayne-mellinger-grand-jury-has-spoken-on-housing-shame-but-will-we-listen/
+  status: published
+  source: Noozhawk author archive and author RSS feed, read 2026-10-01
+  programs:
+  - homelessness-abandonment
+  - public-sociology-justice
+  programs_status: draft
+  topics:
+  - housing
+  - politics-and-democracy
+  topics_status: draft
+  classification_basis: title
+- id: nz-2025-07-07-santa-barbaras-bathroom-politics-reveal-who
+  title: Santa Barbara's Bathroom Politics Reveal Who Really Belongs in Public Space
+  date: '2025-07-07'
+  venue: Noozhawk
+  type: column
+  url: https://www.noozhawk.com/wayne-mellinger-santa-barbaras-bathroom-politics-reveal-who-really-belongs-in-public-space/
+  status: published
+  source: Noozhawk author archive and author RSS feed, read 2026-10-01
+  programs:
+  - public-sociology-justice
+  programs_status: draft
+  topics:
+  - public-space
+  topics_status: draft
+  classification_basis: title
+- id: nz-2025-06-30-santa-barbara-county-homelessness-crisis-reveals
+  title: Santa Barbara County Homelessness Crisis Reveals Who We're Willing to Leave Behind
+  date: '2025-06-30'
+  venue: Noozhawk
+  type: column
+  url: https://www.noozhawk.com/wayne-mellinger-santa-barbara-county-homelessness-crisis-reveals-who-were-willing-to-leave-behind/
+  status: published
+  source: Noozhawk author archive and author RSS feed, read 2026-10-01
+  programs:
+  - homelessness-abandonment
+  - public-sociology-justice
+  programs_status: draft
+  topics:
+  - homelessness
+  topics_status: draft
+  classification_basis: title
+- id: nz-2025-06-22-what-one-man-and-his-cats-taught-me-about
+  title: What One Man and His Cats Taught Me About Compassion
+  date: '2025-06-22'
+  venue: Noozhawk
+  type: column
+  url: https://www.noozhawk.com/wayne-mellinger-what-one-man-and-his-cats-taught-me-about-compassion/
+  status: published
+  source: Noozhawk author archive and author RSS feed, read 2026-10-01
+  programs_status: draft
+  topics:
+  - profiles
+  topics_status: draft
+  classification_basis: title
+- id: nz-2025-06-16-richard-flacks-a-radical-sociologist-who-made
+  title: Richard Flacks a Radical Sociologist Who Made History — and Blintzes
+  date: '2025-06-16'
+  venue: Noozhawk
+  type: column
+  url: https://www.noozhawk.com/wayne-mellinger-richard-flacks-a-radical-sociologist-who-made-history-and-blintzes/
+  status: published
+  source: Noozhawk author archive and author RSS feed, read 2026-10-01
+  programs:
+  - public-sociology-justice
+  programs_status: draft
+  topics:
+  - profiles
+  - housing
+  - politics-and-democracy
+  topics_status: draft
+  classification_basis: article
+- id: nz-2025-06-08-in-santa-barbaras-hidden-camps-stolen-bikes-a
+  title: In Santa Barbara's Hidden Camps, Stolen Bikes a Currency of Survival
+  date: '2025-06-08'
+  venue: Noozhawk
+  type: column
+  url: https://www.noozhawk.com/wayne-mellinger-in-santa-barbaras-hidden-camps-stolen-bikes-a-currency-of-survival/
+  status: published
+  source: Noozhawk author archive and author RSS feed, read 2026-10-01
+  programs:
+  - homelessness-abandonment
+  programs_status: draft
+  topics:
+  - homelessness
+  topics_status: draft
+  classification_basis: title
+- id: nz-2025-06-02-santa-barbaras-invisible-workers-gather-near
+  title: Santa Barbara's Invisible Workers Gather Near Indifference of Funk Zone
+  date: '2025-06-02'
+  venue: Noozhawk
+  type: column
+  url: https://www.noozhawk.com/wayne-mellinger-santa-barbaras-invisible-workers-gather-near-indifference-of-funk-zone/
+  status: published
+  source: Noozhawk author archive and author RSS feed, read 2026-10-01
+  programs_status: draft
+  topics:
+  - public-space
+  - poverty-and-work
+  topics_status: draft
+  classification_basis: title
+- id: nz-2025-05-25-santa-barbaras-working-poor-caught-in-housing
+  title: Santa Barbara's Working Poor Caught in Housing Crisis, Too
+  date: '2025-05-25'
+  venue: Noozhawk
+  type: column
+  url: https://www.noozhawk.com/wayne-mellinger-santa-barbaras-working-poor-caught-in-housing-crisis-too/
+  status: published
+  source: Noozhawk author archive and author RSS feed, read 2026-10-01
+  programs:
+  - homelessness-abandonment
+  programs_status: draft
+  topics:
+  - housing
+  - poverty-and-work
+  topics_status: draft
+  classification_basis: title
+- id: nz-2025-05-11-santa-barbaras-beauty-masks-hidden-homelessness
+  title: Santa Barbara's Beauty Masks Hidden Homelessness Crisis
+  date: '2025-05-11'
+  venue: Noozhawk
+  type: column
+  url: https://www.noozhawk.com/wayne-mellinger-santa-barbaras-beauty-masks-hidden-homelessness-crisis/
+  status: published
+  source: Noozhawk author archive and author RSS feed, read 2026-10-01
+  programs:
+  - homelessness-abandonment
+  programs_status: draft
+  topics:
+  - homelessness
+  topics_status: draft
+  classification_basis: title
+- id: nz-2025-05-02-lessons-from-the-front-lines-of-homelessness-in
+  title: Lessons from the Front Lines of Homelessness in Santa Barbara
+  date: '2025-05-02'
+  venue: Noozhawk
+  type: column
+  url: https://www.noozhawk.com/wayne-mellinger-lessons-from-the-front-lines-of-homelessness-in-santa-barbara/
+  status: published
+  source: Noozhawk author archive and author RSS feed, read 2026-10-01
+  programs:
+  - homelessness-abandonment
+  programs_status: draft
+  topics:
+  - homelessness
+  topics_status: draft
+  classification_basis: title
+- id: nz-2025-04-27-santa-barbara-must-invest-in-housing-justice
+  title: Santa Barbara Must Invest in Housing Justice
+  date: '2025-04-27'
+  venue: Noozhawk
+  type: column
+  url: https://www.noozhawk.com/wayne-mellinger-santa-barbara-must-invest-in-housing-justice/
+  status: published
+  source: Noozhawk author archive and author RSS feed, read 2026-10-01
+  programs:
+  - homelessness-abandonment
+  - public-sociology-justice
+  programs_status: draft
+  topics:
+  - housing
+  topics_status: draft
+  classification_basis: title
+- id: nz-2025-04-18-caught-between-exclusion-and-kindness-on-santa
+  title: Caught Between Exclusion and Kindness on Santa Barbara Streets
+  date: '2025-04-18'
+  venue: Noozhawk
+  type: column
+  url: https://www.noozhawk.com/wayne-mellinger-caught-between-exclusion-and-kindness-on-santa-barbara-streets/
+  status: published
+  source: Noozhawk author archive and author RSS feed, read 2026-10-01
+  programs:
+  - homelessness-abandonment
+  programs_status: draft
+  topics:
+  - homelessness
+  topics_status: draft
+  classification_basis: title
+- id: nz-2025-04-10-ancient-chumash-wisdom-can-shape-santa-barbaras
+  title: Ancient Chumash Wisdom Can Shape Santa Barbara's Future
+  date: '2025-04-10'
+  venue: Noozhawk
+  type: column
+  url: https://www.noozhawk.com/wayne-mellinger-ancient-chumash-wisdom-can-shape-santa-barbaras-future/
+  status: published
+  source: Noozhawk author archive and author RSS feed, read 2026-10-01
+  programs_status: draft
+  topics:
+  - chumash-and-indigenous
+  - santa-barbara-history
+  topics_status: draft
+  classification_basis: title
+- id: nz-2025-03-04-suzanne-riordan-a-local-hero-and-social-justice
+  title: Suzanne Riordan a Local Hero and Social Justice Maverick
+  date: '2025-03-04'
+  venue: Noozhawk
+  type: column
+  url: https://www.noozhawk.com/wayne-mellinger-suzanne-riordan-a-local-hero-and-social-justice-maverick/
+  status: published
+  source: Noozhawk author archive and author RSS feed, read 2026-10-01
+  programs:
+  - public-sociology-justice
+  programs_status: draft
+  topics:
+  - profiles
+  topics_status: draft
+  classification_basis: title
+- id: nz-2025-02-22-why-160-million-is-better-spent-on-housing-not
+  title: Why $160 Million Is Better Spent on Housing, Not Jail Cells
+  date: '2025-02-22'
+  venue: Noozhawk
+  type: column
+  url: https://www.noozhawk.com/wayne-mellinger-why-160-million-is-better-spent-on-housing-not-jail-cells/
+  status: published
+  source: Noozhawk author archive and author RSS feed, read 2026-10-01
+  programs:
+  - homelessness-abandonment
+  - public-sociology-justice
+  programs_status: draft
+  topics:
+  - housing
+  - criminalization-and-jails
+  topics_status: draft
+  classification_basis: title
+- id: nz-2025-02-11-how-santa-barbaras-revolving-door-fails-its-most
+  title: How Santa Barbara's Revolving Door Fails Its Most Vulnerable
+  date: '2025-02-11'
+  venue: Noozhawk
+  type: column
+  url: https://www.noozhawk.com/wayne-mellinger-how-santa-barbaras-revolving-door-fails-its-most-vulnerable/
+  status: published
+  source: Noozhawk author archive and author RSS feed, read 2026-10-01
+  programs:
+  - homelessness-abandonment
+  - public-sociology-justice
+  programs_status: draft
+  topics:
+  - criminalization-and-jails
+  - institutions-and-abandonment
+  - homelessness
+  - mental-health
+  topics_status: draft
+  classification_basis: article
+- id: nz-2025-02-05-new-sales-tax-should-open-doors-for-affordable
+  title: New Sales Tax Should Open Doors for Affordable Housing
+  date: '2025-02-05'
+  venue: Noozhawk
+  type: column
+  url: https://www.noozhawk.com/wayne-mellinger-new-sales-tax-should-open-doors-for-affordable-housing/
+  status: published
+  source: Noozhawk author archive and author RSS feed, read 2026-10-01
+  programs:
+  - homelessness-abandonment
+  - public-sociology-justice
+  programs_status: draft
+  topics:
+  - housing
+  - politics-and-democracy
+  topics_status: draft
+  classification_basis: title
+- id: nz-2025-01-20-george-floyd-murals-removal-leaves-deep-scar-on
+  title: George Floyd Mural's Removal Leaves Deep Scar on Eastside
+  date: '2025-01-20'
+  venue: Noozhawk
+  type: column
+  url: https://www.noozhawk.com/wayne-mellinger-george-floyd-murals-removal-leaves-deep-scar-on-eastside/
+  status: published
+  source: Noozhawk author archive and author RSS feed, read 2026-10-01
+  programs_status: draft
+  topics:
+  - race-and-ethnicity
+  topics_status: draft
+  classification_basis: title
+- id: nz-2024-12-23-remembering-lives-lost-to-homelessness-at
+  title: Remembering Lives Lost to Homelessness at Longest Night Vigil
+  date: '2024-12-23'
+  venue: Noozhawk
+  type: column
+  url: https://www.noozhawk.com/wayne-mellinger-remembering-lives-lost-to-homelessness-at-longest-night-vigil/
+  status: published
+  source: Noozhawk author archive and author RSS feed, read 2026-10-01
+  programs:
+  - homelessness-abandonment
+  programs_status: draft
+  topics:
+  - homelessness
+  topics_status: draft
+  classification_basis: title
+- id: nz-2024-11-26-how-housing-policy-choices-create-homelessness
+  title: How Housing Policy Choices Create Homelessness in Santa Barbara
+  date: '2024-11-26'
+  venue: Noozhawk
+  type: column
+  url: https://www.noozhawk.com/wayne-mellinger-how-housing-policy-choices-create-homelessness-in-santa-barbara/
+  status: published
+  source: Noozhawk author archive and author RSS feed, read 2026-10-01
+  programs:
+  - homelessness-abandonment
+  - public-sociology-justice
+  programs_status: draft
+  topics:
+  - homelessness
+  - housing
+  topics_status: draft
+  classification_basis: title
+- id: nz-2024-11-05-lives-of-dignity-and-despair-in-shadows-of-santa
+  title: Lives of Dignity and Despair in Shadows of Santa Barbara's Paradise
+  date: '2024-11-05'
+  venue: Noozhawk
+  type: column
+  url: https://www.noozhawk.com/wayne-mellinger-lives-of-dignity-and-despair-in-shadows-of-santa-barbaras-paradise/
+  status: published
+  source: Noozhawk author archive and author RSS feed, read 2026-10-01
+  programs_status: draft
+  topics_status: draft
+  classification_basis: title
+- id: nz-2024-10-28-the-power-of-one-teachers-belief
+  title: The Power of One Teacher's Belief
+  date: '2024-10-28'
+  venue: Noozhawk
+  type: column
+  url: https://www.noozhawk.com/wayne-mellinger-the-power-of-one-teachers-belief/
+  status: published
+  source: Noozhawk author archive and author RSS feed, read 2026-10-01
+  programs_status: draft
+  topics:
+  - profiles
+  - reflections-on-living
+  topics_status: draft
+  classification_basis: title
+- id: nz-2024-10-12-proposed-encampment-policy-changes-will-harm-not
+  title: Proposed Encampment Policy Changes Will Harm, Not Help, Homeless Crisis
+  date: '2024-10-12'
+  venue: Noozhawk
+  type: column
+  url: https://www.noozhawk.com/wayne-mellinger-proposed-encampment-policy-changes-will-harm-not-help-homeless-crisis/
+  status: published
+  source: Noozhawk author archive and author RSS feed, read 2026-10-01
+  programs:
+  - homelessness-abandonment
+  - public-sociology-justice
+  programs_status: draft
+  topics:
+  - homelessness
+  topics_status: draft
+  classification_basis: title
+- id: nz-2024-08-04-balancing-compassion-community-needs-in-santa
+  title: Balancing Compassion, Community Needs in Santa Maria Riverbottom
+  date: '2024-08-04'
+  venue: Noozhawk
+  type: column
+  url: https://www.noozhawk.com/wayne-mellinger-balancing-compassion-community-needs-in-santa-maria-riverbottom/
+  status: published
+  source: Noozhawk author archive and author RSS feed, read 2026-10-01
+  programs:
+  - homelessness-abandonment
+  programs_status: draft
+  topics:
+  - homelessness
+  topics_status: draft
+  classification_basis: title
+- id: nz-2024-07-12-charting-the-chicano-journey-in-santa-barbara
+  title: Charting the Chicano Journey in Santa Barbara
+  date: '2024-07-12'
+  venue: Noozhawk
+  type: column
+  url: https://www.noozhawk.com/wayne-mellinger-charting-the-chicano-journey-in-santa-barbara/
+  status: published
+  source: Noozhawk author archive and author RSS feed, read 2026-10-01
+  programs_status: draft
+  topics:
+  - race-and-ethnicity
+  - santa-barbara-history
+  topics_status: draft
+  classification_basis: title
+- id: nz-2024-06-20-wounded-healer-recounts-journey-through
+  title: '''Wounded Healer'' Recounts Journey Through Homelessness, Recovery'
+  date: '2024-06-20'
+  venue: Noozhawk
+  type: column
+  url: https://www.noozhawk.com/wayne-mellinger-wounded-healer-recounts-journey-through-homelessness-recovery/
+  status: published
+  source: Noozhawk author archive and author RSS feed, read 2026-10-01
+  programs:
+  - homelessness-abandonment
+  - public-sociology-justice
+  programs_status: draft
+  topics:
+  - homelessness
+  - drugs-and-harm-reduction
+  - reflections-on-living
+  topics_status: draft
+  classification_basis: article
+- id: nz-2024-06-02-the-truth-about-how-housing-first-solves
+  title: The Truth About How Housing First Solves Homelessness
+  date: '2024-06-02'
+  venue: Noozhawk
+  type: column
+  url: https://www.noozhawk.com/wayne-mellinger-the-truth-about-how-housing-first-solves-homelessness/
+  status: published
+  source: Noozhawk author archive and author RSS feed, read 2026-10-01
+  programs:
+  - homelessness-abandonment
+  - public-sociology-justice
+  programs_status: draft
+  topics:
+  - homelessness
+  - housing
+  topics_status: draft
+  classification_basis: title
+- id: nz-2024-05-18-the-two-sides-of-tourism-in-santa-barbara
+  title: The Two Sides of Tourism in Santa Barbara
+  date: '2024-05-18'
+  venue: Noozhawk
+  type: column
+  url: https://www.noozhawk.com/wayne-mellinger-the-two-sides-of-tourism-in-santa-barbara/
+  status: published
+  source: Noozhawk author archive (/author/wayne-mellinger/), read 2026-10-01
+  programs_status: draft
+  topics:
+  - public-space
+  topics_status: draft
+  classification_basis: title
+- id: nz-2024-05-01-mescalitan-island-isla-vista-all-part-of-goleta
+  title: Mescalitan Island, Isla Vista All Part of Goleta Valley's Changing Urban Coast
+  date: '2024-05-01'
+  venue: Noozhawk
+  type: column
+  url: https://www.noozhawk.com/wayne-mellinger-mescalitan-island-isla-vista-all-part-of-goleta-valleys-changing-urban-coast/
+  status: published
+  source: Noozhawk author archive (/author/wayne-mellinger/), read 2026-10-01
+  programs_status: draft
+  topics:
+  - ecology-and-climate
+  - santa-barbara-history
+  topics_status: draft
+  classification_basis: title
+- id: nz-2024-04-21-those-with-mental-illness-in-our-jails-deserve
+  title: Those with Mental Illness in Our Jails Deserve Better Care
+  date: '2024-04-21'
+  venue: Noozhawk
+  type: column
+  url: https://www.noozhawk.com/wayne-mellinger-those-with-mental-illness-in-our-jails-deserve-better-care/
+  status: published
+  source: Noozhawk author archive (/author/wayne-mellinger/), read 2026-10-01
+  programs:
+  - homelessness-abandonment
+  - public-sociology-justice
+  programs_status: draft
+  topics:
+  - mental-health
+  - criminalization-and-jails
+  topics_status: draft
+  classification_basis: article
+- id: nz-2024-03-27-focus-on-datura-in-chumash-life-highlights-role
+  title: Focus on Datura in Chumash Life Highlights Role of Entheogens in Human Societies
+  date: '2024-03-27'
+  venue: Noozhawk
+  type: column
+  url: https://www.noozhawk.com/wayne-mellinger-focus-on-datura-in-chumash-life-highlights-role-of-entheogens-in-human-societies/
+  status: published
+  source: Noozhawk author archive (/author/wayne-mellinger/), read 2026-10-01
+  programs:
+  - critical-drug-studies
+  - religious-dionysian-naturalism
+  programs_status: draft
+  topics:
+  - drugs-and-harm-reduction
+  - chumash-and-indigenous
+  - santa-barbara-history
+  topics_status: draft
+  classification_basis: article
+- id: nz-2024-03-02-the-criminalization-of-poverty-and-our-housing
+  title: The Criminalization of Poverty and Our Housing Crisis
+  date: '2024-03-02'
+  venue: Noozhawk
+  type: column
+  url: https://www.noozhawk.com/wayne-mellinger-the-criminalization-of-poverty-and-our-housing-crisis/
+  status: published
+  source: Noozhawk author archive (/author/wayne-mellinger/), read 2026-10-01
+  programs:
+  - homelessness-abandonment
+  - public-sociology-justice
+  programs_status: draft
+  topics:
+  - housing
+  - criminalization-and-jails
+  topics_status: draft
+  classification_basis: title
+- id: nz-2023-11-13-range-of-factors-making-mental-health-crisis
+  title: Range of Factors Making Mental Health Crisis Worse for Santa Barbara's Homeless
+  date: '2023-11-13'
+  venue: Noozhawk
+  type: column
+  url: https://www.noozhawk.com/wayne-mellinger-mental-health-crisis-pervasive-among-santa-barbaras-homeless/
+  status: published
+  source: Noozhawk author archive (/author/wayne-mellinger/), read 2026-10-01
+  programs:
+  - homelessness-abandonment
+  - public-sociology-justice
+  programs_status: draft
+  topics:
+  - homelessness
+  - mental-health
+  topics_status: draft
+  classification_basis: article
+- id: nz-2023-10-30-negative-stereotypes-of-unhoused-rationalize
+  title: Negative Stereotypes of Unhoused Rationalize Their Mistreatment
+  date: '2023-10-30'
+  venue: Noozhawk
+  type: column
+  url: https://www.noozhawk.com/wayne-mellinger-negative-stereotypes-of-unhoused-rationalize-their-mistreatment/
+  status: published
+  source: Noozhawk author archive (/author/wayne-mellinger/), read 2026-10-01
+  programs:
+  - homelessness-abandonment
+  - public-sociology-justice
+  programs_status: draft
+  topics:
+  - homelessness
+  - criminalization-and-jails
+  topics_status: draft
+  classification_basis: title
+- id: nz-2022-11-08-jobs-suffering-and-divine-glory
+  title: Job's Suffering and Divine Glory
+  date: '2022-11-08'
+  venue: Noozhawk
+  type: column
+  url: https://www.noozhawk.com/wayne_mellinger_jobs_suffering_and_divine_glory_20221108/
+  status: published
+  source: Noozhawk author archive (/author/wayne-mellinger/), read 2026-10-01
+  programs:
+  - religious-dionysian-naturalism
+  programs_status: draft
+  topics:
+  - faith-and-justice
+  topics_status: draft
+  classification_basis: article
+- id: nz-2022-09-04-how-you-see-the-world-can-help-you-develop
+  title: How You See the World Can Help You Develop Ecological Consciousness
+  date: '2022-09-04'
+  venue: Noozhawk
+  type: column
+  url: https://www.noozhawk.com/wayne_mellinger_how_you_see_world_develop_ecological_consciousness_20220904/
+  status: published
+  source: Noozhawk author archive (/author/wayne-mellinger/), read 2026-10-01
+  programs:
+  - religious-dionysian-naturalism
+  programs_status: draft
+  topics:
+  - ecology-and-climate
+  topics_status: draft
+  classification_basis: article
+- id: nz-2022-05-02-the-criminalization-of-homelessness-is-morally
+  title: The Criminalization of Homelessness Is Morally Wrong
+  date: '2022-05-02'
+  venue: Noozhawk
+  type: column
+  url: https://www.noozhawk.com/wayne_mellinger_criminalization_of_homelessness_is_morally_wrong_20220502/
+  status: published
+  source: Noozhawk author archive (/author/wayne-mellinger/), read 2026-10-01
+  programs:
+  - homelessness-abandonment
+  - public-sociology-justice
+  programs_status: draft
+  topics:
+  - homelessness
+  - criminalization-and-jails
+  topics_status: draft
+  classification_basis: title
+- id: nz-2022-03-23-a-marshall-plan-to-build-affordable-housing-in
+  title: A Marshall Plan to Build Affordable Housing in Santa Barbara County
+  date: '2022-03-23'
+  venue: Noozhawk
+  type: column
+  url: https://www.noozhawk.com/wayne_mellinger_build_affordable_housing_santa_barbara_county_20220323/
+  status: published
+  source: Noozhawk author archive (/author/wayne-mellinger/), read 2026-10-01
+  programs:
+  - homelessness-abandonment
+  - public-sociology-justice
+  programs_status: draft
+  topics:
+  - housing
+  topics_status: draft
+  classification_basis: title
+- id: nz-2021-08-14-bearing-witness-as-a-spiritual-practice
+  title: Bearing Witness as a Spiritual Practice
+  date: '2021-08-14'
+  venue: Noozhawk
+  type: column
+  url: https://www.noozhawk.com/wayne_mellinger_bearing_witness_as_a_spiritual_practice_20210814/
+  status: published
+  source: Noozhawk author archive (/author/wayne-mellinger/), read 2026-10-01
+  programs:
+  - religious-dionysian-naturalism
+  - public-sociology-justice
+  programs_status: draft
+  topics:
+  - faith-and-justice
+  topics_status: draft
+  classification_basis: article
+- id: nz-2020-09-19-how-to-achieve-the-good-life
+  title: How to Achieve the Good Life
+  date: '2020-09-19'
+  venue: Noozhawk
+  type: column
+  url: https://www.noozhawk.com/wayne_mellinger_how_to_achieve_the_good_life_20200919/
+  status: published
+  source: Noozhawk author archive (/author/wayne-mellinger/), read 2026-10-01
+  programs_status: draft
+  topics:
+  - reflections-on-living
+  topics_status: draft
+  classification_basis: title
+- id: nz-2018-07-14-the-myth-of-the-heros-journey-as-a-guide-to-life
+  title: The Myth of the Hero's Journey as a Guide to Life
+  date: '2018-07-14'
+  venue: Noozhawk
+  type: column
+  url: https://www.noozhawk.com/wayne_mellinger_the_myth_of_the_heros_journey_as_a_guide_to_life_20180714/
+  status: published
+  source: Noozhawk author archive (/author/wayne-mellinger/), read 2026-10-01
+  programs_status: draft
+  topics:
+  - reflections-on-living
+  topics_status: draft
+  classification_basis: title
+- id: nz-2017-06-13-to-save-lives-increase-funding-for-behavioral
+  title: To Save Lives, Increase Funding for Behavioral Wellness
+  date: '2017-06-13'
+  venue: Noozhawk
+  type: column
+  url: https://www.noozhawk.com/wayne_mellinger_to_save_lives_increase_funding_behavioral_wellness_20170613/
+  status: published
+  source: Noozhawk author archive (/author/wayne-mellinger/), read 2026-10-01
+  programs:
+  - homelessness-abandonment
+  - public-sociology-justice
+  programs_status: draft
+  topics:
+  - mental-health
+  - homelessness
+  topics_status: draft
+  classification_basis: article
+- id: nz-2013-09-11-the-gift-of-our-wounds
+  title: The Gift of Our Wounds
+  date: '2013-09-11'
+  venue: Noozhawk
+  type: column
+  url: https://www.noozhawk.com/wayne_mellinger_the_gift_of_our_wounds_20130911/
+  status: published
+  source: Noozhawk author archive (/author/wayne-mellinger/), read 2026-10-01
+  programs:
+  - religious-dionysian-naturalism
+  programs_status: draft
+  topics:
+  - faith-and-justice
+  - reflections-on-living
+  topics_status: draft
+  classification_basis: article
+- id: nz-2013-08-26-we-must-save-the-community-kitchen
+  title: We Must Save the Community Kitchen
+  date: '2013-08-26'
+  venue: Noozhawk
+  type: column
+  url: https://www.noozhawk.com/wayne_mellinger_we_must_save_the_community_kitchen_20130826/
+  status: published
+  source: Noozhawk author archive (/author/wayne-mellinger/), read 2026-10-01
+  programs:
+  - public-sociology-justice
+  programs_status: draft
+  topics:
+  - poverty-and-work
+  topics_status: draft
+  classification_basis: title
+- id: nz-2013-08-05-fracking-and-the-rights-of-nature
+  title: Fracking and the Rights of Nature
+  date: '2013-08-05'
+  venue: Noozhawk
+  type: column
+  url: https://www.noozhawk.com/wayne_mellinger_fracking_and_the_rights_of_nature_20130805/
+  status: published
+  source: Noozhawk author archive (/author/wayne-mellinger/), read 2026-10-01
+  programs:
+  - religious-dionysian-naturalism
+  - public-sociology-justice
+  programs_status: draft
+  topics:
+  - ecology-and-climate
+  topics_status: draft
+  classification_basis: article
+- id: nz-2013-07-22-aware-of-injustice-critical-consciousness-of-our
+  title: Aware of Injustice — Critical Consciousness of our Social World
+  date: '2013-07-22'
+  venue: Noozhawk
+  type: column
+  url: https://www.noozhawk.com/wayne_mellinger_aware_of_injustice/
+  status: published
+  source: Noozhawk author archive (/author/wayne-mellinger/), read 2026-10-01
+  programs:
+  - public-sociology-justice
+  programs_status: draft
+  topics:
+  - sociology-and-interaction
+  topics_status: draft
+  classification_basis: article
+- id: nz-2013-07-03-protecting-santa-barbara-county-community-rights
+  title: Protecting Santa Barbara County — Community Rights vs. Corporate Control
+  date: '2013-07-03'
+  venue: Noozhawk
+  type: column
+  url: https://www.noozhawk.com/wayne_mellinger_protecting_santa_barbara_county/
+  status: published
+  source: Noozhawk author archive (/author/wayne-mellinger/), read 2026-10-01
+  programs:
+  - public-sociology-justice
+  programs_status: draft
+  topics:
+  - ecology-and-climate
+  - politics-and-democracy
+  topics_status: draft
+  classification_basis: title
+- id: nz-2013-06-10-on-further-reflection-changing-our-behavior-and
+  title: On Further Reflection — Changing Our Behavior and the World
+  date: '2013-06-10'
+  venue: Noozhawk
+  type: column
+  url: https://www.noozhawk.com/061013_wayne_mellinger_on_further_reflection/
+  status: published
+  source: Noozhawk author archive (/author/wayne-mellinger/), read 2026-10-01
+  programs_status: draft
+  topics:
+  - reflections-on-living
+  topics_status: draft
+  classification_basis: title
+- id: nz-2013-05-28-habit-can-be-hell
+  title: Habit Can Be Hell
+  date: '2013-05-28'
+  venue: Noozhawk
+  type: column
+  url: https://www.noozhawk.com/052813_wayne_mellinger_habit_can_be_hell/
+  status: published
+  source: Noozhawk author archive (/author/wayne-mellinger/), read 2026-10-01
+  programs:
+  - interaction-emca
+  programs_status: draft
+  topics:
+  - sociology-and-interaction
+  - reflections-on-living
+  - race-and-ethnicity
+  topics_status: draft
+  classification_basis: article
+- id: nz-2013-05-08-ideologies-in-the-news-powerful-ideas-become
+  title: Ideologies in the News — Powerful Ideas Become Common Sense
+  date: '2013-05-08'
+  venue: Noozhawk
+  type: column
+  url: https://www.noozhawk.com/050813_wayne_mellinger_ideologies_in_the_news/
+  status: published
+  source: Noozhawk author archive (/author/wayne-mellinger/), read 2026-10-01
+  programs:
+  - public-sociology-justice
+  programs_status: draft
+  topics:
+  - politics-and-democracy
+  - sociology-and-interaction
+  topics_status: draft
+  classification_basis: article
+- id: nz-2013-04-27-cell-phones-and-civility-and-the-emergence-of
+  title: Cell Phones and Civility, and the Emergence of 'Uncivil Inattention' in Public Life
+  date: '2013-04-27'
+  venue: Noozhawk
+  type: column
+  url: https://www.noozhawk.com/wayne_mellinger_cellphones_and_civility/
+  status: published
+  source: Noozhawk author archive (/author/wayne-mellinger/), read 2026-10-01
+  programs:
+  - interaction-emca
+  programs_status: draft
+  topics:
+  - public-space
+  - sociology-and-interaction
+  topics_status: draft
+  classification_basis: article
+- id: nz-2013-04-17-the-power-of-acquaintances
+  title: The Power of Acquaintances
+  date: '2013-04-17'
+  venue: Noozhawk
+  type: column
+  url: https://www.noozhawk.com/041713_wayne_mellinger_power_of_acquaintances/
+  status: published
+  source: Noozhawk author archive (/author/wayne-mellinger/), read 2026-10-01
+  programs:
+  - interaction-emca
+  programs_status: draft
+  topics:
+  - sociology-and-interaction
+  topics_status: draft
+  classification_basis: article
+- id: nz-2013-04-01-from-class-warfare-to-class-envy
+  title: From Class Warfare to Class Envy
+  date: '2013-04-01'
+  venue: Noozhawk
+  type: column
+  url: https://www.noozhawk.com/040113_wayne_mellinger_class_warfare_to_class_envy/
+  status: published
+  source: Noozhawk author archive (/author/wayne-mellinger/), read 2026-10-01
+  programs:
+  - public-sociology-justice
+  programs_status: draft
+  topics:
+  - politics-and-democracy
+  - poverty-and-work
+  topics_status: draft
+  classification_basis: title
+- id: nz-2013-03-21-primal-fantasies-of-modern-humans
+  title: Primal Fantasies of Modern Humans
+  date: '2013-03-21'
+  venue: Noozhawk
+  type: column
+  url: https://www.noozhawk.com/032113_wayne_mellinger_primal_fantasies_of_modern_humans/
+  status: published
+  source: Noozhawk author archive (/author/wayne-mellinger/), read 2026-10-01
+  programs_status: draft
+  topics:
+  - reflections-on-living
+  topics_status: draft
+  classification_basis: title
+- id: nz-2013-03-04-facing-the-mess-were-in-without-going-crazy
+  title: Facing the Mess We're In Without Going Crazy
+  date: '2013-03-04'
+  venue: Noozhawk
+  type: column
+  url: https://www.noozhawk.com/030413_wayne_mellinger_facing_mess_without_going_crazy/
+  status: published
+  source: Noozhawk author archive (/author/wayne-mellinger/), read 2026-10-01
+  programs_status: draft
+  topics:
+  - reflections-on-living
+  topics_status: draft
+  classification_basis: title
+- id: nz-2013-02-25-flying-into-the-future-facing-backward
+  title: Flying Into the Future Facing Backward
+  date: '2013-02-25'
+  venue: Noozhawk
+  type: column
+  url: https://www.noozhawk.com/022513_wayne_mellinger_flying_into_future_facing_backwards/
+  status: published
+  source: Noozhawk author archive (/author/wayne-mellinger/), read 2026-10-01
+  programs_status: draft
+  topics:
+  - reflections-on-living
+  topics_status: draft
+  classification_basis: title
+- id: nz-2013-02-18-welcome-to-the-anthropocene-how-humans-are
+  title: Welcome to the Anthropocene — How Humans Are Changing Earth
+  date: '2013-02-18'
+  venue: Noozhawk
+  type: column
+  url: https://www.noozhawk.com/021813_wayne_mellinger_welcome_to_the_anthropocene/
+  status: published
+  source: Noozhawk author archive (/author/wayne-mellinger/), read 2026-10-01
+  programs_status: draft
+  topics:
+  - ecology-and-climate
+  topics_status: draft
+  classification_basis: title
+- id: nz-2013-02-05-becoming-deep-green-steps-toward-radical
+  title: Becoming Deep Green — Steps Toward Radical Environmentalism
+  date: '2013-02-05'
+  venue: Noozhawk
+  type: column
+  url: https://www.noozhawk.com/020513_wayne_mellinger_becoming_deep_green/
+  status: published
+  source: Noozhawk author archive (/author/wayne-mellinger/), read 2026-10-01
+  programs_status: draft
+  topics:
+  - ecology-and-climate
+  topics_status: draft
+  classification_basis: title
+- id: nz-2012-12-26-affordable-housing-in-santa-barbara
+  title: Affordable Housing in Santa Barbara
+  date: '2012-12-26'
+  venue: Noozhawk
+  type: column
+  url: https://www.noozhawk.com/122612_wayne_mellinger_affordable_housing_santa_barbara/
+  status: published
+  source: Noozhawk author archive (/author/wayne-mellinger/), read 2026-10-01
+  programs:
+  - homelessness-abandonment
+  programs_status: draft
+  topics:
+  - housing
+  topics_status: draft
+  classification_basis: title
+- id: nz-2012-11-30-climate-change-is-real-is-getting-worse-fast-and
+  title: Climate Change Is Real, Is Getting Worse Fast, and We Need a New Approach
+  date: '2012-11-30'
+  venue: Noozhawk
+  type: column
+  url: https://www.noozhawk.com/113012_wayne_mellinger_climate_change_is_real/
+  status: published
+  source: Noozhawk author archive (/author/wayne-mellinger/), read 2026-10-01
+  programs:
+  - public-sociology-justice
+  programs_status: draft
+  topics:
+  - ecology-and-climate
+  topics_status: draft
+  classification_basis: title
+- id: nz-2012-11-21-occupy-xmas-and-change-your-holiday-shopping
+  title: Occupy Xmas and Change Your Holiday Shopping Practices
+  date: '2012-11-21'
+  venue: Noozhawk
+  type: column
+  url: https://www.noozhawk.com/112112_wayne_mellinger_occupy_xmas/
+  status: published
+  source: Noozhawk author archive (/author/wayne-mellinger/), read 2026-10-01
+  programs_status: draft
+  topics:
+  - politics-and-democracy
+  - reflections-on-living
+  topics_status: draft
+  classification_basis: title
+- id: nz-2012-11-12-prophets-of-sustainability-revolution-create
+  title: Prophets of 'Sustainability Revolution' Create Vision of Future Society
+  date: '2012-11-12'
+  venue: Noozhawk
+  type: column
+  url: https://www.noozhawk.com/111212_wayne_mellinger_prophets_of_sustainability_revolution/
+  status: published
+  source: Noozhawk author archive (/author/wayne-mellinger/), read 2026-10-01
+  programs_status: draft
+  topics:
+  - ecology-and-climate
+  topics_status: draft
+  classification_basis: title
+- id: nz-2012-11-05-anarchy-in-the-usa
+  title: Anarchy in the USA
+  date: '2012-11-05'
+  venue: Noozhawk
+  type: column
+  url: https://www.noozhawk.com/110512_wayne_mellinger_anarchy_in_the_usa/
+  status: published
+  source: Noozhawk author archive (/author/wayne-mellinger/), read 2026-10-01
+  programs_status: draft
+  topics:
+  - politics-and-democracy
+  topics_status: draft
+  classification_basis: title
+- id: nz-2012-10-24-george-mcgovern-and-the-social-gospel
+  title: George McGovern and the 'Social Gospel'
+  date: '2012-10-24'
+  venue: Noozhawk
+  type: column
+  url: https://www.noozhawk.com/102412_wayne_mellinger_george_mcgovern_social_gospel/
+  status: published
+  source: Noozhawk author archive (/author/wayne-mellinger/), read 2026-10-01
+  programs_status: draft
+  topics:
+  - faith-and-justice
+  - politics-and-democracy
+  topics_status: draft
+  classification_basis: title
+- id: nz-2012-10-19-democracy-the-worst-form-of-government-except
+  title: Democracy — the Worst Form of Government Except for All the Rest
+  date: '2012-10-19'
+  venue: Noozhawk
+  type: column
+  url: https://www.noozhawk.com/101812_wayne_mellinger_democracy_worst_form_government/
+  status: published
+  source: Noozhawk author archive (/author/wayne-mellinger/), read 2026-10-01
+  note: Noozhawk displays 2012-10-19; the article address encodes 2012-10-18. Displayed date used.
+  programs_status: draft
+  topics:
+  - politics-and-democracy
+  topics_status: draft
+  classification_basis: title
+- id: nz-2012-09-13-the-amethyst-path
+  title: The Amethyst Path
+  date: '2012-09-13'
+  venue: Noozhawk
+  type: column
+  url: https://www.noozhawk.com/091312_wayne_mellinger_the_amethyst_path/
+  status: published
+  source: Noozhawk author archive (/author/wayne-mellinger/), read 2026-10-01
+  programs:
+  - critical-drug-studies
+  - religious-dionysian-naturalism
+  programs_status: draft
+  topics:
+  - drugs-and-harm-reduction
+  topics_status: draft
+  classification_basis: article
+- id: nz-2012-08-30-life-as-web-surfing
+  title: Life as Web Surfing
+  date: '2012-08-30'
+  venue: Noozhawk
+  type: column
+  url: https://www.noozhawk.com/083012_wayne_mellinger_life_as_web_surfing/
+  status: published
+  source: Noozhawk author archive (/author/wayne-mellinger/), read 2026-10-01
+  programs_status: draft
+  topics:
+  - reflections-on-living
+  topics_status: draft
+  classification_basis: title
+- id: nz-2012-08-03-let-us-be-peacemakers
+  title: Let Us Be Peacemakers
+  date: '2012-08-03'
+  venue: Noozhawk
+  type: column
+  url: https://www.noozhawk.com/080312_wayne_mellinger_let_us_be_peacemakers/
+  status: published
+  source: Noozhawk author archive (/author/wayne-mellinger/), read 2026-10-01
+  programs_status: draft
+  topics:
+  - faith-and-justice
+  topics_status: draft
+  classification_basis: title
+- id: nz-2012-05-10-the-cat-is-out-of-the-plastic-bag
+  title: The Cat Is Out of the Plastic Bag
+  date: '2012-05-10'
+  venue: Noozhawk
+  type: column
+  url: https://www.noozhawk.com/051012_wayne_mellinger_cat_out_plastic_bag/
+  status: published
+  source: Noozhawk author archive (/author/wayne-mellinger/), read 2026-10-01
+  programs_status: draft
+  topics:
+  - ecology-and-climate
+  topics_status: draft
+  classification_basis: title
+- id: nz-2012-04-19-stop-ticketing-homeless-for-illegal-camping
+  title: Stop Ticketing Homeless for Illegal Camping
+  date: '2012-04-19'
+  venue: Noozhawk
+  type: column
+  url: https://www.noozhawk.com/041912_wayne_mellinger_ticketing_homeless_illegal_camping/
+  status: published
+  source: Noozhawk author archive (/author/wayne-mellinger/), read 2026-10-01
+  programs:
+  - homelessness-abandonment
+  - public-sociology-justice
+  programs_status: draft
+  topics:
+  - homelessness
+  - criminalization-and-jails
+  topics_status: draft
+  classification_basis: title
+- id: nz-2012-04-02-homeless-foot-washing-good-for-the-soul
+  title: Homeless Foot Washing Good for the Soul
+  date: '2012-04-02'
+  venue: Noozhawk
+  type: column
+  url: https://www.noozhawk.com/040212_wayne_mellinger_homeless_foot_washing/
+  status: published
+  source: Noozhawk author archive (/author/wayne-mellinger/), read 2026-10-01
+  programs:
+  - homelessness-abandonment
+  programs_status: draft
+  topics:
+  - homelessness
+  - faith-and-justice
+  topics_status: draft
+  classification_basis: title
+- id: nz-2012-03-22-occupy-movements-focus-on-one-percent-is-right
+  title: Occupy Movement's Focus on One Percent Is Right On
+  date: '2012-03-22'
+  venue: Noozhawk
+  type: column
+  url: https://www.noozhawk.com/032212_wayne_mellinger_occupy_movement_one_percent/
+  status: published
+  source: Noozhawk author archive (/author/wayne-mellinger/), read 2026-10-01
+  programs:
+  - public-sociology-justice
+  programs_status: draft
+  topics:
+  - politics-and-democracy
+  topics_status: draft
+  classification_basis: title
+- id: nz-2012-02-29-living-in-the-company-of-strangers-parker-palmer
+  title: Living in the Company of Strangers — Parker Palmer and the Heart of Democracy
+  date: '2012-02-29'
+  venue: Noozhawk
+  type: column
+  url: https://www.noozhawk.com/022912_wayne_mellinger_living_in_the_company_of_strangers/
+  status: published
+  source: Noozhawk author archive (/author/wayne-mellinger/), read 2026-10-01
+  programs_status: draft
+  topics:
+  - politics-and-democracy
+  topics_status: draft
+  classification_basis: title
+- id: nz-2012-02-12-spirituality-of-justice-means-reaching-out-to
+  title: Spirituality of Justice Means Reaching Out to Poor, Those in Need
+  date: '2012-02-12'
+  venue: Noozhawk
+  type: column
+  url: https://www.noozhawk.com/021212_wayne_mellinger/
+  status: published
+  source: Noozhawk author archive (/author/wayne-mellinger/), read 2026-10-01
+  programs:
+  - homelessness-abandonment
+  - public-sociology-justice
+  programs_status: draft
+  topics:
+  - faith-and-justice
+  - homelessness
+  topics_status: draft
+  classification_basis: article
+- id: nz-2012-01-15-triple-challenged-cant-grapple-with-their-demons
+  title: Triple Challenged Can't Grapple with Their Demons Alone
+  date: '2012-01-15'
+  venue: Noozhawk
+  type: column
+  url: https://www.noozhawk.com/011412_wayne_mellinger/
+  status: published
+  source: Noozhawk author archive (/author/wayne-mellinger/), read 2026-10-01
+  note: Noozhawk displays 2012-01-15; the article address encodes 2012-01-14. Displayed date used.
+  programs:
+  - homelessness-abandonment
+  - public-sociology-justice
+  programs_status: draft
+  topics:
+  - mental-health
+  - drugs-and-harm-reduction
+  - homelessness
+  topics_status: draft
+  classification_basis: article
+- id: nz-2011-12-14-remembering-the-past-empire-subjugation-and
+  title: Remembering the Past — Empire, Subjugation and Collective Amnesia
+  date: '2011-12-14'
+  venue: Noozhawk
+  type: column
+  url: https://www.noozhawk.com/121411_wayne_mellinger_remembering_the_past/
+  status: published
+  source: Noozhawk author archive (/author/wayne-mellinger/), read 2026-10-01
+  programs_status: draft
+  topics:
+  - politics-and-democracy
+  topics_status: draft
+  classification_basis: title
+- id: nz-2011-12-06-changing-your-holiday-shopping-practices
+  title: Changing Your Holiday Shopping Practices
+  date: '2011-12-06'
+  venue: Noozhawk
+  type: column
+  url: https://www.noozhawk.com/120611_wayne_mellinger_holiday_shopping_practices/
+  status: published
+  source: Noozhawk author archive (/author/wayne-mellinger/), read 2026-10-01
+  programs_status: draft
+  topics:
+  - reflections-on-living
+  topics_status: draft
+  classification_basis: title
+- id: nz-2011-11-29-bummed-out-by-hatred
+  title: Bummed Out By Hatred
+  date: '2011-11-29'
+  venue: Noozhawk
+  type: column
+  url: https://www.noozhawk.com/112911_wayne_mellinger_bummed_out_by_hatred/
+  status: published
+  source: Noozhawk author archive (/author/wayne-mellinger/), read 2026-10-01
+  programs_status: draft
+  topics:
+  - reflections-on-living
+  topics_status: draft
+  classification_basis: title
+- id: nz-2011-11-21-praxis-a-spiritual-process-that-can-save-our
+  title: Praxis, a Spiritual Process That Can Save Our World
+  date: '2011-11-21'
+  venue: Noozhawk
+  type: column
+  url: https://www.noozhawk.com/112111_wayne_mellinger_praxis/
+  status: published
+  source: Noozhawk author archive (/author/wayne-mellinger/), read 2026-10-01
+  programs:
+  - religious-dionysian-naturalism
+  - public-sociology-justice
+  programs_status: draft
+  topics:
+  - faith-and-justice
+  topics_status: draft
+  classification_basis: article
+- id: nz-2011-06-08-serving-the-poor-heeds-the-call-of-a-higher
+  title: Serving the Poor Heeds the Call of a Higher Power
+  date: '2011-06-08'
+  venue: Noozhawk
+  type: column
+  url: https://www.noozhawk.com/060411_wayne_mellinger/
+  status: published
+  source: Noozhawk author archive (/author/wayne-mellinger/), read 2026-10-01
+  note: Noozhawk displays 2011-06-08; the article address encodes 2011-06-04. Displayed date used.
+  programs_status: draft
+  topics:
+  - faith-and-justice
+  topics_status: draft
+  classification_basis: title

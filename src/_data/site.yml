@@ -1,0 +1,32 @@
+name: "Wayne Martin Mellinger, Ph.D."
+url: "https://waynemartinmellinger.com"
+description: "Wayne Martin Mellinger, Ph.D. — sociologist, writer and street outreach worker in Santa Barbara, California. Scholarship, public writing, religious naturalism and poetry."
+locale: en_US
+# The line under Wayne's name, as on the previous site.
+tagline: "Sociologist · Philosopher · Writer · Poet"
+tagline_2: "Social and Environmental Justice Activist"
+email: waynemellinger@gmail.com
+# Image used when a page is shared (Open Graph). Path under /assets/images/.
+share_image: /assets/images/portrait-sunflowers-1200.jpg
+# pilot: true shows preview notices on every page. Off for the finished site.
+pilot: false
+
+# Global navigation. Kept short on purpose: the archive's detail lives on the
+# Writing page, its filters, and the collection, topic and program pages.
+nav:
+  - { label: About, url: /about/ }
+  - { label: Writing, url: /writing/ }
+  - { label: Research, url: /research/ }
+  - { label: Community, url: /community/ }
+  - { label: Contact, url: /contact/ }
+  - { label: Search, url: /search/ }
+
+# Profiles elsewhere. sameAs: true adds the link to the Person structured data;
+# use it only for profiles that are verifiably Wayne's own.
+elsewhere:
+  - { label: Noozhawk, url: "https://www.noozhawk.com/author/wayne-mellinger/", sameAs: true }
+  - { label: Academia.edu, url: "https://independentscholar.academia.edu/WayneMellinger", sameAs: true }
+  - { label: LinkedIn, url: "https://www.linkedin.com/in/wayne-martin-mellinger-ph-d-0757b723/", sameAs: true }
+  - { label: Doing Modernity, url: "https://doingmodernity.blogspot.com/" }
+  - { label: The Dionysian Naturalist, url: "https://thedionysiannaturalist.blogspot.com/" }
+  - { label: Wild Flesh, url: "https://wildflesh.blogspot.com/" }

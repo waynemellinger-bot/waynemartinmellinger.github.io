@@ -1,0 +1,88 @@
+---
+layout: base.njk
+permalink: /
+wide: true
+bodyClass: home
+description: "Wayne Martin Mellinger, Ph.D. — independent sociologist, writer, street outreach worker and public intellectual in Santa Barbara, California. Scholarship, Noozhawk columns, religious naturalism and poetry."
+---
+{#- The introduction is the opening paragraph of Wayne's biography, unchanged.
+    Everything else on this page is generated from the records. -#}
+<section class="hero" aria-labelledby="who">
+  <figure class="hero-figure">
+    {%- set img = images.portrait %}{% set sizes = "(min-width: 56rem) 20rem, 70vw" %}{% set eager = true %}
+    {% include "picture.njk" %}
+  </figure>
+  <div class="hero-text">
+    <h1 id="who">{{ site.name }}</h1>
+    <p class="tagline">{{ site.tagline }}<br>{{ site.tagline_2 }}</p>
+    <p class="intro">Wayne Martin Mellinger, Ph.D., is an independent sociologist, writer, street outreach worker, and public intellectual based in Santa Barbara, California. His life has moved through universities and homeless encampments, professional success and incarceration, addiction and recovery, scholarship and public service. Rather than separating these experiences, Wayne draws upon all of them in his efforts to understand how institutions treat people — and how lives can be rebuilt through connection, accountability, and care.</p>
+    <ul class="link-row">
+      <li><a href="/about/biography/">Biography</a></li>
+      <li><a href="/writing/">All {{ archive.stats.total }} works</a></li>
+      <li><a href="/cv/">CV</a></li>
+    </ul>
+  </div>
+</section>
+
+<div class="home-columns">
+  <section aria-labelledby="work-on" class="home-block">
+    <h2 id="work-on" class="section-title">What he works on</h2>
+    <ul class="program-list compact">
+      {%- for p in archive.programPages %}
+      <li><a href="{{ p.path }}">{{ p.name }}</a>
+        <p>{{ p.description }}</p></li>
+      {%- endfor %}
+    </ul>
+  </section>
+
+  <section aria-labelledby="recent" class="home-block" data-pagefind-ignore="all">
+    <h2 id="recent" class="section-title">Recent writing</h2>
+    {%- set recent = [] %}
+    {%- for w in archive.works %}{% if w.status == 'published' and w.date and recent.length < 6 %}{% set recent = (recent.push(w), recent) %}{% endif %}{% endfor %}
+    <ol class="work-list">
+      {%- set fullDates = true %}{% set showVenue = true %}{% set showType = false %}
+      {%- for w in recent %}{% include "record.njk" %}{% endfor %}
+    </ol>
+    <p class="more"><a href="/writing/">All writing</a></p>
+  </section>
+</div>
+
+<section aria-labelledby="archive-h" class="home-block">
+  <h2 id="archive-h" class="section-title">The archive</h2>
+  <ul class="cards">
+    {%- for c in archive.collections %}
+    <li class="card">
+      <h3><a href="{{ c.path }}">{{ c.name }}</a></h3>
+      <p class="count">{{ archive.byCollection[c.slug].length | pluralize(c.noun) }}</p>
+    </li>
+    {%- endfor %}
+  </ul>
+  <form class="home-search" action="/search/" method="get" role="search">
+    <label for="home-q">Search the archive</label>
+    <div class="search-row"><input id="home-q" type="search" name="q" placeholder="e.g. Chumash, civil inattention, Dionysus"><button type="submit">Search</button></div>
+  </form>
+  <p class="also-browse">Or browse by <a href="/topics/">topic</a>, <a href="/research/#bodies-of-work">body of work</a>, or <a href="/writing/">decade and kind</a>.</p>
+</section>
+
+<div class="home-columns">
+  <section aria-labelledby="projects-h" class="home-block">
+    <h2 id="projects-h" class="section-title">Current projects</h2>
+    <ul class="project-teasers">
+      {%- for p in archive.projects | limit(4) %}
+      <li><a href="/research/#{{ p.id }}">{{ p.title }}</a> <span class="status">{{ p.status }}</span></li>
+      {%- endfor %}
+    </ul>
+    <p class="more"><a href="/research/">All research and projects</a></p>
+  </section>
+
+  <section aria-labelledby="community-h" class="home-block">
+    <h2 id="community-h" class="section-title">In the community</h2>
+    <ul class="project-teasers">
+      <li>Organizer, Longest Night Homeless Memorial Vigil</li>
+      <li>Co-founder, Santa Barbara Homeless Foot Washing</li>
+      <li>Member, Santa Barbara County Continuum of Care</li>
+    </ul>
+    <p class="more"><a href="/community/">Community work</a> · <a href="/contact/">Contact</a></p>
+  </section>
+</div>
+<script src="/assets/js/legacy-anchors.js"></script>

@@ -1,0 +1,612 @@
+# Doing Modernity: works listed on the previous site, migrated 2026-10-07.
+# Created by scripts/migration/extract-legacy.py; edit by hand from now on.
+- id: dm-the-santa-barbara-school-of-ethnomethodology-and-conversatio
+  title: The Santa Barbara School of Ethnomethodology and Conversation Analysis
+  date: '2026-01'
+  venue: Doing Modernity
+  type: essay
+  url: https://doingmodernity.blogspot.com/2026/01/the-santa-barbara-school-of.html
+  status: published
+  series:
+  - I. Overviews & Theoretical Frameworks
+  description: The foundational overview, distinguishing the Santa Barbara School from the UCLA and Boston-Manchester Schools via six defining features — ethnographic integration, structure-in-action, moral order, critical orientation, Goffman engagement, and broad sociological relevance.
+  programs:
+  - interaction-emca
+  programs_status: draft
+  classification_basis: grouping
+  source: Previous site (waynemartinmellinger.com, single page), migrated 2026-10-07
+- id: dm-from-minds-to-moments-how-ethnomethodology-and-conversation
+  title: 'From Minds to Moments: How Ethnomethodology and Conversation Analysis Reconceived Sociological Social Psychology'
+  date: '2026-01'
+  venue: Doing Modernity
+  type: essay
+  url: https://doingmodernity.blogspot.com/2026/01/from-minds-to-moments-how.html
+  status: published
+  series:
+  - I. Overviews & Theoretical Frameworks
+  description: Traces the shift from cognitive and attitudinal models of social psychology to the interactional, sequential approach pioneered at Santa Barbara — an ontological shift, not merely a methodological one.
+  programs:
+  - interaction-emca
+  programs_status: draft
+  classification_basis: grouping
+  source: Previous site (waynemartinmellinger.com, single page), migrated 2026-10-07
+- id: dm-how-ucsb-became-a-world-center-for-studying-race-policing-an
+  title: How UCSB Became a World Center for Studying Race, Policing, and Everyday Interaction
+  date: '2026-01'
+  venue: Doing Modernity
+  type: essay
+  url: https://doingmodernity.blogspot.com/2026/01/how-ucsb-became-world-center-for.html
+  status: published
+  series:
+  - I. Overviews & Theoretical Frameworks
+  description: Traces the lineage from Zimmerman through Geoffrey Raymond's and Kevin Whitehead's research on racial categorization in police-civilian encounters, courtroom proceedings, and medical interviews.
+  programs:
+  - interaction-emca
+  programs_status: draft
+  classification_basis: grouping
+  source: Previous site (waynemartinmellinger.com, single page), migrated 2026-10-07
+- id: dm-the-moral-economy-of-interaction
+  title: The Moral Economy of Interaction
+  date: '2025-11'
+  venue: Doing Modernity
+  type: essay
+  url: https://doingmodernity.blogspot.com/2025/11/the-moral-economy-of-interaction-by.html
+  status: published
+  series:
+  - I. Overviews & Theoretical Frameworks
+  description: Extends Thompson's and Scott's "moral economy" from markets to meaning, arguing every interaction is a moral event where recognition and respect circulate by norms participants feel as binding. The theoretical cornerstone of Critical Interactionism.
+  programs:
+  - interaction-emca
+  programs_status: draft
+  classification_basis: grouping
+  source: Previous site (waynemartinmellinger.com, single page), migrated 2026-10-07
+- id: dm-the-layered-moral-economy-of-oppression-completing-the-santa
+  title: 'The Layered Moral Economy of Oppression: Completing the Santa Barbara School''s Unfinished Revolution'
+  date: '2025-11'
+  venue: Doing Modernity
+  type: essay
+  url: https://doingmodernity.blogspot.com/2025/11/the-laminated-moral-economy-of.html
+  status: published
+  series:
+  - I. Overviews & Theoretical Frameworks
+  description: Introduces the Layered Moral Economy of Oppression (LMEO) — oppression operating through six interconnected layers, each reproduced and contested through interactional practice.
+  programs:
+  - interaction-emca
+  programs_status: draft
+  classification_basis: grouping
+  source: Previous site (waynemartinmellinger.com, single page), migrated 2026-10-07
+- id: dm-the-wilson-zimmerman-approach-to-social-structure
+  title: The Wilson-Zimmerman Approach to Social Structure
+  date: '2025-11'
+  venue: Doing Modernity
+  type: essay
+  url: https://doingmodernity.blogspot.com/2025/11/the-wilson-zimmerman-approach-to-social.html
+  status: published
+  series:
+  - I. Overviews & Theoretical Frameworks
+  description: Reconstructs Wilson and Zimmerman's claim that social structure exists nowhere but in the sequential organization of members' practices — inverting the standard relationship between structure and action.
+  programs:
+  - interaction-emca
+  programs_status: draft
+  classification_basis: grouping
+  source: Previous site (waynemartinmellinger.com, single page), migrated 2026-10-07
+- id: dm-on-maynard-and-wilsons-on-the-reification-of-social-structur
+  title: On Maynard and Wilson's "On the Reification of Social Structure" (1980)
+  date: '2025-11'
+  venue: Doing Modernity
+  type: essay
+  url: https://doingmodernity.blogspot.com/2025/11/on-maynard-and-wilsons-on-reification.html
+  status: published
+  series:
+  - I. Overviews & Theoretical Frameworks
+  description: A close reading treated as a foundational text for the school's anti-reificationist theory of social structure, connecting mid-century EM/CA debates to contemporary practice theory.
+  programs:
+  - interaction-emca
+  programs_status: draft
+  classification_basis: grouping
+  source: Previous site (waynemartinmellinger.com, single page), migrated 2026-10-07
+- id: dm-don-h-zimmerman-the-quiet-maverick-of-ethnomethodology
+  title: 'Don H. Zimmerman: The Quiet Maverick of Ethnomethodology'
+  date: '2025-11'
+  venue: Doing Modernity
+  type: essay
+  url: https://doingmodernity.blogspot.com/2025/11/don-h-zimmerman-quiet-maverick-of.html
+  status: published
+  series:
+  - II. Founders & First-Generation Figures
+  description: Documents Zimmerman's training under Garfinkel, his 1965 move to UCSB, and five decades as the school's central architect — from bureaucratic sociology through emergency dispatch calls, gender and interaction, and Talk and Social Structure (1991).
+  programs:
+  - interaction-emca
+  programs_status: draft
+  classification_basis: grouping
+  source: Previous site (waynemartinmellinger.com, single page), migrated 2026-10-07
+- id: dm-harvey-molotch-and-the-foundations-of-critical-interactionis
+  title: Harvey Molotch and the Foundations of Critical Interactionism
+  date: '2025-07'
+  venue: Doing Modernity
+  type: essay
+  url: https://doingmodernity.blogspot.com/2025/07/harvey-molotch-and-foundations-of.html
+  status: published
+  series:
+  - II. Founders & First-Generation Figures
+  description: Positions Molotch as the school's "critical conscience," analyzing his collaborative work with Lester (news production), Boden (Watergate), and Duneier (urban public space) as demonstrations of interactional detail illuminating power.
+  programs:
+  - interaction-emca
+  programs_status: draft
+  classification_basis: grouping
+  source: Previous site (waynemartinmellinger.com, single page), migrated 2026-10-07
+- id: dm-when-the-doctor-is-a-lady-candace-west-the-santa-barbara-sch
+  title: 'When the Doctor is a "Lady": Candace West, the Santa Barbara School, and the Micro-Politics of Gender'
+  date: '2025-12'
+  venue: Doing Modernity
+  type: essay
+  url: https://doingmodernity.blogspot.com/2025/12/when-doctor-is-lady-candace-west-santa.html
+  status: published
+  series:
+  - II. Founders & First-Generation Figures
+  description: Examines West's studies of doctor-patient interaction and "Doing Gender" (1987, with Zimmerman) — arguably the most-cited article in sociology — through to West and Fenstermaker's "Doing Difference" (1995).
+  programs:
+  - interaction-emca
+  programs_status: draft
+  classification_basis: grouping
+  source: Previous site (waynemartinmellinger.com, single page), migrated 2026-10-07
+- id: dm-douglas-w-maynard-and-the-moral-architecture-of-institutiona
+  title: Douglas W. Maynard and the Moral Architecture of Institutional Life
+  date: '2025-11'
+  venue: Doing Modernity
+  type: essay
+  url: https://doingmodernity.blogspot.com/2025/11/douglas-w-maynard-and-moral.html
+  status: published
+  series:
+  - II. Founders & First-Generation Figures
+  description: Presents Maynard as the school's foremost "moral microsociologist," analyzing his studies of plea bargaining and diagnosis delivery through the perspective-display series and the evidential-interactional nexus.
+  programs:
+  - interaction-emca
+  programs_status: draft
+  classification_basis: grouping
+  source: Previous site (waynemartinmellinger.com, single page), migrated 2026-10-07
+- id: dm-democracy-under-threat-steven-claymans-interactional-analysi
+  title: 'Democracy Under Threat: Steven Clayman''s Interactional Analysis and the Crisis We Can No Longer Ignore'
+  date: '2025-11'
+  venue: Doing Modernity
+  type: essay
+  url: https://doingmodernity.blogspot.com/2025/11/democracy-under-threat-steven-claymans.html
+  status: published
+  series:
+  - II. Founders & First-Generation Figures
+  description: Examines Clayman's study of news interviews and political accountability (including The News Interview, 2002, with John Heritage) as illuminating the interactional machinery of democratic accountability.
+  programs:
+  - interaction-emca
+  programs_status: draft
+  classification_basis: grouping
+  source: Previous site (waynemartinmellinger.com, single page), migrated 2026-10-07
+- id: dm-timothy-halkowski-and-the-mirandum-of-ordinary-medical-life
+  title: Timothy Halkowski and the Mirandum of Ordinary Medical Life
+  date: '2025-12'
+  venue: Doing Modernity
+  type: essay
+  url: https://doingmodernity.blogspot.com/2025/12/timothy-halkowski-and-mirandum-of.html
+  status: published
+  series:
+  - II. Founders & First-Generation Figures
+  description: Introduces the "mirandum" — the wonder-worthy features of ordinary medical life patients and practitioners treat as requiring explanation — through Halkowski's studies of medical interaction.
+  programs:
+  - interaction-emca
+  programs_status: draft
+  classification_basis: grouping
+  source: Previous site (waynemartinmellinger.com, single page), migrated 2026-10-07
+- id: dm-organizations-are-talking-deirdre-boden-and-the-sequential-c
+  title: 'Organizations Are Talking: Deirdre Boden and the Sequential Constitution of Institutional Order'
+  date: '2025-11'
+  venue: Doing Modernity
+  type: essay
+  url: https://doingmodernity.blogspot.com/2025/11/organization-are-talking-deirdre-boden.html
+  status: published
+  series:
+  - III. Institutional Sites & Applied Work
+  description: 'Examines Boden''s The Business of Talk (1994): organizations aren''t structures within which talk occurs, but are themselves constituted through the sequential organization of meetings, negotiations, and calls.'
+  programs:
+  - interaction-emca
+  programs_status: draft
+  classification_basis: grouping
+  source: Previous site (waynemartinmellinger.com, single page), migrated 2026-10-07
+- id: dm-on-boden-and-molotchs-the-compulsion-of-proximity
+  title: On Boden and Molotch's "The Compulsion of Proximity"
+  date: '2025-11'
+  venue: Doing Modernity
+  type: essay
+  url: https://doingmodernity.blogspot.com/2025/11/deirdre-boden-and-harvey-molotch.html
+  status: published
+  series:
+  - III. Institutional Sites & Applied Work
+  description: On the persistent preference for co-present interaction despite remote communication technology, extended toward questions of who has access to co-presence and who is structurally excluded from it.
+  programs:
+  - interaction-emca
+  programs_status: draft
+  classification_basis: grouping
+  source: Previous site (waynemartinmellinger.com, single page), migrated 2026-10-07
+- id: dm-on-marilyn-whalen-and-jack-whalens-studying-workscapes
+  title: On Marilyn Whalen and Jack Whalen's "Studying Workscapes"
+  date: '2025-11'
+  venue: Doing Modernity
+  type: essay
+  url: https://doingmodernity.blogspot.com/2025/11/on-marilyn-whalen-and-jack-whalens.html
+  status: published
+  series:
+  - III. Institutional Sites & Applied Work
+  description: On the Whalens' approach to CSCW (Computer-Supported Cooperative Work) research, treating technology as embedded in interactional practice rather than a determinant of behavior.
+  programs:
+  - interaction-emca
+  programs_status: draft
+  classification_basis: grouping
+  source: Previous site (waynemartinmellinger.com, single page), migrated 2026-10-07
+- id: dm-ethnomethodology-and-conversation-analysis-at-xerox-parc-rem
+  title: 'Ethnomethodology and Conversation Analysis at Xerox PARC: Remaking Technology Through the Social Order'
+  date: '2025-10'
+  venue: Doing Modernity
+  type: essay
+  url: https://doingmodernity.blogspot.com/2025/10/emca-at-xerox-parc-by-wayne-martin.html
+  status: published
+  series:
+  - III. Institutional Sites & Applied Work
+  - Workplace Studies & Applied EM/CA
+  description: On Lucy Suchman and the Whalens' work at Xerox PARC in the 1980s–90s, studying workplace interaction to redesign office technology — a demonstration of EM/CA's practical applicability.
+  programs:
+  - interaction-emca
+  programs_status: draft
+  classification_basis: grouping
+  source: Previous site (waynemartinmellinger.com, single page), migrated 2026-10-07
+- id: dm-jack-whalen-and-the-documentary-constitution-of-organization
+  title: Jack Whalen and the Documentary Constitution of Organizational Reality
+  date: '2026-02'
+  venue: Doing Modernity
+  type: essay
+  url: https://doingmodernity.blogspot.com/2026/02/jack-whalen-and-documentary.html
+  status: published
+  series:
+  - III. Institutional Sites & Applied Work
+  description: The most recent essay in the series. On how documents — forms, records, databases — actively participate in constituting organizational reality rather than merely recording it.
+  programs:
+  - interaction-emca
+  programs_status: draft
+  classification_basis: grouping
+  source: Previous site (waynemartinmellinger.com, single page), migrated 2026-10-07
+- id: dm-on-maynard-and-zimmermans-topical-talk-ritual-and-the-social
+  title: On Maynard and Zimmerman's "Topical Talk, Ritual and the Social Organization of Relationships"
+  date: '2025-11'
+  venue: Doing Modernity
+  type: essay
+  url: https://doingmodernity.blogspot.com/2025/11/on-maynard-and-zimmermans-topical-talk.html
+  status: published
+  series:
+  - III. Institutional Sites & Applied Work
+  description: On how topical talk serves ritual and relational functions beyond information transfer — anticipating the moral economy framework developed in later essays.
+  programs:
+  - interaction-emca
+  programs_status: draft
+  classification_basis: grouping
+  source: Previous site (waynemartinmellinger.com, single page), migrated 2026-10-07
+- id: dm-talking-city-trouble-urban-micro-ethnography-and-the-moral-o
+  title: 'Talking City Trouble: Urban Micro-Ethnography and the Moral Order of Public Space'
+  date: '2025-11'
+  venue: Doing Modernity
+  type: essay
+  url: https://doingmodernity.blogspot.com/2025/11/talking-city-trouble-urban-micro.html
+  status: published
+  series:
+  - III. Institutional Sites & Applied Work
+  - Workplace Studies & Applied EM/CA
+  description: On Molotch and Duneier's study of interaction in urban public space, extended through Wayne's own street outreach experience connecting the literature to homelessness, policing, and urban exclusion.
+  programs:
+  - interaction-emca
+  programs_status: draft
+  classification_basis: grouping
+  source: Previous site (waynemartinmellinger.com, single page), migrated 2026-10-07
+- id: dm-jason-turowetz-and-the-second-santa-barbara-school
+  title: Jason Turowetz and the Second Santa Barbara School
+  date: '2025-12'
+  venue: Doing Modernity
+  type: essay
+  url: https://doingmodernity.blogspot.com/2025/12/jason-turowetz-and-second-santa-barbara.html
+  status: published
+  series:
+  - IV. The Second Santa Barbara School
+  description: Profiles Turowetz as representative of the post-2000 generation extending the tradition — his work with Maynard on autism diagnosis, and greater theoretical reflexivity around race, disability, and structural inequality.
+  programs:
+  - interaction-emca
+  programs_status: draft
+  classification_basis: grouping
+  source: Previous site (waynemartinmellinger.com, single page), migrated 2026-10-07
+- id: dm-what-do-we-owe-one-another-once-we-see-asymmetries-being-don
+  title: What Do We Owe One Another Once We See Asymmetries Being Done
+  date: '2025-12'
+  venue: Doing Modernity
+  type: essay
+  url: https://doingmodernity.blogspot.com/2025/12/what-do-we-owe-oner-another-once-we-see.html
+  status: published
+  series:
+  - V. Critical Interactionism & Normative Questions
+  description: 'Confronts the normative question hanging over the tradition directly: once gender or racial or class asymmetry is documented with sequential precision, what follows? Develops "ethically engaged interactionism."'
+  programs:
+  - critical-interactionism
+  programs_status: draft
+  classification_basis: grouping
+  source: Previous site (waynemartinmellinger.com, single page), migrated 2026-10-07
+- id: dm-beyond-asymmetries-in-action-critical-interactionism-moral-e
+  title: 'Beyond Asymmetries-in-Action: Critical Interactionism, Moral Economy, and the Unequal Distribution of Consequences'
+  date: '2025-12'
+  venue: Doing Modernity
+  type: essay
+  url: https://doingmodernity.blogspot.com/2025/12/beyond-asymmetries-in-action-critical.html
+  status: published
+  series:
+  - V. Critical Interactionism & Normative Questions
+  description: Extends the argument above with a theory of how interactional patterns generate differential outcomes that compound across interactions, institutions, and lifetimes.
+  programs:
+  - critical-interactionism
+  programs_status: draft
+  classification_basis: grouping
+  source: Previous site (waynemartinmellinger.com, single page), migrated 2026-10-07
+- id: dm-reading-the-news-towards-a-methodology-of-critical-textual-a
+  title: 'Reading the News: Towards a Methodology of Critical Textual Analysis'
+  date: '2026-01'
+  venue: Doing Modernity
+  type: essay
+  url: https://doingmodernity.blogspot.com/2026/01/reading-news-toward-methodology-of.html
+  status: published
+  series:
+  - Also on Doing Modernity
+  note: Month taken from the post address; the previous site gave the year only.
+  source: Previous site (waynemartinmellinger.com, single page), migrated 2026-10-07
+- id: dm-building-a-new-astronomy-without-a-telescope-why-critical-in
+  title: 'Building a New Astronomy Without a Telescope: Why Critical Interactionism Cannot Ignore EM/CA'
+  date: '2025-09'
+  venue: Doing Modernity
+  type: essay
+  url: https://doingmodernity.blogspot.com/2025/09/building-new-astronomy-without.html
+  status: published
+  series:
+  - Also on Doing Modernity
+  note: Month taken from the post address; the previous site gave the year only.
+  source: Previous site (waynemartinmellinger.com, single page), migrated 2026-10-07
+- id: dm-the-insurrection-of-the-next-turn-sequential-organization-an
+  title: 'The Insurrection of the Next Turn: Sequential Organization and the Praxis of Liberation'
+  date: '2025-12'
+  venue: Doing Modernity
+  type: essay
+  url: https://doingmodernity.blogspot.com/2025/12/wayne-martin-mellinger-phd-insurrection.html
+  status: published
+  series:
+  - Also on Doing Modernity
+  note: Month taken from the post address; the previous site gave the year only.
+  source: Previous site (waynemartinmellinger.com, single page), migrated 2026-10-07
+- id: dm-interaction-order-at-the-margins-robin-james-smiths-sociolog
+  title: 'Interaction Order at the Margins: Robin James Smith''s Sociology of Homeless Outreach'
+  date: '2025-12'
+  venue: Doing Modernity
+  type: essay
+  url: https://doingmodernity.blogspot.com/2025/12/interaction-order-at-margins-robin.html
+  status: published
+  series:
+  - Also on Doing Modernity
+  note: Month taken from the post address; the previous site gave the year only.
+  source: Previous site (waynemartinmellinger.com, single page), migrated 2026-10-07
+- id: dm-the-many-interaction-orders-goffman-rawls-smith-and-the-plur
+  title: 'The Many Interaction Orders: Goffman, Rawls, Smith and the Plural Moral Terrains of Everyday Life'
+  date: '2025-05'
+  venue: Doing Modernity
+  type: essay
+  url: https://doingmodernity.blogspot.com/2025/05/interaction-orders-erving-goffman-and.html
+  status: published
+  related: [pub-many-interaction-orders]
+  series:
+  - Also on Doing Modernity
+  note: Month taken from the post address; the previous site gave the year only.
+  source: Previous site (waynemartinmellinger.com, single page), migrated 2026-10-07
+- id: dm-george-herbert-mead-and-the-making-of-symbolic-interactionis
+  title: George Herbert Mead and the Making of Symbolic Interactionism
+  date: '2025-05'
+  venue: Doing Modernity
+  type: essay
+  url: https://doingmodernity.blogspot.com/2025/05/george-herbert-mead-and-making-of.html
+  status: published
+  series:
+  - Also on Doing Modernity
+  note: Month taken from the post address; the previous site gave the year only.
+  source: Previous site (waynemartinmellinger.com, single page), migrated 2026-10-07
+- id: dm-workplace-studies-and-critical-interactionism
+  title: Workplace Studies and Critical Interactionism
+  date: '2025-11'
+  venue: Doing Modernity
+  type: essay
+  url: https://doingmodernity.blogspot.com/2025/11/workplace-studies-and-critical.html
+  status: published
+  series:
+  - Also on Doing Modernity
+  - Workplace Studies & Applied EM/CA
+  programs:
+  - interaction-emca
+  programs_status: draft
+  classification_basis: grouping
+  note: Month taken from the post address; the previous site gave the year only.
+  source: Previous site (waynemartinmellinger.com, single page), migrated 2026-10-07
+- id: dm-interactionist-studies-of-work
+  title: Interactionist Studies of Work
+  date: '2025-06'
+  venue: Doing Modernity
+  type: essay
+  url: https://doingmodernity.blogspot.com/2025/06/interactionist-studies-of-work-by-wayne.html
+  status: published
+  series:
+  - Also on Doing Modernity
+  - Workplace Studies & Applied EM/CA
+  programs:
+  - interaction-emca
+  programs_status: draft
+  classification_basis: grouping
+  note: Month taken from the post address; the previous site gave the year only.
+  source: Previous site (waynemartinmellinger.com, single page), migrated 2026-10-07
+- id: dm-ethnomethodology-and-conversation-analysis-in-social-work
+  title: Ethnomethodology and Conversation Analysis in Social Work
+  date: '2025-10'
+  venue: Doing Modernity
+  type: essay
+  url: https://doingmodernity.blogspot.com/2025/10/ethnomethodology-and-conversation_29.html
+  status: published
+  series:
+  - Also on Doing Modernity
+  - Workplace Studies & Applied EM/CA
+  programs:
+  - interaction-emca
+  programs_status: draft
+  classification_basis: grouping
+  note: Month taken from the post address; the previous site gave the year only.
+  source: Previous site (waynemartinmellinger.com, single page), migrated 2026-10-07
+- id: dm-the-epistemology-of-abandonment-a-critical-interactionist-th
+  title: 'The Epistemology of Abandonment: A Critical Interactionist Theory of Modernity'
+  date: '2026-01'
+  venue: Doing Modernity
+  type: essay
+  url: https://doingmodernity.blogspot.com/2026/01/the-epistemology-of-abandonment-by.html
+  status: published
+  series:
+  - Sociology of Homelessness & Abandonment
+  programs:
+  - homelessness-abandonment
+  programs_status: draft
+  classification_basis: grouping
+  note: Month taken from the post address; the previous site gave the year only.
+  source: Previous site (waynemartinmellinger.com, single page), migrated 2026-10-07
+- id: dm-maladjustment-as-insight-the-epistemology-of-the-abandoned
+  title: 'Maladjustment as Insight: The Epistemology of the Abandoned'
+  date: '2026-01'
+  venue: Doing Modernity
+  type: essay
+  url: https://doingmodernity.blogspot.com/2026/01/maladjustment-as-insight-epistemology.html
+  status: published
+  series:
+  - Sociology of Homelessness & Abandonment
+  programs:
+  - homelessness-abandonment
+  programs_status: draft
+  classification_basis: grouping
+  note: Month taken from the post address; the previous site gave the year only.
+  source: Previous site (waynemartinmellinger.com, single page), migrated 2026-10-07
+- id: dm-abandonment-in-real-time-recognition-rupture-and-the-moral-e
+  title: 'Abandonment in Real Time: Recognition, Rupture, and the Moral Economy of Interaction'
+  date: '2026'
+  venue: Doing Modernity
+  type: essay
+  status: unverified
+  series:
+  - Sociology of Homelessness & Abandonment
+  programs:
+  - homelessness-abandonment
+  programs_status: draft
+  classification_basis: grouping
+  note: No link on the previous site; publication not yet confirmed.
+  source: Previous site (waynemartinmellinger.com, single page), migrated 2026-10-07
+- id: dm-the-career-of-disposability-street-outreach-fentanyl-and-the
+  title: 'The Career of Disposability: Street Outreach, Fentanyl, and the Sociology of Abandonment'
+  date: '2026-01'
+  venue: Doing Modernity
+  type: essay
+  url: https://doingmodernity.blogspot.com/2026/01/the-career-of-disposability-street.html
+  status: published
+  series:
+  - Sociology of Homelessness & Abandonment
+  programs:
+  - homelessness-abandonment
+  programs_status: draft
+  classification_basis: grouping
+  note: Month taken from the post address; the previous site gave the year only.
+  source: Previous site (waynemartinmellinger.com, single page), migrated 2026-10-07
+- id: dm-abandonment-as-a-site-of-revelation-witnessing-the-sacred-in
+  title: 'Abandonment as a Site of Revelation: Witnessing the Sacred in a World That Looks Away'
+  date: '2026-01'
+  venue: Doing Modernity
+  type: essay
+  url: https://doingmodernity.blogspot.com/2026/01/abandonment-as-site-of-revelation-by.html
+  status: published
+  series:
+  - Sociology of Homelessness & Abandonment
+  programs:
+  - homelessness-abandonment
+  programs_status: draft
+  classification_basis: grouping
+  note: Month taken from the post address; the previous site gave the year only.
+  source: Previous site (waynemartinmellinger.com, single page), migrated 2026-10-07
+- id: dm-seeing-like-an-outreach-worker-professional-vision-and-the-p
+  title: 'Seeing Like an Outreach Worker: Professional Vision and the Politics of Homelessness'
+  date: '2025-12'
+  venue: Doing Modernity
+  type: essay
+  url: https://doingmodernity.blogspot.com/2025/12/seeing-like-outreach-worker.html
+  status: published
+  series:
+  - Sociology of Homelessness & Abandonment
+  programs:
+  - homelessness-abandonment
+  programs_status: draft
+  classification_basis: grouping
+  note: Month taken from the post address; the previous site gave the year only.
+  source: Previous site (waynemartinmellinger.com, single page), migrated 2026-10-07
+- id: dm-first-encounter-at-the-stone-wall-a-flash-autoethnography-of
+  title: 'First Encounter at the Stone Wall: A Flash Autoethnography of Street Outreach'
+  date: '2025-09'
+  venue: Doing Modernity
+  type: essay
+  url: https://doingmodernity.blogspot.com/2025/09/first-encounter-at-stone-wall.html
+  status: published
+  series:
+  - Sociology of Homelessness & Abandonment
+  programs:
+  - homelessness-abandonment
+  programs_status: draft
+  classification_basis: grouping
+  note: Month taken from the post address; the previous site gave the year only.
+  source: Previous site (waynemartinmellinger.com, single page), migrated 2026-10-07
+- id: dm-an-autoethnography-of-human-ai-interaction-towards-an-ethnom
+  title: 'An Autoethnography of Human-AI Interaction: Towards an Ethnomethodology of Artificial Accountability'
+  date: '2025-10'
+  venue: Doing Modernity
+  type: essay
+  url: https://doingmodernity.blogspot.com/2025/10/doing-ethnomethodology-with-machine.html
+  status: published
+  series:
+  - Human-AI Interaction
+  note: Month taken from the post address; the previous site gave the year only.
+  source: Previous site (waynemartinmellinger.com, single page), migrated 2026-10-07
+- id: dm-ethnomethodology-and-conversation-analysis-in-human-computer
+  title: 'Ethnomethodology and Conversation Analysis in Human–Computer Interaction: A Field Guide'
+  date: '2025-10'
+  venue: Doing Modernity
+  type: essay
+  url: https://doingmodernity.blogspot.com/2025/10/ethnomethodology-and-conversation.html
+  status: published
+  series:
+  - Human-AI Interaction
+  note: Month taken from the post address; the previous site gave the year only.
+  source: Previous site (waynemartinmellinger.com, single page), migrated 2026-10-07
+- id: dm-january-6-as-media-event-seeing-accountability-and-ideology
+  title: 'January 6 as Media Event: Seeing, Accountability and Ideology'
+  date: '2026-01'
+  venue: Doing Modernity
+  type: essay
+  url: https://doingmodernity.blogspot.com/2026/01/january-6-as-media-event-seeing.html
+  status: published
+  series:
+  - Media, Politics & Other Essays
+  note: Month taken from the post address; the previous site gave the year only.
+  source: Previous site (waynemartinmellinger.com, single page), migrated 2026-10-07
+- id: dm-how-to-read-people-a-critical-interactionist-guide
+  title: 'How to Read People: A Critical Interactionist Guide'
+  date: '2025-09'
+  venue: Doing Modernity
+  type: essay
+  url: https://doingmodernity.blogspot.com/2025/09/how-to-read-people-critical.html
+  status: published
+  series:
+  - Media, Politics & Other Essays
+  note: Month taken from the post address; the previous site gave the year only.
+  source: Previous site (waynemartinmellinger.com, single page), migrated 2026-10-07
