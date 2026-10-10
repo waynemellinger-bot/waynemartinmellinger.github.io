@@ -19,6 +19,9 @@ Nothing is merged into `main` or published without Wayne's explicit approval.
 
 ### Tags (restore points)
 
+These live in the full-history bundle; they are **not yet on GitHub** (the 2026-10-09 session could
+push branches but not tags). Each tagged commit is in the `archive-rebuild` history either way.
+
 | Tag | What it marks |
 | --- | --- |
 | `legacy-original` | The original single-page site. |
