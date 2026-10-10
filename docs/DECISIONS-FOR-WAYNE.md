@@ -6,10 +6,10 @@ October 7, 2026.
 
 | | |
 | --- | --- |
-| **Built and tested** | Yes, in Claude's workspace (see QA report). |
-| **Pushed to GitHub** | **No.** GitHub refused access: your GitHub account is not linked to Claude. GitHub's `main` branch is still the original single page (commit `a05e5c7`). |
-| **Deployed / live** | **No.** waynemartinmellinger.com still serves the original single page. Neither the mobile fix nor anything since has gone live. |
-| **Where it exists** | In the source ZIP and the full-history bundle delivered with this report, and in Claude's workspace for this conversation. |
+| **Built and tested** | Yes (see QA report); rebuilt and re-checked 2026-10-09 from the handoff package. |
+| **Pushed to GitHub** | **Yes, as of 2026-10-09:** branch `archive-rebuild`, with a pull request into `main`. Not merged. `main` is still the original single page (commit `a05e5c7`). |
+| **Deployed / live** | **No.** waynemartinmellinger.com still serves the original single page. Nothing goes live until the pull request is merged. |
+| **Where it exists** | On GitHub (branch `archive-rebuild` and its tags), and in the October 8 source ZIP and full-history bundle. Current status lives in `HANDOFF.md` at the top of the repository. |
 
 How to publish it: `UPLOAD-INSTRUCTIONS.md`. Recommended order: review items A1–A4 below
 first, because publishing makes them public.
