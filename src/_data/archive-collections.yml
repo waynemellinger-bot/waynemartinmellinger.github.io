@@ -1,0 +1,119 @@
+# Collections: where a work was published. One records file per collection, in _data/works/.
+#
+#   slug      short name used in records and filters
+#   name      short display name           title   page heading
+#   section   the part of the site the collection page sits under (breadcrumb)
+#   path      the collection's page        file    its records file in _data/works/
+#   home      the original venue, if any
+#   group_by  year (default) | series (Wayne's own headings, in the order given) | none (file order)
+#   noun      what one record is called in counts ("column", "essay")
+#   intro     one or two sentences shown under the heading
+#   coverage  an honest note on how complete the listing is
+#   schema    schema.org type for the works in the page's structured data
+#
+# The Noozhawk entry's slug, path and file are unchanged from the accepted pilot.
+
+- slug: noozhawk
+  name: Noozhawk
+  title: Noozhawk Columns
+  venue: Noozhawk
+  section: { label: Public Scholarship & Media, url: /public-writing/ }
+  path: /public-writing/noozhawk/
+  file: noozhawk
+  home: https://www.noozhawk.com/author/wayne-mellinger/
+  noun: column
+  intro: Columns published in Noozhawk, Santa Barbara’s online newspaper. Each title links to the column on Noozhawk.
+  coverage: 133 columns catalogued from Noozhawk’s author archive and author feed on October 1, 2026.
+  schema: OpinionNewsArticle
+  publisher: { name: Noozhawk, url: "https://www.noozhawk.com/" }
+
+- slug: scholarship
+  name: Scholarly Publications
+  title: Scholarly Publications
+  venue: Journals and books
+  section: { label: Sociology, url: /scholarship/ }
+  path: /scholarship/publications/
+  file: scholarship
+  group_by: series
+  series:
+    - { name: Books }
+    - { name: Forthcoming }
+    - { name: Journal Articles }
+    - { name: Chapters in Edited Volumes and Research Annuals }
+    - { name: Other Articles, intro: "Listed in another bibliography of Wayne’s work but not yet confirmed against the publication." }
+  noun: publication
+  intro: Journal articles, chapters in edited volumes and research annuals, and published books, each linked to the publisher or another authoritative record where one could be found. Work in progress is on the Research page.
+  coverage: Checked against publishers and bibliographic records in October 2026. Five works now link to the journal, publisher or a scholarly archive; the rest are older journal issues and research annuals with no record online that could be confirmed, and are listed without links rather than with guessed ones.
+  schema: ScholarlyArticle
+
+- slug: doing-modernity
+  name: Doing Modernity
+  title: "Doing Modernity: Studies in Critical Interactionism"
+  venue: Doing Modernity
+  section: { label: Sociology, url: /scholarship/ }
+  path: /scholarship/doing-modernity/
+  file: doing-modernity
+  home: https://doingmodernity.blogspot.com/
+  group_by: series
+  series:
+    - name: I. Overviews & Theoretical Frameworks
+      parent: "The Santa Barbara School: An Annotated Bibliography"
+      parent_intro: Compiled February 2026, ongoing. UCSB has been a major center for ethnomethodology and conversation analysis since the mid-1960s, yet the Santa Barbara School has never been systematically documented as a tradition — this bibliography, and the theoretical framework of Critical Interactionism it develops, is an attempt to remedy that.
+    - { name: II. Founders & First-Generation Figures, parent: "The Santa Barbara School: An Annotated Bibliography" }
+    - { name: III. Institutional Sites & Applied Work, parent: "The Santa Barbara School: An Annotated Bibliography" }
+    - { name: IV. The Second Santa Barbara School, parent: "The Santa Barbara School: An Annotated Bibliography" }
+    - { name: V. Critical Interactionism & Normative Questions, parent: "The Santa Barbara School: An Annotated Bibliography" }
+    - { name: Sociology of Homelessness & Abandonment, parent: Other essays }
+    - { name: Workplace Studies & Applied EM/CA, parent: Other essays }
+    - { name: Human-AI Interaction, parent: Other essays }
+    - { name: "Media, Politics & Other Essays", parent: Other essays }
+    - { name: Also on Doing Modernity, parent: Other essays, intro: Additional essays not part of the Santa Barbara School bibliography above. }
+  noun: essay
+  intro: Wayne’s research platform for Critical Interactionism, institutions and recognition, and the Santa Barbara School of ethnomethodology. Each title links to the essay on Doing Modernity.
+  coverage: A selection — the essays Wayne listed on the previous site. The full Doing Modernity archive has not yet been catalogued here; read everything at the platform itself.
+  schema: Article
+
+- slug: dionysian-naturalist
+  name: The Dionysian Naturalist
+  title: "The Dionysian Naturalist: Studies in Religious Naturalism and Other Emerging Nature Religions"
+  venue: The Dionysian Naturalist
+  section: { label: Theology & Religious Naturalism, url: /religion-philosophy/ }
+  path: /religion-philosophy/dionysian-naturalist/
+  file: dionysian-naturalist
+  home: https://thedionysiannaturalist.blogspot.com/
+  group_by: series
+  series:
+    - name: Annotated Bibliography (2014–2025)
+      intro: Compiled by Wayne, February 2026. The essays trace an evolving eco-theological architecture — from early writings on shamanism, recovery, and ecstatic experience, through cosmology and enchanted naturalism, to ritual theory, sacred nature, and political eco-theology.
+    - name: Also on The Dionysian Naturalist
+      intro: Full-length, finished essays not included in the annotated bibliography above.
+  noun: work
+  intro: Wayne’s platform for religious naturalism, contemporary Paganism and ecstatic spiritual practice — the theological framework he calls Dionysian Naturalism. Each title links to the essay on The Dionysian Naturalist.
+  coverage: A selection — the works Wayne listed on the previous site. The full archive of The Dionysian Naturalist has not yet been catalogued here.
+  schema: Article
+
+- slug: wild-flesh
+  name: Wild Flesh
+  title: "Wild Flesh: Explorations in Critical Drug Studies"
+  venue: Wild Flesh
+  section: { label: Sociology, url: /scholarship/ }
+  path: /scholarship/wild-flesh/
+  file: wild-flesh
+  home: https://wildflesh.blogspot.com/
+  noun: work
+  intro: Wayne’s platform for critical drug studies, on drug use and altered states. Each title links to the essay on Wild Flesh.
+  coverage: A selection — the works Wayne listed on the previous site. The full Wild Flesh archive has not yet been catalogued here.
+  schema: Article
+
+- slug: poetry
+  name: Poetry
+  title: Poems
+  venue: Moments of Awe Punctuated by the Mundane
+  section: { label: Poetry & Creative Work, url: /creative-work/ }
+  path: /creative-work/poetry/
+  file: poetry
+  group_by: none
+  noun: poem
+  intro: A working selection of poems, in the order Wayne arranged them on his earlier site, which presented them as drawn from Moments of Awe Punctuated by the Mundane (2025). Each poem has its own page.
+  coverage: The selection shown on the previous site — not the full contents of the book, and not necessarily its final texts. The full collection is available from Wayne on request.
+  schema: CreativeWork

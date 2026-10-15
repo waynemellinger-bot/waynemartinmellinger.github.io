@@ -1,0 +1,18 @@
+{#- A list of works grouped under year headings, with a jump list of years. -#}
+{%- set groups = list | groupByYear %}
+{%- if groups.length > 1 %}
+<nav class="year-jump" aria-label="Jump to year">
+  <h2 class="label">Jump to year</h2>
+  <ul>{% for g in groups %}<li><a href="#y{{ g.year }}">{{ g.year }}</a></li>{% endfor %}</ul>
+</nav>
+{%- endif %}
+<div class="works" data-pagefind-ignore="all">
+{%- for g in groups %}
+  <section class="year-group" aria-labelledby="y{{ g.year }}">
+    <h2 id="y{{ g.year }}" class="year-heading">{{ g.year }} <span class="count">{{ g.works.length }}<span class="vh"> {{ "work" if g.works.length == 1 else "works" }}</span></span></h2>
+    <ol class="work-list">
+      {%- for w in g.works %}{% include "record.njk" %}{% endfor %}
+    </ol>
+  </section>
+{%- endfor %}
+</div>

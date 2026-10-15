@@ -1,0 +1,43 @@
+---
+layout: base.njk
+permalink: /research/
+title: Research
+description: "The research of Wayne Martin Mellinger, Ph.D.: bodies of work in Critical Interactionism, the sociology of interaction, homelessness and institutional abandonment, critical drug studies and religious naturalism, and current book and essay projects."
+---
+<header class="page-head">
+  <h1>Research</h1>
+  <p class="lede">Wayne’s newspaper columns, sociology, homelessness scholarship and religious-naturalist writing grow from a few long-running bodies of work. Below are those bodies of work, and the projects now in progress within them.</p>
+</header>
+
+<section aria-labelledby="bodies-of-work">
+  <h2 id="bodies-of-work" class="section-title">Bodies of work</h2>
+  <ul class="program-list">
+    {%- for p in archive.programPages %}
+    <li><a href="{{ p.path }}">{{ p.name }}</a> <span class="count">{{ p.works.length | pluralize('work') }}</span>
+      <p>{{ p.description }}</p></li>
+    {%- endfor %}
+  </ul>
+</section>
+
+<section aria-labelledby="projects">
+  <h2 id="projects" class="section-title">Current projects</h2>
+  <p class="coverage">Status as of October 2026. Work in progress is described here, not published here; nothing on this page is a claim of publication.</p>
+  {%- for p in archive.projects %}
+  <article class="project" id="{{ p.id }}" aria-labelledby="{{ p.id }}-h">
+    <h3 id="{{ p.id }}-h">{{ p.title }}</h3>
+    <p class="status-line"><span class="status">{{ p.status }}</span>
+      {%- if p.programList.length %} <span class="project-programs">{% for pr in p.programList %}<a href="{{ pr.path }}">{{ pr.name }}</a>{% if not loop.last %} · {% endif %}{% endfor %}</span>{% endif %}</p>
+    <p>{{ p.summary }}</p>
+    {%- if p.workList.length %}
+    <details class="project-works">
+      <summary>Related published work <span class="count">{{ p.workList.length }}</span></summary>
+      <ul>
+        {%- for w in p.workList %}
+        <li><a href="{{ w.page or w.url or w.permalink }}">{{ w.title }}</a> <span class="work-venue">{{ w.collectionName }}{% if w.date %}, {{ w | dateLabel(true) }}{% endif %}</span></li>
+        {%- endfor %}
+      </ul>
+    </details>
+    {%- endif %}
+  </article>
+  {%- endfor %}
+</section>

@@ -1,0 +1,46 @@
+---
+layout: base.njk
+permalink: /about/
+title: About
+wide: true
+description: "About Wayne Martin Mellinger, Ph.D.: independent sociologist, writer, street outreach worker and public intellectual in Santa Barbara, California."
+---
+{#- The introduction is the opening paragraph of Wayne's biography on the previous site, unchanged.
+    The facts under "At a glance" are taken from his CV on the previous site. -#}
+<div class="about-grid">
+  <figure class="about-figure">
+    {%- set img = images.portrait %}{% set sizes = "(min-width: 56rem) 22rem, 90vw" %}{% set eager = true %}
+    {% include "picture.njk" %}
+  </figure>
+  <div class="about-text">
+    <header class="page-head">
+      <h1>About</h1>
+      <p class="tagline">{{ site.tagline }}<br>{{ site.tagline_2 }}</p>
+    </header>
+    <div class="prose">
+      <p>Wayne Martin Mellinger, Ph.D., is an independent sociologist, writer, street outreach worker, and public intellectual based in Santa Barbara, California. His life has moved through universities and homeless encampments, professional success and incarceration, addiction and recovery, scholarship and public service. Rather than separating these experiences, Wayne draws upon all of them in his efforts to understand how institutions treat people — and how lives can be rebuilt through connection, accountability, and care.</p>
+    </div>
+    <ul class="link-row">
+      <li><a href="/about/biography/">Read the full biography</a></li>
+      <li><a href="/cv/">CV</a></li>
+      <li><a href="/about/portraits/">Portraits</a></li>
+      <li><a href="/contact/">Contact</a></li>
+    </ul>
+
+    <section aria-labelledby="glance" class="glance">
+      <h2 id="glance" class="label">At a glance</h2>
+      <dl>
+        <dt>Training</dt>
+        <dd>Ph.D. in Sociology, University of California, Santa Barbara (1990), in ethnomethodology and conversation analysis; committee: Don H. Zimmerman (chair), Thomas P. Wilson, Harvey Molotch.</dd>
+        <dt>Teaching</dt>
+        <dd>UC Santa Barbara, UC Santa Cruz, UC Berkeley, Fielding Graduate University, Ventura College and Antioch University Santa Barbara.</dd>
+        <dt>Human services</dt>
+        <dd>Street outreach worker, counselor and case manager; homelessness prevention program manager.</dd>
+        <dt>Public service</dt>
+        <dd>Has served on the Santa Barbara County Behavioral Wellness Commission; Santa Barbara County Continuum of Care; boards of CLUE-SB, Showers of Blessing and the Committee for Social Justice. <a href="/community/">Community work</a></dd>
+        <dt>Writing</dt>
+        <dd>Columnist for Noozhawk; research platforms <a href="/scholarship/doing-modernity/">Doing Modernity</a>, <a href="/religion-philosophy/dionysian-naturalist/">The Dionysian Naturalist</a> and <a href="/scholarship/wild-flesh/">Wild Flesh</a>; poetry. <a href="/writing/">All writing</a></dd>
+      </dl>
+    </section>
+  </div>
+</div>

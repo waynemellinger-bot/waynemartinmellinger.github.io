@@ -1,0 +1,84 @@
+---
+layout: base.njk
+pagination:
+  data: archive.collections
+  size: 1
+  addAllPagesToCollections: true
+  alias: coll
+permalink: "{{ coll.path }}"
+eleventyComputed:
+  title: "{{ coll.title }}"
+  crumbTitle: "{{ coll.name }}"
+  description: "{{ archive.byCollection[coll.slug].length }} {{ coll.noun }}s by Wayne Martin Mellinger, Ph.D. — {{ coll.intro }}"
+---
+{%- set list = archive.byCollection[coll.slug] %}
+{%- set dated = [] %}{% for w in list %}{% if w.year %}{% set dated = (dated.push(w.year), dated) %}{% endif %}{% endfor %}
+{%- set years = dated | sort %}
+{%- set hasDraft = false %}{% for w in list %}{% if w.draft %}{% set hasDraft = true %}{% endif %}{% endfor %}
+{%- set hasTopics = false %}{% for w in list %}{% if w.topics and w.topics.length %}{% set hasTopics = true %}{% endif %}{% endfor %}
+<header class="page-head">
+  <p class="eyebrow">{{ coll.section.label }}</p>
+  <h1>{{ coll.title }}</h1>
+  <p class="lede">{{ coll.intro }}</p>
+  <p class="meta-line">{{ list.length | pluralize(coll.noun) }}{% if years.length %}, {{ years | first }}{% if (years | last) != (years | first) %}–{{ years | last }}{% endif %}{% endif %}.
+    {%- if coll.home %} <a href="{{ coll.home }}">Visit {{ coll.venue }}</a>{% endif %}</p>
+  <p class="coverage">{{ coll.coverage }}</p>
+  {%- if hasDraft %}
+  <p class="provisional">Program and topic labels on this page are provisional and await the author’s review. <a href="/writing/about-the-archive/">About the archive</a></p>
+  {%- endif %}
+</header>
+
+{%- if hasTopics %}
+<details class="browse-topics">
+  <summary><span class="label">Browse by topic</span></summary>
+  <ul class="topic-cloud">
+    {%- for t in archive.topicPages %}
+    {%- set n = 0 %}{% for w in t.works %}{% if w.collection == coll.slug %}{% set n = n + 1 %}{% endif %}{% endfor %}
+    {%- if n %}<li><a href="{{ t.path }}">{{ t.name }} <span class="count">{{ n }}</span></a></li>{% endif %}
+    {%- endfor %}
+  </ul>
+  <p class="all-topics"><a href="/topics/">All topics across the archive</a></p>
+</details>
+{%- endif %}
+
+{%- if coll.group_by == 'series' %}
+<div class="works" data-pagefind-ignore="all">
+  {%- set parent = '' %}
+  {%- for g in archive.groups[coll.slug] %}{% if g.works.length %}
+  {%- if g.parent and g.parent != parent %}{% set parent = g.parent %}
+  <h2 class="series-parent">{{ g.parent }}</h2>
+  {%- if g.parent_intro %}<p class="series-intro">{{ g.parent_intro }}</p>{% endif %}
+  {%- endif %}
+  <section class="series-group" aria-labelledby="s-{{ loop.index }}">
+    {%- if g.parent %}<h3 id="s-{{ loop.index }}" class="series-heading">{{ g.name }}</h3>
+    {%- else %}<h2 id="s-{{ loop.index }}" class="series-heading top">{{ g.name }}</h2>{% endif %}
+    {%- if g.intro %}<p class="series-intro">{{ g.intro }}</p>{% endif %}
+    <ol class="work-list">
+      {%- set fullDates = true %}
+      {%- for w in g.works %}{% include "record.njk" %}{% endfor %}
+    </ol>
+  </section>
+  {%- endif %}{% endfor %}
+</div>
+{%- elif coll.group_by == 'none' %}
+<div class="works" data-pagefind-ignore="all">
+  <ol class="work-list">
+    {%- set fullDates = true %}
+    {%- for w in list %}{% include "record.njk" %}{% endfor %}
+  </ol>
+</div>
+{%- else %}
+{% include "works-by-year.njk" %}
+{%- endif %}
+
+{%- set items = [] %}
+{%- for w in list %}
+  {%- set item = { "@type": coll.schema, "headline": w.title, "name": w.title, "author": { "@id": site.url + "/#person" } } %}
+  {%- if w.date %}{% set item = (item | dictMerge({ "datePublished": w.date })) %}{% endif %}
+  {%- if w.page %}{% set item = (item | dictMerge({ "url": w.page | absolute(site.url) })) %}{% elif w.url %}{% set item = (item | dictMerge({ "url": w.url })) %}{% endif %}
+  {%- if coll.publisher %}{% set item = (item | dictMerge({ "publisher": { "@type": "NewsMediaOrganization", "name": coll.publisher.name, "url": coll.publisher.url } })) %}
+  {%- elif w.type in ['article', 'chapter'] %}{% set item = (item | dictMerge({ "isPartOf": { "@type": "Periodical" if w.type == 'article' else "Book", "name": w.venue } })) %}{% endif %}
+  {%- set items = (items.push({ "@type": "ListItem", "position": loop.index, "item": item }), items) %}
+{%- endfor %}
+<script type="application/ld+json">{{ { "@context": "https://schema.org", "@type": "CollectionPage", "name": coll.title, "url": coll.path | absolute(site.url), "about": { "@id": site.url + "/#person" }, "isPartOf": { "@id": site.url + "/#website" },
+  "mainEntity": { "@type": "ItemList", "numberOfItems": list.length, "itemListElement": items } } | json | safe }}</script>

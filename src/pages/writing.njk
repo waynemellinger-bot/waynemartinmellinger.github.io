@@ -1,0 +1,87 @@
+---
+layout: base.njk
+permalink: /writing/
+title: Writing
+description: "Every work in the archive of Wayne Martin Mellinger, Ph.D. — scholarship, Noozhawk columns, essays on Doing Modernity, The Dionysian Naturalist and Wild Flesh, and poems — filterable by collection, type, body of work, topic and decade."
+---
+{%- set st = archive.stats %}
+<header class="page-head">
+  <h1>Writing</h1>
+  <p class="lede">{{ st.total }} works from {{ st.first }} to {{ st.last }}: scholarly sociology, newspaper columns, essays on three research platforms, and poems. Start from a part of the work below, or filter the whole list.</p>
+</header>
+
+<nav class="doorways-grid" aria-label="Parts of the archive">
+  <div>
+    <h2 class="label"><a href="/scholarship/">Sociology</a></h2>
+    <ul>
+      {%- for slug in ['scholarship', 'doing-modernity', 'wild-flesh'] %}{% set c = archive.collectionBySlug[slug] %}
+      <li><a href="{{ c.path }}">{{ c.name }}</a> <span class="count">{{ archive.byCollection[slug].length }}</span></li>
+      {%- endfor %}
+    </ul>
+  </div>
+  <div>
+    <h2 class="label"><a href="/public-writing/">Public scholarship &amp; media</a></h2>
+    <ul>
+      <li><a href="/public-writing/noozhawk/">Noozhawk columns</a> <span class="count">{{ archive.byCollection.noozhawk.length }}</span></li>
+    </ul>
+  </div>
+  <div>
+    <h2 class="label"><a href="/religion-philosophy/">Theology &amp; religious naturalism</a></h2>
+    <ul>
+      <li><a href="/religion-philosophy/dionysian-naturalist/">The Dionysian Naturalist</a> <span class="count">{{ archive.byCollection['dionysian-naturalist'].length }}</span></li>
+      <li><a href="/philosophy/">Philosophy</a> <span class="count">{{ curated.philosophy.ids.length }}</span></li>
+    </ul>
+  </div>
+  <div>
+    <h2 class="label"><a href="/creative-work/">Poetry &amp; prayer</a></h2>
+    <ul>
+      <li><a href="/creative-work/poetry/">Poems</a> <span class="count">{{ archive.byCollection.poetry.length }}</span></li>
+      <li><a href="/prayers/">Prayers and spiritual writings</a></li>
+    </ul>
+  </div>
+</nav>
+<p class="also-browse">Also browse by <a href="/research/#bodies-of-work">body of work</a> or <a href="/topics/">topic</a>, or <a href="/search/">search</a> the full text of this site. <a href="/writing/about-the-archive/">How the archive is organized</a></p>
+
+<section aria-labelledby="all-works" class="archive">
+  <h2 id="all-works" class="section-title">All works</h2>
+  <form class="filters js-only" id="filters" role="search" aria-label="Filter the list of works">
+    <div class="filter-row">
+      <label class="filter wide-filter"><span>Words in the title or description</span>
+        <input type="search" name="q" autocomplete="off" spellcheck="false"></label>
+    </div>
+    <div class="filter-row">
+      <label class="filter"><span>Collection</span>
+        <select name="collection"><option value="">All</option>
+          {%- for f in archive.facets.collections %}<option value="{{ f.value }}">{{ f.label }} ({{ f.n }})</option>{% endfor %}
+        </select></label>
+      <label class="filter"><span>Type</span>
+        <select name="type"><option value="">All</option>
+          {%- for f in archive.facets.types %}<option value="{{ f.value }}">{{ f.label }} ({{ f.n }})</option>{% endfor %}
+        </select></label>
+      <label class="filter"><span>Body of work</span>
+        <select name="program"><option value="">All</option>
+          {%- for f in archive.facets.programs %}<option value="{{ f.value }}">{{ f.label }} ({{ f.n }})</option>{% endfor %}
+          <option value="none">None assigned ({{ archive.facets.unprogrammed }})</option>
+        </select></label>
+      <label class="filter"><span>Topic</span>
+        <select name="topic"><option value="">All</option>
+          {%- for f in archive.facets.topics %}<option value="{{ f.value }}">{{ f.label }} ({{ f.n }})</option>{% endfor %}
+        </select></label>
+      <label class="filter"><span>Decade</span>
+        <select name="decade"><option value="">All</option>
+          {%- for d in archive.facets.decades %}<option value="{{ d | replace('0s', '') }}">{{ d }}</option>{% endfor %}
+        </select></label>
+    </div>
+    <div class="filter-status">
+      <p id="filter-count" aria-live="polite">Showing all {{ st.total }} works.</p>
+      <button type="reset" class="button-quiet">Clear filters</button>
+    </div>
+  </form>
+  <p class="provisional">Body-of-work and topic labels are provisional and await the author’s review.</p>
+  <ol class="work-list" id="work-list" data-pagefind-ignore="all">
+    {%- set filterable = true %}{% set fullDates = true %}{% set showVenue = true %}{% set showType = true %}
+    {%- for w in archive.works %}{% include "record.njk" %}{% endfor %}
+  </ol>
+  <p id="no-results" class="no-results" hidden>No works match these filters. <button type="button" class="button-link" data-clear>Clear filters</button></p>
+</section>
+<script src="/assets/js/archive-filter.js" defer></script>

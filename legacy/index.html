@@ -442,6 +442,32 @@
     font-family:var(--mono); font-size:11.5px; color:rgba(246,242,234,0.45);
     flex-wrap:wrap; gap:12px;
   }
+
+  /* ---------- MOBILE FIXES (Oct 2026) ---------- */
+  /* Bio portrait was position:sticky in a one-column layout, pinning it over the text on phones. */
+  @media (max-width:820px){
+    .intro-figure{position:static; top:auto; border-left:0; padding-left:0;}
+    .intro-figure img{max-width:260px; height:auto; margin-left:auto; margin-right:auto;}
+  }
+  /* CV/Projects lists overflowed narrow screens. */
+  .adv-grid > *{min-width:0;}
+  @media (max-width:480px){
+    .adv-list li{flex-wrap:wrap; gap:4px 16px;}
+    .adv-list li span:last-child{white-space:normal;}
+  }
+  /* Phone menu: links were hidden below 1020px with no way to open them. */
+  @media (max-width:1020px){
+    #mainnav .wrap{display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap;}
+    .navtoggle{display:inline-block; background:none; border:1px solid currentColor; border-radius:2px;
+      font-family:var(--mono); font-size:11px; letter-spacing:0.06em; text-transform:uppercase;
+      padding:8px 12px; color:var(--paper); cursor:pointer;}
+    nav.scrolled .navtoggle, nav.open .navtoggle{color:var(--ink);}
+    nav.open{background:rgba(246,242,234,0.98);}
+    nav.open .brand{color:var(--ink);}
+    nav.open .navlinks{display:flex; flex-direction:column; flex-basis:100%; gap:0; padding-top:12px;}
+    nav.open .navlinks a{color:var(--ink); font-size:13px; padding:12px 0; border-bottom:1px solid var(--line);}
+  }
+  .navtoggle:focus-visible, .navlinks a:focus-visible{outline:2px solid var(--ochre); outline-offset:3px;}
 </style>
 </head>
 <body>
@@ -449,7 +475,8 @@
 <nav id="mainnav">
   <div class="wrap">
     <a class="brand" href="#top">Wayne Martin Mellinger, Ph.D.</a>
-    <div class="navlinks">
+    <button class="navtoggle" type="button" aria-expanded="false" aria-controls="navlinks">Menu</button>
+    <div class="navlinks" id="navlinks">
       <a href="#top">Home</a>
       <a href="#contact">Contact</a>
       <a href="#biography">Biography</a>
@@ -1334,6 +1361,16 @@
   }
   window.addEventListener('scroll', updateAperture, {passive:true});
   updateAperture();
+
+  // phone menu
+  const toggle = document.querySelector('.navtoggle');
+  toggle.addEventListener('click', () => {
+    const open = nav.classList.toggle('open');
+    toggle.setAttribute('aria-expanded', open);
+  });
+  document.querySelectorAll('#navlinks a').forEach(a => a.addEventListener('click', () => {
+    nav.classList.remove('open'); toggle.setAttribute('aria-expanded', 'false');
+  }));
 </script>
 
 </body>

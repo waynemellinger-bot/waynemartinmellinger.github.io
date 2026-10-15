@@ -1,0 +1,208 @@
+# Scholarly publications: journal articles, chapters in edited volumes and research annuals,
+# other articles, and published books.
+#
+# Titles, venues, years and page ranges were first copied from the previous site's
+# "Peer-Reviewed Publications" list (migrated 2026-10-07). On 2026-10-14 each record was
+# checked against the publisher or another authoritative record where one could be found.
+# Every check, the link chosen and every open question are in docs/PUBLICATION-AUDIT.md.
+# A url is added only when that address was itself found and confirmed; none is constructed.
+#
+# Grouping changed 2026-10-14 from a single "Peer-Reviewed Publications" list to publication
+# types. Whether each venue was refereed has not been confirmed; that is a decision for Wayne.
+# Books still in progress are not listed here; they are on the Research page (src/_data/projects.yml).
+
+# ---------- Forthcoming ----------
+
+- id: pub-many-interaction-orders
+  title: Many Interaction Orders
+  venue: Studies in Symbolic Interaction
+  type: article
+  status: forthcoming
+  series: Forthcoming
+  related: [dm-the-many-interaction-orders-goffman-rawls-smith-and-the-plur]
+  note: >-
+    Listed as "Forthcoming" on the previous site, with no year. Wayne's notes record acceptance
+    for Vol. 64. Wayne's ResearchGate profile (checked 2026-10-14) lists a July 2026 chapter titled
+    "Many Interaction Orders: Political Socialization and the Organizational Ecology of Housing
+    Justice". Title, volume and date are not changed here until Wayne confirms them and the
+    publisher's page can be found.
+  source: Previous site, Peer-Reviewed Publications list; ResearchGate profile checked 2026-10-14
+
+# ---------- Journal articles ----------
+
+- id: pub-white-fantasies-black-bodies
+  title: "White Fantasies, Black Bodies: Racial Power, Disgust and Desire in American Popular Culture"
+  date: '1997'
+  with: Rodney Beaulieu
+  venue: Visual Anthropology
+  citation: "9:117–147"
+  type: article
+  url: https://philarchive.org/rec/MELWFB
+  status: published
+  series: Journal Articles
+  note: >-
+    PhilArchive record confirms Visual Anthropology, vol. 9, pp. 117–147, 1997. Taylor & Francis
+    lists the journal's vol. 9 no. 2, but the article's own DOI page could not be reached to
+    confirm; replace the url with the DOI once it is confirmed.
+  source: Previous site; PhilArchive record MELWFB checked 2026-10-14
+
+- id: pub-newz-from-the-hood
+  title: "Newz from the Hood: The Stephanie Kuhen Murder in the Los Angeles Times"
+  date: '1997'
+  venue: Human Systems
+  type: article
+  status: published
+  series: Journal Articles
+  note: >-
+    Volume and pages not found. Human Systems (The Journal of Systemic Consultation and
+    Management) has no online archive for 1997 that could be located. Wayne's ResearchGate profile
+    lists the work twice, once as an article and once as a chapter, under the spelling "Kuhn".
+  source: Previous site, Peer-Reviewed Publications list; searched 2026-10-14, unresolved
+
+- id: pub-negotiated-orders
+  title: "Negotiated Orders: The Negotiation of Directives in Paramedic-Nurse Interaction"
+  date: '1994'
+  venue: Symbolic Interaction
+  citation: "17(2):165–185"
+  type: article
+  url: https://doi.org/10.1525/si.1994.17.2.165
+  status: published
+  series: Journal Articles
+  programs: [interaction-emca]
+  programs_status: draft
+  classification_basis: title
+  source: Previous site; DOI and citation confirmed by emcawiki and the Wiley Online Library listing, 2026-10-14
+
+- id: pub-tourism-representations
+  title: Toward a Critical Analysis of Tourism Representations
+  date: '1994'
+  venue: Annals of Tourism Research
+  citation: "21(4):756–779"
+  type: article
+  url: https://www.sciencedirect.com/science/article/abs/pii/0160738394900825
+  status: published
+  series: Journal Articles
+  note: The ScienceDirect article page was found by search; its DOI was not read from the page, so the page address is used rather than a DOI.
+  source: Previous site; ScienceDirect article page located 2026-10-14
+
+- id: pub-postcards-from-the-edge-of-the-color-line
+  title: "Postcards from the Edge of the Color Line: Images of African Americans in Popular Culture, 1893–1917"
+  date: '1992'
+  venue: Symbolic Interaction
+  citation: "15(4):413–433"
+  type: article
+  status: published
+  series: Journal Articles
+  note: >-
+    No publisher page found. Symbolic Interaction articles of this period are on Wiley Online Library
+    with DOIs of the form 10.1525/si.YEAR.VOL.ISSUE.PAGE, but this article's DOI has not been
+    seen or confirmed, so none is given.
+  source: Previous site, Peer-Reviewed Publications list; searched 2026-10-14, unresolved
+
+- id: pub-representing-blackness
+  title: 'Representing Blackness in the White Imagination: Images of "Happy Darkeys" in Popular Culture, 1893–1917'
+  date: '1992'
+  venue: Visual Sociology
+  citation: "7(2):3–21"
+  type: article
+  url: https://doi.org/10.1080/14725869208583700
+  status: published
+  series: Journal Articles
+  note: Taylor & Francis lists the article in Visual Sociology vol. 7 no. 2 at this DOI. Pages not re-read from the publisher page.
+  source: Previous site; Taylor & Francis listing checked 2026-10-14
+
+# ---------- Chapters in edited volumes and research annuals ----------
+
+- id: pub-reading-the-news-postmodern-mass-media
+  title: "Reading the News in the Age of Postmodern Mass Media: Gang Murders in the Los Angeles Times"
+  date: '1997'
+  venue: "Cultural Studies: A Research Annual"
+  type: article
+  status: published
+  series: Chapters in Edited Volumes and Research Annuals
+  note: >-
+    Cultural Studies: A Research Annual was a research annual edited by Norman K. Denzin,
+    so it is listed with chapters and research-annual contributions. Volume and pages not found.
+  source: Previous site, Peer-Reviewed Publications list; searched 2026-10-14, unresolved
+
+- id: pub-talk-power-and-professionals
+  title: "Talk, Power and Professionals: Partial Repeats as Challenges in the Psychiatric Interview"
+  date: '1995'
+  venue: Therapeutic and Everyday Discourse as Behavior Change
+  citation: "ed. Jürg Siegfried (Ablex), pp. 391–418"
+  type: chapter
+  status: published
+  series: Chapters in Edited Volumes and Research Annuals
+  programs: [interaction-emca]
+  programs_status: draft
+  classification_basis: title
+  note: Another listing puts "Challenges" in quotation marks and gives the book's subtitle (Toward a Microanalysis in Psychotherapy Process Research). Not confirmed against the book.
+  source: Previous site, Peer-Reviewed Publications list; searched 2026-10-14, unresolved
+
+- id: pub-anatomy-of-an-obituary
+  title: 'The Anatomy of an Obituary: "Rock Hudson Dies at 59 After Fighting AIDS"'
+  date: '1995'
+  venue: Perspectives on Social Problems
+  citation: "7"
+  type: article
+  status: published
+  series: Chapters in Edited Volumes and Research Annuals
+  note: Perspectives on Social Problems is a research annual edited by Gale Miller and James A. Holstein. Pages not found.
+  source: Previous site, Peer-Reviewed Publications list; searched 2026-10-14, unresolved
+
+- id: pub-talk-as-work
+  title: "Talk-as-Work: The Case of Paramedic Calls for Emergency Field Orders"
+  date: '1992'
+  venue: Current Research on Occupations and Professions
+  citation: "Vol. 7, pp. 79–109"
+  type: article
+  status: published
+  series: Chapters in Edited Volumes and Research Annuals
+  programs: [interaction-emca]
+  programs_status: draft
+  classification_basis: title
+  source: Previous site, Peer-Reviewed Publications list; searched 2026-10-14, unresolved
+
+- id: pub-accomplishing-fact-dispatch-packages
+  title: 'Accomplishing Fact in Police "Dispatch Packages": An Analysis of the Situated Construction of an Organizational Record'
+  date: '1992'
+  venue: Perspectives on Social Problems
+  citation: "4"
+  type: article
+  status: published
+  series: Chapters in Edited Volumes and Research Annuals
+  programs: [interaction-emca]
+  programs_status: draft
+  classification_basis: title
+  source: Previous site, Peer-Reviewed Publications list; searched 2026-10-14, unresolved
+
+# ---------- Other articles ----------
+
+- id: pub-john-henry-adams-new-negro
+  title: John Henry Adams and the Image of the New Negro
+  date: '1997'
+  venue: The International Review of African American Art
+  type: article
+  status: unverified
+  series: Other Articles
+  note: >-
+    Missing from the previous site. Added 2026-10-14 from the publication list on Wayne's
+    EverybodyWiki biography, the only listing found. The magazine's 1997 contents could not be
+    checked; title, year, volume and pages need Wayne's confirmation (or a copy) before the
+    "not yet confirmed" label is removed.
+  source: EverybodyWiki biography of Wayne Martin Mellinger, publication list, checked 2026-10-14
+
+# ---------- Books ----------
+
+- id: book-i-just-wanted-to-dance-with-dionysus
+  title: "I Just Wanted to Dance with Dionysus: Life's Sacred Journey, Lost Souls and Our Thirst for Wholeness"
+  date: '2025'
+  venue: PhilArchive
+  type: book
+  url: https://philarchive.org/rec/MELIJW
+  status: published
+  series: Books
+  description: A Gonzo autoethnography about addiction, homelessness, psychiatric crisis, and recovery, structured through Joseph Campbell's Hero's Journey and the mythology of Dionysus.
+  related: [dn-i-just-wanted-to-dance-with-dionysus-lifes-sacred-journey-lo, wf-i-just-wanted-to-dance-with-dionysus]
+  note: Description is Wayne's own wording from the biography on the previous site.
+  source: Previous site, Biography (linked to PhilArchive)

@@ -1,0 +1,21 @@
+# Controlled topic list. A work may only use topics listed here.
+# DRAFT, drawn from the Noozhawk columns during the pilot; names await Wayne's review.
+# Add a topic here first, then use its slug in a record.
+- { slug: homelessness, name: Homelessness }
+- { slug: housing, name: Housing }
+- { slug: institutions-and-abandonment, name: Institutions & Abandonment }
+- { slug: criminalization-and-jails, name: Criminalization & Jails }
+- { slug: mental-health, name: Mental Health }
+- { slug: drugs-and-harm-reduction, name: "Drugs, Recovery & Harm Reduction" }
+- { slug: public-space, name: Public Space }
+- { slug: poverty-and-work, name: Poverty & Work }
+- { slug: immigration, name: Immigration }
+- { slug: race-and-ethnicity, name: Race & Ethnicity }
+- { slug: chumash-and-indigenous, name: Chumash & Indigenous Santa Barbara }
+- { slug: santa-barbara-history, name: Santa Barbara History & Civic Life }
+- { slug: politics-and-democracy, name: Politics & Democracy }
+- { slug: faith-and-justice, name: Faith & Justice }
+- { slug: ecology-and-climate, name: Ecology & Climate }
+- { slug: sociology-and-interaction, name: Sociology & Everyday Interaction }
+- { slug: profiles, name: Profiles of People }
+- { slug: reflections-on-living, name: Reflections on Living }

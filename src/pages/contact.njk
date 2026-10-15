@@ -1,0 +1,19 @@
+---
+layout: base.njk
+permalink: /contact/
+title: Contact
+description: "Contact Wayne Martin Mellinger, Ph.D., for speaking, press, collaboration, or to share a correction."
+---
+<header class="page-head">
+  <h1>Contact</h1>
+  <p class="lede">For speaking, press, collaboration, or to share a correction:</p>
+  <p class="contact-mail"><a href="mailto:{{ site.email }}">{{ site.email }}</a></p>
+</header>
+<section aria-labelledby="elsewhere">
+  <h2 id="elsewhere" class="label">Elsewhere</h2>
+  <ul class="index-list">
+    {%- for e in site.elsewhere %}
+    <li><a href="{{ e.url }}"{% if e.sameAs %} rel="me"{% endif %}>{{ e.label }}</a></li>
+    {%- endfor %}
+  </ul>
+</section>

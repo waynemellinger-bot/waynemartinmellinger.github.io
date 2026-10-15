@@ -1,0 +1,103 @@
+---
+layout: base.njk
+pagination:
+  data: sections
+  size: 1
+  addAllPagesToCollections: true
+  alias: s
+permalink: "{{ s.url }}"
+eleventyComputed:
+  title: "{{ s.title }}"
+  description: "{{ s.description }}"
+  breadcrumbs:
+    - { label: "Writing", url: "/writing/" }
+sections:
+  - url: /scholarship/
+    title: Sociology
+    lede: Scholarly sociology, and two research platforms — Doing Modernity, on Critical Interactionism and the Santa Barbara School, and Wild Flesh, on critical drug studies.
+    description: "Sociology by Wayne Martin Mellinger, Ph.D.: scholarly publications, Doing Modernity and Wild Flesh, and his work in Critical Interactionism, ethnomethodology and conversation analysis, homelessness and institutional abandonment, and critical drug studies."
+    collections: [scholarship, doing-modernity, wild-flesh]
+    programs: [critical-interactionism, interaction-emca, homelessness-abandonment, critical-drug-studies]
+    links:
+      - { label: Publications, url: /scholarship/publications/ }
+      - { label: Research and current projects, url: /research/ }
+      - { label: Philosophy, url: /philosophy/ }
+  - url: /public-writing/
+    title: Public Scholarship & Media
+    lede: Public sociology for a general audience — mostly Noozhawk columns on homelessness, housing, mental health and civic life in Santa Barbara.
+    description: "Public scholarship by Wayne Martin Mellinger, Ph.D.: Noozhawk columns on homelessness, housing, mental health and civic life in Santa Barbara."
+    collections: [noozhawk]
+    programs: [public-sociology-justice]
+    links:
+      - { label: Community work, url: /community/ }
+      - { label: Contact for interviews and talks, url: /contact/ }
+    note: Wayne’s fourth platform, Our Neighbors on the Streets, has not yet been catalogued here.
+  - url: /religion-philosophy/
+    title: Theology & Religious Naturalism
+    lede: Religious naturalism, contemporary Paganism and ecstatic spiritual practice — the theological framework Wayne calls Dionysian Naturalism.
+    description: "Writing by Wayne Martin Mellinger, Ph.D., on religious naturalism, Dionysian Naturalism and spiritual practice, from The Dionysian Naturalist."
+    collections: [dionysian-naturalist]
+    programs: [religious-dionysian-naturalism]
+    links:
+      - { label: Prayers and Spiritual Writings, url: /prayers/ }
+      - { label: Philosophy, url: /philosophy/ }
+  - url: /creative-work/
+    title: Poetry & Creative Work
+    lede: Poetry, and the books in which it appears. Prayers and ritual writing now have <a href="/prayers/">their own page</a>.
+    description: "Poetry, prayers and ritual writing by Wayne Martin Mellinger, from Moments of Awe Punctuated by the Mundane (2025) and The Dionysian Naturalist."
+    collections: [poetry]
+    creative: true
+---
+<header class="page-head">
+  <p class="eyebrow">Writing</p>
+  <h1>{{ s.title }}</h1>
+  <p class="lede">{{ s.lede | safe }}</p>
+</header>
+
+<section aria-labelledby="where">
+  <h2 id="where" class="label">{{ "Collections" if s.collections.length > 1 else "Collection" }}</h2>
+  <ul class="cards">
+    {%- for slug in s.collections %}{% set c = archive.collectionBySlug[slug] %}
+    <li class="card">
+      <h3><a href="{{ c.path }}">{{ c.title }}</a></h3>
+      <p>{{ c.intro }}</p>
+      <p class="count">{{ archive.byCollection[slug].length | pluralize(c.noun) }}</p>
+    </li>
+    {%- endfor %}
+  </ul>
+  {%- if s.note %}<p class="coverage">{{ s.note }}</p>{% endif %}
+</section>
+
+{%- if s.programs %}
+<section aria-labelledby="bodies">
+  <h2 id="bodies" class="label">Bodies of work</h2>
+  <ul class="program-list">
+    {%- for slug in s.programs %}{% set pp = archive.programPageBySlug[slug] %}
+    <li><a href="{{ pp.path }}">{{ pp.name }}</a> <span class="count">{{ pp.works.length }}</span>
+      <p>{{ pp.description }}</p></li>
+    {%- endfor %}
+  </ul>
+</section>
+{%- endif %}
+
+{%- if s.links %}
+<section aria-labelledby="see-also">
+  <h2 id="see-also" class="label">See also</h2>
+  <ul class="link-row">{% for l in s.links %}<li><a href="{{ l.url }}">{{ l.label }}</a></li>{% endfor %}</ul>
+</section>
+{%- endif %}
+
+{%- if s.creative %}
+<section aria-labelledby="books">
+  <h2 id="books" class="label">Books</h2>
+  <ul class="program-list">
+    <li><cite>Moments of Awe Punctuated by the Mundane</cite> (2025). Poems. <a href="/creative-work/poetry/">Read a selection</a> shown on the earlier site; the full collection is available from Wayne on request.</li>
+    <li><a href="https://philarchive.org/rec/MELIJW"><cite>I Just Wanted to Dance with Dionysus: Life’s Sacred Journey, Lost Souls and Our Thirst for Wholeness</cite></a> (2025). A Gonzo autoethnography.</li>
+  </ul>
+</section>
+
+<section aria-labelledby="prayers-pointer" id="prayers-section">
+  <h2 id="prayers-pointer" class="label">Prayers &amp; ritual</h2>
+  <p><a href="/prayers/">Prayers and Spiritual Writings</a> — prayers, invocations and essays on spiritual practice.</p>
+</section>
+{%- endif %}
