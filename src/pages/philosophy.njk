@@ -1,0 +1,47 @@
+---
+layout: base.njk
+permalink: /philosophy/
+title: Philosophy
+description: "Philosophical writing by Wayne Martin Mellinger, Ph.D.: Nietzsche and Dionysian thought, religious naturalism, the epistemology of abandonment, and the moral economy of interaction."
+breadcrumbs:
+  - { label: "Writing", url: "/writing/" }
+---
+{#- Added 2026-10-14. The works listed here already have records in other collections;
+    the selection lives in src/_data/curated.yml and is provisional until Wayne reviews it. -#}
+{%- set sel = curated.philosophy %}
+<header class="page-head">
+  <p class="eyebrow">Writing</p>
+  <h1>Philosophy</h1>
+  <p class="lede">Writing in which the questions are philosophical ones: what Nietzsche’s Dionysus offers against a narrow idea of reason, what a sacred naturalism can claim, what people pushed to the margins come to know, and what we owe one another.</p>
+  {%- if sel.status == 'draft' %}
+  <p class="provisional">This page gathers essays published elsewhere on this site. Which works belong here is a provisional selection, made from their titles, awaiting the author’s review. <a href="/writing/about-the-archive/">About the archive</a></p>
+  {%- endif %}
+</header>
+
+<section aria-labelledby="phil-works">
+  <h2 id="phil-works" class="section-title">Essays and books</h2>
+  <ol class="work-list">
+    {%- set fullDates = true %}{% set showVenue = true %}{% set showType = true %}
+    {%- for id in sel.ids %}{% set w = archive.byId[id] %}{% if w %}{% include "record.njk" %}{% endif %}{% endfor %}
+  </ol>
+</section>
+
+{%- if sel.projects %}
+<section aria-labelledby="phil-projects">
+  <h2 id="phil-projects" class="section-title">In progress</h2>
+  <ul class="project-teasers">
+    {%- for p in archive.projects %}{% if p.id in sel.projects %}
+    <li><a href="/research/#{{ p.id }}">{{ p.title }}</a> <span class="status">{{ p.status }}</span></li>
+    {%- endif %}{% endfor %}
+  </ul>
+</section>
+{%- endif %}
+
+<section aria-labelledby="phil-more">
+  <h2 id="phil-more" class="section-title">Related</h2>
+  <ul class="link-row">
+    <li><a href="/religion-philosophy/">Theology &amp; Religious Naturalism</a></li>
+    <li><a href="/scholarship/">Sociology</a></li>
+    <li><a href="/writing/">All writing</a></li>
+  </ul>
+</section>

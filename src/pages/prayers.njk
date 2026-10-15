@@ -1,0 +1,44 @@
+---
+layout: base.njk
+permalink: /prayers/
+title: Prayers and Spiritual Writings
+crumbTitle: Prayers
+description: "Prayers, invocations and spiritual writings by Wayne Martin Mellinger, Ph.D., from Moments of Awe Punctuated by the Mundane and The Dionysian Naturalist."
+breadcrumbs:
+  - { label: "Writing", url: "/writing/" }
+---
+{#- Added 2026-10-14. Replaces the "Prayers & ritual" section of /creative-work/ and the
+    #prayers section of the previous one-page site. Selections live in src/_data/curated.yml. -#}
+<header class="page-head">
+  <p class="eyebrow">Writing</p>
+  <h1>Prayers and Spiritual Writings</h1>
+  <p class="lede">Words offered, not just written. Prayer runs through both of Wayne’s platforms — ritual writing from <cite>The Dionysian Naturalist</cite> alongside prayer-poems from <cite>Moments of Awe</cite>.</p>
+</header>
+
+<section aria-labelledby="prayers">
+  <h2 id="prayers" class="section-title">Prayers and invocations</h2>
+  <ol class="work-list">
+    {%- set fullDates = true %}{% set showVenue = true %}{% set showType = true %}
+    {%- for id in curated.prayers.ids %}{% set w = archive.byId[id] %}{% if w %}{% include "record.njk" %}{% endif %}{% endfor %}
+  </ol>
+  <p class="coverage">Also in <cite>Moments of Awe</cite>, not yet on this site: “A Prayer for Those Who Serve,” “Prayer for Longest Night,” and “A Prayer for an Entheogenic Sacrament.”</p>
+</section>
+
+<section aria-labelledby="spiritual">
+  <h2 id="spiritual" class="section-title">Spiritual writings</h2>
+  {%- if curated.spiritual_writings.status == 'draft' %}
+  <p class="provisional">Essays on spiritual practice published elsewhere on this site. This selection was made from their titles and awaits the author’s review.</p>
+  {%- endif %}
+  <ol class="work-list">
+    {%- for id in curated.spiritual_writings.ids %}{% set w = archive.byId[id] %}{% if w %}{% include "record.njk" %}{% endif %}{% endfor %}
+  </ol>
+</section>
+
+<section aria-labelledby="prayer-more">
+  <h2 id="prayer-more" class="section-title">Related</h2>
+  <ul class="link-row">
+    <li><a href="/creative-work/poetry/">Poetry</a></li>
+    <li><a href="/religion-philosophy/">Theology &amp; Religious Naturalism</a></li>
+    <li><a href="/community/">The Longest Night vigil and community work</a></li>
+  </ul>
+</section>

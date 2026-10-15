@@ -20,11 +20,17 @@
     <button class="menu-button" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
     <nav id="site-nav" class="site-nav" aria-label="Main">
       <ul>
-        {%- set section = breadcrumbs[0].url if breadcrumbs else '' %}
+        {#- Mark the current page (aria-current="page") or, failing that, the one menu entry
+            whose area contains it: the longest menu url that the page url, or its breadcrumb
+            trail, starts with. Home is only ever marked on the home page itself. -#}
+        {%- set trail = [page.url] %}{% for b in (breadcrumbs or []) %}{% set trail = (trail.push(b.url), trail) %}{% endfor %}
+        {%- set best = '' %}
+        {%- for item in site.nav %}{% if item.url != '/' %}{% for t in trail %}
+          {%- if t.startsWith(item.url) and item.url.length > best.length %}{% set best = item.url %}{% endif %}
+        {%- endfor %}{% endif %}{% endfor %}
         {%- for item in site.nav %}
         {%- set exact = page.url == item.url %}
-        {%- set within = page.url.startsWith(item.url) or section == item.url %}
-        <li><a href="{{ item.url }}"{% if exact %} aria-current="page"{% elif within %} aria-current="true"{% endif %}>{{ item.label }}</a></li>
+        <li><a href="{{ item.url }}"{% if item.title %} title="{{ item.title }}"{% endif %}{% if exact %} aria-current="page"{% elif item.url == best %} aria-current="true"{% endif %}>{{ item.label }}</a></li>
         {%- endfor %}
       </ul>
     </nav>
@@ -51,6 +57,8 @@
         <li><a href="/writing/">All writing</a></li>
         <li><a href="/topics/">Topics</a></li>
         <li><a href="/research/">Research</a></li>
+        <li><a href="/community/">Community work</a></li>
+        <li><a href="/creative-work/">Poetry &amp; creative work</a></li>
         <li><a href="/cv/">CV</a></li>
         <li><a href="/contact/">Contact</a></li>
         <li><a href="/legacy/">The previous site, preserved</a></li>

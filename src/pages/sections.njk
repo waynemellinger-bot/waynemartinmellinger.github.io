@@ -13,27 +13,37 @@ eleventyComputed:
     - { label: "Writing", url: "/writing/" }
 sections:
   - url: /scholarship/
-    title: Scholarship
-    lede: Peer-reviewed sociology, and two research platforms — Doing Modernity, on Critical Interactionism and the Santa Barbara School, and Wild Flesh, on critical drug studies.
-    description: "Scholarship by Wayne Martin Mellinger, Ph.D.: peer-reviewed publications, Doing Modernity and Wild Flesh, and his work in Critical Interactionism, ethnomethodology and conversation analysis, homelessness and institutional abandonment, and critical drug studies."
+    title: Sociology
+    lede: Scholarly sociology, and two research platforms — Doing Modernity, on Critical Interactionism and the Santa Barbara School, and Wild Flesh, on critical drug studies.
+    description: "Sociology by Wayne Martin Mellinger, Ph.D.: scholarly publications, Doing Modernity and Wild Flesh, and his work in Critical Interactionism, ethnomethodology and conversation analysis, homelessness and institutional abandonment, and critical drug studies."
     collections: [scholarship, doing-modernity, wild-flesh]
     programs: [critical-interactionism, interaction-emca, homelessness-abandonment, critical-drug-studies]
+    links:
+      - { label: Publications, url: /scholarship/publications/ }
+      - { label: Research and current projects, url: /research/ }
+      - { label: Philosophy, url: /philosophy/ }
   - url: /public-writing/
-    title: Public Writing
-    lede: Writing for a general audience — mostly Noozhawk columns on homelessness, housing, mental health and civic life in Santa Barbara.
-    description: "Public writing by Wayne Martin Mellinger, Ph.D.: Noozhawk columns on homelessness, housing, mental health and civic life in Santa Barbara."
+    title: Public Scholarship & Media
+    lede: Public sociology for a general audience — mostly Noozhawk columns on homelessness, housing, mental health and civic life in Santa Barbara.
+    description: "Public scholarship by Wayne Martin Mellinger, Ph.D.: Noozhawk columns on homelessness, housing, mental health and civic life in Santa Barbara."
     collections: [noozhawk]
     programs: [public-sociology-justice]
+    links:
+      - { label: Community work, url: /community/ }
+      - { label: Contact for interviews and talks, url: /contact/ }
     note: Wayne’s fourth platform, Our Neighbors on the Streets, has not yet been catalogued here.
   - url: /religion-philosophy/
-    title: Religion & Philosophy
+    title: Theology & Religious Naturalism
     lede: Religious naturalism, contemporary Paganism and ecstatic spiritual practice — the theological framework Wayne calls Dionysian Naturalism.
     description: "Writing by Wayne Martin Mellinger, Ph.D., on religious naturalism, Dionysian Naturalism and spiritual practice, from The Dionysian Naturalist."
     collections: [dionysian-naturalist]
     programs: [religious-dionysian-naturalism]
+    links:
+      - { label: Prayers and Spiritual Writings, url: /prayers/ }
+      - { label: Philosophy, url: /philosophy/ }
   - url: /creative-work/
-    title: Creative Work
-    lede: Poetry, prayer and ritual writing.
+    title: Poetry & Creative Work
+    lede: Poetry, and the books in which it appears. Prayers and ritual writing now have <a href="/prayers/">their own page</a>.
     description: "Poetry, prayers and ritual writing by Wayne Martin Mellinger, from Moments of Awe Punctuated by the Mundane (2025) and The Dionysian Naturalist."
     collections: [poetry]
     creative: true
@@ -41,7 +51,7 @@ sections:
 <header class="page-head">
   <p class="eyebrow">Writing</p>
   <h1>{{ s.title }}</h1>
-  <p class="lede">{{ s.lede }}</p>
+  <p class="lede">{{ s.lede | safe }}</p>
 </header>
 
 <section aria-labelledby="where">
@@ -70,6 +80,13 @@ sections:
 </section>
 {%- endif %}
 
+{%- if s.links %}
+<section aria-labelledby="see-also">
+  <h2 id="see-also" class="label">See also</h2>
+  <ul class="link-row">{% for l in s.links %}<li><a href="{{ l.url }}">{{ l.label }}</a></li>{% endfor %}</ul>
+</section>
+{%- endif %}
+
 {%- if s.creative %}
 <section aria-labelledby="books">
   <h2 id="books" class="label">Books</h2>
@@ -79,15 +96,8 @@ sections:
   </ul>
 </section>
 
-<section aria-labelledby="prayers" id="prayers-section">
-  <h2 id="prayers" class="label">Prayers &amp; ritual</h2>
-  <p>Prayer runs through both platforms — ritual writing from <cite>The Dionysian Naturalist</cite> alongside prayer-poems from <cite>Moments of Awe</cite>.</p>
-  <ul class="program-list">
-    {%- set clue = archive.byId['dn-santa-barbara-rising-opening-prayer-for-clue'] %}
-    {%- set muse = archive.byId['poem-invocation-to-the-earth-muse'] %}
-    {%- if clue %}<li><a href="{{ clue.url }}">{{ clue.title }}</a> <span class="work-venue">The Dionysian Naturalist, {{ clue | dateLabel(true) }}</span></li>{% endif %}
-    {%- if muse %}<li><a href="{{ muse.page }}">{{ muse.title }}</a> <span class="work-venue">Poem, {{ muse | dateLabel(true) }}</span></li>{% endif %}
-  </ul>
-  <p class="coverage">Also in <cite>Moments of Awe</cite>, not yet on this site: “A Prayer for Those Who Serve,” “Prayer for Longest Night,” and “A Prayer for an Entheogenic Sacrament.”</p>
+<section aria-labelledby="prayers-pointer" id="prayers-section">
+  <h2 id="prayers-pointer" class="label">Prayers &amp; ritual</h2>
+  <p><a href="/prayers/">Prayers and Spiritual Writings</a> — prayers, invocations and essays on spiritual practice.</p>
 </section>
 {%- endif %}

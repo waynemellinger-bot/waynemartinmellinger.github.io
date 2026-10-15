@@ -7,12 +7,12 @@ description: "Every work in the archive of Wayne Martin Mellinger, Ph.D. — sch
 {%- set st = archive.stats %}
 <header class="page-head">
   <h1>Writing</h1>
-  <p class="lede">{{ st.total }} works from {{ st.first }} to {{ st.last }}: peer-reviewed sociology, newspaper columns, essays on three research platforms, and poems. Start from a part of the work below, or filter the whole list.</p>
+  <p class="lede">{{ st.total }} works from {{ st.first }} to {{ st.last }}: scholarly sociology, newspaper columns, essays on three research platforms, and poems. Start from a part of the work below, or filter the whole list.</p>
 </header>
 
 <nav class="doorways-grid" aria-label="Parts of the archive">
   <div>
-    <h2 class="label"><a href="/scholarship/">Scholarship</a></h2>
+    <h2 class="label"><a href="/scholarship/">Sociology</a></h2>
     <ul>
       {%- for slug in ['scholarship', 'doing-modernity', 'wild-flesh'] %}{% set c = archive.collectionBySlug[slug] %}
       <li><a href="{{ c.path }}">{{ c.name }}</a> <span class="count">{{ archive.byCollection[slug].length }}</span></li>
@@ -20,22 +20,23 @@ description: "Every work in the archive of Wayne Martin Mellinger, Ph.D. — sch
     </ul>
   </div>
   <div>
-    <h2 class="label"><a href="/public-writing/">Public writing</a></h2>
+    <h2 class="label"><a href="/public-writing/">Public scholarship &amp; media</a></h2>
     <ul>
       <li><a href="/public-writing/noozhawk/">Noozhawk columns</a> <span class="count">{{ archive.byCollection.noozhawk.length }}</span></li>
     </ul>
   </div>
   <div>
-    <h2 class="label"><a href="/religion-philosophy/">Religion &amp; philosophy</a></h2>
+    <h2 class="label"><a href="/religion-philosophy/">Theology &amp; religious naturalism</a></h2>
     <ul>
       <li><a href="/religion-philosophy/dionysian-naturalist/">The Dionysian Naturalist</a> <span class="count">{{ archive.byCollection['dionysian-naturalist'].length }}</span></li>
+      <li><a href="/philosophy/">Philosophy</a> <span class="count">{{ curated.philosophy.ids.length }}</span></li>
     </ul>
   </div>
   <div>
-    <h2 class="label"><a href="/creative-work/">Creative work</a></h2>
+    <h2 class="label"><a href="/creative-work/">Poetry &amp; prayer</a></h2>
     <ul>
       <li><a href="/creative-work/poetry/">Poems</a> <span class="count">{{ archive.byCollection.poetry.length }}</span></li>
-      <li><a href="/creative-work/#prayers">Prayers &amp; ritual</a></li>
+      <li><a href="/prayers/">Prayers and spiritual writings</a></li>
     </ul>
   </div>
 </nav>

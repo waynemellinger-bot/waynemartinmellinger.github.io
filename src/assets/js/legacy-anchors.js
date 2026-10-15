@@ -9,7 +9,7 @@
     '#religion-philosophy': '/religion-philosophy/',
     '#public-writing': '/public-writing/',
     '#poetry': '/creative-work/poetry/',
-    '#prayers': '/creative-work/#prayers',
+    '#prayers': '/prayers/',
     '#gallery': '/about/portraits/',
     '#projects': '/community/',
     '#cv': '/cv/'

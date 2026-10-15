@@ -199,6 +199,23 @@ projects.forEach((p, i) => {
   for (const id of asList(p.works)) if (!allIds.has(id)) errors.push(`${where}: work id "${id}" does not exist`);
 });
 
+// ---------- Curated selections (Philosophy and Prayers pages) ----------
+const curated = load('curated.yml') || {};
+const projectIds = new Set(projects.map((p) => p.id));
+for (const [name, list] of Object.entries(curated)) {
+  const where = `curated.yml, "${name}"`;
+  if (!REVIEW.has(list.status)) errors.push(`${where}: status must be draft or reviewed`);
+  if (!['title', 'article', 'wayne'].includes(list.basis)) errors.push(`${where}: basis must be title, article or wayne`);
+  if (!asList(list.ids).length) errors.push(`${where}: needs at least one id`);
+  const seen = new Set();
+  for (const id of asList(list.ids)) {
+    if (!allIds.has(id)) errors.push(`${where}: work id "${id}" does not exist`);
+    if (seen.has(id)) errors.push(`${where}: "${id}" is listed twice`);
+    seen.add(id);
+  }
+  for (const id of asList(list.projects)) if (!projectIds.has(id)) errors.push(`${where}: project id "${id}" does not exist`);
+}
+
 // ---------- Report ----------
 for (const w of warnings) console.warn(`  note: ${w}`);
 if (errors.length) {

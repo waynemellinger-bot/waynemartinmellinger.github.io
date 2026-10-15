@@ -17,7 +17,7 @@
   name: Noozhawk
   title: Noozhawk Columns
   venue: Noozhawk
-  section: { label: Public Writing, url: /public-writing/ }
+  section: { label: Public Scholarship & Media, url: /public-writing/ }
   path: /public-writing/noozhawk/
   file: noozhawk
   home: https://www.noozhawk.com/author/wayne-mellinger/
@@ -31,23 +31,26 @@
   name: Scholarly Publications
   title: Scholarly Publications
   venue: Journals and books
-  section: { label: Scholarship, url: /scholarship/ }
+  section: { label: Sociology, url: /scholarship/ }
   path: /scholarship/publications/
   file: scholarship
   group_by: series
   series:
     - { name: Books }
-    - { name: Peer-Reviewed Publications }
+    - { name: Forthcoming }
+    - { name: Journal Articles }
+    - { name: Chapters in Edited Volumes and Research Annuals }
+    - { name: Other Articles, intro: "Listed in another bibliography of Wayne’s work but not yet confirmed against the publication." }
   noun: publication
-  intro: Peer-reviewed articles and chapters, and published books. Books and articles still in progress are on the Research page.
-  coverage: As listed on the previous site. Citations have not yet been checked against the journals, and few have links.
+  intro: Journal articles, chapters in edited volumes and research annuals, and published books, each linked to the publisher or another authoritative record where one could be found. Work in progress is on the Research page.
+  coverage: Checked against publishers and bibliographic records in October 2026. Five works now link to the journal, publisher or a scholarly archive; the rest are older journal issues and research annuals with no record online that could be confirmed, and are listed without links rather than with guessed ones.
   schema: ScholarlyArticle
 
 - slug: doing-modernity
   name: Doing Modernity
   title: "Doing Modernity: Studies in Critical Interactionism"
   venue: Doing Modernity
-  section: { label: Scholarship, url: /scholarship/ }
+  section: { label: Sociology, url: /scholarship/ }
   path: /scholarship/doing-modernity/
   file: doing-modernity
   home: https://doingmodernity.blogspot.com/
@@ -74,7 +77,7 @@
   name: The Dionysian Naturalist
   title: "The Dionysian Naturalist: Studies in Religious Naturalism and Other Emerging Nature Religions"
   venue: The Dionysian Naturalist
-  section: { label: Religion & Philosophy, url: /religion-philosophy/ }
+  section: { label: Theology & Religious Naturalism, url: /religion-philosophy/ }
   path: /religion-philosophy/dionysian-naturalist/
   file: dionysian-naturalist
   home: https://thedionysiannaturalist.blogspot.com/
@@ -93,7 +96,7 @@
   name: Wild Flesh
   title: "Wild Flesh: Explorations in Critical Drug Studies"
   venue: Wild Flesh
-  section: { label: Scholarship, url: /scholarship/ }
+  section: { label: Sociology, url: /scholarship/ }
   path: /scholarship/wild-flesh/
   file: wild-flesh
   home: https://wildflesh.blogspot.com/
@@ -106,7 +109,7 @@
   name: Poetry
   title: Poems
   venue: Moments of Awe Punctuated by the Mundane
-  section: { label: Creative Work, url: /creative-work/ }
+  section: { label: Poetry & Creative Work, url: /creative-work/ }
   path: /creative-work/poetry/
   file: poetry
   group_by: none

@@ -1,0 +1,44 @@
+# Selections for the Philosophy and Prayers pages (added 2026-10-14).
+#
+# These two pages gather works that already have records elsewhere in the archive; nothing
+# here is a new work. Each list is a provisional, editorial selection made from titles
+# (status: draft) until Wayne reviews it and sets status: reviewed. While a list is draft,
+# its page says so. The build checks that every id exists (scripts/validate.mjs).
+#
+#   ids     record ids, in the order shown
+#   status  draft | reviewed
+#   basis   what the selection rests on: title | article | wayne
+
+philosophy:
+  status: draft
+  basis: title
+  ids:
+    - dn-dionysian-thinking-nietzsche-and-the-critique-of-reason
+    - dn-the-golden-mean-seeking-balance-between-the-apollonian-and-t
+    - dn-enchanting-naturalism
+    - dn-sacred-nature-towards-a-comprehensive-theory
+    - dm-the-epistemology-of-abandonment-a-critical-interactionist-th
+    - dm-maladjustment-as-insight-the-epistemology-of-the-abandoned
+    - dm-what-do-we-owe-one-another-once-we-see-asymmetries-being-don
+    - dm-the-moral-economy-of-interaction
+    - book-i-just-wanted-to-dance-with-dionysus
+  # Research-page projects shown on the Philosophy page (ids from projects.yml).
+  projects:
+    - dionysian-wine-apollonian-cup
+
+prayers:
+  status: reviewed
+  basis: wayne
+  # Prayers and invocations. These two were listed under "Prayers" on the previous site.
+  ids:
+    - dn-santa-barbara-rising-opening-prayer-for-clue
+    - poem-invocation-to-the-earth-muse
+
+spiritual_writings:
+  status: draft
+  basis: title
+  ids:
+    - dn-bearing-witness-to-social-injustice-as-a-spiritual-practice
+    - dm-abandonment-as-a-site-of-revelation-witnessing-the-sacred-in
+    - dn-the-use-of-ritual-in-dionysian-naturalism
+    - dn-walking-the-earth-path-exploring-the-spiritual-common-core-o
