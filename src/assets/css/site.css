@@ -80,8 +80,12 @@ main:focus { outline: none; }
 }
 .site-nav a:hover, .site-nav a[aria-current] { color: var(--ink); text-decoration: underline; text-decoration-color: var(--ochre); text-underline-offset: 0.35em; text-decoration-thickness: 2px; }
 
+/* Desktop: the name on the first line, the full menu (eleven entries since 2026-10-14) on a
+   line of its own beneath it, wrapping if the window is narrow rather than overflowing. */
 @media (min-width: 56rem) {
-  .header-inner { flex-wrap: nowrap; }
+  .header-inner { padding-bottom: 0.4rem; }
+  .site-nav { flex-basis: 100%; }
+  .site-nav ul { gap: 0 1.35rem; }
 }
 @media (max-width: 55.99rem) {
   .site-nav { flex-basis: 100%; }
@@ -169,14 +173,17 @@ h1 {
 
 /* ---------- Home ---------- */
 .hero { display: grid; gap: 2rem; align-items: start; margin-bottom: 1rem; }
-.hero-figure { margin: 0; max-width: 18rem; }
+/* Phones and narrow tablets: the portrait sits in normal flow above the text, centred and
+   capped in size so the heading and opening lines show on the first screen. It is never
+   sticky, fixed or absolutely positioned, so it cannot cover text (the original iPhone bug). */
+.hero-figure { margin: 0 auto; width: 100%; max-width: 15rem; }
 .hero-figure img, .about-figure img { border-radius: 2px; }
 .hero h1 { font-size: clamp(2.1rem, 1.5rem + 2.8vw, 3.4rem); margin-bottom: 0.6rem; }
 .tagline { font-family: var(--mono); font-size: 0.82rem; letter-spacing: 0.04em; text-transform: uppercase; color: var(--sage); line-height: 1.7; margin: 0 0 1.25rem; }
 .intro { font-size: 1.12em; max-width: var(--reading); margin: 0; }
 @media (min-width: 48rem) {
   .hero { grid-template-columns: minmax(13rem, 18rem) minmax(0, 1fr); gap: 3rem; }
-  .hero-figure { max-width: none; }
+  .hero-figure { max-width: none; margin: 0; }
 }
 .home-block { margin-top: 3.5rem; }
 .home-block > .section-title { margin-top: 0; padding-top: 1.5rem; border-top: 1px solid var(--line-strong); }
@@ -205,8 +212,8 @@ button:hover { background: var(--ochre); border-color: var(--ochre); color: var(
 
 /* ---------- About ---------- */
 .about-grid { display: grid; gap: 2rem; }
-.about-figure { margin: 0; max-width: 20rem; }
-@media (min-width: 56rem) { .about-grid { grid-template-columns: 20rem minmax(0, 1fr); gap: 3.5rem; } .about-figure { position: static; } }
+.about-figure { margin: 0 auto; width: 100%; max-width: 15rem; position: static; }
+@media (min-width: 56rem) { .about-grid { grid-template-columns: 20rem minmax(0, 1fr); gap: 3.5rem; } .about-figure { margin: 0; max-width: 20rem; } }
 .about-text { max-width: var(--measure); }
 .glance { margin-top: 2.75rem; }
 .glance dl { margin: 0; }
