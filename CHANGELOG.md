@@ -1,5 +1,26 @@
 # Changelog
 
+## 2026-10-14 — Audit and repairs (branch `site-repairs-2026-10-14`)
+
+Full report: `docs/SITE-REPAIRS-2026-10-14.md`; publications: `docs/PUBLICATION-AUDIT.md`.
+
+- Mobile portrait: centred above the text on phones, at most 15rem wide, in normal flow
+  (never sticky, fixed or absolute). Desktop unchanged. Before/after screenshots in
+  `docs/screenshots/2026-10-14/`.
+- Menu: eleven entries for the agreed areas (Home, About, Sociology, Philosophy, Theology, Poetry,
+  Prayers, Publications, Public Scholarship, Contact, Search); on desktop it runs on its own line
+  under the name. The current page or area is marked by the longest matching address.
+- New pages: `/philosophy/` and `/prayers/` (selections in new `src/_data/curated.yml`, checked
+  by `scripts/validate.mjs`). Prayers moved off `/creative-work/`; old `/#prayers` now forwards to `/prayers/`.
+- Section pages retitled: Sociology (`/scholarship/`), Theology & Religious Naturalism
+  (`/religion-philosophy/`), Public Scholarship & Media (`/public-writing/`), Poetry & Creative
+  Work (`/creative-work/`), with "See also" links. Addresses unchanged.
+- Publications: regrouped by type; links added to four records (two DOIs, one ScienceDirect page,
+  one PhilArchive record); "John Henry Adams and the Image of the New Negro" (1997) added as
+  `unverified`; every record's source and open questions noted.
+- Browser QA: adds 390 and 430px widths, the new pages and the old section anchors.
+- Footer: Community work and Poetry & creative work links.
+
 ## 2026-10-08 — Content review corrections (October 7 review)
 
 - Research page: "Dionysian Wine, Apollonian Cup" now Under Review, summary naming the

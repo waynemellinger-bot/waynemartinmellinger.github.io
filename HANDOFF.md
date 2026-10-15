@@ -8,14 +8,14 @@ reconstruct the project from memory or chat history.
 Claude implements. ChatGPT acts as senior editor and QA auditor.
 Nothing is merged into `main` or published without Wayne's explicit approval.
 
-## Current state (updated 2026-10-09)
+## Current state (updated 2026-10-14)
 
 | | |
 | --- | --- |
 | Live site | Still the original single page (`main`, commit `a05e5c7`, tag `legacy-original`). |
-| Work in review | Branch `archive-rebuild`, open pull request into `main`. **Not merged, not published.** |
+| Work in review | Branch `site-repairs-2026-10-14` (contains all of `archive-rebuild` plus the October 14 repairs), pull request into `main`. Supersedes PR #1. **Not merged, not published.** |
 | Restored from | `waynemartinmellinger-site-source-2026-10-08.zip` and `waynemartinmellinger-full-history-2026-10-08.bundle`. The ZIP matches the bundle's tip file for file; the history is preserved commit by commit. |
-| Checks | `npm run build` (record validation, build, search index), `scripts/qa/check_site.py` and `scripts/qa/browser_check.py` all pass as of 2026-10-09. |
+| Checks | `npm run build` (record validation, build, search index), `scripts/qa/check_site.py` and `scripts/qa/browser_check.py` (now incl. 390 and 430px iPhone widths) all pass as of 2026-10-14. |
 
 ### Tags (restore points)
 
@@ -40,12 +40,14 @@ push branches but not tags). Each tagged commit is in the `archive-rebuild` hist
 
 ## Open items
 
-**Before merging** (details in `docs/DECISIONS-FOR-WAYNE.md`):
+**Before merging** (details in `docs/DECISIONS-FOR-WAYNE.md` and `docs/SITE-REPAIRS-2026-10-14.md` §6):
 - A0: Behavioral Wellness Commission, current or former service.
 - A1: Research page statuses and summaries.
 - A2: Program descriptions.
 - A3: New page prose.
 - A4: Conflicting facts.
+- October 14 items 1–7: publication groupings, John Henry Adams details, Many Interaction Orders,
+  Philosophy and spiritual-writings selections (`src/_data/curated.yml`), menu labels and addresses, new page wording.
 
 **At merge:** set Settings → Pages → Source to **GitHub Actions**, then merge right away
 (`docs/UPLOAD-INSTRUCTIONS.md`, step 9).
@@ -62,5 +64,8 @@ block publishing.
 - 2026-10-01 to 10-02: mobile hotfix; Noozhawk pilot built and accepted.
 - 2026-10-07: site completed; reports written. Not pushed (no GitHub access then).
 - 2026-10-08: content-review corrections applied; handoff ZIP and bundle produced.
+- 2026-10-14: Audit. Live site confirmed still `main` a05e5c7 (sticky-photo bug reproduced). On a new
+  branch: phone portrait centred and capped; Philosophy and Prayers pages; eleven-item menu for the agreed
+  areas; publications regrouped by type, five linked, John Henry Adams added; audit and test reports in `docs/`.
 - 2026-10-09: GitHub write access confirmed. Restored from the handoff package onto
   `archive-rebuild`, history intact; all checks re-run and passing; pull request opened.

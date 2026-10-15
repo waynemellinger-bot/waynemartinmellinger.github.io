@@ -17,9 +17,9 @@ from playwright.sync_api import sync_playwright
 
 BASE = 'http://localhost:8080'
 SHOTS = sys.argv[1] if len(sys.argv) > 1 else None
-WIDTHS = [320, 375, 768, 1024, 1440]
+WIDTHS = [320, 375, 390, 430, 768, 1024, 1440]
 PAGES = ['/', '/about/', '/about/biography/', '/about/portraits/', '/cv/', '/writing/', '/research/',
-         '/community/', '/contact/', '/scholarship/', '/scholarship/publications/', '/scholarship/doing-modernity/',
+         '/community/', '/contact/', '/scholarship/', '/philosophy/', '/prayers/', '/religion-philosophy/', '/public-writing/', '/scholarship/publications/', '/scholarship/doing-modernity/',
          '/religion-philosophy/dionysian-naturalist/', '/public-writing/noozhawk/', '/creative-work/',
          '/creative-work/poetry/', '/creative-work/poetry/i-saw-the-best-souls-of-my-city/',
          '/creative-work/poetry/the-search-for-light/', '/scholarship/critical-interactionism/', '/topics/mental-health/',
@@ -106,7 +106,7 @@ with sync_playwright() as p:
     page.goto(BASE + '/writing/?type=poem'); page.wait_for_timeout(100)
     check(vis() == 18, f'filters: ?type=poem shows {vis()}, expected 18 (17 poems + The Ordeal)')
     page.goto(BASE + '/writing/?decade=199'); page.wait_for_timeout(100)
-    check(vis() == 11, f'filters: 1990s shows {vis()}, expected 11')
+    check(vis() == 12, f'filters: 1990s shows {vis()}, expected 12 (11 from the previous site + John Henry Adams, added 2026-10-14)')
 
     # Search (Pagefind).
     page.goto(BASE + '/search/?q=chumash'); page.wait_for_timeout(1500)
@@ -117,7 +117,9 @@ with sync_playwright() as p:
 
     # Old one-page addresses forward to their new pages.
     for old, new in [('/#poetry', '/creative-work/poetry/'), ('/#cv', '/cv/'), ('/#biography', '/about/biography/'),
-                     ('/#gallery', '/about/portraits/'), ('/#contact', '/contact/'), ('/#projects', '/community/')]:
+                     ('/#gallery', '/about/portraits/'), ('/#contact', '/contact/'), ('/#projects', '/community/'),
+                     ('/#prayers', '/prayers/'), ('/#sociology', '/scholarship/'), ('/#religion-philosophy', '/religion-philosophy/'),
+                     ('/#public-writing', '/public-writing/')]:
         page.goto(BASE + old); page.wait_for_timeout(300)
         check(page.url.endswith(new), f'old address {old} went to {page.url}, expected {new}')
     page.goto(BASE + '/index%20(1).html'); page.wait_for_timeout(500)
